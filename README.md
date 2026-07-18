@@ -113,7 +113,7 @@ Please read [CONTRIBUTING.md](portal/CONTRIBUTING.md), then follow these steps i
    - Link the official paper, long-form technical document, or official release page.
    - Base classifications and structured details on the full text, especially Method and Evaluation—not only the title or abstract.
    - Use only author- or institution-maintained Code and Project links, and use HTTPS URLs.
-   - For a Research Work, provide a neutral English summary of 80–120 words and a Chinese summary of 140–220 Chinese characters. Do not include offensive language or unsupported claims.
+   - For a Research Work, provide a neutral English summary of 80–120 words. A Chinese summary is optional. Do not include offensive language or unsupported claims.
    - For an Evaluation Resource, provide `resourceType`, `target`, `scale`, `task`, and `dimensions` instead of a narrative summary.
 
 4. **Regenerate and validate the portal.** Node.js 22 or newer is required.
