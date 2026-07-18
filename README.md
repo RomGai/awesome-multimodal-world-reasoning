@@ -1,4 +1,4 @@
-# Awesome Multimodal World Reasoning [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Multimodal World Reasoning
 
 <p align="center">
   <a href="https://romgai.github.io/awesome-multimodal-world-reasoning/">
@@ -11,9 +11,8 @@
 </p>
 
 <p align="center">
-  <a href="https://romgai.github.io/awesome-multimodal-world-reasoning/"><strong>Open the live portal</strong></a>
-  ·
-  <a href="https://github.com/RomGai/awesome-multimodal-world-reasoning">Repository</a>
+  <a href="https://romgai.github.io/awesome-multimodal-world-reasoning/"><img src="https://img.shields.io/badge/Open-Live%20Portal-0A7F86?style=flat-square&amp;logo=githubpages&amp;logoColor=white" alt="Open the live portal"></a>
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
 </p>
 
 This repository is the interactive companion to **A Survey of World Models in Multimodal Reasoning**. It currently indexes 345 Research Works and 176 Evaluation Resources with functional-role filtering, world-model types, keyword and year search, date sorting, bilingual summaries, structured resource details, pagination, and verified Paper, Code, Project, and Blog links when available.
