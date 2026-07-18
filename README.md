@@ -15,7 +15,7 @@
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
 </p>
 
-This repository is the interactive companion to **A Survey of World Models in Multimodal Reasoning**. It currently indexes 345 Research Works and 176 Evaluation Resources with functional-role filtering, world-model types, keyword and year search, date sorting, bilingual summaries, structured resource details, pagination, and verified Paper, Code, Project, and Blog links when available.
+This repository is the interactive companion to **A Survey of World Models in Multimodal Reasoning**. It currently indexes 345 Research Works and 176 Evaluation Resources. Every Research Work includes a concise summary in English and Chinese, while Evaluation Resources provide structured details. The portal also supports functional-role filtering, world-model types, keyword and year search, date sorting, pagination, and verified Paper, Code, Project, and Blog links when available.
 
 ## Contents
 
