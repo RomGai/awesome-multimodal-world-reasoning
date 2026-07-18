@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  An interactive, bilingual literature and evaluation index for world models in multimodal reasoning, simulation, planning, and control.
+  <em>An interactive literature and evaluation index for world models in multimodal reasoning.</em>
 </p>
 
 <p align="center">
