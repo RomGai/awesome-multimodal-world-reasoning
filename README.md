@@ -39,7 +39,7 @@ The complete index is available at:
 
 <p align="center">
   <a href="https://romgai.github.io/awesome-multimodal-world-reasoning/">
-    <img src="portal/public/live-portal-preview.png" alt="Live portal interface showing the Research Works index" width="100%">
+    <img src="portal/public/live-portal-preview-expanded.png" alt="Live portal interface showing an expanded Research Work summary" width="100%">
   </a>
 </p>
 
