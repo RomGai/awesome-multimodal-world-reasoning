@@ -70,16 +70,21 @@ Corrections and additions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTIN
    git checkout -b data/add-short-name
    ```
 
-2. **Edit the source files for your change.** Do not edit `app/data/*.generated.json` by hand.
+2. **Choose the portal view you want to update.** Do not edit `app/data/*.generated.json` by hand.
 
-   | Change | Files to edit |
-   | --- | --- |
-   | Correct a Table 2 Research Work | `source-data/world_model_methods.csv`; use `data/portal-meta.json` for summaries or official link corrections |
-   | Correct a Table 3 Evaluation Resource | `source-data/world_model_benchmarks.csv`; update `source-data/tab_world_model_benchmarks.tex` when its TI/SS/AC Evaluation Focus changes |
-   | Add a Research Work beyond Table 2 | add its BibTeX record to `source-data/survey.bib`, add the Research entry to `data/curated-additions.json`, and add its bilingual summary and official links to `data/portal-meta.json` |
-   | Add an Evaluation Resource beyond Table 3 | add its BibTeX record to `source-data/survey.bib`, add the Evaluation entry to `data/curated-additions.json`, and add official links to `data/portal-meta.json` when available |
+   **Research Works**
 
-   Do not append new, non-table works to the Table 2 or Table 3 source files. Research roles must use `TI-I`, `TI-G`, `TI-M`, `SS-G`, `SS-P`, `SS-C`, `SS-E`, `AC-V`, `AC-R`, `AC-D`, `AC-N`, or `AC-T`. Evaluation Focus accepts `TI`, `SS`, and `AC`. Multiple tags are allowed when supported by the full text.
+   - To add a new Research Work, add its BibTeX record to `source-data/survey.bib`, add the entry under `research` in `data/curated-additions.json`, and add its bilingual summary and official links to `data/portal-meta.json`.
+   - To correct an existing Research Work, search for its `bibKey` in `data/curated-additions.json`. Edit that entry when present; otherwise update its source record in `source-data/world_model_methods.csv`. Summary, role-override, Paper, Code, and Project corrections belong in `data/portal-meta.json`.
+   - Roles must use `TI-I`, `TI-G`, `TI-M`, `SS-G`, `SS-P`, `SS-C`, `SS-E`, `AC-V`, `AC-R`, `AC-D`, `AC-N`, or `AC-T`.
+
+   **Evaluation Resources**
+
+   - To add a new Evaluation Resource, add its BibTeX record to `source-data/survey.bib`, add the entry under `evaluation` in `data/curated-additions.json`, and add official links to `data/portal-meta.json` when available.
+   - To correct an existing Evaluation Resource, search for its `bibKey` in `data/curated-additions.json`. Edit that entry when present; otherwise update its source record in `source-data/world_model_benchmarks.csv`. For source-backed records, TI/SS/AC Evaluation Focus corrections are synchronized through `source-data/tab_world_model_benchmarks.tex`.
+   - Evaluation Focus accepts `TI`, `SS`, and `AC`.
+
+   Multiple roles or Focus tags are allowed when supported by the full text. New portal entries always belong in `data/curated-additions.json`; do not append them to the survey-source CSV or TeX files.
 
 3. **Include the required evidence and metadata.**
 
