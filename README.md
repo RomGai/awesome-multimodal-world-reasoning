@@ -21,8 +21,6 @@ This repository is the interactive companion to **A Survey of World Models in Mu
 
 - [Live portal](#live-portal)
 - [Organization](#organization)
-- [Data and curation](#data-and-curation)
-- [Local development](#local-development)
 - [Contributing](#contributing)
 - [Citation](#citation)
 - [License](#license)
@@ -57,32 +55,6 @@ Research Works may receive multiple detailed roles across interactive or imagine
 - **(M)LLM-Integrated** — places an LLM, MLLM, VLM, or VLA interface inside the world-model loop.
 
 The types are intentionally non-exclusive when a paper implements more than one mechanism.
-
-## Data and curation
-
-- `source-data/` stores the public bibliography and Table 2/3 source records used by the generator.
-- `data/curated-additions.json` stores reviewed entries beyond the two survey tables.
-- `data/portal-meta.json` stores bilingual summaries and official link overrides.
-- `app/data/*.generated.json` contains the generated front-end catalogs.
-
-Classifications and structured details are checked against full papers or official long-form technical documents. Research summaries are neutral, factual, and explicitly marked in the interface as summarized by GPT-5.6 Sol. The repository does not claim official inclusion in the `sindresorhus/awesome` directory.
-
-## Local development
-
-Node.js 22 or newer is required.
-
-```bash
-npm ci
-npm run dev
-```
-
-Open `http://localhost:3000/`. To regenerate the catalogs and run the validation suite plus static build:
-
-```bash
-npm test
-```
-
-The GitHub Pages workflow deploys the static output from `dist/client/`.
 
 ## Contributing
 
