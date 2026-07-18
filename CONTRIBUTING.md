@@ -30,4 +30,4 @@ npm test
 
 ## Pull requests
 
-Keep each pull request focused. Describe the source reviewed, the reason for the classification or correction, and any link ownership checks performed. New Research summaries should remain neutral and factual and should not add criticism, limitations, or unsupported claims.
+Keep each pull request focused. Describe the source reviewed, the reason for the classification or correction, and any link ownership checks performed. New Research summaries should remain neutral and factual and should not include offensive language, limitations, or unsupported claims.
