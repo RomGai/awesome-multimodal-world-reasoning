@@ -3,7 +3,7 @@ message: "If you use this portal or its curated catalog, please cite the reposit
 title: "Awesome Multimodal World Reasoning"
 type: software
 authors:
-  - name: "RomGai"
+  - name: "Honghao Fu"
 repository-code: "https://github.com/RomGai/awesome-multimodal-world-reasoning"
 url: "https://romgai.github.io/awesome-multimodal-world-reasoning/"
 license: CC-BY-4.0
