@@ -21,7 +21,7 @@ This repository is the interactive companion to **A Survey of World Models in Mu
 
 - [Live portal](#live-portal)
 - [Organization](#organization)
-- [Contributing](#contributing)
+- [How to add new works](#how-to-add-new-works)
 - [Citation](#citation)
 - [License](#license)
 
@@ -56,11 +56,24 @@ Research Works may receive multiple detailed roles across interactive or imagine
 
 The types are intentionally non-exclusive when a paper implements more than one mechanism.
 
-## Contributing
+## How to add new works
 
-Corrections and additions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request. Proposed additions should include an official full-text source and evidence for the requested role or Evaluation Focus.
+If a Research Work or Evaluation Resource is missing from the portal, you can request that we add it or submit the data directly.
 
-### Submit a portal-data pull request
+### 1. Request an addition through an issue
+
+Open a [new GitHub issue](https://github.com/RomGai/awesome-multimodal-world-reasoning/issues/new) and include:
+
+- the name of the work or resource and whether it belongs in **Research Works** or **Evaluation Resources**;
+- its official paper, long-form technical document, or official release page;
+- official Code and Project links, when available;
+- a short explanation of why it belongs in the portal and any roles or Evaluation Focus tags you suggest.
+
+No repository edits are required. We will review the full text, verify the links, determine the classification, prepare the summary or structured resource details, and add accepted entries to the portal.
+
+### 2. Submit a pull request
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md), then follow these steps if you would like to prepare the portal data yourself.
 
 1. **Fork the repository and create a focused branch.**
 
@@ -70,18 +83,16 @@ Corrections and additions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTIN
    git checkout -b data/add-short-name
    ```
 
-2. **Choose the portal view you want to update.** Do not edit `app/data/*.generated.json` by hand.
+2. **Choose the portal view for the new entry.** Do not edit `app/data/*.generated.json` by hand.
 
    **Research Works**
 
-   - To add a new Research Work, add its BibTeX record to `source-data/survey.bib`, add the entry under `research` in `data/curated-additions.json`, and add its bilingual summary and official links to `data/portal-meta.json`.
-   - To correct an existing Research Work, search for its `bibKey` in `data/curated-additions.json`. Edit that entry when present; otherwise update its source record in `source-data/world_model_methods.csv`. Summary, role-override, Paper, Code, and Project corrections belong in `data/portal-meta.json`.
+   - Add its BibTeX record to `source-data/survey.bib`, add the entry under `research` in `data/curated-additions.json`, and add its bilingual summary and official links to `data/portal-meta.json`.
    - Roles must use `TI-I`, `TI-G`, `TI-M`, `SS-G`, `SS-P`, `SS-C`, `SS-E`, `AC-V`, `AC-R`, `AC-D`, `AC-N`, or `AC-T`.
 
    **Evaluation Resources**
 
-   - To add a new Evaluation Resource, add its BibTeX record to `source-data/survey.bib`, add the entry under `evaluation` in `data/curated-additions.json`, and add official links to `data/portal-meta.json` when available.
-   - To correct an existing Evaluation Resource, search for its `bibKey` in `data/curated-additions.json`. Edit that entry when present; otherwise update its source record in `source-data/world_model_benchmarks.csv`. For source-backed records, TI/SS/AC Evaluation Focus corrections are synchronized through `source-data/tab_world_model_benchmarks.tex`.
+   - Add its BibTeX record to `source-data/survey.bib`, add the entry under `evaluation` in `data/curated-additions.json`, and add official links to `data/portal-meta.json` when available.
    - Evaluation Focus accepts `TI`, `SS`, and `AC`.
 
    Multiple roles or Focus tags are allowed when supported by the full text. New portal entries always belong in `data/curated-additions.json`; do not append them to the survey-source CSV or TeX files.
