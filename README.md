@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://romgai.github.io/awesome-multimodal-world-reasoning/">
-    <img src="public/readme-hero.png" alt="From Language to World States — A Survey of World Models in Multimodal Reasoning" width="100%">
+    <img src="portal/public/readme-hero.png" alt="From Language to World States — A Survey of World Models in Multimodal Reasoning" width="100%">
   </a>
 </p>
 
@@ -79,7 +79,7 @@ No repository edits are required. We will review the full text, verify the links
 
 ### 2. Submit a pull request
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md), then follow these steps if you would like to prepare the portal data yourself.
+Please read [CONTRIBUTING.md](portal/CONTRIBUTING.md), then follow these steps if you would like to prepare the portal data yourself.
 
 1. **Fork the repository and create a focused branch.**
 
@@ -87,6 +87,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md), then follow these steps if you w
    git clone https://github.com/<your-username>/awesome-multimodal-world-reasoning.git
    cd awesome-multimodal-world-reasoning
    git checkout -b data/add-short-name
+   cd portal
    ```
 
 2. **Choose the portal view for the new entry.** Do not edit `app/data/*.generated.json` by hand.
@@ -132,4 +133,4 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md), then follow these steps if you w
 
 ## License
 
-The curated catalog, summaries, and documentation are licensed under [CC BY 4.0](LICENSE). Portal source code is licensed separately under the [MIT License](LICENSE-CODE).
+The curated catalog, summaries, and documentation are licensed under [CC BY 4.0](portal/LICENSE). Portal source code is licensed separately under the [MIT License](portal/LICENSE-CODE).
