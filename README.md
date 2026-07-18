@@ -37,6 +37,12 @@ The complete index is available at:
 
 **https://romgai.github.io/awesome-multimodal-world-reasoning/**
 
+<p align="center">
+  <a href="https://romgai.github.io/awesome-multimodal-world-reasoning/">
+    <img src="portal/public/live-portal-preview.png" alt="Live portal interface showing the Research Works index" width="100%">
+  </a>
+</p>
+
 The portal provides two connected views:
 
 - **Research Works** — world-model methods grouped by their functional roles and technical type.
