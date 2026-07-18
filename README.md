@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://romgai.github.io/awesome-multimodal-world-reasoning/">
-    <img src="public/world-state-portal-compact-v4.png" alt="World-state portal mark" width="430">
+    <img src="public/readme-hero.png" alt="From Language to World States — A Survey of World Models in Multimodal Reasoning" width="100%">
   </a>
 </p>
 
