@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "kind": "github",
+      "label": "GitHub",
+      "href": "https://github.com/RomGai/awesome-multimodal-world-reasoning",
+      "placeholder": false
+    },
+    {
+      "kind": "email",
+      "label": "Email",
+      "href": "mailto:honghao.fu@uq.edu.au",
+      "placeholder": false
+    }
+  ]
+}

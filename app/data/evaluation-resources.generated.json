@@ -1,0 +1,5651 @@
+[
+  {
+    "id": "evaluation-1-tassa2018deepmind",
+    "name": "DeepMind Control Suite",
+    "title": "DeepMind Control Suite",
+    "venue": "arXiv",
+    "date": "2018-01",
+    "year": 2018,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Physical"
+      ],
+      "zh": [
+        "机器人",
+        "物理"
+      ]
+    },
+    "resourceType": "Suite",
+    "target": "Reward",
+    "scale": "14 domains",
+    "task": "Continuous control",
+    "dimensions": "control return; sample efficiency; episode return",
+    "links": {
+      "paper": "https://arxiv.org/abs/1801.00690",
+      "code": "https://github.com/google-deepmind/dm_control"
+    }
+  },
+  {
+    "id": "evaluation-2-bakhtin2019phyre",
+    "name": "PHYRE",
+    "title": "PHYRE: A New Benchmark for Physical Reasoning",
+    "venue": "NeurIPS",
+    "date": "2019-12",
+    "year": 2019,
+    "focus": [
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Environment / Benchmark",
+    "target": "Success",
+    "scale": "5K tasks",
+    "task": "Physical intervention",
+    "dimensions": "solution efficiency; within-template generalization; cross-template generalization; AUCCESS",
+    "links": {
+      "paper": "https://arxiv.org/abs/1908.05656",
+      "code": "https://github.com/facebookresearch/phyre"
+    }
+  },
+  {
+    "id": "evaluation-3-kaiser2020atari100k",
+    "name": "Atari 100K (ALE)",
+    "title": "Model-Based Reinforcement Learning for Atari",
+    "venue": "ICLR",
+    "date": "2020-04",
+    "year": 2020,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Games"
+      ],
+      "zh": [
+        "游戏"
+      ]
+    },
+    "resourceType": "Environment / Protocol",
+    "target": "Reward",
+    "scale": "26 games; 100K interactions",
+    "task": "Sample-efficient visual control",
+    "dimensions": "sample efficiency; long-horizon control; human-normalized score",
+    "links": {
+      "paper": "https://arxiv.org/abs/1903.00374",
+      "code": "https://github.com/tensorflow/tensor2tensor/tree/master/tensor2tensor/rl"
+    }
+  },
+  {
+    "id": "evaluation-4-yi2020clevrer",
+    "name": "CLEVRER",
+    "title": "CLEVRER: Collision Events for Video Representation and Reasoning",
+    "venue": "ICLR",
+    "date": "2020-04",
+    "year": 2020,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Answer",
+    "scale": "20K videos; 300K+ QA pairs",
+    "task": "Causal video reasoning",
+    "dimensions": "descriptive; explanatory; predictive; counterfactual; accuracy",
+    "links": {
+      "paper": "https://arxiv.org/abs/1910.01442",
+      "code": "https://github.com/chuangg/CLEVRER"
+    }
+  },
+  {
+    "id": "evaluation-5-ahmed2020causalworld",
+    "name": "CausalWorld",
+    "title": "CausalWorld: A Robotic Manipulation Benchmark for Causal Structure and Transfer Learning",
+    "venue": "ICLR",
+    "date": "2021-05",
+    "year": 2021,
+    "focus": [
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Physical"
+      ],
+      "zh": [
+        "机器人",
+        "物理"
+      ]
+    },
+    "resourceType": "Simulator / Benchmark",
+    "target": "State; Success",
+    "scale": "8 task distributions",
+    "task": "Causal transfer",
+    "dimensions": "intervention generalization; long-horizon control; transfer; volumetric overlap",
+    "links": {
+      "paper": "https://arxiv.org/abs/2010.04296",
+      "code": "https://github.com/rr-learning/CausalWorld",
+      "project": "https://sites.google.com/view/causal-world/home"
+    }
+  },
+  {
+    "id": "evaluation-6-hafner2021crafter",
+    "name": "Crafter",
+    "title": "Benchmarking the Spectrum of Agent Capabilities",
+    "venue": "arXiv",
+    "date": "2021-09",
+    "year": 2021,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Games"
+      ],
+      "zh": [
+        "游戏"
+      ]
+    },
+    "resourceType": "Environment / Benchmark",
+    "target": "Reward",
+    "scale": "22 achievements",
+    "task": "Open-ended survival",
+    "dimensions": "exploration; generalization; long-horizon reasoning; Crafter score",
+    "links": {
+      "paper": "https://arxiv.org/abs/2109.06780",
+      "code": "https://github.com/danijar/crafter"
+    }
+  },
+  {
+    "id": "evaluation-7-bear2021physion",
+    "name": "Physion",
+    "title": "Physion: Evaluating Physical Prediction from Vision in Humans and Machines",
+    "venue": "NeurIPS",
+    "date": "2021-12",
+    "year": 2021,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Object State",
+    "scale": "1.2K examples",
+    "task": "Physical prediction",
+    "dimensions": "physical dynamics; human alignment; object-contact accuracy",
+    "links": {
+      "paper": "https://arxiv.org/abs/2106.08261",
+      "code": "https://github.com/cogtoolslab/physics-benchmarking-neurips2021",
+      "project": "https://physion-benchmark.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-8-unisim2023sensor",
+    "name": "UniSim",
+    "title": "UniSim: A Neural Closed-Loop Sensor Simulator",
+    "venue": "CVPR",
+    "date": "2023-06",
+    "year": 2023,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving"
+      ],
+      "zh": [
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Simulator",
+    "target": "Sensor Stream",
+    "scale": "3 datasets",
+    "task": "Closed-loop sensor simulation",
+    "dimensions": "rendering quality; detection transfer; closed-loop behavior",
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/CVPR2023/html/Yang_UniSim_A_Neural_Closed-Loop_Sensor_Simulator_CVPR_2023_paper.html",
+      "project": "https://waabi.ai/research/unisim/"
+    }
+  },
+  {
+    "id": "evaluation-9-arxiv231109064",
+    "name": "SVIB",
+    "title": "Imagine the Unseen World: A Benchmark for Systematic Generalization in Visual World Models",
+    "venue": "NeurIPS",
+    "date": "2023-12",
+    "year": 2023,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General",
+        "Physical"
+      ],
+      "zh": [
+        "通用",
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Image; Factor State",
+    "scale": "12 tasks; 183 GB",
+    "task": "Systematic visual imagination",
+    "dimensions": "compositional generalization; factor consistency; LPIPS; MSE",
+    "links": {
+      "paper": "https://arxiv.org/abs/2311.09064",
+      "project": "https://systematic-visual-imagination.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-10-montali2023wosac",
+    "name": "WOSAC",
+    "title": "The Waymo Open Sim Agents Challenge",
+    "venue": "NeurIPS",
+    "date": "2023-12",
+    "year": 2023,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving"
+      ],
+      "zh": [
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Challenge / Benchmark",
+    "target": "Multi-agent State",
+    "scale": "44.9K scenarios",
+    "task": "Closed-loop traffic simulation",
+    "dimensions": "realism; interaction fidelity; collision and off-road rates; meta-metric",
+    "links": {
+      "paper": "https://arxiv.org/abs/2305.12032",
+      "code": "https://github.com/waymo-research/waymo-open-dataset",
+      "project": "https://waymo.com/research/the-waymo-open-sim-agents-challenge/"
+    }
+  },
+  {
+    "id": "evaluation-11-li2024iphyre",
+    "name": "I-PHYRE",
+    "title": "I-PHYRE: Interactive Physical Reasoning",
+    "venue": "ICLR",
+    "date": "2024-05",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Environment / Benchmark",
+    "target": "Success",
+    "scale": "40 games",
+    "task": "Interactive physical reasoning",
+    "dimensions": "multi-step planning; action timing; generalization; reward and success",
+    "links": {
+      "paper": "https://arxiv.org/abs/2312.03009",
+      "code": "https://github.com/lishiqianhugh/IPHYRE",
+      "project": "https://lishiqianhugh.github.io/IPHYRE/"
+    }
+  },
+  {
+    "id": "evaluation-12-ma2024cam4docc",
+    "name": "Cam4DOcc",
+    "title": "Cam4DOcc: Benchmark for Camera-Only 4D Occupancy Forecasting in Autonomous Driving Applications",
+    "venue": "CVPR",
+    "date": "2024-06",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Driving"
+      ],
+      "zh": [
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Occupancy",
+    "scale": "3 datasets",
+    "task": "Occupancy forecasting",
+    "dimensions": "current occupancy; future occupancy; motion flow; current and future IoU",
+    "links": {
+      "paper": "https://arxiv.org/abs/2311.17663",
+      "code": "https://github.com/haomo-ai/Cam4DOcc"
+    }
+  },
+  {
+    "id": "evaluation-13-wang2024drivingdojo",
+    "name": "DrivingDojo",
+    "title": "DrivingDojo Dataset: Advancing Interactive and Knowledge-Enriched Driving World Model",
+    "venue": "NeurIPS",
+    "date": "2024-12",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving"
+      ],
+      "zh": [
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Driving Video",
+    "scale": "18.2K clips",
+    "task": "Action-conditioned future prediction",
+    "dimensions": "action following; multi-agent interaction; open-world knowledge; AIF",
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.10738",
+      "code": "https://github.com/Robertwyq/Drivingdojo",
+      "project": "https://drivingdojo.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-14-arxiv250306163",
+    "name": "VACT",
+    "title": "VACT: A Video Automatic Causal Testing System and a Benchmark",
+    "venue": "arXiv",
+    "date": "2025-03",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Protocol / Benchmark",
+    "target": "Video; Causal Graph",
+    "scale": "Not reported",
+    "task": "Causal generation testing",
+    "dimensions": "causal structure; intervention response; rule consistency; multilevel causal scores",
+    "links": {
+      "paper": "https://arxiv.org/abs/2503.06163"
+    }
+  },
+  {
+    "id": "evaluation-15-arxiv250321755",
+    "name": "VBench-2.0",
+    "title": "VBench-2.0: Advancing Video Generation Benchmark Suite for Intrinsic Faithfulness",
+    "venue": "arXiv",
+    "date": "2025-03",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Suite",
+    "target": "Video",
+    "scale": "18 dimensions",
+    "task": "Intrinsic-faithfulness evaluation",
+    "dimensions": "human fidelity; controllability; creativity; physics; commonsense",
+    "links": {
+      "paper": "https://arxiv.org/abs/2503.21755",
+      "code": "https://github.com/Vchitect/VBench",
+      "project": "https://vchitect.github.io/VBench-project/"
+    }
+  },
+  {
+    "id": "evaluation-16-arai2024actbench",
+    "name": "ACT-Bench",
+    "title": "ACT-Bench: Towards Action Controllable World Models for Autonomous Driving",
+    "venue": "ICLR W.",
+    "date": "2025-04",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving"
+      ],
+      "zh": [
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Driving Video",
+    "scale": "2,286 video-trajectory pairs",
+    "task": "Action-fidelity evaluation",
+    "dimensions": "trajectory following; trajectory error; motion consistency; action match",
+    "links": {
+      "paper": "https://arxiv.org/abs/2412.05337",
+      "code": "https://github.com/turingmotors/ACT-Bench",
+      "project": "https://turingmotors.github.io/actbench/"
+    }
+  },
+  {
+    "id": "evaluation-17-he2025mmworld",
+    "name": "MMWorld",
+    "title": "MMWorld: Towards Multi-discipline Multi-faceted World Model Evaluation in Videos",
+    "venue": "ICLR",
+    "date": "2025-04",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Answer",
+    "scale": "1,910 videos; 6,627 QA pairs",
+    "task": "World-model video reasoning",
+    "dimensions": "explanation; counterfactual reasoning; future prediction; multi-discipline knowledge; accuracy",
+    "links": {
+      "paper": "https://arxiv.org/abs/2406.08407",
+      "code": "https://github.com/eric-ai-lab/MMWorld",
+      "project": "https://mmworld-bench.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-18-chow2025physbench",
+    "name": "PhysBench",
+    "title": "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+    "venue": "ICLR",
+    "date": "2025-04",
+    "year": 2025,
+    "focus": [
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General",
+        "Physical"
+      ],
+      "zh": [
+        "通用",
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Answer",
+    "scale": "10,002 entries",
+    "task": "Physical-world understanding",
+    "dimensions": "object properties; object relationships; physical scenes; dynamics; accuracy",
+    "links": {
+      "paper": "https://arxiv.org/abs/2501.16411",
+      "code": "https://github.com/USC-GVL/PhysBench"
+    }
+  },
+  {
+    "id": "evaluation-19-arxiv250522976",
+    "name": "LoopNav",
+    "title": "LoopNav: Benchmarking Spatial Consistency in World Models",
+    "venue": "arXiv",
+    "date": "2025-05",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Games",
+        "Navigation"
+      ],
+      "zh": [
+        "游戏",
+        "导航"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Video Rollout",
+    "scale": "250 h; 20M frames",
+    "task": "Loop navigation",
+    "dimensions": "spatial consistency; loop closure; long-horizon memory; SGCS",
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.22976",
+      "code": "https://github.com/Kevin-lkw/LoopNav"
+    }
+  },
+  {
+    "id": "evaluation-20-arxiv250519017",
+    "name": "WorldEval",
+    "title": "WorldEval: World Model as Real-World Robot Policies Evaluator",
+    "venue": "arXiv",
+    "date": "2025-05",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Protocol / Benchmark",
+    "target": "Policy",
+    "scale": "Not reported",
+    "task": "Policy ranking",
+    "dimensions": "policy ranking; world-to-real success correlation; checkpoint comparison; safety",
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.19017",
+      "code": "https://github.com/liyaxuanliyaxuan/Worldeval",
+      "project": "https://worldeval.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-21-asim2025met3r",
+    "name": "MEt3R",
+    "title": "MEt3R: Measuring Multi-View Consistency in Generated Images",
+    "venue": "CVPR",
+    "date": "2025-06",
+    "year": 2025,
+    "focus": [
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "3D/4D"
+      ],
+      "zh": [
+        "三维/四维"
+      ]
+    },
+    "resourceType": "Metric",
+    "target": "Multi-view Image",
+    "scale": "Pairwise metric",
+    "task": "Multi-view consistency",
+    "dimensions": "3D spatial consistency; pose-free feature reprojection; MEt3R score",
+    "links": {
+      "paper": "https://arxiv.org/abs/2501.06336",
+      "code": "https://github.com/mohammadasim98/MEt3R",
+      "project": "https://geometric-rl.mpi-inf.mpg.de/met3r/"
+    }
+  },
+  {
+    "id": "evaluation-22-nvidia2025pbench",
+    "name": "PBench",
+    "title": "PBench: Benchmarking World Models for Physical AI",
+    "venue": "NVIDIA",
+    "date": "2025-06",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical AI",
+        "Driving",
+        "Robotics"
+      ],
+      "zh": [
+        "物理智能",
+        "自动驾驶",
+        "机器人"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Video",
+    "scale": "1,044 samples; 5,636 QA pairs",
+    "task": "Physical-AI generation",
+    "dimensions": "space; time; fundamental physics; domain score; video quality score",
+    "links": {
+      "official": "https://research.nvidia.com/labs/cosmos-lab/pbench/",
+      "project": "https://huggingface.co/datasets/nvidia/PBench"
+    }
+  },
+  {
+    "id": "evaluation-23-chi2025evabench",
+    "name": "EVA-Bench",
+    "title": "Empowering World Models with Reflection for Embodied Video Prediction",
+    "venue": "ICML",
+    "date": "2025-07",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Answer; Video",
+    "scale": "125 samples",
+    "task": "Embodied anticipation",
+    "dimensions": "action description; how-to reasoning; next-step prediction; task completion; EVA-Score",
+    "links": {
+      "paper": "https://proceedings.mlr.press/v267/chi25b.html",
+      "project": "https://sites.google.com/view/icml-eva"
+    }
+  },
+  {
+    "id": "evaluation-24-meng2025phygenbench",
+    "name": "PhyGenBench",
+    "title": "Towards World Simulator: Crafting Physical Commonsense-Based Benchmark for Video Generation",
+    "venue": "ICML",
+    "date": "2025-07",
+    "year": 2025,
+    "focus": [
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Video",
+    "scale": "160 prompts",
+    "task": "Physical generation",
+    "dimensions": "semantic alignment; physical commonsense; physical-law adherence; overall naturalness",
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.05363",
+      "code": "https://github.com/OpenGVLab/PhyGenBench",
+      "project": "https://phygenbench123.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-25-arxiv250213092",
+    "name": "Text2World",
+    "title": "Text2World: Benchmarking Large Language Models for Symbolic World Model Generation",
+    "venue": "ACL F.",
+    "date": "2025-07",
+    "year": 2025,
+    "focus": [
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Digital Worlds"
+      ],
+      "zh": [
+        "数字世界"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Symbolic World Model",
+    "scale": "Hundreds of domains",
+    "task": "Symbolic model generation",
+    "dimensions": "PDDL validity; action preconditions and effects; transition correctness; executability",
+    "links": {
+      "paper": "https://doi.org/10.18653/v1/2025.findings-acl.1337",
+      "code": "https://github.com/Aaron617/text2world",
+      "project": "https://text-to-world.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-26-wmabench2025",
+    "name": "WM-ABench",
+    "title": "Do Vision-Language Models Have Internal World Models? Towards an Atomic Evaluation",
+    "venue": "ACL F.",
+    "date": "2025-07",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Answer",
+    "scale": "23 dimensions; 6 environments",
+    "task": "Atomic world modeling",
+    "dimensions": "perception; mechanistic inference; transitive inference; compositional inference; accuracy",
+    "links": {
+      "paper": "https://doi.org/10.18653/v1/2025.findings-acl.1342",
+      "project": "https://wm-abench.maitrix.org/"
+    }
+  },
+  {
+    "id": "evaluation-27-arxiv250604363",
+    "name": "WorldPrediction",
+    "title": "WorldPrediction: A Benchmark for High-level World Modeling and Long-horizon Procedural Planning",
+    "venue": "ICML W.",
+    "date": "2025-07",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Action Sequence",
+    "scale": "Not reported",
+    "task": "High-level world modeling and procedural planning",
+    "dimensions": "state-transition inference; action selection; action ordering; long-horizon planning; accuracy",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.04363",
+      "project": "https://worldprediction.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-28-qin2024worldsimbench",
+    "name": "WorldSimBench",
+    "title": "WorldSimBench: Towards Video Generation Models as World Simulators",
+    "venue": "ICML",
+    "date": "2025-07",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "General",
+        "Driving",
+        "Robotics"
+      ],
+      "zh": [
+        "通用",
+        "自动驾驶",
+        "机器人"
+      ]
+    },
+    "resourceType": "Suite",
+    "target": "Video; Action",
+    "scale": "3 scenarios",
+    "task": "Embodied simulation",
+    "dimensions": "visual fidelity; temporal and state consistency; video-action consistency; embodied utility",
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.18072",
+      "project": "https://iranqin.github.io/WorldSimBench.github.io"
+    }
+  },
+  {
+    "id": "evaluation-29-jang2025dreamgen",
+    "name": "DreamGen Bench",
+    "title": "DreamGen: Unlocking Generalization in Robot Learning through Video World Models",
+    "venue": "CoRL",
+    "date": "2025-09",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Robot Video",
+    "scale": "175 evaluation frames",
+    "task": "Robot video generation",
+    "dimensions": "instruction following; physics alignment; human agreement; downstream policy utility; DreamGen score",
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.12705",
+      "code": "https://github.com/NVIDIA/GR00T-Dreams",
+      "project": "https://research.nvidia.com/labs/gear/dreamgen/"
+    }
+  },
+  {
+    "id": "evaluation-30-yang2025drivearena",
+    "name": "DriveArena",
+    "title": "DriveArena: A Closed-loop Generative Simulation Platform for Autonomous Driving",
+    "venue": "ICCV",
+    "date": "2025-10",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving"
+      ],
+      "zh": [
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Simulator / Benchmark",
+    "target": "Driving Rollout",
+    "scale": "4 evaluation routes",
+    "task": "Closed-loop driving simulation",
+    "dimensions": "visual realism; traffic reactivity; planning; safety; route completion; collision",
+    "links": {
+      "paper": "https://arxiv.org/abs/2408.00415",
+      "code": "https://github.com/PJLab-ADG/DriveArena",
+      "project": "https://pjlab-adg.github.io/DriveArena/"
+    }
+  },
+  {
+    "id": "evaluation-31-arxiv250313952",
+    "name": "SimWorld",
+    "title": "SimWorld: A Unified Benchmark for Simulator-Conditioned Scene Generation via World Model",
+    "venue": "IROS",
+    "date": "2025-10",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving"
+      ],
+      "zh": [
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Hybrid Benchmark",
+    "target": "Generated Scene",
+    "scale": "Not reported",
+    "task": "Simulator-conditioned scene generation",
+    "dimensions": "generation quality; condition alignment; controllability; perception utility",
+    "links": {
+      "paper": "https://arxiv.org/abs/2503.13952",
+      "code": "https://github.com/Li-Zn-H/SimWorld"
+    }
+  },
+  {
+    "id": "evaluation-32-wang2025uniocc",
+    "name": "UniOcc",
+    "title": "UniOcc: A Unified Benchmark for Occupancy Forecasting and Prediction in Autonomous Driving",
+    "venue": "ICCV",
+    "date": "2025-10",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Driving"
+      ],
+      "zh": [
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Occupancy",
+    "scale": "4 datasets",
+    "task": "Occupancy prediction and forecasting",
+    "dimensions": "occupancy quality; current and future occupancy; voxel flow; cross-dataset transfer",
+    "links": {
+      "paper": "https://arxiv.org/abs/2503.24381",
+      "code": "https://github.com/tasl-lab/uniocc",
+      "project": "https://uniocc.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-33-duan2025worldscore",
+    "name": "WorldScore",
+    "title": "WorldScore: A Unified Evaluation Benchmark for World Generation",
+    "venue": "ICCV",
+    "date": "2025-10",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General",
+        "3D/4D"
+      ],
+      "zh": [
+        "通用",
+        "三维/四维"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "3D/4D Scene",
+    "scale": "3K examples",
+    "task": "Next-scene generation",
+    "dimensions": "camera and layout controllability; perceptual and 3D quality; scene dynamics",
+    "links": {
+      "paper": "https://arxiv.org/abs/2504.00983",
+      "code": "https://github.com/haoyi-duan/WorldScore",
+      "project": "https://haoyi-duan.github.io/WorldScore/"
+    }
+  },
+  {
+    "id": "evaluation-34-yue2025ewmbench",
+    "name": "EWMBench",
+    "title": "EWMBench: Evaluating Scene, Motion, and Semantic Quality in Embodied World Models",
+    "venue": "BMVC",
+    "date": "2025-11",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Robot Video",
+    "scale": "Not reported",
+    "task": "Embodied generation",
+    "dimensions": "visual scene consistency; motion correctness; semantic alignment",
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.09694",
+      "code": "https://github.com/AgibotTech/EWMBench"
+    }
+  },
+  {
+    "id": "evaluation-35-li2025worldmodelbench",
+    "name": "WorldModelBench",
+    "title": "WorldModelBench: Judging Video Generation Models as World Models",
+    "venue": "NeurIPS",
+    "date": "2025-12",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Video",
+    "scale": "67K human labels",
+    "task": "Future generation",
+    "dimensions": "instruction following; commonsense; physical consistency; human preference",
+    "links": {
+      "paper": "https://papers.neurips.cc/paper_files/paper/2025/hash/4ec03ed08a3fcb59e1c815b5598beff1-Abstract-Datasets_and_Benchmarks_Track.html",
+      "code": "https://github.com/WorldModelBench-Team/WorldModelBench",
+      "project": "https://worldmodelbench-team.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-36-arxiv260121282",
+    "name": "WorldBench",
+    "title": "WorldBench: Disambiguating Physics for Diagnostic Evaluation of World Models",
+    "venue": "arXiv",
+    "date": "2026-01",
+    "year": 2026,
+    "focus": [
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Video",
+    "scale": "Not reported",
+    "task": "Diagnostic physical generation",
+    "dimensions": "concept-level physics; material properties; physical constants; parameter consistency",
+    "links": {
+      "paper": "https://arxiv.org/abs/2601.21282",
+      "project": "https://world-bench.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-37-arxiv260208025",
+    "name": "MIND",
+    "title": "MIND: Benchmarking Memory Consistency and Action Control in World Models",
+    "venue": "arXiv",
+    "date": "2026-02",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Games"
+      ],
+      "zh": [
+        "游戏"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Video Rollout",
+    "scale": "250 videos",
+    "task": "Memory and action control",
+    "dimensions": "long-context memory consistency; temporal coherence; action control; action-space generalization",
+    "links": {
+      "paper": "https://arxiv.org/abs/2602.08025",
+      "project": "https://csu-jpg.github.io/MIND.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-38-li2026worldarena",
+    "name": "WorldArena",
+    "title": "WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models",
+    "venue": "arXiv",
+    "date": "2026-02",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Suite",
+    "target": "Robot Rollout",
+    "scale": "16 metrics; 14 models",
+    "task": "Perception and functional-utility evaluation",
+    "dimensions": "video perception; data-engine utility; policy evaluation; action planning; EWMScore",
+    "links": {
+      "paper": "https://arxiv.org/abs/2602.08971",
+      "code": "https://github.com/tsinghua-fib-lab/WorldArena",
+      "project": "https://world-arena.ai/"
+    }
+  },
+  {
+    "id": "evaluation-39-arxiv260322212",
+    "name": "Omni-WorldBench",
+    "title": "Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models",
+    "venue": "arXiv",
+    "date": "2026-03",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "General",
+        "Driving"
+      ],
+      "zh": [
+        "通用",
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Suite",
+    "target": "4D Video",
+    "scale": "1,068 prompts; 15 metrics",
+    "task": "Interactive 4D response",
+    "dimensions": "video quality; camera and action control; state transition; interaction fidelity; causal fidelity; AgenticScore",
+    "links": {
+      "paper": "https://arxiv.org/abs/2603.22212",
+      "code": "https://github.com/AMAP-ML/Omni-WorldBench"
+    }
+  },
+  {
+    "id": "evaluation-40-motamed2025physicsiq",
+    "name": "Physics-IQ",
+    "title": "Do Generative Video Models Understand Physical Principles?",
+    "venue": "WACV",
+    "date": "2026-03",
+    "year": 2026,
+    "focus": [
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Video",
+    "scale": "396 videos; 66 scenarios",
+    "task": "Physical prediction",
+    "dimensions": "where, when, and how physical action occurs; MSE; spatial and spatiotemporal IoU; Physics-IQ score",
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/WACV2026/html/Motamed_Do_Generative_Video_Models_Understand_Physical_Principles_WACV_2026_paper.html",
+      "code": "https://github.com/google-deepmind/physics-IQ-benchmark",
+      "project": "https://physics-iq.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-41-zhang2026physioneval",
+    "name": "Physion-Eval",
+    "title": "Physion-Eval: Evaluating Physical Realism in Generated Video via Human Reasoning",
+    "venue": "arXiv",
+    "date": "2026-03",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Generated Video",
+    "scale": "10,990 expert reasoning traces; 22 categories",
+    "task": "Physical failure diagnosis",
+    "dimensions": "temporal glitch localization; failure category; severity; explanation; view robustness; perceived realism",
+    "links": {
+      "paper": "https://arxiv.org/abs/2603.19607",
+      "project": "https://huggingface.co/datasets/PhysionLabs/Physion-Eval"
+    }
+  },
+  {
+    "id": "evaluation-42-chen2026t2vworldbench",
+    "name": "T2VWorldBench",
+    "title": "T2VWorldBench: A Benchmark for Evaluating World Knowledge in Text-to-Video Generation",
+    "venue": "WACV",
+    "date": "2026-03",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General",
+        "Physical"
+      ],
+      "zh": [
+        "通用",
+        "物理"
+      ]
+    },
+    "resourceType": "Benchmark",
+    "target": "Generated Video",
+    "scale": "1,200 prompts; 60 subcategories",
+    "task": "World-knowledge video generation",
+    "dimensions": "factual accuracy; semantic consistency; physical knowledge; causality; nature; activity; culture; object knowledge",
+    "links": {
+      "paper": "https://arxiv.org/abs/2507.18107",
+      "code": "https://github.com/magiclinux/world_knowledge"
+    }
+  },
+  {
+    "id": "evaluation-43-arxiv260101528",
+    "name": "DrivingGen",
+    "title": "DrivingGen: A Comprehensive Benchmark for Generative Video World Models in Autonomous Driving",
+    "venue": "ICLR",
+    "date": "2026-04",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving"
+      ],
+      "zh": [
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark Suite",
+    "target": "Driving Video and Trajectory",
+    "scale": "2 tracks; 14 evaluated models",
+    "task": "Generative driving-world evaluation",
+    "dimensions": "video and trajectory distribution; visual and trajectory quality; temporal consistency; agent persistence; ego-trajectory alignment; controllability",
+    "links": {
+      "paper": "https://arxiv.org/abs/2601.01528",
+      "code": "https://github.com/youngzhou1999/DrivingGen",
+      "project": "https://drivinggen-bench.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-44-gu2026phyworldbench",
+    "name": "PhyWorldBench",
+    "title": "PhyWorldBench: A Comprehensive Evaluation of Physical Realism in Text-to-Video Models",
+    "venue": "ICLR",
+    "date": "2026-04",
+    "year": 2026,
+    "focus": [
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Generated Video",
+    "scale": "1,050 prompts; 50 subcategories",
+    "task": "Physical-realism video generation",
+    "dimensions": "fundamental physics; composite physical interaction; anti-physics instruction following; object and event fidelity; physical-standard compliance",
+    "links": {
+      "paper": "https://arxiv.org/abs/2507.13428",
+      "code": "https://github.com/g-jing/phy-world-bench",
+      "project": "https://research.nvidia.com/labs/dir/phyworldbench/"
+    }
+  },
+  {
+    "id": "evaluation-45-zhang2026worldinworld",
+    "name": "World-in-World",
+    "title": "World-in-World: World Models in a Closed-Loop World",
+    "venue": "ICLR",
+    "date": "2026-04",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Navigation"
+      ],
+      "zh": [
+        "机器人",
+        "导航"
+      ]
+    },
+    "resourceType": "Environment / Benchmark",
+    "target": "Closed-loop Policy Rollout",
+    "scale": "4 interactive environments",
+    "task": "Closed-loop execution and planning",
+    "dimensions": "task success; action controllability; rollout consistency; planning utility; long-horizon execution",
+    "links": {
+      "paper": "https://arxiv.org/abs/2510.18135",
+      "code": "https://github.com/World-In-World/world-in-world",
+      "project": "https://world-in-world.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-46-arxiv250600613",
+    "name": "WorldGym",
+    "title": "WorldGym: World Model as An Environment for Policy Evaluation",
+    "venue": "ICLR",
+    "date": "2026-04",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Environment / Benchmark",
+    "target": "Robot Policy",
+    "scale": "17 tasks; 3 VLA policy families",
+    "task": "World-model-based policy evaluation",
+    "dimensions": "task success; policy ranking; checkpoint progression; real-world correlation; OOD task and environment generalization",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.00613",
+      "code": "https://github.com/world-model-eval/world-model-eval",
+      "project": "https://world-model-eval.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-47-xue2026acwmphys",
+    "name": "ACWM-Phys",
+    "title": "ACWM-Phys: Investigating Generalized Physical Interaction in Action-Conditioned Video World Models",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Physical",
+        "Robotics"
+      ],
+      "zh": [
+        "物理",
+        "机器人"
+      ]
+    },
+    "resourceType": "Dataset / Environment / Benchmark",
+    "target": "Action-conditioned Video",
+    "scale": "15K+ trajectories; 8 environments; 4 physical regimes",
+    "task": "Physical interaction prediction",
+    "dimensions": "InD/OoD generalization; action compliance; rigid-body dynamics; deformation; particle dynamics; kinematics; MSE; SSIM; PSNR",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.08567",
+      "code": "https://github.com/xavihart/ACWM-Phys-dev",
+      "project": "https://xavihart.github.io/ACWM-Phys/"
+    }
+  },
+  {
+    "id": "evaluation-48-arxiv260523699",
+    "name": "CRONOS",
+    "title": "CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Video Prediction",
+    "scale": "675 reference videos; 2,025 generated videos",
+    "task": "Counterfactual physical prediction",
+    "dimensions": "background stability; appearance stability; 3D-shape stability; motion similarity; physical plausibility; success rate; intervention sensitivity",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.23699",
+      "code": "https://github.com/GenIntel/CRONOS-benchmark",
+      "project": "https://genintel.github.io/CRONOS/"
+    }
+  },
+  {
+    "id": "evaluation-49-arxiv260519341",
+    "name": "HalluWorld",
+    "title": "HalluWorld: A Controlled Benchmark for Hallucination via Reference World Models",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Games",
+        "Digital Worlds"
+      ],
+      "zh": [
+        "游戏",
+        "数字世界"
+      ]
+    },
+    "resourceType": "Environment / Benchmark",
+    "target": "World-state Claim",
+    "scale": "3 domains; 50 episodes per configuration",
+    "task": "Reference-world hallucination diagnosis",
+    "dimensions": "perception; temporal state tracking; causal simulation; compound reasoning; source conflict; abstention; action-conditioned terminal state",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.19341",
+      "code": "https://github.com/DegenAI-Labs/HalluWorld",
+      "project": "https://degenai-labs.github.io/research/hallu-world/"
+    }
+  },
+  {
+    "id": "evaluation-50-arxiv260600793",
+    "name": "MBench",
+    "title": "MBench: A Comprehensive Benchmark on Memory Capability for Video World Models",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Long Video Rollout",
+    "scale": "1,040 evaluation items; 12 subdimensions",
+    "task": "Long-horizon world-state memory",
+    "dimensions": "entity consistency; environment consistency; causal consistency; identity persistence; spatial revisit; off-screen dynamics",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.00793",
+      "code": "https://github.com/study-overflow/MBench",
+      "project": "https://peanutup.github.io/MBench-project/"
+    }
+  },
+  {
+    "id": "evaluation-51-wu2026pdibench",
+    "name": "PDI-Bench",
+    "title": "Quantitative Video World Model Evaluation for Geometric-Consistency",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General",
+        "3D Geometry"
+      ],
+      "zh": [
+        "通用",
+        "3D Geometry"
+      ]
+    },
+    "resourceType": "Dataset / Metric / Benchmark",
+    "target": "Video Geometry",
+    "scale": "183 videos; 28 synthetic prompts",
+    "task": "3D geometric-consistency audit",
+    "dimensions": "scale-depth alignment; 3D motion consistency; structural rigidity; Perspective Distortion Index; long-horizon drift",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.15185",
+      "project": "https://pdi-bench.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-52-arxiv260510806",
+    "name": "PhyGround",
+    "title": "PhyGround: Benchmarking Physical Reasoning in Generative World Models",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark / Judge",
+    "target": "Generated Video",
+    "scale": "250 prompts; 13 laws; 37.4K labels",
+    "task": "Criteria-grounded physical evaluation",
+    "dimensions": "solid-body mechanics; fluid dynamics; optics; semantic alignment; physical trajectory validity; state persistence; per-law adherence",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.10806",
+      "code": "https://github.com/NU-World-Model-Embodied-AI/PhyGround",
+      "project": "https://phyground.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-53-arxiv260525874",
+    "name": "WBench",
+    "title": "WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Games",
+        "General"
+      ],
+      "zh": [
+        "游戏",
+        "通用"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark Suite",
+    "target": "Interactive Video Rollout",
+    "scale": "289 cases; 1,058 turns; 22 metrics",
+    "task": "Multi-turn interactive world evaluation",
+    "dimensions": "video quality; setting adherence; interaction adherence; temporal and spatial consistency; physics compliance; navigation; perspective control",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.25874",
+      "code": "https://github.com/meituan-longcat/WBench",
+      "project": "https://meituan-longcat.github.io/WBench/"
+    }
+  },
+  {
+    "id": "evaluation-54-shang2026worldarena20",
+    "name": "WorldArena 2.0",
+    "title": "WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Benchmark Suite",
+    "target": "Embodied World Model and Policy",
+    "scale": "3 platforms; 16 perceptual metrics",
+    "task": "Cross-modality and cross-platform embodied evaluation",
+    "dimensions": "visual and visuotactile prediction; perceptual quality; interactive utility; RL environment utility; policy evaluation; action planning; sim-to-real transfer",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.17912",
+      "code": "https://github.com/tsinghua-fib-lab/WorldArena",
+      "project": "https://worldarena2.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-55-arxiv260530346",
+    "name": "YoCausal",
+    "title": "YoCausal: How Far is Video Generation from World Model? A Causality Perspective",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General",
+        "Physical",
+        "Human Activity",
+        "Animal"
+      ],
+      "zh": [
+        "通用",
+        "物理",
+        "Human Activity",
+        "Animal"
+      ]
+    },
+    "resourceType": "Dataset / Evaluation Protocol",
+    "target": "Video Diffusion Model",
+    "scale": "1,232 videos; 13 evaluated models",
+    "task": "Causal cognition evaluation",
+    "dimensions": "arrow-of-time perception; causal versus non-causal discrimination; Reverse Surprise Index; Causality Cognition Index; entropy-controlled causality",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.30346",
+      "code": "https://github.com/youzhe0305/YoCausal",
+      "project": "https://www.youzhexie.me/papers/YoCausal/index.html"
+    }
+  },
+  {
+    "id": "evaluation-56-lu2026fourDworldbench",
+    "name": "4DWorldBench",
+    "title": "4DWorldBench: A Comprehensive Evaluation Framework for 3D/4D World Generation Models",
+    "venue": "CVPR",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "3D / 4D Worlds",
+        "Interactive Worlds",
+        "Driving"
+      ],
+      "zh": [
+        "3D / 4D Worlds",
+        "Interactive Worlds",
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "3D / 4D World Generation",
+    "scale": "3 conditioning modalities; 4 main dimensions; 12 subdimensions",
+    "task": "Multimodal 3D/4D world-generation evaluation",
+    "dimensions": "spatial and temporal quality; 3D texture; event, scene, attribute and motion control; dynamics; optics; thermal behavior; viewpoint, motion and style consistency",
+    "links": {
+      "paper": "https://arxiv.org/abs/2511.19836",
+      "project": "https://yeppp27.github.io/4DWorldBench.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-57-arxiv260624597",
+    "name": "AgentWorldBench",
+    "title": "Qwen-AgentWorld: Language World Models for General Agents",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Digital Worlds",
+        "Web",
+        "Software",
+        "Operating Systems"
+      ],
+      "zh": [
+        "数字世界",
+        "Web",
+        "Software",
+        "Operating Systems"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Language World State",
+    "scale": "7 domains; 9 source benchmarks; 5 frontier agents",
+    "task": "Agent-environment next-state prediction",
+    "dimensions": "format; factuality; state consistency; realism; response quality; controllability; error handling; long-context tracking",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.24597",
+      "code": "https://github.com/QwenLM/Qwen-AgentWorld",
+      "project": "https://qwen.ai/blog?id=qwen-agentworld"
+    }
+  },
+  {
+    "id": "evaluation-58-arxiv260616605",
+    "name": "ARB4WM",
+    "title": "ARB4WM: An Adversarial Robustness Benchmark for World Models in Continuous Control",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Continuous Control"
+      ],
+      "zh": [
+        "机器人",
+        "Continuous Control"
+      ]
+    },
+    "resourceType": "Benchmark / Evaluation Framework",
+    "target": "World-model Control Agent",
+    "scale": "20 tasks; 4 Dreamer-family agents",
+    "task": "Adversarial robustness evaluation",
+    "dimensions": "policy robustness; value robustness; latent-dynamics robustness; temporal exposure; clean-normalized return; recovery; saliency",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.16605",
+      "code": "https://github.com/zaoanguai/ARB4WM"
+    }
+  },
+  {
+    "id": "evaluation-59-mohan2026forecastocc",
+    "name": "ForecastOcc",
+    "title": "ForecastOcc: Vision-based Semantic Occupancy Forecasting",
+    "venue": "ICRA",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Driving"
+      ],
+      "zh": [
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Benchmark / Protocol",
+    "target": "Semantic Occupancy",
+    "scale": "2 datasets; 1 s, 2 s, and 3 s horizons",
+    "task": "Vision-based semantic occupancy forecasting",
+    "dimensions": "future occupancy geometry; semantic class; multi-horizon mIoU; IoU; runtime; multi-view and monocular forecasting",
+    "links": {
+      "paper": "https://arxiv.org/abs/2602.08006",
+      "project": "https://forecastocc.cs.uni-freiburg.de/"
+    }
+  },
+  {
+    "id": "evaluation-60-zhou2026paibench",
+    "name": "PAI-Bench",
+    "title": "PAI-Bench: A Comprehensive Benchmark for Physical AI",
+    "venue": "CVPR",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Physical AI",
+        "Driving",
+        "Robotics",
+        "Human Activity"
+      ],
+      "zh": [
+        "物理智能",
+        "自动驾驶",
+        "机器人",
+        "Human Activity"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark Suite",
+    "target": "Generated Video and Multimodal Answer",
+    "scale": "2,808 cases; 3 tracks",
+    "task": "Physical-AI perception and prediction",
+    "dimensions": "physical plausibility; generation quality; conditional-control fidelity; domain reasoning; forecasting; causal interpretation; embodied understanding",
+    "links": {
+      "paper": "https://arxiv.org/abs/2512.01989",
+      "code": "https://github.com/SHI-Labs/physical-ai-bench",
+      "project": "https://huggingface.co/spaces/shi-labs/physical-ai-bench-leaderboard"
+    }
+  },
+  {
+    "id": "evaluation-61-arxiv260614058",
+    "name": "ReactSim-Bench",
+    "title": "ReactSim-Bench: Benchmarking Reactive Behavior World Model Simulation in Autonomous Driving",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving"
+      ],
+      "zh": [
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Interactive Driving Trajectory",
+    "scale": "2,636 scenarios; 3 deviation categories",
+    "task": "Reactive behavior simulation",
+    "dimensions": "AV-agent and agent-agent safety; collision response; map compliance; kinematic feasibility; reactive realism; replanning sensitivity",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.14058",
+      "code": "https://github.com/Thinklab-SJTU/ReactSim-Bench"
+    }
+  },
+  {
+    "id": "evaluation-62-arxiv260601600",
+    "name": "RoboTrustBench",
+    "title": "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Robot Manipulation Video",
+    "scale": "1,207 instruction-image pairs; 13 criteria",
+    "task": "Trustworthiness evaluation",
+    "dimensions": "scene-entity alignment; spatiotemporal consistency; interaction rationality; task and action completion; visual quality; safety-risk identification",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.01600",
+      "project": "https://huiqiongli.github.io/RoboTrustBench/"
+    }
+  },
+  {
+    "id": "evaluation-63-arxiv260419092",
+    "name": "RoboWM-Bench",
+    "title": "RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation",
+    "venue": "CVPR W.",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Environment / Benchmark",
+    "target": "Executable Manipulation Rollout",
+    "scale": "16 core manipulation tasks",
+    "task": "Embodiment-grounded execution evaluation",
+    "dimensions": "video-to-action executability; contact and spatial reasoning; kinematic validity; step completion; final task success; real-to-sim consistency",
+    "links": {
+      "paper": "https://arxiv.org/abs/2604.19092",
+      "code": "https://github.com/fffstrong/RoboWM-Bench",
+      "project": "https://robowm-bench.github.io/RoboWM-Bench/"
+    }
+  },
+  {
+    "id": "evaluation-64-khose2026wfmeval",
+    "name": "WFM-Eval",
+    "title": "WFM-Eval: Interpretable Error Diagnostics for Video World Models in Robotics",
+    "venue": "CVPR W.",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Evaluation Framework",
+    "target": "Robot Manipulation Video",
+    "scale": "468 samples; 6 datasets; 5 model families",
+    "task": "Interpretable robot-video diagnostics",
+    "dimensions": "task completion; object hallucination; temporal consistency; phantom appearance and disappearance; position drift and jump; harm-weighted severity",
+    "links": {
+      "paper": "https://sahilkhose.github.io/wfm-eval-cvpr26/",
+      "code": "https://github.com/sahilkhose/wfm-eval-cvpr26"
+    }
+  },
+  {
+    "id": "evaluation-65-arxiv251210958",
+    "name": "WorldLens",
+    "title": "WorldLens: Full-Spectrum Evaluations of Driving World Models in Real World",
+    "venue": "CVPR",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving",
+        "3D/4D"
+      ],
+      "zh": [
+        "自动驾驶",
+        "三维/四维"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark Suite",
+    "target": "Driving World Rollout",
+    "scale": "26K annotated videos; 24 dimensions",
+    "task": "Full-spectrum driving-world evaluation",
+    "dimensions": "generation; 4D reconstruction; action following; downstream perception utility; human preference; visual realism; geometry; physics; behavioral safety",
+    "links": {
+      "paper": "https://arxiv.org/abs/2512.10958",
+      "code": "https://github.com/worldbench/WorldLens"
+    }
+  },
+  {
+    "id": "evaluation-66-arxiv260611129",
+    "name": "WorldOlympiad",
+    "title": "WorldOlympiad: Can Your World Model Survive a Triathlon?",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "General",
+        "Games",
+        "Robotics",
+        "3D/4D"
+      ],
+      "zh": [
+        "通用",
+        "游戏",
+        "机器人",
+        "三维/四维"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark Suite",
+    "target": "Long Video Rollout",
+    "scale": "1K long videos; 3 application domains",
+    "task": "Long-horizon world simulation evaluation",
+    "dimensions": "physical faithfulness; 3D geometric consistency; interaction fidelity; chunk transition; long-range action adherence; camera trajectory",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.11129",
+      "code": "https://github.com/alibaba-damo-academy/WorldOlympiad",
+      "project": "https://alibaba-damo-academy.github.io/WorldOlympiad/"
+    }
+  },
+  {
+    "id": "evaluation-67-arxiv260620545",
+    "name": "WRBench",
+    "title": "Current World Models Lack a Persistent State Core",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Camera-controlled Video Rollout",
+    "scale": "9,600 videos; 23 models; 6 diagnostic dimensions",
+    "task": "Persistent hidden-state evaluation",
+    "dimensions": "requested-view execution; prompt-camera alignment; visible integrity; spatial and state consistency; re-observation access; hidden-event endpoint persistence",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.20545",
+      "code": "https://github.com/JinPLu/WRBench",
+      "project": "https://jinplu.github.io/WRBench/"
+    }
+  },
+  {
+    "id": "evaluation-68-warrier2025autumnbench",
+    "name": "AutumnBench",
+    "title": "Benchmarking World-Model Learning with Environment-Level Queries",
+    "venue": "ICML",
+    "date": "2026-07",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Games",
+        "Grid Worlds"
+      ],
+      "zh": [
+        "游戏",
+        "Grid Worlds"
+      ]
+    },
+    "resourceType": "Environment / Benchmark",
+    "target": "Learned Environment Model",
+    "scale": "43 environments; 129 tasks",
+    "task": "Interactive world-model learning",
+    "dimensions": "causal-dynamics change detection; masked-frame prediction; planning; intervention design; exploration efficiency; belief updating",
+    "links": {
+      "paper": "https://arxiv.org/abs/2510.19788",
+      "code": "https://github.com/BasisResearch/MARAProtocol",
+      "project": "https://autumn.basis.ai/"
+    }
+  },
+  {
+    "id": "evaluation-69-arxiv260422152",
+    "name": "dWorldEval",
+    "title": "Scaling Real-World Robot Policy Evaluation via Discrete Diffusion World Model",
+    "venue": "ICML",
+    "date": "2026-07",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Evaluation Protocol / World-model Environment",
+    "target": "Robot Policy",
+    "scale": "3 platforms; 10.7K collected trajectories",
+    "task": "World-model-based policy evaluation",
+    "dimensions": "action controllability; long-horizon state consistency; multi-view consistency; task progress; success estimation; real-world policy ranking",
+    "links": {
+      "paper": "https://arxiv.org/abs/2604.22152",
+      "project": "https://dworldeval.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-70-arxiv260503941",
+    "name": "iWorld-Bench",
+    "title": "iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework",
+    "venue": "ICML",
+    "date": "2026-07",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Games",
+        "Driving",
+        "Robotics",
+        "3D Reconstruction"
+      ],
+      "zh": [
+        "游戏",
+        "自动驾驶",
+        "机器人",
+        "3D Reconstruction"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Interactive Video Rollout",
+    "scale": "330K clips; 4.9K tests; 6 task types",
+    "task": "Unified interactive world-model evaluation",
+    "dimensions": "visual generation; action and camera control; trajectory following; motion smoothness; loop-closure memory; 3D spatial persistence",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.03941",
+      "code": "https://github.com/EmbodiedCity/iWorld-Bench",
+      "project": "https://iworld-bench.com/"
+    }
+  },
+  {
+    "id": "evaluation-71-deng2026rbench",
+    "name": "RBench",
+    "title": "Rethinking Video Generation Model for the Embodied World",
+    "venue": "ICML",
+    "date": "2026-07",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Robot Video Rollout",
+    "scale": "650 cases; 5 task domains; 4 embodiments",
+    "task": "Embodied video-generation evaluation",
+    "dimensions": "task correctness; action completeness; structural consistency; physical plausibility; visual fidelity",
+    "links": {
+      "paper": "https://arxiv.org/abs/2601.15282",
+      "code": "https://github.com/DAGroup-PKU/ReVidgen",
+      "project": "https://dagroup-pku.github.io/ReVidgen.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-72-gigaworld2026wmbench",
+    "name": "WMBench",
+    "title": "GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation",
+    "venue": "arXiv",
+    "date": "2026-07",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Dataset / Evaluation Framework",
+    "target": "Robot Policy Rollout",
+    "scale": "324K+ rollouts; 7 world models; 4 action representations",
+    "task": "World-model-based policy evaluation",
+    "dimensions": "closed-loop outcome alignment; action fidelity; trajectory accuracy; long-horizon consistency; geometry and interaction; policy success ranking; WMES",
+    "links": {
+      "paper": "https://arxiv.org/abs/2607.02642",
+      "code": "https://github.com/open-gigaai/giga-world-1",
+      "project": "https://open-gigaai.github.io/giga-world-1/"
+    }
+  },
+  {
+    "id": "evaluation-73-chen2026causalphys",
+    "name": "CausalPhys",
+    "title": "Causal Scaffolding for Physical Reasoning: A Benchmark for Causally-Informed Physical World Understanding in VLMs",
+    "venue": "KDD",
+    "date": "2026-08",
+    "year": 2026,
+    "focus": [
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical",
+        "General"
+      ],
+      "zh": [
+        "物理",
+        "通用"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Answer / Causal Graph",
+    "scale": "3K+ questions; 3 visual modalities",
+    "task": "Causal physical reasoning",
+    "dimensions": "answer accuracy; entity faithfulness; relation awareness; description correctness; causal-graph alignment; intervention and goal reasoning",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.05966",
+      "code": "https://github.com/haorentang/CausalPhys"
+    }
+  },
+  {
+    "id": "evaluation-74-arxiv260627537",
+    "name": "MemoBench",
+    "title": "MemoBench: Benchmarking World Modeling in Dynamically Changing Environments",
+    "venue": "ECCV",
+    "date": "2026-09",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Dynamic Video Rollout",
+    "scale": "360 clips; 8 evaluated models",
+    "task": "Hidden-state memory evaluation",
+    "dimensions": "state persistence; disappearance and reappearance; dynamic update consistency; object-state recovery; camera-conditioned rendering; VQA and automated metrics",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.27537",
+      "project": "https://memobench-team.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-curated-1-foss2025causalvqa",
+    "name": "CausalVQA",
+    "title": "CausalVQA: A Physically Grounded Causal Reasoning Benchmark for Video Models",
+    "venue": "arXiv",
+    "date": "2025-06",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical",
+        "General"
+      ],
+      "zh": [
+        "物理",
+        "通用"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Causal Answer",
+    "scale": "1,586 items; 5 question types; 273-participant human baseline",
+    "task": "Physically grounded video causal reasoning",
+    "dimensions": "counterfactual reasoning; hypothetical outcomes; anticipation; planning; description; accuracy by difficulty; temporal-evidence dependence",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.09943",
+      "code": "https://github.com/facebookresearch/CausalVQA"
+    }
+  },
+  {
+    "id": "evaluation-curated-2-bordes2025intphys2",
+    "name": "IntPhys 2",
+    "title": "IntPhys 2: Benchmarking Intuitive Physics Understanding in Complex Synthetic Environments",
+    "venue": "arXiv",
+    "date": "2025-06",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Physical Possibility Score",
+    "scale": "1,416 videos; 4 physical conditions; 3 splits",
+    "task": "Intuitive-physics video evaluation",
+    "dimensions": "object permanence; object immutability; spatiotemporal continuity; solidity; camera motion; difficulty; classification accuracy",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.09849",
+      "code": "https://github.com/facebookresearch/IntPhys2"
+    }
+  },
+  {
+    "id": "evaluation-curated-3-dong2025mvpbench",
+    "name": "MVPBench",
+    "title": "Seeing is Not Reasoning: MVPBench for Graph-based Evaluation of Multi-path Visual Physical CoT",
+    "venue": "arXiv",
+    "date": "2025-05",
+    "year": 2025,
+    "focus": [
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Answer / Reasoning Graph",
+    "scale": "1,211 examples; 4 major categories",
+    "task": "Visual physical chain-of-thought evaluation",
+    "dimensions": "answer correctness; step accuracy; graph consistency; reasoning quality; path diversity; reasoning efficiency; visual grounding",
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.24182",
+      "code": "https://github.com/CSU-JPG/MVPBench",
+      "project": "https://csu-jpg.github.io/MVPBench/"
+    }
+  },
+  {
+    "id": "evaluation-curated-4-yang2026mirabench",
+    "name": "MiraBench",
+    "title": "MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Action-conditioned Robot Rollout",
+    "scale": "906 videos; 16,704 annotation decisions; 12 model configurations",
+    "task": "Robotic world-model reliability evaluation",
+    "dimensions": "physics adherence; action-following fidelity; failure preservation; optimism bias; object-state consistency; kinematic compliance; evaluator agreement",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.29360"
+    }
+  },
+  {
+    "id": "evaluation-curated-5-arxiv250801922",
+    "name": "Beyond Simulation",
+    "title": "Beyond Simulation: Benchmarking World Models for Planning and Causality in Autonomous Driving",
+    "venue": "ICRA",
+    "date": "2025-05",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving"
+      ],
+      "zh": [
+        "自动驾驶"
+      ]
+    },
+    "resourceType": "Evaluation Protocol",
+    "target": "Traffic-agent Trajectory Rollout",
+    "scale": "4,393 scenarios; 32 predicted futures per scenario",
+    "task": "Planning-oriented driving-world evaluation",
+    "dimensions": "trajectory accuracy; causal-agent response; ego-action conditioning; uncontrollable-object sensitivity; reactivity; map and kinematic compliance; interaction realism",
+    "links": {
+      "paper": "https://arxiv.org/abs/2508.01922"
+    }
+  },
+  {
+    "id": "evaluation-curated-6-arxiv260421686",
+    "name": "WorldMark",
+    "title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+    "venue": "arXiv",
+    "date": "2026-04",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Games",
+        "General",
+        "3D/4D"
+      ],
+      "zh": [
+        "游戏",
+        "通用",
+        "三维/四维"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark Suite",
+    "target": "Interactive Video Rollout",
+    "scale": "500 cases; 100 images; 15 action sequences; 6 models",
+    "task": "Cross-model interactive world evaluation",
+    "dimensions": "visual and imaging quality; translation and rotation alignment; 3D reprojection; state consistency; content consistency; style consistency",
+    "links": {
+      "paper": "https://arxiv.org/abs/2604.21686",
+      "project": "https://alaya-studio.github.io/WorldMark/"
+    }
+  },
+  {
+    "id": "evaluation-curated-7-arxiv260313215",
+    "name": "StEvo-Bench",
+    "title": "Out of Sight, Out of Mind? Evaluating State Evolution in Video World Models",
+    "venue": "arXiv",
+    "date": "2026-03",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Partially Observed Video Rollout",
+    "scale": "225 tasks; 6 evolution categories; 11 model families",
+    "task": "Unobserved state-evolution evaluation",
+    "dimensions": "state progress; physical plausibility; temporal and scene coherence; occlusion control; illumination control; camera-lookaway compliance",
+    "links": {
+      "paper": "https://arxiv.org/abs/2603.13215",
+      "project": "https://glab-caltech.github.io/STEVOBench/",
+      "blog": "https://ziqi-ma.github.io/blog/2026/outofsight/"
+    }
+  },
+  {
+    "id": "evaluation-curated-8-arxiv260631993",
+    "name": "OopsieVerse",
+    "title": "OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation",
+    "venue": "RSS",
+    "date": "2026-07",
+    "year": 2026,
+    "focus": [
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Physical AI"
+      ],
+      "zh": [
+        "机器人",
+        "物理智能"
+      ]
+    },
+    "resourceType": "Environment / Benchmark",
+    "target": "Damage-aware Manipulation Policy",
+    "scale": "32 household tasks; 2 simulator backends; 3 damage modalities",
+    "task": "Safe robot-manipulation evaluation",
+    "dimensions": "task completion; safe task completion; object health; mechanical damage; thermal damage; fluid damage; sim-to-real safety",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.31993",
+      "code": "https://github.com/UT-Austin-RobIn/oopsieverse",
+      "project": "https://robin-lab.cs.utexas.edu/oopsieverse/"
+    }
+  },
+  {
+    "id": "evaluation-curated-9-arxiv260200292",
+    "name": "LogicGaze",
+    "title": "LogicGaze: Benchmarking Causal Consistency in Visual Narratives via Counterfactual Verification",
+    "venue": "arXiv",
+    "date": "2026-02",
+    "year": 2026,
+    "focus": [
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Causal Narrative / Verification",
+    "scale": "40K video segments; 5K images",
+    "task": "Counterfactual visual causal verification",
+    "dimensions": "causal validation; grounded narrative synthesis; perturbation rejection; causal-step consistency; hallucination resistance; accuracy and F1",
+    "links": {
+      "paper": "https://arxiv.org/abs/2602.00292"
+    }
+  },
+  {
+    "id": "evaluation-curated-10-arxiv250402918",
+    "name": "Morpheus",
+    "title": "Evaluating Newtonian Mechanics in Video Generative Models with Real Physical Systems",
+    "venue": "ICML",
+    "date": "2026-07",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Evaluation Framework",
+    "target": "Generated Physical Trajectory",
+    "scale": "130 real-world videos; 16 controlled experiment variants",
+    "task": "Newtonian video-dynamics evaluation",
+    "dimensions": "energy conservation; momentum consistency; acceleration and force laws; ODE compliance; trajectory validity; depth consistency; physics-informed score",
+    "links": {
+      "paper": "https://arxiv.org/abs/2504.02918",
+      "code": "https://github.com/physics-from-video/Morpheus"
+    }
+  },
+  {
+    "id": "evaluation-curated-11-arxiv260610620",
+    "name": "ImageTime",
+    "title": "Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Ordered Visual State Sequence",
+    "scale": "750 cases; 375 action concepts; 22 domains; 8 models",
+    "task": "Spatiotemporal image-world evaluation",
+    "dimensions": "entity persistence; object-state consistency; spatial layout; temporal ordering; causal-process consistency; interaction fidelity; counterfactual constraints; visual quality",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.10620",
+      "code": "https://github.com/gintmr/ImagineTime"
+    }
+  },
+  {
+    "id": "evaluation-curated-12-arxiv250418904",
+    "name": "RoboVerse",
+    "title": "RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning",
+    "venue": "arXiv",
+    "date": "2025-04",
+    "year": 2025,
+    "focus": [
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Physical AI"
+      ],
+      "zh": [
+        "机器人",
+        "物理智能"
+      ]
+    },
+    "resourceType": "Platform / Dataset / Benchmark",
+    "target": "Robot Policy",
+    "scale": "1,000+ tasks; 10M+ transitions; multiple simulators and embodiments",
+    "task": "Generalizable robot-learning evaluation",
+    "dimensions": "task success; imitation learning; reinforcement learning; cross-simulator transfer; cross-embodiment generalization; policy execution; standardized logging",
+    "links": {
+      "paper": "https://arxiv.org/abs/2504.18904",
+      "code": "https://github.com/RoboVerseOrg/RoboVerse",
+      "project": "https://roboverseorg.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-curated-13-arxiv250605523",
+    "name": "MORSE-500",
+    "title": "MORSE-500: A Programmatically Controllable Video Benchmark to Stress-Test Multimodal Reasoning",
+    "venue": "arXiv",
+    "date": "2025-06",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "General",
+        "Physical",
+        "Robotics"
+      ],
+      "zh": [
+        "通用",
+        "物理",
+        "机器人"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Video-grounded Answer / Plan",
+    "scale": "500 scripted videos; 6 reasoning categories",
+    "task": "Controllable multimodal-reasoning stress test",
+    "dimensions": "temporal reasoning; physical reasoning; spatial reasoning; planning; mathematical reasoning; abstract reasoning; difficulty and distractor robustness",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.05523",
+      "code": "https://github.com/morse-benchmark/morse-500-code",
+      "project": "https://morse-500.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-curated-14-arxiv251201816",
+    "name": "Envision",
+    "title": "Envision: Benchmarking Unified Understanding & Generation for Causal World Process Insights",
+    "venue": "arXiv",
+    "date": "2025-12",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General",
+        "Physical"
+      ],
+      "zh": [
+        "通用",
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Multi-image Event Process",
+    "scale": "1,000 four-stage sequences; 6 disciplines; 15 models",
+    "task": "Causal world-process generation evaluation",
+    "dimensions": "spatiotemporal consistency; physical reliability; dynamics and interactivity; causal order; basic properties; aesthetics; robustness and stability",
+    "links": {
+      "paper": "https://arxiv.org/abs/2512.01816",
+      "code": "https://github.com/OpenRaiser/Envision",
+      "project": "https://openraiser.github.io/Envision/"
+    }
+  },
+  {
+    "id": "evaluation-curated-15-arxiv250500337",
+    "name": "T2VPhysBench",
+    "title": "T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation",
+    "venue": "arXiv",
+    "date": "2025-05",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Generated Physical Video",
+    "scale": "84 prompts; 12 physical laws; 10 video models",
+    "task": "First-principles physical-consistency evaluation",
+    "dimensions": "Newtonian motion; gravitation; energy, mass, linear-momentum and angular-momentum conservation; Hooke, Snell, reflection and Bernoulli laws; hint sensitivity; counterfactual compliance",
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.00337"
+    }
+  },
+  {
+    "id": "evaluation-curated-16-arxiv260609803",
+    "name": "Echo-Memory",
+    "title": "Echo-Memory: A Controlled Study of Memory in Action World Models",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Games",
+        "General"
+      ],
+      "zh": [
+        "游戏",
+        "通用"
+      ]
+    },
+    "resourceType": "Evaluation Protocol / Benchmark",
+    "target": "Action-conditioned Video Memory",
+    "scale": "4 memory families; 3 evaluation branches; 160 open-domain return sources",
+    "task": "World-state memory and revisit evaluation",
+    "dimensions": "camera-action replay; in-domain loop closure; open-domain semantic return; identity preservation; context capacity; memory compression; read-out access; recurrence; PSNR, SSIM and LPIPS",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.09803",
+      "code": "https://github.com/Echo-Team-Joy-Future-Academy-JD/Echo-Memory",
+      "project": "https://echo-team-joy-future-academy-jd.github.io/Echo-Memory/"
+    }
+  },
+  {
+    "id": "evaluation-curated-17-arxiv260627406",
+    "name": "Software World Models",
+    "title": "Towards Evaluation of Implicit Software World Models in Coding LLMs",
+    "venue": "ICML Workshop",
+    "date": "2026-07",
+    "year": 2026,
+    "focus": [
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Digital Worlds"
+      ],
+      "zh": [
+        "数字世界"
+      ]
+    },
+    "resourceType": "Dataset / Evaluation Protocol",
+    "target": "Software Execution State",
+    "scale": "435 examples; 12 repositories; 12 models",
+    "task": "Implicit software-world-model evaluation",
+    "dimensions": "test outcome; exception class; wall-clock time; peak memory; method and line profiler ranking; calibration; execution scope; NDCG and recall",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.27406",
+      "code": "https://github.com/JetBrains-Research/cwm-execution-tracer"
+    }
+  },
+  {
+    "id": "evaluation-curated-18-arxiv251202942",
+    "name": "VideoScience-Bench",
+    "title": "Benchmarking Scientific Understanding and Reasoning for Video Generation using VideoScience-Bench",
+    "venue": "arXiv",
+    "date": "2025-12",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Generated Scientific Process",
+    "scale": "200 prompts; 14 topics; 103 concepts; 7 models",
+    "task": "Scientific video-generation evaluation",
+    "dimensions": "prompt consistency; phenomenon congruency; correct dynamics; immutability; spatiotemporal coherence; physics and chemistry concept grounding; human-judge alignment",
+    "links": {
+      "paper": "https://arxiv.org/abs/2512.02942",
+      "code": "https://github.com/hao-ai-lab/VideoScience"
+    }
+  },
+  {
+    "id": "evaluation-curated-19-arxiv260223969",
+    "name": "MSVBench",
+    "title": "MSVBench: Towards Human-Level Evaluation of Multi-Shot Video Generation",
+    "venue": "ACL Findings",
+    "date": "2026-07",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Dataset / Evaluation Framework",
+    "target": "Multi-shot Video Narrative",
+    "scale": "20 stories; 20 video-generation systems",
+    "task": "Multi-shot video evaluation",
+    "dimensions": "visual quality; story-video alignment; narrative coherence; face, character and background consistency; style continuity; physical interaction; human rank alignment",
+    "links": {
+      "paper": "https://arxiv.org/abs/2602.23969",
+      "code": "https://github.com/HITsz-TMG/MSVBench"
+    }
+  },
+  {
+    "id": "evaluation-curated-20-arxiv260423789",
+    "name": "MuSS",
+    "title": "MuSS: A Large-Scale Dataset and Cinematic Narrative Benchmark for Multi-Shot Subject-to-Video Generation",
+    "venue": "arXiv",
+    "date": "2026-04",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "General"
+      ],
+      "zh": [
+        "通用"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Multi-shot Subject Video",
+    "scale": "30K+ multi-shot clips; 1,000+ hours; 3,000+ films",
+    "task": "Cinematic narrative generation evaluation",
+    "dimensions": "narrative effectiveness; cross-shot visual stability; subject consistency and recall; viewpoint and pose diversity; visual logic; anti-copy-paste behavior; camera dynamics",
+    "links": {
+      "paper": "https://arxiv.org/abs/2604.23789",
+      "code": "https://github.com/zhang-haojie/MuSS"
+    }
+  },
+  {
+    "id": "evaluation-curated-21-arxiv250205503",
+    "name": "PhyCoBench",
+    "title": "A Physical Coherence Benchmark for Evaluating Video Generation Models via Optical Flow-guided Frame Prediction",
+    "venue": "arXiv",
+    "date": "2025-02",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical"
+      ],
+      "zh": [
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Generated Motion / Optical Flow",
+    "scale": "120 prompts; 7 physical categories; 4 video models",
+    "task": "Physical-coherence video evaluation",
+    "dimensions": "gravity; collision; vibration; friction; fluid dynamics; projectile motion; rotation; optical-flow prediction; future-frame consistency; human ranking agreement",
+    "links": {
+      "paper": "https://arxiv.org/abs/2502.05503",
+      "code": "https://github.com/Jeckinchen/PhyCoBench"
+    }
+  },
+  {
+    "id": "evaluation-curated-22-arxiv250306800",
+    "name": "VideoPhy-2",
+    "title": "VideoPhy-2: A Challenging Action-Centric Physical Commonsense Evaluation in Video Generation",
+    "venue": "arXiv",
+    "date": "2025-03",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Physical",
+        "General"
+      ],
+      "zh": [
+        "物理",
+        "通用"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Action-centric Generated Video",
+    "scale": "197 actions; 3,940 prompts; 6,800 videos; 102K annotations",
+    "task": "Action-centric physical-commonsense evaluation",
+    "dimensions": "prompt adherence; action completion; physical likelihood; rule following and violation; contact and interaction; conservation laws; human and automatic evaluation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2503.06800",
+      "code": "https://github.com/Hritikbansal/videophy/tree/main/VIDEOPHY2",
+      "project": "https://videophy2.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-curated-23-arxiv251120937",
+    "name": "ENACT",
+    "title": "ENACT: Evaluating Embodied Cognition with World Modeling of Egocentric Interaction",
+    "venue": "arXiv",
+    "date": "2025-11",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Physical AI"
+      ],
+      "zh": [
+        "机器人",
+        "物理智能"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Embodied State / Action Sequence",
+    "scale": "8,972 QA pairs; 2 world-modeling tasks; 3–10-step horizons",
+    "task": "Egocentric embodied-cognition evaluation",
+    "dimensions": "forward state prediction; inverse action inference; temporal ordering; long-horizon memory; contact and state-change reasoning; viewpoint robustness; task and sequence accuracy",
+    "links": {
+      "paper": "https://arxiv.org/abs/2511.20937",
+      "code": "https://github.com/mll-lab-nu/ENACT",
+      "project": "https://enact-embodied-cognition.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-curated-24-arxiv260527589",
+    "name": "What-If World",
+    "title": "What-If World: A Causal Benchmark for General World Models in Embodied Scenarios",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving",
+        "Robotics",
+        "Physical"
+      ],
+      "zh": [
+        "自动驾驶",
+        "机器人",
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Paired Embodied Video Rollout",
+    "scale": "319 intervention pairs; 6 variable primitives; 9 models",
+    "task": "Contrastive intervention-following evaluation",
+    "dimensions": "input adherence; physical plausibility; environment stability; outcome separation; intervention sensitivity; paired-versus-single consistency; driving and manipulation effects",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.27589"
+    }
+  },
+  {
+    "id": "evaluation-curated-25-arxiv260622363",
+    "name": "Relative Rollout Assessment",
+    "title": "Reference-Free Assessment of Physical Consistency in World Model-based Video Generation",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics"
+      ],
+      "zh": [
+        "机器人"
+      ]
+    },
+    "resourceType": "Metric / Evaluation Protocol",
+    "target": "Robot Video Rollout",
+    "scale": "150 rollouts; 5 tasks; 30 videos per task",
+    "task": "Reference-free rollout consistency assessment",
+    "dimensions": "3D geometric consistency; optical-flow and photometric consistency; relative anomaly score; physical integrity; rollout filtering; policy-success alignment",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.22363"
+    }
+  },
+  {
+    "id": "evaluation-curated-26-xu2026worldroambench",
+    "name": "WorldRoamBench",
+    "title": "WorldRoamBench: An Open-World Benchmark for Long-Horizon Stability of Interactive World Models",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Interactive worlds",
+        "Long-horizon memory",
+        "Physics"
+      ],
+      "zh": [
+        "交互世界",
+        "长程记忆",
+        "物理"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Interactive Video World",
+    "scale": "600+ cases; 10+ models; 10–60 s WASD interactions",
+    "task": "Long-horizon open-world stability evaluation",
+    "dimensions": "per-frame and trajectory action following; segment-level visual drift; mechanics; optics; 3D consistency; scene memory; subject memory; first- and third-person stability",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.31672"
+    }
+  },
+  {
+    "id": "evaluation-curated-27-liu2026physicsmind",
+    "name": "PhysicsMind",
+    "title": "PhysicsMind: Sim and Real Mechanics Benchmarking for Physical Reasoning and Prediction in Foundational VLMs and World Models",
+    "venue": "arXiv",
+    "date": "2026-01",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physics",
+        "Simulation",
+        "Video prediction"
+      ],
+      "zh": [
+        "物理",
+        "仿真",
+        "视频预测"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Physical Reasoning / Video Prediction",
+    "scale": "81 videos; 122 VQA pairs; 81 generation cases; 3 mechanics domains",
+    "task": "Law-consistent mechanics reasoning and generation",
+    "dimensions": "center of mass; lever equilibrium; inertia; final-state accuracy; segmentation IoU and centroid error; trajectory RMSE; directional, speed and acceleration consistency; sim-to-real transfer",
+    "links": {
+      "paper": "https://arxiv.org/abs/2601.16007",
+      "code": "https://github.com/marcozzxx810/PhysicsMind",
+      "project": "https://physicsmind-web.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-curated-28-lin2026scratchworld",
+    "name": "ScratchWorld",
+    "title": "ScratchWorld: Evaluating If World Models Compute Executable Consequences",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Software worlds",
+        "Causal reasoning",
+        "Structured state"
+      ],
+      "zh": [
+        "软件世界",
+        "因果推理",
+        "结构化状态"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark / Protocol",
+    "target": "Executable Program State",
+    "scale": "659 examples; 4 tasks; 4 evidence modalities",
+    "task": "Executable action-consequence evaluation",
+    "dimensions": "next-state prediction; changed fields and values; hidden-state tracking; causal rule-chain attribution; counterfactual outcomes; intervention sensitivity; copy resistance; perturbation robustness",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.31689"
+    }
+  },
+  {
+    "id": "evaluation-curated-29-li2026billiardphys",
+    "name": "BilliardPhys-Bench",
+    "title": "BilliardPhys-Bench: Benchmarking Physical Reasoning and Visual Dynamics of Multimodal LLMs",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physics",
+        "Simulation",
+        "Games"
+      ],
+      "zh": [
+        "物理",
+        "仿真",
+        "游戏"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Billiards Physical State",
+    "scale": "200 scenes at each of 5 horizons; 3 tasks; 7 balls per scene",
+    "task": "Single-frame forward physical simulation",
+    "dimensions": "ball-to-ball collision; wall collision; final 2D coordinates; friction and elastic dynamics; multi-object tracking; event accuracy; coordinate error; 1–5 s temporal scaling",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.30900"
+    }
+  },
+  {
+    "id": "evaluation-curated-30-jeon2026roboworld",
+    "name": "RoboWorld",
+    "title": "RoboWorld: Fast and Reliable Neural Simulators for Generalist Robot Policy Evaluation",
+    "venue": "arXiv",
+    "date": "2026-07",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Policy evaluation",
+        "Video worlds"
+      ],
+      "zh": [
+        "机器人",
+        "策略评估",
+        "视频世界"
+      ]
+    },
+    "resourceType": "Simulator / Evaluation Protocol",
+    "target": "Generalist Robot Policy",
+    "scale": "9 policy variants; 3 views; 300-frame / 20 s closed-loop rollouts",
+    "task": "World-model-based robot-policy evaluation",
+    "dimensions": "closed-loop task success; policy ranking correlation; long-horizon rollout quality; task progress; action-state consistency; inference throughput; judge robustness",
+    "links": {
+      "paper": "https://arxiv.org/abs/2607.01060",
+      "project": "https://byeongguks.github.io/RoboWorld/"
+    }
+  },
+  {
+    "id": "evaluation-curated-31-fan2026wowworldeval",
+    "name": "WoW-World-Eval",
+    "title": "Wow, wo, val! A Comprehensive Embodied World Model Evaluation Turing Test",
+    "venue": "arXiv",
+    "date": "2026-01",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Physical AI",
+        "Planning"
+      ],
+      "zh": [
+        "机器人",
+        "物理智能",
+        "规划"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Embodied Video World Model",
+    "scale": "609 manipulation samples; 22 metrics; 5 capability groups",
+    "task": "Embodied world-model Turing evaluation",
+    "dimensions": "perception; planning; future prediction; physical law; execution accuracy; instruction alignment; generalization; human preference; inverse-dynamics recoverability",
+    "links": {
+      "paper": "https://arxiv.org/abs/2601.04137"
+    }
+  },
+  {
+    "id": "evaluation-curated-32-yang2026spiral",
+    "name": "ActVideoGen-Bench",
+    "title": "SPIRAL: A Closed-Loop Framework for Self-Improving Action World Models via Reflective Planning Agents",
+    "venue": "arXiv",
+    "date": "2026-03",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Video worlds",
+        "Long-horizon actions",
+        "Planning"
+      ],
+      "zh": [
+        "视频世界",
+        "长程动作",
+        "规划"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Long-Horizon Action-Conditioned Video",
+    "scale": "300 prompts; 3 difficulty levels; 1 to 5+ action steps",
+    "task": "Long-horizon action-video generation evaluation",
+    "dimensions": "action completeness; action smoothness; object interaction; physical fidelity; visual quality; temporal coherence; subject and background consistency; procedural difficulty",
+    "links": {
+      "paper": "https://arxiv.org/abs/2603.08403",
+      "project": "https://yuyang-cloud.github.io/spiral"
+    }
+  },
+  {
+    "id": "evaluation-curated-33-arxiv260625306",
+    "name": "PQSG / FinePhyEval",
+    "title": "Physics Question Scene Graph: Fine-grained Evaluation of Physical Plausibility in Text-to-Video Generation",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Physics",
+        "Causal reasoning",
+        "Video evaluation"
+      ],
+      "zh": [
+        "物理",
+        "因果推理",
+        "视频评估"
+      ]
+    },
+    "resourceType": "Dataset / Metric / Evaluation Protocol",
+    "target": "Physically Conditioned Video",
+    "scale": "65 prompts; 3 generation models; graph-structured human annotations",
+    "task": "Fine-grained physical plausibility evaluation",
+    "dimensions": "object existence and state; action execution; physical-law adherence; dependency validity; localized failure attribution; human correlation; question generation and answering reliability",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.25306",
+      "code": "https://github.com/atinpothiraj/pqsg"
+    }
+  },
+  {
+    "id": "evaluation-curated-34-arxiv260600773",
+    "name": "SafeVLA-Bench",
+    "title": "SafeVLA-Bench: A Benchmark for the Success-Safety Gap in Vision-Language-Action Models",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Safety",
+        "VLA"
+      ],
+      "zh": [
+        "机器人",
+        "安全",
+        "视觉语言动作"
+      ]
+    },
+    "resourceType": "Metric / Evaluation Protocol",
+    "target": "Vision-Language-Action Policy",
+    "scale": "2 host benchmarks; 6 VLA models; 8 safety-specification families",
+    "task": "Post-hoc robot success-and-safety evaluation",
+    "dimensions": "native task success; safety satisfaction; successful-but-unsafe rate; violation severity; contact force; bystander displacement; object stability; joint torque; self-collision",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.00773",
+      "project": "https://safevla.org/"
+    }
+  },
+  {
+    "id": "evaluation-curated-35-arxiv260614574",
+    "name": "SIMMER",
+    "title": "SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Planning",
+        "Structured state",
+        "Household"
+      ],
+      "zh": [
+        "规划",
+        "结构化状态",
+        "家庭环境"
+      ]
+    },
+    "resourceType": "Environment / Benchmark / Protocol",
+    "target": "Executable Agent Plan",
+    "scale": "100 cooking scripts; 77 actions; 262 objects; ~46,800 interactions",
+    "task": "Latent planning-failure evaluation",
+    "dimensions": "precondition satisfaction; explicit and implicit state tracking; immediate failure; latent hazard; irreversible consequence; plan completion; counterfactual foresight; long-horizon action sequencing",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.14574"
+    }
+  },
+  {
+    "id": "evaluation-curated-36-arxiv260613877",
+    "name": "ContactWorld",
+    "title": "ContactWorld: What Matters in Vision-Tactile World Models for Contact-Rich Manipulation",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Physics",
+        "Tactile"
+      ],
+      "zh": [
+        "机器人",
+        "物理",
+        "触觉"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark / Environment",
+    "target": "Contact-Rich World Model and Planner",
+    "scale": "12 contact-rich manipulation tasks; visual, geometric and tactile-force modalities",
+    "task": "Multimodal contact-state prediction and model-based manipulation planning",
+    "dimensions": "future object and contact-state prediction; action conditioning; tactile-force representation; contact dynamics; task success; multimodal fusion; planning under physical interaction",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.13877",
+      "project": "https://contact-world.github.io"
+    }
+  },
+  {
+    "id": "evaluation-curated-37-arxiv260620092",
+    "name": "RoboTwin-MeM",
+    "title": "EventVLA: Event-Driven Visual Evidence Memory for Long-Horizon Vision-Language-Action Policies",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Memory",
+        "Long-horizon actions"
+      ],
+      "zh": [
+        "机器人",
+        "记忆",
+        "长程动作"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark / Environment",
+    "target": "Memory-Augmented Vision-Language-Action Policy",
+    "scale": "8 non-Markovian task families; 17 simulation and 4 real-world tasks; ~430–1,544 average steps",
+    "task": "Long-horizon embodied memory and action evaluation",
+    "dimensions": "past-event retrieval; persistent object and scene state; keyframe memory; long-context action selection; temporal credit assignment; simulation success; real-world task completion",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.20092",
+      "code": "https://github.com/InternRobotics/EventVLA"
+    }
+  },
+  {
+    "id": "evaluation-curated-38-chen2024videophy",
+    "name": "VideoPhy",
+    "title": "VideoPhy: Evaluating Physical Commonsense for Video Generation",
+    "venue": "NeurIPS Workshop",
+    "date": "2024-12",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physics",
+        "Video evaluation"
+      ],
+      "zh": [
+        "物理",
+        "视频评估"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark / Metric",
+    "target": "Text-to-Video Generator",
+    "scale": "Human-labeled generated videos across diverse physical interactions",
+    "task": "Physical-commonsense and semantic-adherence evaluation",
+    "dimensions": "object dynamics; interaction outcomes; physical plausibility; prompt adherence; automated-human agreement",
+    "links": {
+      "paper": "https://arxiv.org/abs/2406.03520",
+      "code": "https://github.com/Hritikbansal/videophy"
+    }
+  },
+  {
+    "id": "evaluation-curated-39-li2026visphyworld",
+    "name": "VisPhyBench",
+    "title": "VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction",
+    "venue": "arXiv",
+    "date": "2026-02",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physics",
+        "Causal reasoning",
+        "Video evaluation"
+      ],
+      "zh": [
+        "物理",
+        "因果推理",
+        "视频评估"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark / Protocol",
+    "target": "Multimodal Physical-Reasoning Model",
+    "scale": "Multiple physics scenes; 5 model backbones; 2 executable rendering engines",
+    "task": "Code-driven physical scene reconstruction and rollout",
+    "dimensions": "scene reconstruction; physical parameterization; temporal behavior; semantic consistency; text-video agreement; executable-law grounding",
+    "links": {
+      "paper": "https://arxiv.org/abs/2602.13294",
+      "code": "https://github.com/TIGER-AI-Lab/VisPhyWorld"
+    }
+  },
+  {
+    "id": "evaluation-curated-40-tung2023physionpp",
+    "name": "Physion++",
+    "title": "Physion++: Evaluating Physical Scene Understanding that Requires Online Inference of Different Physical Properties",
+    "venue": "NeurIPS",
+    "date": "2023-12",
+    "year": 2023,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physics",
+        "Object interaction"
+      ],
+      "zh": [
+        "物理",
+        "物体交互"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Physical Scene-Understanding Model",
+    "scale": "Approximately 2,000 dynamic physical scenarios",
+    "task": "Hidden-property inference and future-outcome prediction",
+    "dimensions": "mass; friction; elasticity; object interaction; online inference; long-term dependency; human alignment",
+    "links": {
+      "paper": "https://arxiv.org/abs/2306.15668",
+      "project": "https://dingmyu.github.io/physion_v2/"
+    }
+  },
+  {
+    "id": "evaluation-curated-41-yu2020metaworld",
+    "name": "Meta-World",
+    "title": "Meta-World: A Benchmark and Evaluation for Multi-Task and Meta Reinforcement Learning",
+    "venue": "CoRL",
+    "date": "2020-11",
+    "year": 2020,
+    "focus": [
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Manipulation",
+        "Control"
+      ],
+      "zh": [
+        "机器人",
+        "操作",
+        "控制"
+      ]
+    },
+    "resourceType": "Environment / Benchmark",
+    "target": "Multi-Task and Meta-RL Agent",
+    "scale": "50 manipulation tasks; ML1, ML10 and ML45 protocols",
+    "task": "Multi-task skill learning and held-out task adaptation",
+    "dimensions": "task success; state-conditioned control; action execution; multi-task transfer; few-shot adaptation; task generalization",
+    "links": {
+      "paper": "https://arxiv.org/abs/1910.10897",
+      "code": "https://github.com/Farama-Foundation/Metaworld",
+      "project": "https://metaworld.farama.org/"
+    }
+  },
+  {
+    "id": "evaluation-curated-42-liu2023libero",
+    "name": "LIBERO",
+    "title": "LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning",
+    "venue": "NeurIPS Datasets and Benchmarks",
+    "date": "2023-12",
+    "year": 2023,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Memory",
+        "Long-horizon actions"
+      ],
+      "zh": [
+        "机器人",
+        "记忆",
+        "长程动作"
+      ]
+    },
+    "resourceType": "Dataset / Environment / Benchmark",
+    "target": "Lifelong Robot-Manipulation Agent",
+    "scale": "130 standardized tasks across 4 benchmark suites",
+    "task": "Sequential manipulation learning and knowledge transfer",
+    "dimensions": "task success; spatial and object knowledge; goal transfer; long-horizon procedure; forward transfer; backward transfer; task-order robustness",
+    "links": {
+      "paper": "https://arxiv.org/abs/2306.03310",
+      "code": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+      "project": "https://libero-project.github.io"
+    }
+  },
+  {
+    "id": "evaluation-curated-43-mandlekar2021robomimic",
+    "name": "robomimic",
+    "title": "What Matters in Learning from Offline Human Demonstrations for Robot Manipulation",
+    "venue": "CoRL",
+    "date": "2021-11",
+    "year": 2021,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Offline learning",
+        "Control"
+      ],
+      "zh": [
+        "机器人",
+        "离线学习",
+        "控制"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark / Toolkit",
+    "target": "Imitation and Offline-RL Policy",
+    "scale": "Multiple simulated and real-robot tasks with machine and human datasets",
+    "task": "Offline manipulation-policy training and evaluation",
+    "dimensions": "trajectory history; visual and low-dimensional state; action prediction; task success; dataset quality; temporal abstraction; algorithm reproducibility",
+    "links": {
+      "paper": "https://arxiv.org/abs/2108.03298",
+      "code": "https://github.com/ARISE-Initiative/robomimic",
+      "project": "https://robomimic.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-curated-44-zhu2020robosuite",
+    "name": "robosuite",
+    "title": "robosuite: A Modular Simulation Framework and Benchmark for Robot Learning",
+    "venue": "arXiv",
+    "date": "2020-09",
+    "year": 2020,
+    "focus": [
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Simulation",
+        "Physics"
+      ],
+      "zh": [
+        "机器人",
+        "仿真",
+        "物理"
+      ]
+    },
+    "resourceType": "Simulator / Environment / Benchmark",
+    "target": "Robot-Learning Algorithm",
+    "scale": "Modular robots, grippers, controllers and standardized manipulation tasks",
+    "task": "Physics-based manipulation learning and control evaluation",
+    "dimensions": "contact dynamics; robot and object state; controller action; task success; sensor observations; reproducibility; sim-to-real experimentation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2009.12293",
+      "code": "https://github.com/ARISE-Initiative/robosuite",
+      "project": "https://robosuite.ai/"
+    }
+  },
+  {
+    "id": "evaluation-curated-45-tao2024maniskill3",
+    "name": "ManiSkill3",
+    "title": "ManiSkill3: GPU Parallelized Robotics Simulation and Rendering for Generalizable Embodied AI",
+    "venue": "arXiv",
+    "date": "2024-10",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Simulation",
+        "Manipulation"
+      ],
+      "zh": [
+        "机器人",
+        "仿真",
+        "操作"
+      ]
+    },
+    "resourceType": "Simulator / Dataset / Benchmark",
+    "target": "Generalizable Embodied Policy",
+    "scale": "GPU-parallel environments with diverse robots, scenes and tasks",
+    "task": "Scalable manipulation training, generation and evaluation",
+    "dimensions": "physical dynamics; visual and geometric state; action execution; task success; rendering throughput; parallel simulation; generalization",
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.00425",
+      "code": "https://github.com/haosulab/ManiSkill",
+      "project": "https://www.maniskill.ai/ManiSkill3"
+    }
+  },
+  {
+    "id": "evaluation-curated-46-li2024simpler",
+    "name": "SIMPLER",
+    "title": "Evaluating Real-World Robot Manipulation Policies in Simulation",
+    "venue": "arXiv",
+    "date": "2024-05",
+    "year": 2024,
+    "focus": [
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Simulation",
+        "Policy evaluation"
+      ],
+      "zh": [
+        "机器人",
+        "仿真",
+        "策略评估"
+      ]
+    },
+    "resourceType": "Simulator / Environment / Evaluation Protocol",
+    "target": "Real-World Robot Policy",
+    "scale": "2 common robot setups with matched simulated manipulation tasks",
+    "task": "Reproducible simulation-based proxy evaluation",
+    "dimensions": "task success; real-sim performance correlation; policy ranking; visual matching; dynamics calibration; mean maximum rank violation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2405.05941",
+      "code": "https://github.com/simpler-env/SimplerEnv",
+      "project": "https://simpler-env.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-curated-47-li2024behavior1k",
+    "name": "BEHAVIOR-1K",
+    "title": "BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation",
+    "venue": "CoRL",
+    "date": "2023-11",
+    "year": 2023,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Household",
+        "Robotics",
+        "Long-horizon actions"
+      ],
+      "zh": [
+        "家庭环境",
+        "机器人",
+        "长程动作"
+      ]
+    },
+    "resourceType": "Dataset / Simulator / Benchmark",
+    "target": "Embodied Household Agent",
+    "scale": "1,000 everyday activities with realistic scenes, objects and state transitions",
+    "task": "Long-horizon household activity execution",
+    "dimensions": "object and relation state; physical interaction; temporal procedure; navigation; manipulation; task completion; generalization",
+    "links": {
+      "paper": "https://arxiv.org/abs/2403.09227",
+      "code": "https://github.com/StanfordVL/BEHAVIOR-1K",
+      "project": "https://behavior.stanford.edu/index.html"
+    }
+  },
+  {
+    "id": "evaluation-curated-48-zhang2025vlabench",
+    "name": "VLABench",
+    "title": "VLABench: A Large-Scale Benchmark for Language-Conditioned Robotics Manipulation with Long-Horizon Reasoning Tasks",
+    "venue": "arXiv",
+    "date": "2025-01",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "VLA",
+        "Long-horizon actions"
+      ],
+      "zh": [
+        "机器人",
+        "视觉语言动作",
+        "长程动作"
+      ]
+    },
+    "resourceType": "Dataset / Environment / Benchmark",
+    "target": "Vision-Language-Action Policy",
+    "scale": "Large compositional manipulation suite with task, object and scene variations",
+    "task": "Language-conditioned long-horizon manipulation",
+    "dimensions": "instruction grounding; object and spatial state; action sequence; task progress; success; compositional and out-of-distribution generalization",
+    "links": {
+      "paper": "https://arxiv.org/abs/2412.18194",
+      "code": "https://github.com/OpenMOSS/VLABench"
+    }
+  },
+  {
+    "id": "evaluation-curated-49-chen2025robotwin2",
+    "name": "RoboTwin 2.0",
+    "title": "RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation",
+    "venue": "arXiv",
+    "date": "2025-06",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Bimanual manipulation",
+        "Simulation"
+      ],
+      "zh": [
+        "机器人",
+        "双臂操作",
+        "仿真"
+      ]
+    },
+    "resourceType": "Dataset / Simulator / Benchmark",
+    "target": "Bimanual Vision-Language-Action Policy",
+    "scale": "Dozens of bimanual tasks with large-scale randomized demonstrations",
+    "task": "Robust bimanual manipulation and sim-to-real evaluation",
+    "dimensions": "task success; object and scene state; coordinated action; instruction variation; domain randomization; robustness; sim-to-real transfer",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.18088",
+      "code": "https://github.com/RoboTwin-Platform/RoboTwin"
+    }
+  },
+  {
+    "id": "evaluation-curated-50-dosovitskiy2017carla",
+    "name": "CARLA",
+    "title": "CARLA: An Open Urban Driving Simulator",
+    "venue": "CoRL",
+    "date": "2017-11",
+    "year": 2017,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving",
+        "Simulation",
+        "Control"
+      ],
+      "zh": [
+        "驾驶",
+        "仿真",
+        "控制"
+      ]
+    },
+    "resourceType": "Simulator / Environment / Benchmark",
+    "target": "Autonomous-Driving Agent",
+    "scale": "Configurable towns, weather, traffic, sensors and driving routes",
+    "task": "Closed-loop urban driving",
+    "dimensions": "vehicle and traffic dynamics; route progress; collision; lane state; control; weather and town generalization; sensor perception",
+    "links": {
+      "paper": "https://arxiv.org/abs/1711.03938",
+      "code": "https://github.com/carla-simulator/carla",
+      "project": "https://carla.org/"
+    }
+  },
+  {
+    "id": "evaluation-curated-51-caesar2021nuplan",
+    "name": "nuPlan",
+    "title": "nuPlan: A Closed-Loop ML-Based Planning Benchmark for Autonomous Vehicles",
+    "venue": "CVPR Workshop",
+    "date": "2021-06",
+    "year": 2021,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving",
+        "Planning",
+        "Closed-loop evaluation"
+      ],
+      "zh": [
+        "驾驶",
+        "规划",
+        "闭环评估"
+      ]
+    },
+    "resourceType": "Dataset / Simulator / Benchmark",
+    "target": "Autonomous-Vehicle Planner",
+    "scale": "Approximately 1,500 driving hours across 4 cities",
+    "task": "Open- and closed-loop driving planning",
+    "dimensions": "trajectory prediction; map and agent state; route progress; collision; time-to-collision; comfort; drivable area; closed-loop control",
+    "links": {
+      "paper": "https://arxiv.org/abs/2106.11810",
+      "code": "https://github.com/motional/nuplan-devkit",
+      "project": "https://www.nuscenes.org/nuplan"
+    }
+  },
+  {
+    "id": "evaluation-curated-52-tian2023occ3d",
+    "name": "Occ3D",
+    "title": "Occ3D: A Large-Scale 3D Occupancy Prediction Benchmark for Autonomous Driving",
+    "venue": "NeurIPS",
+    "date": "2023-12",
+    "year": 2023,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "3D occupancy",
+        "Driving",
+        "Structured state"
+      ],
+      "zh": [
+        "三维占据",
+        "驾驶",
+        "结构化状态"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "3D Semantic Occupancy Model",
+    "scale": "Large-scale voxel occupancy labels derived from nuScenes and Waymo",
+    "task": "Camera-based 3D semantic occupancy prediction",
+    "dimensions": "voxel geometry; semantic class; visibility; occlusion; free and occupied space; class IoU; scene completion",
+    "links": {
+      "paper": "https://arxiv.org/abs/2304.14365",
+      "code": "https://github.com/Tsinghua-MARS-Lab/Occ3D"
+    }
+  },
+  {
+    "id": "evaluation-curated-53-dauner2024navsim",
+    "name": "NAVSIM",
+    "title": "NAVSIM: Data-Driven Non-Reactive Autonomous Vehicle Simulation and Benchmarking",
+    "venue": "NeurIPS",
+    "date": "2024-12",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving",
+        "Planning",
+        "Policy evaluation"
+      ],
+      "zh": [
+        "驾驶",
+        "规划",
+        "策略评估"
+      ]
+    },
+    "resourceType": "Dataset / Simulator / Benchmark",
+    "target": "End-to-End Driving Planner",
+    "scale": "Large-scale driving scenes with multimodal observations and future trajectories",
+    "task": "Data-driven non-reactive planning evaluation",
+    "dimensions": "future trajectory; collision; drivable area; time-to-collision; comfort; route progress; ego dynamics; planning score",
+    "links": {
+      "paper": "https://arxiv.org/abs/2406.15349",
+      "code": "https://github.com/autonomousvision/navsim"
+    }
+  },
+  {
+    "id": "evaluation-curated-54-savva2019habitat",
+    "name": "Habitat",
+    "title": "Habitat: A Platform for Embodied AI Research",
+    "venue": "ICCV",
+    "date": "2019-10",
+    "year": 2019,
+    "focus": [
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Navigation",
+        "Simulation",
+        "Embodied agents"
+      ],
+      "zh": [
+        "导航",
+        "仿真",
+        "具身智能体"
+      ]
+    },
+    "resourceType": "Simulator / Environment / Benchmark",
+    "target": "Embodied Navigation Agent",
+    "scale": "Thousands of indoor 3D spaces across multiple scene datasets",
+    "task": "Visual navigation in photorealistic indoor environments",
+    "dimensions": "3D scene and sensor state; action execution; geodesic distance; success; path length; SPL; transfer across environments",
+    "links": {
+      "paper": "https://arxiv.org/abs/1904.01201",
+      "code": "https://github.com/facebookresearch/habitat-lab",
+      "project": "https://aihabitat.org/"
+    }
+  },
+  {
+    "id": "evaluation-curated-55-kolve2017ai2thor",
+    "name": "AI2-THOR",
+    "title": "AI2-THOR: An Interactive 3D Environment for Visual AI",
+    "venue": "arXiv",
+    "date": "2017-12",
+    "year": 2017,
+    "focus": [
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Household",
+        "Navigation",
+        "Interactive environments"
+      ],
+      "zh": [
+        "家庭环境",
+        "导航",
+        "交互环境"
+      ]
+    },
+    "resourceType": "Simulator / Environment / Benchmark",
+    "target": "Interactive Visual Agent",
+    "scale": "120 interactive kitchen, living-room, bedroom and bathroom scenes",
+    "task": "Visual navigation and household object interaction",
+    "dimensions": "object state and affordance; spatial relation; navigation; manipulation action; task success; scene and object generalization",
+    "links": {
+      "paper": "https://arxiv.org/abs/1712.05474",
+      "code": "https://github.com/allenai/ai2thor",
+      "project": "https://ai2thor.allenai.org/"
+    }
+  },
+  {
+    "id": "evaluation-curated-56-shridhar2020alfred",
+    "name": "ALFRED",
+    "title": "ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks",
+    "venue": "CVPR",
+    "date": "2020-06",
+    "year": 2020,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Household",
+        "Long-horizon actions",
+        "Navigation"
+      ],
+      "zh": [
+        "家庭环境",
+        "长程动作",
+        "导航"
+      ]
+    },
+    "resourceType": "Dataset / Environment / Benchmark",
+    "target": "Instruction-Following Embodied Agent",
+    "scale": "Approximately 8,000 demonstrations and 25,000 language instructions",
+    "task": "Long-horizon household instruction execution",
+    "dimensions": "instruction grounding; task progress; object state; navigation; manipulation sequence; goal-condition success; unseen-scene generalization",
+    "links": {
+      "paper": "https://arxiv.org/abs/1912.01734",
+      "code": "https://github.com/askforalfred/alfred",
+      "project": "https://askforalfred.com/"
+    }
+  },
+  {
+    "id": "evaluation-curated-57-cote2018textworld",
+    "name": "TextWorld",
+    "title": "TextWorld: A Learning Environment for Text-Based Games",
+    "venue": "CGW Workshop",
+    "date": "2019-08",
+    "year": 2019,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Text environments",
+        "Planning",
+        "Interactive worlds"
+      ],
+      "zh": [
+        "文本环境",
+        "规划",
+        "交互世界"
+      ]
+    },
+    "resourceType": "Environment / Generator / Benchmark",
+    "target": "Text-Based Interactive Agent",
+    "scale": "Procedurally generated games with controllable maps, objects, quests and action depth",
+    "task": "Language-based exploration and quest completion",
+    "dimensions": "hidden state tracking; entity and relation state; action preconditions and effects; exploration; plan length; score; quest completion",
+    "links": {
+      "paper": "https://arxiv.org/abs/1806.11532",
+      "code": "https://github.com/microsoft/TextWorld"
+    }
+  },
+  {
+    "id": "evaluation-curated-58-wang2022scienceworld",
+    "name": "ScienceWorld",
+    "title": "ScienceWorld: Is Your Agent Smarter than a 5th Grader?",
+    "venue": "EMNLP",
+    "date": "2022-12",
+    "year": 2022,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Text environments",
+        "Causal reasoning",
+        "Planning"
+      ],
+      "zh": [
+        "文本环境",
+        "因果推理",
+        "规划"
+      ]
+    },
+    "resourceType": "Environment / Dataset / Benchmark",
+    "target": "Language-Based Scientific Agent",
+    "scale": "30 task families with thousands of procedurally varied instances",
+    "task": "Interactive scientific experimentation and goal completion",
+    "dimensions": "object and process state; temporal change; action sequence; scientific reasoning; subgoal progress; task score; generalization",
+    "links": {
+      "paper": "https://arxiv.org/abs/2203.07540",
+      "code": "https://github.com/allenai/ScienceWorld"
+    }
+  },
+  {
+    "id": "evaluation-curated-59-zhou2023webarena",
+    "name": "WebArena",
+    "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+    "venue": "ICLR",
+    "date": "2024-05",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Web agents",
+        "Software state",
+        "Long-horizon actions"
+      ],
+      "zh": [
+        "网页智能体",
+        "软件状态",
+        "长程动作"
+      ]
+    },
+    "resourceType": "Environment / Benchmark / Protocol",
+    "target": "Autonomous Web Agent",
+    "scale": "812 tasks across 5 self-hosted realistic websites",
+    "task": "Long-horizon browser interaction and transaction completion",
+    "dimensions": "website and account state; navigation; form and tool action; cross-site dependency; task progress; functional correctness; success",
+    "links": {
+      "paper": "https://arxiv.org/abs/2307.13854",
+      "code": "https://github.com/web-arena-x/webarena",
+      "project": "https://webarena.dev/"
+    }
+  },
+  {
+    "id": "evaluation-curated-60-koh2024visualwebarena",
+    "name": "VisualWebArena",
+    "title": "VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks",
+    "venue": "ACL",
+    "date": "2024-08",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Web agents",
+        "Multimodal agents",
+        "Software state"
+      ],
+      "zh": [
+        "网页智能体",
+        "多模态智能体",
+        "软件状态"
+      ]
+    },
+    "resourceType": "Environment / Benchmark / Protocol",
+    "target": "Multimodal Web Agent",
+    "scale": "910 visually grounded tasks across 3 realistic websites",
+    "task": "Screenshot-grounded browser interaction",
+    "dimensions": "visual and DOM state; image grounding; navigation and form action; persistent website change; task progress; functional correctness; success",
+    "links": {
+      "paper": "https://doi.org/10.48550/arXiv.2401.13649",
+      "code": "https://github.com/web-arena-x/visualwebarena",
+      "project": "https://jykoh.com/vwa"
+    }
+  },
+  {
+    "id": "evaluation-curated-61-trivedi2024appworld",
+    "name": "AppWorld",
+    "title": "AppWorld: A Controllable World of Apps and People for Benchmarking Interactive Coding Agents",
+    "venue": "ACL",
+    "date": "2024-08",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Software agents",
+        "Tool use",
+        "Structured state"
+      ],
+      "zh": [
+        "软件智能体",
+        "工具使用",
+        "结构化状态"
+      ]
+    },
+    "resourceType": "Environment / Dataset / Benchmark",
+    "target": "API-Using Agent",
+    "scale": "9 apps, 457 APIs and 750 tasks with reproducible world states",
+    "task": "Cross-application API task completion",
+    "dimensions": "database and user state; API preconditions and effects; transaction sequence; cross-app dependency; functional correctness; task success",
+    "links": {
+      "paper": "https://arxiv.org/abs/2407.18901",
+      "code": "https://github.com/StonyBrookNLP/appworld",
+      "project": "https://appworld.dev/"
+    }
+  },
+  {
+    "id": "evaluation-curated-62-rawles2024androidworld",
+    "name": "AndroidWorld",
+    "title": "AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents",
+    "venue": "ICLR",
+    "date": "2025-04",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "GUI agents",
+        "Software state",
+        "Tool use"
+      ],
+      "zh": [
+        "图形界面智能体",
+        "软件状态",
+        "工具使用"
+      ]
+    },
+    "resourceType": "Environment / Benchmark / Protocol",
+    "target": "Android GUI Agent",
+    "scale": "116 task templates across 20 Android apps with dynamic instantiation",
+    "task": "Open-ended mobile interface control",
+    "dimensions": "device and app state; visual grounding; tap, scroll and text action; task progress; dynamic variation; programmatic success",
+    "links": {
+      "paper": "https://arxiv.org/abs/2405.14573",
+      "code": "https://github.com/google-research/android_world"
+    }
+  },
+  {
+    "id": "evaluation-curated-63-lu2024toolsandbox",
+    "name": "ToolSandbox",
+    "title": "ToolSandbox: A Stateful, Conversational, Interactive Evaluation Benchmark for LLM Tool Use Capabilities",
+    "venue": "NAACL",
+    "date": "2025-04",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Tool use",
+        "Software state",
+        "Conversational agents"
+      ],
+      "zh": [
+        "工具使用",
+        "软件状态",
+        "对话智能体"
+      ]
+    },
+    "resourceType": "Environment / Dataset / Benchmark",
+    "target": "Conversational Tool Agent",
+    "scale": "Hundreds of scenarios spanning state dependency, canonicalization, insufficient information and distraction",
+    "task": "Stateful multi-turn tool use",
+    "dimensions": "hidden service state; dialogue context; tool preconditions and effects; milestone order; state similarity; task completion",
+    "links": {
+      "paper": "https://arxiv.org/abs/2408.04682",
+      "code": "https://github.com/apple/ToolSandbox"
+    }
+  },
+  {
+    "id": "evaluation-curated-64-yao2024taubench",
+    "name": "Tau-bench",
+    "title": "Tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+    "venue": "ICLR",
+    "date": "2025-04",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Tool use",
+        "Software state",
+        "Conversational agents"
+      ],
+      "zh": [
+        "工具使用",
+        "软件状态",
+        "对话智能体"
+      ]
+    },
+    "resourceType": "Environment / Dataset / Benchmark",
+    "target": "Tool-Using Conversational Agent",
+    "scale": "Airline and retail domains with tools, policies, users and hundreds of tasks",
+    "task": "Policy-constrained customer-service interaction",
+    "dimensions": "database state; user goal; dialogue state; tool sequence; policy compliance; final-state correctness; pass^k reliability",
+    "links": {
+      "paper": "https://arxiv.org/abs/2406.12045",
+      "code": "https://github.com/sierra-research/tau-bench"
+    }
+  },
+  {
+    "id": "evaluation-curated-65-barres2025tau2bench",
+    "name": "Tau2-bench",
+    "title": "Tau2-Bench: Evaluating Conversational Agents in a Dual-Control Environment",
+    "venue": "arXiv",
+    "date": "2025-06",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Tool use",
+        "Conversational agents",
+        "Structured state"
+      ],
+      "zh": [
+        "工具使用",
+        "对话智能体",
+        "结构化状态"
+      ]
+    },
+    "resourceType": "Environment / Dataset / Benchmark",
+    "target": "Dual-Control Conversational Agent",
+    "scale": "Multiple service domains with simulated users, tools, policies and stateful tasks",
+    "task": "Cooperative user-agent control of shared task state",
+    "dimensions": "shared and private state; user action; agent tool action; information exchange; policy compliance; final-state correctness; reliability",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.07982",
+      "code": "https://github.com/sierra-research/tau2-bench"
+    }
+  },
+  {
+    "id": "evaluation-curated-66-arxiv211203227",
+    "name": "CALVIN",
+    "title": "CALVIN: A Benchmark for Language-Conditioned Policy Learning for Long-Horizon Robot Manipulation Tasks",
+    "venue": "RA-L",
+    "date": "2022-12",
+    "year": 2022,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Robotics",
+        "Long-horizon actions",
+        "Language"
+      ],
+      "zh": [
+        "机器人",
+        "长程动作",
+        "语言"
+      ]
+    },
+    "resourceType": "Dataset / Environment / Benchmark",
+    "target": "Language-Conditioned Robot Policy",
+    "scale": "24 hours of teleoperated play; 34 tasks; five-task evaluation sequences",
+    "task": "Long-horizon language-conditioned manipulation",
+    "dimensions": "persistent object state; task sequence; instruction grounding; action execution; atomic success; completed sequence length; environment generalization",
+    "links": {
+      "paper": "https://arxiv.org/abs/2112.03227",
+      "code": "https://github.com/mees/calvin"
+    }
+  },
+  {
+    "id": "evaluation-curated-67-safebench2022",
+    "name": "SafeBench",
+    "title": "SafeBench: A Benchmarking Platform for Safety Evaluation of Autonomous Vehicles",
+    "venue": "NeurIPS Datasets and Benchmarks",
+    "date": "2022-12",
+    "year": 2022,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving",
+        "Safety",
+        "Closed-loop evaluation"
+      ],
+      "zh": [
+        "驾驶",
+        "安全",
+        "闭环评估"
+      ]
+    },
+    "resourceType": "Simulator / Benchmark / Protocol",
+    "target": "Autonomous-Driving Policy",
+    "scale": "2,352 safety-critical scenarios across 8 scenario types",
+    "task": "Closed-loop safety-critical driving",
+    "dimensions": "collision; route completion; time-to-collision; lane invasion; red-light violation; planning and control; scenario difficulty",
+    "links": {
+      "paper": "https://arxiv.org/abs/2206.09682",
+      "code": "https://github.com/trust-ai/SafeBench"
+    }
+  },
+  {
+    "id": "evaluation-curated-68-bench2drive2024",
+    "name": "Bench2Drive",
+    "title": "Bench2Drive: Towards Multi-Ability Benchmarking of Closed-Loop End-to-End Autonomous Driving",
+    "venue": "NeurIPS",
+    "date": "2024-12",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving",
+        "Closed-loop evaluation",
+        "Planning"
+      ],
+      "zh": [
+        "驾驶",
+        "闭环评估",
+        "规划"
+      ]
+    },
+    "resourceType": "Dataset / Simulator / Benchmark",
+    "target": "End-to-End Driving Agent",
+    "scale": "44 scenario types with 2 million annotated frames",
+    "task": "Multi-ability closed-loop autonomous driving",
+    "dimensions": "perception; dynamic interaction; route planning; vehicle control; scenario success; infractions; driving score; ability-wise performance",
+    "links": {
+      "paper": "https://arxiv.org/abs/2406.03877",
+      "code": "https://github.com/Thinklab-SJTU/Bench2Drive"
+    }
+  },
+  {
+    "id": "evaluation-curated-69-waymax2023",
+    "name": "Waymax",
+    "title": "Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research",
+    "venue": "NeurIPS",
+    "date": "2023-12",
+    "year": 2023,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving",
+        "Simulation",
+        "Multi-agent worlds"
+      ],
+      "zh": [
+        "驾驶",
+        "仿真",
+        "多智能体世界"
+      ]
+    },
+    "resourceType": "Simulator / Environment / Benchmark",
+    "target": "Autonomous-Driving Planner",
+    "scale": "Large-scale Waymo motion scenarios with GPU/TPU-parallel simulation",
+    "task": "Data-driven closed-loop traffic simulation",
+    "dimensions": "road and agent state; multi-agent dynamics; vehicle action; collision; off-road behavior; imitation; route progress; simulation throughput",
+    "links": {
+      "paper": "https://arxiv.org/abs/2310.08710",
+      "code": "https://github.com/waymo-research/waymax"
+    }
+  },
+  {
+    "id": "evaluation-curated-70-metadrive2022",
+    "name": "MetaDrive",
+    "title": "MetaDrive: Composing Diverse Driving Scenarios for Generalizable Reinforcement Learning",
+    "venue": "TPAMI",
+    "date": "2022-12",
+    "year": 2022,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving",
+        "Simulation",
+        "Generalization"
+      ],
+      "zh": [
+        "驾驶",
+        "仿真",
+        "泛化"
+      ]
+    },
+    "resourceType": "Simulator / Environment / Benchmark",
+    "target": "Generalizable Driving Policy",
+    "scale": "Procedurally generated unlimited road and traffic scenarios",
+    "task": "Closed-loop driving policy training and generalization",
+    "dimensions": "map and traffic state; vehicle dynamics; control; collision; route completion; safety; distribution shift; scenario generalization",
+    "links": {
+      "paper": "https://arxiv.org/abs/2109.12674",
+      "code": "https://github.com/metadriverse/metadrive",
+      "project": "https://metadriverse.github.io/metadrive/"
+    }
+  },
+  {
+    "id": "evaluation-curated-71-advsim2021",
+    "name": "AdvSim",
+    "title": "AdvSim: Generating Safety-Critical Scenarios for Self-Driving Vehicles",
+    "venue": "CVPR",
+    "date": "2021-06",
+    "year": 2021,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving",
+        "Safety",
+        "Scenario generation"
+      ],
+      "zh": [
+        "驾驶",
+        "安全",
+        "场景生成"
+      ]
+    },
+    "resourceType": "Scenario Generator / Benchmark / Protocol",
+    "target": "Autonomous-Vehicle Planner",
+    "scale": "Adversarial variants of real-world traffic scenarios",
+    "task": "Safety-critical planner stress testing",
+    "dimensions": "multi-agent trajectory; physical and map feasibility; planner collision; safety margin; route behavior; scenario realism; adversarial difficulty",
+    "links": {
+      "paper": "https://arxiv.org/abs/2101.06549",
+      "project": "https://wangjksjtu.github.io/publications/advsim.html"
+    }
+  },
+  {
+    "id": "evaluation-curated-72-safesim2024",
+    "name": "SAFE-SIM",
+    "title": "SAFE-SIM: Safety-Critical Closed-Loop Traffic Simulation with Diffusion-Controllable Adversaries",
+    "venue": "ECCV",
+    "date": "2024-09",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving",
+        "Safety",
+        "Simulation"
+      ],
+      "zh": [
+        "驾驶",
+        "安全",
+        "仿真"
+      ]
+    },
+    "resourceType": "Simulator / Scenario Generator / Benchmark",
+    "target": "Autonomous-Driving Planner",
+    "scale": "Large sets of controllable safety-critical traffic rollouts",
+    "task": "Closed-loop adversarial traffic evaluation",
+    "dimensions": "future traffic state; actor interaction; collision risk; controllability; realism; diversity; planner response; safety outcome",
+    "links": {
+      "paper": "https://arxiv.org/abs/2401.00391",
+      "project": "https://safe-sim.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-curated-73-safety2drive2025",
+    "name": "Safety2Drive",
+    "title": "Safety2Drive: Safety-Critical Scenario Benchmark for the Evaluation of Autonomous Driving",
+    "venue": "arXiv",
+    "date": "2025-05",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving",
+        "Safety",
+        "Robustness"
+      ],
+      "zh": [
+        "驾驶",
+        "安全",
+        "稳健性"
+      ]
+    },
+    "resourceType": "Dataset / Simulator / Benchmark",
+    "target": "End-to-End Driving Policy",
+    "scale": "Large scenario suite spanning diverse safety-critical interactions",
+    "task": "Closed-loop safety and robustness evaluation",
+    "dimensions": "collision; traffic-rule violation; route completion; interactive response; scenario success; difficulty; robustness; closed-loop score",
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.13872"
+    }
+  },
+  {
+    "id": "evaluation-curated-74-bench2driverobust2026",
+    "name": "Bench2Drive-Robust",
+    "title": "Bench2Drive-Robust: Benchmarking Closed-Loop Autonomous Driving under Deployment Perturbations",
+    "venue": "arXiv",
+    "date": "2026-02",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Driving",
+        "Robustness",
+        "Closed-loop evaluation"
+      ],
+      "zh": [
+        "驾驶",
+        "稳健性",
+        "闭环评估"
+      ]
+    },
+    "resourceType": "Simulator / Benchmark / Protocol",
+    "target": "End-to-End Driving Agent",
+    "scale": "Multiple deployment perturbation families and severities over Bench2Drive scenarios",
+    "task": "Robust closed-loop autonomous driving",
+    "dimensions": "sensor state; calibration; appearance and weather shift; vehicle dynamics; route completion; collision; infraction; degradation across severity",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.18059",
+      "code": "https://github.com/Thinklab-SJTU/Bench2Drive-Robust"
+    }
+  },
+  {
+    "id": "evaluation-curated-75-cobbe2020procgen",
+    "name": "Procgen",
+    "title": "Leveraging Procedural Generation to Benchmark Reinforcement Learning",
+    "venue": "ICML",
+    "date": "2020-07",
+    "year": 2020,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Gaming",
+        "Generalization",
+        "Control"
+      ],
+      "zh": [
+        "游戏",
+        "泛化",
+        "控制"
+      ]
+    },
+    "resourceType": "Environment / Generator / Benchmark",
+    "target": "Reinforcement-Learning Agent",
+    "scale": "16 games with procedurally unlimited levels",
+    "task": "Visual game control and out-of-distribution level generalization",
+    "dimensions": "dynamic game state; discrete action; episodic return; sample efficiency; train-test level gap; procedural generalization",
+    "links": {
+      "paper": "https://arxiv.org/abs/1912.01588",
+      "code": "https://github.com/openai/procgen"
+    }
+  },
+  {
+    "id": "evaluation-curated-76-guss2019minerl",
+    "name": "MineRL",
+    "title": "MineRL: A Large-Scale Dataset of Minecraft Demonstrations",
+    "venue": "IJCAI",
+    "date": "2019-08",
+    "year": 2019,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Gaming",
+        "Embodied agents",
+        "Long-horizon actions"
+      ],
+      "zh": [
+        "游戏",
+        "具身智能体",
+        "长程动作"
+      ]
+    },
+    "resourceType": "Dataset / Environment / Benchmark",
+    "target": "Minecraft Agent",
+    "scale": "Over 60 million state-action pairs from human gameplay",
+    "task": "Sample-efficient long-horizon Minecraft control",
+    "dimensions": "visual and inventory state; action sequence; resource acquisition; crafting progress; reward; task success; data efficiency",
+    "links": {
+      "paper": "https://arxiv.org/abs/1907.13440",
+      "code": "https://github.com/minerllabs/minerl"
+    }
+  },
+  {
+    "id": "evaluation-curated-77-fan2022minedojo",
+    "name": "MineDojo",
+    "title": "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge",
+    "venue": "NeurIPS Datasets and Benchmarks",
+    "date": "2022-12",
+    "year": 2022,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Gaming",
+        "Open-ended learning",
+        "Long-horizon actions"
+      ],
+      "zh": [
+        "游戏",
+        "开放式学习",
+        "长程动作"
+      ]
+    },
+    "resourceType": "Dataset / Environment / Benchmark",
+    "target": "Open-Ended Minecraft Agent",
+    "scale": "3,142 tasks with wiki, video and forum knowledge resources",
+    "task": "Open-ended instruction-conditioned Minecraft interaction",
+    "dimensions": "world and inventory state; navigation; manipulation; crafting; long-horizon progress; task success; knowledge transfer",
+    "links": {
+      "paper": "https://arxiv.org/abs/2206.08853",
+      "code": "https://github.com/MineDojo/MineDojo",
+      "project": "https://minedojo.org/"
+    }
+  },
+  {
+    "id": "evaluation-curated-78-kempka2016vizdoom",
+    "name": "ViZDoom",
+    "title": "ViZDoom: A Doom-Based AI Research Platform for Visual Reinforcement Learning",
+    "venue": "CIG",
+    "date": "2016-09",
+    "year": 2016,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Gaming",
+        "Navigation",
+        "Control"
+      ],
+      "zh": [
+        "游戏",
+        "导航",
+        "控制"
+      ]
+    },
+    "resourceType": "Simulator / Environment / Benchmark",
+    "target": "Visual Control Agent",
+    "scale": "Configurable Doom scenarios with high-throughput simulation",
+    "task": "First-person navigation and combat control",
+    "dimensions": "visual and game state; action execution; navigation; resource and health state; reward; scenario completion; simulation throughput",
+    "links": {
+      "paper": "https://arxiv.org/abs/1605.02097",
+      "code": "https://github.com/Farama-Foundation/ViZDoom"
+    }
+  },
+  {
+    "id": "evaluation-curated-79-matthews2024craftax",
+    "name": "Craftax",
+    "title": "Craftax: A Lightning-Fast Benchmark for Open-Ended Reinforcement Learning",
+    "venue": "ICML",
+    "date": "2024-07",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Gaming",
+        "Open-ended learning",
+        "Planning"
+      ],
+      "zh": [
+        "游戏",
+        "开放式学习",
+        "规划"
+      ]
+    },
+    "resourceType": "Environment / Generator / Benchmark",
+    "target": "Open-Ended Reinforcement-Learning Agent",
+    "scale": "Procedurally unlimited worlds with 65 achievements",
+    "task": "Long-horizon survival, crafting and exploration",
+    "dimensions": "world and inventory state; temporal survival; navigation; resource interaction; crafting sequence; combat; achievements; return",
+    "links": {
+      "paper": "https://arxiv.org/abs/2402.16801",
+      "code": "https://github.com/MichaelTMatthews/Craftax"
+    }
+  },
+  {
+    "id": "evaluation-curated-80-drouin2024workarena",
+    "name": "WorkArena",
+    "title": "WorkArena: How Capable Are Web Agents at Solving Common Knowledge Work Tasks?",
+    "venue": "ICML",
+    "date": "2024-07",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Web agents",
+        "Enterprise software",
+        "Software state"
+      ],
+      "zh": [
+        "网页智能体",
+        "企业软件",
+        "软件状态"
+      ]
+    },
+    "resourceType": "Environment / Benchmark / Protocol",
+    "target": "Enterprise Web Agent",
+    "scale": "29 task types with randomized instances in ServiceNow",
+    "task": "Enterprise knowledge-work workflow completion",
+    "dimensions": "application and record state; navigation; form action; workflow sequence; task correctness; success; instance variation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2403.07718",
+      "code": "https://github.com/ServiceNow/WorkArena"
+    }
+  },
+  {
+    "id": "evaluation-curated-81-lesellier2024browsergym",
+    "name": "BrowserGym",
+    "title": "The BrowserGym Ecosystem for Web Agent Research",
+    "venue": "arXiv",
+    "date": "2025-04",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Web agents",
+        "Evaluation protocol",
+        "Tool use"
+      ],
+      "zh": [
+        "网页智能体",
+        "评估协议",
+        "工具使用"
+      ]
+    },
+    "resourceType": "Environment / Toolkit / Evaluation Protocol",
+    "target": "Browser Agent",
+    "scale": "Unified access to multiple web benchmark families and thousands of tasks",
+    "task": "Cross-benchmark browser interaction evaluation",
+    "dimensions": "browser state; multimodal observation; action execution; task reset; reproducibility; validator outcome; cross-environment performance",
+    "links": {
+      "paper": "https://arxiv.org/abs/2412.05467",
+      "code": "https://github.com/ServiceNow/BrowserGym"
+    }
+  },
+  {
+    "id": "evaluation-curated-82-xie2024osworld",
+    "name": "OSWorld",
+    "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+    "venue": "NeurIPS",
+    "date": "2024-12",
+    "year": 2024,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Computer use",
+        "Software state",
+        "Long-horizon actions"
+      ],
+      "zh": [
+        "计算机使用",
+        "软件状态",
+        "长程动作"
+      ]
+    },
+    "resourceType": "Environment / Dataset / Benchmark",
+    "target": "Computer-Use Agent",
+    "scale": "369 tasks across Ubuntu, Windows and macOS applications",
+    "task": "Open-ended desktop application control",
+    "dimensions": "operating-system and application state; visual grounding; mouse and keyboard action; cross-app workflow; functional correctness; task success",
+    "links": {
+      "paper": "https://arxiv.org/abs/2404.07972",
+      "code": "https://github.com/xlang-ai/OSWorld",
+      "project": "https://os-world.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-curated-83-krantz2020vlnce",
+    "name": "VLN-CE",
+    "title": "Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments",
+    "venue": "ECCV",
+    "date": "2020-08",
+    "year": 2020,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Navigation",
+        "Language",
+        "Simulation"
+      ],
+      "zh": [
+        "导航",
+        "语言",
+        "仿真"
+      ]
+    },
+    "resourceType": "Dataset / Environment / Benchmark",
+    "target": "Vision-and-Language Navigation Agent",
+    "scale": "Thousands of instruction-path episodes in continuous Matterport3D environments",
+    "task": "Continuous vision-and-language navigation",
+    "dimensions": "agent pose and scene state; instruction grounding; low-level navigation action; goal distance; success; SPL; seen and unseen environment transfer",
+    "links": {
+      "paper": "https://arxiv.org/abs/2004.02857",
+      "code": "https://github.com/jacobkrantz/VLN-CE"
+    }
+  },
+  {
+    "id": "evaluation-curated-84-shridhar2020alfworld",
+    "name": "ALFWorld",
+    "title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+    "venue": "ICLR",
+    "date": "2021-05",
+    "year": 2021,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Household",
+        "Text environments",
+        "Long-horizon actions"
+      ],
+      "zh": [
+        "家庭环境",
+        "文本环境",
+        "长程动作"
+      ]
+    },
+    "resourceType": "Environment / Dataset / Benchmark",
+    "target": "Interactive Household Agent",
+    "scale": "Thousands of aligned textual and embodied household tasks",
+    "task": "Long-horizon instruction execution and cross-modal transfer",
+    "dimensions": "object and relation state; temporal task progress; navigation; manipulation action; text-visual transfer; task success",
+    "links": {
+      "paper": "https://arxiv.org/abs/2010.03768",
+      "code": "https://github.com/alfworld/alfworld",
+      "project": "https://alfworld.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-curated-85-puig2018virtualhome",
+    "name": "VirtualHome",
+    "title": "VirtualHome: Simulating Household Activities via Programs",
+    "venue": "CVPR",
+    "date": "2018-06",
+    "year": 2018,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Household",
+        "Structured state",
+        "Planning"
+      ],
+      "zh": [
+        "家庭环境",
+        "结构化状态",
+        "规划"
+      ]
+    },
+    "resourceType": "Dataset / Simulator / Benchmark",
+    "target": "Household Activity Planner",
+    "scale": "2,821 activities represented by executable programs in multiple 3D homes",
+    "task": "Household program generation and execution",
+    "dimensions": "entity and relation state; action preconditions and effects; temporal sequence; program executability; activity completion; scene grounding",
+    "links": {
+      "paper": "https://arxiv.org/abs/1806.07011",
+      "code": "https://github.com/xavierpuigf/virtualhome"
+    }
+  },
+  {
+    "id": "evaluation-curated-86-srivastava2021behavior",
+    "name": "BEHAVIOR",
+    "title": "BEHAVIOR: Benchmark for Everyday Household Activities in Virtual, Interactive, and Ecological Environments",
+    "venue": "CoRL",
+    "date": "2021-11",
+    "year": 2021,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Household",
+        "Robotics",
+        "Simulation"
+      ],
+      "zh": [
+        "家庭环境",
+        "机器人",
+        "仿真"
+      ]
+    },
+    "resourceType": "Dataset / Simulator / Benchmark",
+    "target": "Embodied Household Agent",
+    "scale": "100 household activities with realistic scenes and object interactions",
+    "task": "Long-horizon everyday activity execution",
+    "dimensions": "object and relation state; physical interaction; temporal sequence; navigation; manipulation; goal-condition success; task completion",
+    "links": {
+      "paper": "https://arxiv.org/abs/2108.03332",
+      "code": "https://github.com/StanfordVL/BEHAVIOR-1K",
+      "project": "https://behavior.stanford.edu/"
+    }
+  },
+  {
+    "id": "evaluation-curated-87-xia2020igibson",
+    "name": "iGibson",
+    "title": "Interactive Gibson Benchmark (iGibson 0.5): A Benchmark for Interactive Navigation in Cluttered Environments",
+    "venue": "IROS",
+    "date": "2020-10",
+    "year": 2020,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Navigation",
+        "Household",
+        "Simulation"
+      ],
+      "zh": [
+        "导航",
+        "家庭环境",
+        "仿真"
+      ]
+    },
+    "resourceType": "Simulator / Environment / Benchmark",
+    "target": "Interactive Embodied Agent",
+    "scale": "15 fully interactive indoor scenes with robots and articulated objects",
+    "task": "Interactive navigation and household manipulation",
+    "dimensions": "3D scene and object state; physical dynamics; sensor observation; navigation and manipulation action; collision; task success; sim-to-real transfer",
+    "links": {
+      "paper": "https://arxiv.org/abs/1910.14442",
+      "code": "https://github.com/StanfordVL/iGibson",
+      "project": "https://svl.stanford.edu/igibson/"
+    }
+  },
+  {
+    "id": "evaluation-curated-88-wu2025causalworldmodels",
+    "name": "PhysiCa-Bench",
+    "title": "Inducing Causal World Models in LLMs for Zero-Shot Physical Reasoning",
+    "venue": "arXiv",
+    "date": "2025-07",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physical reasoning",
+        "Causality",
+        "Counterfactuals"
+      ],
+      "zh": [
+        "物理推理",
+        "因果性",
+        "反事实"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Multimodal Physical-Reasoning Model",
+    "scale": "10,000 manually validated direct and counterfactual physical-reasoning examples",
+    "task": "Predict physical outcomes before and after controlled interventions",
+    "dimensions": "initial and final physical state; object properties; temporal outcome prediction; causal intervention effect; counterfactual consistency; direct-question accuracy",
+    "links": {
+      "paper": "https://arxiv.org/abs/2507.19855"
+    }
+  },
+  {
+    "id": "evaluation-curated-89-arxiv260122130",
+    "name": "WoW-bench",
+    "title": "World of Workflows: A Benchmark for Bringing World Models to Enterprise Systems",
+    "venue": "arXiv",
+    "date": "2026-01",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Enterprise workflows",
+        "Hidden dynamics",
+        "Tool agents"
+      ],
+      "zh": [
+        "企业工作流",
+        "隐藏动力学",
+        "工具智能体"
+      ]
+    },
+    "resourceType": "Interactive Environment / Benchmark",
+    "target": "Enterprise Tool-Using Agent and World Model",
+    "scale": "234 tasks in a ServiceNow environment with 4,000+ business rules and 55 active workflows",
+    "task": "Predict hidden workflow effects and complete constrained enterprise actions",
+    "dimensions": "database state transition; cascading side effects; partial observability; workflow prediction; constraint reliability; tool action; task completion; oracle-audit gap",
+    "links": {
+      "paper": "https://arxiv.org/abs/2601.22130",
+      "code": "https://github.com/Skyfall-Research/world-of-workflows"
+    }
+  },
+  {
+    "id": "evaluation-curated-90-arxiv250922799",
+    "name": "VideoScore-Bench-v2",
+    "title": "VideoScore2: Think before You Score in Generative Video Evaluation",
+    "venue": "arXiv",
+    "date": "2025-09",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Video evaluation",
+        "Physical consistency",
+        "Human feedback"
+      ],
+      "zh": [
+        "视频评测",
+        "物理一致性",
+        "人类反馈"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark / Metric",
+    "target": "Generated-Video Evaluator and Video World Model",
+    "scale": "27,168 human-annotated videos with a 500-video in-domain benchmark split",
+    "task": "Score and explain generated-video quality, text alignment, and physical consistency",
+    "dimensions": "visual quality; text-video alignment; temporal coherence; physical and commonsense consistency; rationale quality; pairwise preference; point-score correlation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2509.22799",
+      "code": "https://github.com/TIGER-AI-Lab/VideoScore2",
+      "project": "https://tiger-ai-lab.github.io/VideoScore2/"
+    }
+  },
+  {
+    "id": "evaluation-curated-91-arxiv250515472",
+    "name": "PhysicsArena",
+    "title": "PhysicsArena: The First Multimodal Physics Reasoning Benchmark Exploring Variable, Process, and Solution Dimensions",
+    "venue": "Findings of EMNLP",
+    "date": "2025-11",
+    "year": 2025,
+    "focus": [
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Physics reasoning",
+        "Diagrams",
+        "Scientific evaluation"
+      ],
+      "zh": [
+        "物理推理",
+        "图示",
+        "科学评测"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Multimodal Physics-Reasoning Model",
+    "scale": "5,103 multimodal physics problems across three difficulty levels and fourteen topic groups",
+    "task": "Identify physical variables, formulate processes, and derive solutions from text and diagrams",
+    "dimensions": "entity and field state; geometry and structure; interaction; external influence; process relationship; physical-law application; solution accuracy; difficulty transfer",
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.15472"
+    }
+  },
+  {
+    "id": "evaluation-curated-92-arxiv260523216",
+    "name": "CaST-Bench",
+    "title": "CaST-Bench: Benchmarking Causal Chain-Grounded Spatio-Temporal Reasoning for Video Question Answering",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Causal video",
+        "Spatio-temporal grounding",
+        "Video QA"
+      ],
+      "zh": [
+        "因果视频",
+        "时空定位",
+        "视频问答"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark",
+    "target": "Video Vision-Language Model",
+    "scale": "2,066 questions over 1,015 videos with grounded causal-chain annotations",
+    "task": "Answer causal video questions while localizing a multi-step evidence chain",
+    "dimensions": "event order; cause and effect; predictive anticipation; counterfactual reasoning; temporal localization; spatial grounding; answer accuracy; evidence-answer faithfulness",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.23216",
+      "project": "https://woven-by-toyota.github.io/CaST-Bench/"
+    }
+  },
+  {
+    "id": "evaluation-curated-93-cow2022",
+    "name": "PASTURE",
+    "title": "CoWs on Pasture: Baselines and Benchmarks for Language-Driven Zero-Shot Object Navigation",
+    "venue": "CVPR",
+    "date": "2023-06",
+    "year": 2023,
+    "focus": [
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Object navigation",
+        "Open vocabulary",
+        "Language grounding"
+      ],
+      "zh": [
+        "目标导航",
+        "开放词汇",
+        "语言定位"
+      ]
+    },
+    "resourceType": "Dataset / Environment / Benchmark",
+    "target": "Language-Driven Zero-Shot Object Navigation Agent",
+    "scale": "PASTURE task suite evaluated with over 90,000 aggregate navigation episodes across three environments",
+    "task": "Find unseen objects from free-form descriptions without in-domain navigation training",
+    "dimensions": "object identity and attributes; spatial relation; hidden-object relation; distractor discrimination; exploration; localization; navigation action; success; SPL",
+    "links": {
+      "paper": "https://arxiv.org/abs/2203.10421",
+      "code": "https://github.com/real-stanford/cow",
+      "project": "https://cow.cs.columbia.edu/"
+    }
+  },
+  {
+    "id": "evaluation-curated-94-zheng2025occstep",
+    "name": "OccSTeP",
+    "title": "OccSTeP: Benchmarking 4D Occupancy Spatio-Temporal Persistence",
+    "venue": "arXiv",
+    "date": "2025-12",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "4D occupancy",
+        "Temporal persistence",
+        "Driving robustness"
+      ],
+      "zh": [
+        "四维占用",
+        "时间持久性",
+        "驾驶鲁棒性"
+      ]
+    },
+    "resourceType": "Benchmark / Protocol",
+    "target": "Persistent Occupancy World Model",
+    "scale": "Occ3D-nuScenes sequences transformed into four temporal-persistence challenge scenarios",
+    "task": "Forecast future occupancy reactively and under queried ego trajectories despite corrupted history",
+    "dimensions": "semantic occupancy; geometric persistence; long-horizon memory; missing or incorrect observations; ego-motion prediction; action-conditioned forecast; IoU; mIoU; planning response",
+    "links": {
+      "paper": "https://arxiv.org/abs/2512.15621",
+      "code": "https://github.com/FaterYU/OccSTeP"
+    }
+  },
+  {
+    "id": "evaluation-curated-95-arxiv260607967",
+    "name": "DisCoBench",
+    "title": "DisCo: World Models with Discrete Camera Motion Control",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Camera control",
+        "Dynamic exploration",
+        "Long-horizon video"
+      ],
+      "zh": [
+        "相机控制",
+        "动态探索",
+        "长程视频"
+      ]
+    },
+    "resourceType": "Benchmark Suite",
+    "target": "Action-Conditioned Video World Model",
+    "scale": "300 compositional image-action cases, 200 dynamic exploration videos, and long-horizon sequences of at least 241 frames",
+    "task": "Generate short, dynamic, and long-horizon world rollouts that follow discrete camera-action sequences",
+    "dimensions": "action adherence; compositional control; temporal coherence; subject consistency; background consistency; motion smoothness; dynamic-scene fidelity; long-horizon stability; visual quality",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.07967"
+    }
+  },
+  {
+    "id": "evaluation-curated-96-arxiv260612072",
+    "name": "WorldTasks-Bench",
+    "title": "World Model Self-Distillation: Training World Models to Solve General Tasks",
+    "venue": "arXiv",
+    "date": "2026-06",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Embodied tasks",
+        "Agent grounding",
+        "Physical realism"
+      ],
+      "zh": [
+        "具身任务",
+        "智能体定位",
+        "物理真实感"
+      ]
+    },
+    "resourceType": "Dataset / Benchmark / Protocol",
+    "target": "Task-Oriented Video World Model",
+    "scale": "146,440 training task prompts derived from 20,000 images and a 200-pair held-out benchmark",
+    "task": "Generate a video in which the requested agent completes an embodied task with coherent world dynamics",
+    "dimensions": "task completion; agent identity and engagement; navigation; spatial positioning; object interaction; scene perception; multi-step control; physical plausibility; temporal coherence",
+    "links": {
+      "paper": "https://arxiv.org/abs/2606.12072",
+      "project": "https://sebastian-stapf.github.io/world-model-self-distillation/"
+    }
+  },
+  {
+    "id": "evaluation-curated-97-arxiv260515618",
+    "name": "Latent Video World-Model Robustness Protocol",
+    "title": "Latent Video Prediction Learns Better World Models",
+    "venue": "arXiv",
+    "date": "2026-05",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "Representation robustness",
+        "Temporal direction",
+        "Occlusion"
+      ],
+      "zh": [
+        "表征鲁棒性",
+        "时间方向",
+        "遮挡"
+      ]
+    },
+    "resourceType": "Evaluation Protocol",
+    "target": "Self-Supervised Video World-Model Encoder",
+    "scale": "Five controlled evaluation axes on Something-Something v2, including a 600-video discriminability slice and multi-severity perturbations",
+    "task": "Test whether frozen video representations preserve usable action and dynamics information under corruption, occlusion, fine-grained contact changes, and time reversal",
+    "dimensions": "feature discriminability; corruption robustness; contact-state sensitivity; missing-observation robustness; temporal direction; top-1 accuracy; accuracy retention; representation similarity; semantic reversal coherence",
+    "links": {
+      "paper": "https://arxiv.org/abs/2605.15618"
+    }
+  },
+  {
+    "id": "evaluation-curated-98-arxiv260307145",
+    "name": "LiveBench",
+    "title": "LiveWorld: Simulating Out-of-Sight Dynamics in Generative Video World Models",
+    "venue": "arXiv",
+    "date": "2026-03",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Out-of-sight dynamics",
+        "Camera revisit",
+        "Persistent events"
+      ],
+      "zh": [
+        "视野外动力学",
+        "相机重访",
+        "持续事件"
+      ]
+    },
+    "resourceType": "Benchmark / Protocol",
+    "target": "Long-Horizon Video World Model",
+    "scale": "100 scenes and 400 camera-controlled evaluation sequences; each sequence spans 4 rounds and 260 frames at 16 FPS",
+    "task": "Move the camera away from an active event and revisit while preserving background, entity identity, elapsed dynamics, and scripted outcomes",
+    "dimensions": "out-of-sight event evolution; event success and presence; entity identity; spatial memory; background consistency; 3D dynamic-state agreement; camera revisit control; long-horizon video quality",
+    "links": {
+      "paper": "https://arxiv.org/abs/2603.07145",
+      "project": "https://zichengduan.github.io/LiveWorld/index.html"
+    }
+  },
+  {
+    "id": "evaluation-curated-99-arxiv250803692",
+    "name": "LiDARCrafter Benchmark",
+    "title": "LiDARCrafter: Dynamic 4D World Modeling from LiDAR Sequences",
+    "venue": "arXiv",
+    "date": "2025-08",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "4D LiDAR metrics",
+        "Layout control",
+        "Temporal point clouds"
+      ],
+      "zh": [
+        "四维激光雷达指标",
+        "布局控制",
+        "时间点云"
+      ]
+    },
+    "resourceType": "Benchmark / Metric Suite",
+    "target": "Controllable 4D LiDAR World Model",
+    "scale": "nuScenes-based scene graphs with 10,000 generated samples for scene-level and layout-level evaluation",
+    "task": "Generate or edit temporally coherent LiDAR scenes that follow object layouts, spatial relations, motion states, trajectories, and text controls",
+    "dimensions": "range and point-cloud fidelity; BEV distribution; object detectability and geometry; temporal coherence; spatial-relation consistency; motion-state consistency; trajectory adherence; edit controllability",
+    "links": {
+      "paper": "https://arxiv.org/abs/2508.03692",
+      "code": "https://github.com/worldbench/lidarcrafter",
+      "project": "https://lidarcrafter.github.io/"
+    }
+  },
+  {
+    "id": "evaluation-curated-100-tseng2025scalablepolicy",
+    "name": "Video World-Model Policy Evaluation",
+    "title": "Scalable Policy Evaluation with Video World Models",
+    "venue": "arXiv",
+    "date": "2025-11",
+    "year": 2025,
+    "focus": [
+      "TI",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Policy ranking",
+        "Value correlation",
+        "Robot rollout"
+      ],
+      "zh": [
+        "策略排序",
+        "价值相关性",
+        "机器人展开"
+      ]
+    },
+    "resourceType": "Evaluation Protocol",
+    "target": "Robot Policy and Action-Conditioned Video World Model",
+    "scale": "Synthetic RoboMimic and real-robot tasks with demonstration and policy-rollout datasets studied from 0.3M to 1.1M transitions",
+    "task": "Roll out a policy's action sequence in a video world model, judge task completion, estimate policy value, and recover the ranking measured by execution",
+    "dimensions": "policy-ranking agreement; predicted-versus-real value correlation; task-completion prediction; rollout fidelity; OOD action handling; physical consistency; calibration; dataset and pretraining sensitivity",
+    "links": {
+      "paper": "https://arxiv.org/abs/2511.11520",
+      "project": "https://miscsubmission.github.io/world_model_policy_eval/"
+    }
+  },
+  {
+    "id": "evaluation-curated-101-abotphysworld2026",
+    "name": "EZSbench",
+    "title": "ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment",
+    "venue": "arXiv",
+    "date": "2026-03",
+    "year": 2026,
+    "focus": [
+      "TI",
+      "SS",
+      "AC"
+    ],
+    "keywords": {
+      "en": [
+        "Embodied zero-shot",
+        "Physical plausibility",
+        "Action alignment"
+      ],
+      "zh": [
+        "具身零样本",
+        "物理合理性",
+        "动作对齐"
+      ]
+    },
+    "resourceType": "Benchmark / Protocol",
+    "target": "Embodied Video World Model",
+    "scale": "Dual-branch real and synthetic zero-shot scene pool across robot, scene, task, and perspective axes, plus 200 structured action-to-video instances",
+    "task": "Generate physically plausible manipulation videos for unseen robot-task-scene combinations and follow specified end-effector and gripper trajectories",
+    "dimensions": "zero-shot generalization; physical realism; penetration and gravity violations; contact dynamics; instruction binding; action alignment; trajectory consistency; pixel and structural fidelity; temporal coherence",
+    "links": {
+      "paper": "https://arxiv.org/abs/2603.23376",
+      "code": "https://github.com/amap-cvlab/ABot-PhysWorld"
+    }
+  },
+  {
+    "id": "evaluation-curated-102-khurana2023pointcloudforecasting",
+    "name": "4D Occupancy Forecasting Protocol",
+    "title": "Point Cloud Forecasting as a Proxy for 4D Occupancy Forecasting",
+    "venue": "CVPR",
+    "date": "2023-06",
+    "year": 2023,
+    "focus": [
+      "TI",
+      "SS"
+    ],
+    "keywords": {
+      "en": [
+        "LiDAR forecasting",
+        "Geometry metrics",
+        "Cross-sensor evaluation"
+      ],
+      "zh": [
+        "激光雷达预测",
+        "几何指标",
+        "跨传感器评估"
+      ]
+    },
+    "resourceType": "Evaluation Protocol / Metric Suite",
+    "target": "Point-Cloud and 4D Occupancy Forecasting Model",
+    "scale": "nuScenes, KITTI-Odometry, and Argoverse 2 protocols with matched 1-second and 3-second future horizons across different LiDAR sensor rigs",
+    "task": "Predict future world occupancy or render future LiDAR while separating scene dynamics from ego motion, sensor sampling, visibility, and occlusion",
+    "dimensions": "continuous occupancy accuracy; occupied/free/unknown classification; geometric L1 error; point-cloud distance; short- and long-horizon forecasting; cross-sensor generalization; visibility awareness; static and dynamic geometry",
+    "links": {
+      "paper": "https://arxiv.org/abs/2302.13130",
+      "code": "https://github.com/tarashakhurana/4d-occ-forecasting",
+      "project": "https://www.cs.cmu.edu/~tkhurana/ff4d/index.html"
+    }
+  }
+]
