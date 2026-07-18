@@ -1,6 +1,12 @@
 {
   "resources": [
     {
+      "kind": "arxiv",
+      "label": "arXiv",
+      "href": "",
+      "placeholder": true
+    },
+    {
       "kind": "github",
       "label": "GitHub",
       "href": "https://github.com/RomGai/awesome-multimodal-world-reasoning",

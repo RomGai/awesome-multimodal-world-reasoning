@@ -67,9 +67,11 @@ a { color: inherit; text-decoration: none; }
 .hero h1 .titleLine { color: var(--ink); display: block; }
 .hero h1 .titleAccent { color: var(--ac); font-style: normal; font-weight: 400; }
 .heroLinks { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 32px; }
-.heroLink { align-items: center; background: var(--ink); border: 1px solid var(--ink); border-radius: 999px; color: white; display: inline-flex; font-size: 18px; gap: 9px; height: 44px; justify-content: flex-start; padding: 0 13px; transition: background .2s ease, border-color .2s ease, color .2s ease, transform .2s ease; width: 112px; }
+.heroLink { align-items: center; background: var(--ink); border: 1px solid var(--ink); border-radius: 999px; color: white; display: inline-flex; font-family: inherit; font-size: 18px; gap: 9px; height: 44px; justify-content: flex-start; padding: 0 13px; transition: background .2s ease, border-color .2s ease, color .2s ease, transform .2s ease; width: 112px; }
 .heroLink:hover { background: white; border-color: var(--ink); color: var(--ink); transform: translateY(-2px); }
 .heroLink.resource-arxiv { font-size: 21px; }
+.heroLink.isPlaceholder { cursor: default; opacity: .72; }
+.heroLink.isPlaceholder:hover { background: var(--ink); border-color: var(--ink); color: white; transform: none; }
 .heroLink > i { min-width: 19px; text-align: center; }
 .resourceLabel { font-size: 13px; font-weight: 750; letter-spacing: .035em; }
 .heroLink.viewLink { background: white; color: var(--ink); min-width: 152px; width: auto; }

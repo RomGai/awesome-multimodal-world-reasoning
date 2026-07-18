@@ -530,19 +530,37 @@ export default function WorldModelPortal() {
             <span className="titleLine titleAccent">{t.titleB}</span>
           </h1>
           <nav className="heroLinks" aria-label="Survey resources">
-            {siteMeta.resources.map((resource) => (
-              <a
-                className={`heroLink resource-${resource.kind} ${resource.placeholder ? "isPlaceholder" : ""}`}
-                href={resource.href}
-                key={resource.kind}
-                onClick={(event) => resource.placeholder && event.preventDefault()}
-                aria-label={`${resource.label}${resource.placeholder ? " link placeholder" : ""}`}
-                title={resource.placeholder ? `${resource.label} link will be added later` : resource.label}
-              >
-                <i className={resourceIcons[resource.kind]} aria-hidden="true" />
-                <span className="resourceLabel">{resource.label}</span>
-              </a>
-            ))}
+            {siteMeta.resources.map((resource) => {
+              const content = (
+                <>
+                  <i className={resourceIcons[resource.kind]} aria-hidden="true" />
+                  <span className="resourceLabel">{resource.label}</span>
+                </>
+              );
+
+              return resource.placeholder ? (
+                <button
+                  className={`heroLink resource-${resource.kind} isPlaceholder`}
+                  type="button"
+                  key={resource.kind}
+                  disabled
+                  aria-label={`${resource.label} link coming soon`}
+                  title={`${resource.label} link will be added later`}
+                >
+                  {content}
+                </button>
+              ) : (
+                <a
+                  className={`heroLink resource-${resource.kind}`}
+                  href={resource.href}
+                  key={resource.kind}
+                  aria-label={resource.label}
+                  title={resource.label}
+                >
+                  {content}
+                </a>
+              );
+            })}
             {(["works", "evaluation"] as PortalView[]).map((portalView) => (
               <button
                 className={`heroLink viewLink view-${portalView} ${view === portalView ? "active" : ""}`}
