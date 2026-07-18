@@ -23,7 +23,6 @@
 - [Live portal](#live-portal)
 - [Organization](#organization)
 - [How to add new works](#how-to-add-new-works)
-- [Citation](#citation)
 - [License](#license)
 
 ## Introduction
@@ -128,10 +127,6 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md), then follow these steps if you w
    ```
 
    On GitHub, select **Compare & pull request**. In the description, state what changed, link the full-text source, cite the sections or pages supporting the tags and details, confirm link ownership, and report that `npm test` passes. Keep each pull request limited to one work, one resource, or one closely related correction whenever possible.
-
-## Citation
-
-Repository citation metadata is available in [CITATION.cff](CITATION.cff). Citation details for the survey paper will be added when its official publication page becomes available.
 
 ## License
 
