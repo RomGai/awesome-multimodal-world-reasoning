@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://romgai.github.io/awesome-multimodal-world-reasoning/"><img src="https://img.shields.io/badge/Open-Live%20Portal-0A7F86?style=flat-square&amp;logo=githubpages&amp;logoColor=white" alt="Open the live portal"></a>
+  <a href="https://romgai.github.io/awesome-multimodal-world-reasoning/"><img src="https://img.shields.io/badge/%20-Live%20Portal-0A7F86?style=flat-square&amp;logo=bookstack&amp;logoColor=white" alt="Live portal"></a>
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
 </p>
 
