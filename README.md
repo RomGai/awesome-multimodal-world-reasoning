@@ -33,9 +33,11 @@ The portal currently indexes 416 Research Works and 176 Evaluation Resources. Ev
 
 ## Live portal
 
-The complete index is available at:
+The complete index is available here:
 
-**https://romgai.github.io/awesome-multimodal-world-reasoning/**
+<p align="center">
+  <a href="https://romgai.github.io/awesome-multimodal-world-reasoning/"><img src="https://img.shields.io/badge/%20-Live%20Portal-0A7F86?style=flat-square&amp;logo=bookstack&amp;logoColor=white" alt="Live portal"></a>
+</p>
 
 <p align="center">
   <img src="portal/public/live-portal-index-current.png" alt="Live portal interface showing the Research Works index" width="100%">
