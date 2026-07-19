@@ -22,7 +22,7 @@
 - [Introduction](#introduction)
 - [Live portal](#live-portal)
 - [Organization](#organization)
-- [How to add new works](#how-to-add-new-works)
+- [How to add new works or update existing entries](#how-to-add-new-works-or-update-existing-entries)
 - [License](#license)
 
 ## Introduction
