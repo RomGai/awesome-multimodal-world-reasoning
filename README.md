@@ -46,7 +46,7 @@ The portal provides two connected views:
 
 ## Organization
 
-Building on this functional perspective, the taxonomy separates what a method contributes from how it realizes that contribution. A method may simultaneously predict or imagine temporal evolution, represent structured world state, and connect those representations to action; the portal therefore uses non-exclusive, multi-label roles to preserve these overlaps. Primary and detailed roles capture the functional dimensions of **Temporal & Imaginative (TI)**, **Structured State (SS)**, and **Action Coupled (AC)**; World Model Types describe broader technical formulations; and Evaluation Resources are indexed separately by the dimensions they assess. This structure positions the survey as a map connecting methods, capabilities, and evaluation evidence.
+Building on a functional perspective, the taxonomy separates what a method contributes from how it realizes that contribution. A method may simultaneously predict or imagine temporal evolution, represent structured world state, and connect those representations to action; the portal therefore uses non-exclusive, multi-label roles to preserve these overlaps. Primary and detailed roles capture the functional dimensions of **Temporal & Imaginative (TI)**, **Structured State (SS)**, and **Action Coupled (AC)**; World Model Types describe broader technical formulations; and Evaluation Resources are indexed separately by the dimensions they assess. This structure positions the survey as a map connecting methods, capabilities, and evaluation evidence.
 
 ### Primary roles
 
