@@ -48,6 +48,10 @@ The portal provides two connected views:
 
 ## Organization
 
+This survey treats world models as functional components of multimodal reasoning rather than as a single architectural family or an application-specific list. A method may simultaneously predict or imagine temporal evolution, represent structured world state, and connect those representations to action. The portal therefore uses non-exclusive, multi-label roles so cross-cutting methods remain visible instead of being forced into one category.
+
+The taxonomy separates what a method contributes from how it realizes that contribution. Primary and detailed roles capture the functional dimensions of **Temporal & Imaginative (TI)**, **Structured State (SS)**, and **Action Coupled (AC)**; World Model Types describe broader technical formulations; and Evaluation Resources are indexed separately by the dimensions they assess. This structure positions the survey as a map connecting methods, capabilities, and evaluation evidence.
+
 ### Primary roles
 
 | Family | Meaning |
