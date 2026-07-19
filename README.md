@@ -66,20 +66,21 @@ Research Works may receive multiple detailed roles across interactive or imagine
 
 The types are intentionally non-exclusive when a paper implements more than one mechanism.
 
-## How to add new works
+## How to add new works or update existing entries
 
-If a Research Work or Evaluation Resource is missing from the portal, you can request that we add it or submit the data directly.
+If a Research Work or Evaluation Resource is missing from the portal or contains incorrect information, you can open an issue or submit the addition or correction directly.
 
-### 1. Request an addition through an issue
+### 1. Request an addition or update through an issue
 
 Open a [new GitHub issue](https://github.com/RomGai/awesome-multimodal-world-reasoning/issues/new) and include:
 
 - the name of the work or resource and whether it belongs in **Research Works** or **Evaluation Resources**;
 - its official paper, long-form technical document, or official release page;
 - official Code and Project links, when available;
-- a short explanation of why it belongs in the portal and any roles or Evaluation Focus tags you suggest.
+- for a new entry, a short explanation of why it belongs in the portal and any roles or Evaluation Focus tags you suggest;
+- for an existing entry, the field that should be changed, the proposed correction, and supporting evidence.
 
-No repository edits are required. We will review the full text, verify the links, determine the classification, prepare the summary or structured resource details, and add accepted entries to the portal.
+No repository edits are required. We will review the full text, verify the links and classification, and add accepted entries or corrections to the portal.
 
 ### 2. Submit a pull request
 
@@ -94,7 +95,7 @@ Please read [CONTRIBUTING.md](portal/CONTRIBUTING.md), then follow these steps i
    cd portal
    ```
 
-2. **Choose the portal view for the new entry.** Do not edit `app/data/*.generated.json` by hand.
+2. **Choose the portal view and edit the source data.** Add new entries or update the corresponding existing source record. Do not edit `app/data/*.generated.json` by hand.
 
    **Research Works**
 
@@ -106,7 +107,7 @@ Please read [CONTRIBUTING.md](portal/CONTRIBUTING.md), then follow these steps i
    - Add its BibTeX record to `source-data/survey.bib`, add the entry under `evaluation` in `data/curated-additions.json`, and add official links to `data/portal-meta.json` when available.
    - Evaluation Focus accepts `TI`, `SS`, and `AC`.
 
-   Multiple roles or Focus tags are allowed when supported by the full text. New portal entries always belong in `data/curated-additions.json`; do not append them to the survey-source CSV or TeX files.
+   Multiple roles or Focus tags are allowed when supported by the full text. New portal entries always belong in `data/curated-additions.json`; do not append them to the survey-source CSV or TeX files. For corrections, update the existing record in its current source file and any related metadata in `data/portal-meta.json`.
 
 3. **Include the required evidence and metadata.**
 
