@@ -6834,6 +6834,1865 @@
       ],
       "applications": "Multimodal language-model alignment with executable behavioral planning states",
       "dateBasis": "Initial arXiv release (v1): 2023-12 [2312.09245]"
+    },
+    {
+      "bibKey": "oh2015actionconditional",
+      "name": "Action-Conditional Video Prediction",
+      "venue": "NeurIPS",
+      "date": "2015-07",
+      "keywords": {
+        "en": [
+          "Action-conditioned prediction",
+          "Atari dynamics",
+          "Future frames"
+        ],
+        "zh": [
+          "动作条件预测",
+          "Atari动力学",
+          "未来帧"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G"
+      ],
+      "applications": "Visual simulation of game consequences under control inputs",
+      "dateBasis": "Initial arXiv release (v1): 2015-07 [1507.08750]"
+    },
+    {
+      "bibKey": "watter2015e2c",
+      "name": "Embed to Control",
+      "venue": "NeurIPS",
+      "date": "2015-06",
+      "keywords": {
+        "en": [
+          "Locally linear dynamics",
+          "Control from pixels",
+          "Variational state model"
+        ],
+        "zh": [
+          "局部线性动力学",
+          "像素控制",
+          "变分状态模型"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-P",
+        "AC-R"
+      ],
+      "applications": "Planning and control directly from image observations",
+      "dateBasis": "Initial arXiv release (v1): 2015-06 [1506.07365]"
+    },
+    {
+      "bibKey": "fraccaro2016kvae",
+      "name": "Kalman Variational Auto-Encoder",
+      "venue": "NeurIPS",
+      "date": "2017-10",
+      "keywords": {
+        "en": [
+          "Kalman VAE",
+          "Nonlinear state space",
+          "Structured inference"
+        ],
+        "zh": [
+          "卡尔曼变分自编码器",
+          "非线性状态空间",
+          "结构化推断"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-P"
+      ],
+      "applications": "Unsupervised filtering, prediction, and control from image sequences",
+      "dateBasis": "Initial arXiv release (v1): 2017-10 [1710.05741]"
+    },
+    {
+      "bibKey": "karl2016dvbf",
+      "name": "DVBF",
+      "venue": "ICLR",
+      "date": "2016-05",
+      "keywords": {
+        "en": [
+          "Variational filtering",
+          "Latent state-space model",
+          "System identification"
+        ],
+        "zh": [
+          "变分滤波",
+          "潜状态空间模型",
+          "系统辨识"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-P"
+      ],
+      "applications": "Unsupervised dynamics identification and control from raw observations",
+      "dateBasis": "Initial arXiv release (v1): 2016-05 [1605.06432]"
+    },
+    {
+      "bibKey": "watters2017vin",
+      "name": "Visual Interaction Networks",
+      "venue": "NeurIPS",
+      "date": "2017-06",
+      "keywords": {
+        "en": [
+          "Visual physics",
+          "Object interactions",
+          "Latent simulation"
+        ],
+        "zh": [
+          "视觉物理",
+          "物体交互",
+          "潜仿真"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-P",
+        "SS-C",
+        "SS-E"
+      ],
+      "applications": "Physical forecasting and inference from short image sequences",
+      "dateBasis": "Initial arXiv release (v1): 2017-06 [1706.01433]"
+    },
+    {
+      "bibKey": "babaeizadeh2017sv2p",
+      "name": "SV2P",
+      "venue": "ICLR",
+      "date": "2017-10",
+      "keywords": {
+        "en": [
+          "Stochastic video prediction",
+          "Action conditioning",
+          "Robot control"
+        ],
+        "zh": [
+          "随机视频预测",
+          "动作条件",
+          "机器人控制"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M"
+      ],
+      "applications": "Action-conditioned visual foresight for robotic manipulation",
+      "dateBasis": "Initial arXiv release (v1): 2017-10 [1710.11252]"
+    },
+    {
+      "bibKey": "janner2018o2p2",
+      "name": "O2P2",
+      "venue": "ICLR",
+      "date": "2018-12",
+      "keywords": {
+        "en": [
+          "Object-oriented prediction",
+          "Physical interaction",
+          "Visual planning"
+        ],
+        "zh": [
+          "物体导向预测",
+          "物理交互",
+          "视觉规划"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-P",
+        "SS-E",
+        "AC-R"
+      ],
+      "applications": "Goal-directed block placement through learned physical simulation",
+      "dateBasis": "Initial arXiv release (v1): 2018-12 [1812.10972]"
+    },
+    {
+      "bibKey": "sanchezgonzalez2018graphnetworks",
+      "name": "Graph Networks as Learnable Physics Engines",
+      "venue": "ICML",
+      "date": "2018-06",
+      "keywords": {
+        "en": [
+          "Graph network",
+          "Physics engine",
+          "System identification"
+        ],
+        "zh": [
+          "图网络",
+          "物理引擎",
+          "系统辨识"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-P",
+        "SS-C",
+        "SS-E"
+      ],
+      "applications": "Physical prediction, parameter inference, and trajectory optimization",
+      "dateBasis": "Initial arXiv release (v1): 2018-06 [1806.01242]"
+    },
+    {
+      "bibKey": "denton2018svg",
+      "name": "SVG-LP",
+      "venue": "ICML",
+      "date": "2018-02",
+      "keywords": {
+        "en": [
+          "Stochastic video prediction",
+          "Learned prior",
+          "Uncertain futures"
+        ],
+        "zh": [
+          "随机视频预测",
+          "学习先验",
+          "不确定未来"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M"
+      ],
+      "applications": "Multimodal future-frame generation in dynamic visual environments",
+      "dateBasis": "Initial arXiv release (v1): 2018-02 [1802.07687]"
+    },
+    {
+      "bibKey": "jiang2019scalor",
+      "name": "SCALOR",
+      "venue": "ICLR",
+      "date": "2019-10",
+      "keywords": {
+        "en": [
+          "Object-centric representation",
+          "Sequential generative model",
+          "Entity tracking"
+        ],
+        "zh": [
+          "物体中心表征",
+          "序列生成模型",
+          "实体跟踪"
+        ]
+      },
+      "roles": [
+        "TI-G",
+        "TI-M",
+        "SS-E"
+      ],
+      "applications": "Unsupervised decomposition and temporal modeling of crowded scenes",
+      "dateBasis": "Initial arXiv release (v1): 2019-10 [1910.02384]"
+    },
+    {
+      "bibKey": "veerapaneni2019op3",
+      "name": "OP3",
+      "venue": "CoRL",
+      "date": "2019-10",
+      "keywords": {
+        "en": [
+          "Entity abstraction",
+          "Object-centric planning",
+          "Visual model-based reinforcement learning"
+        ],
+        "zh": [
+          "实体抽象",
+          "物体中心规划",
+          "视觉模型强化学习"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-E",
+        "AC-R"
+      ],
+      "applications": "Planning manipulation with object-centric latent dynamics",
+      "dateBasis": "Initial arXiv release (v1): 2019-10 [1910.12827]"
+    },
+    {
+      "bibKey": "lin2020gswm",
+      "name": "G-SWM",
+      "venue": "ICML",
+      "date": "2020-10",
+      "keywords": {
+        "en": [
+          "Object-centric generation",
+          "Multimodal dynamics",
+          "Situation awareness"
+        ],
+        "zh": [
+          "物体中心生成",
+          "多模态动力学",
+          "情境感知"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-E"
+      ],
+      "applications": "Object-centric temporal imagination in multi-entity scenes",
+      "dateBasis": "Initial arXiv release (v1): 2020-10 [2010.02054]"
+    },
+    {
+      "bibKey": "kim2020gamegan",
+      "name": "GameGAN",
+      "venue": "CVPR",
+      "date": "2020-05",
+      "keywords": {
+        "en": [
+          "Neural game engine",
+          "Action-conditioned generation",
+          "External memory"
+        ],
+        "zh": [
+          "神经游戏引擎",
+          "动作条件生成",
+          "外部记忆"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M"
+      ],
+      "applications": "Interactive simulation of game environments from recorded play",
+      "dateBasis": "Initial arXiv release (v1): 2020-05 [2005.12126]"
+    },
+    {
+      "bibKey": "leguen2020phydnet",
+      "name": "PhyDNet",
+      "venue": "CVPR",
+      "date": "2020-03",
+      "keywords": {
+        "en": [
+          "Physics-aware prediction",
+          "Partial differential equations",
+          "Video dynamics"
+        ],
+        "zh": [
+          "物理感知预测",
+          "偏微分方程",
+          "视频动力学"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-P"
+      ],
+      "applications": "Unsupervised future prediction with separated physical and residual dynamics",
+      "dateBasis": "Initial arXiv release (v1): 2020-03 [2003.01460]"
+    },
+    {
+      "bibKey": "kim2021drivegan",
+      "name": "DriveGAN",
+      "venue": "CVPR",
+      "date": "2021-04",
+      "keywords": {
+        "en": [
+          "Neural driving simulator",
+          "Controllable generation",
+          "Scene dynamics"
+        ],
+        "zh": [
+          "神经驾驶模拟器",
+          "可控生成",
+          "场景动力学"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "AC-D"
+      ],
+      "applications": "Interactive photorealistic driving-scene simulation",
+      "dateBasis": "Initial arXiv release (v1): 2021-04 [2104.15060]"
+    },
+    {
+      "bibKey": "seo2022apv",
+      "name": "APV",
+      "venue": "ICML",
+      "date": "2022-03",
+      "keywords": {
+        "en": [
+          "Action-free video pretraining",
+          "Latent prediction",
+          "Visual reinforcement learning"
+        ],
+        "zh": [
+          "无动作视频预训练",
+          "潜预测",
+          "视觉强化学习"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "AC-R"
+      ],
+      "applications": "Sample-efficient manipulation and locomotion from pretrained video dynamics",
+      "dateBasis": "Initial arXiv release (v1): 2022-03 [2203.13880]"
+    },
+    {
+      "bibKey": "pan2022isodream",
+      "name": "Iso-Dream",
+      "venue": "NeurIPS",
+      "date": "2022-05",
+      "keywords": {
+        "en": [
+          "Controllable dynamics",
+          "Noncontrollable dynamics",
+          "Visual reinforcement learning"
+        ],
+        "zh": [
+          "可控动力学",
+          "不可控动力学",
+          "视觉强化学习"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-C"
+      ],
+      "applications": "Control in environments with independently moving visual factors",
+      "dateBasis": "Initial arXiv release (v1): 2022-05 [2205.13817]"
+    },
+    {
+      "bibKey": "deng2022dreamingv2",
+      "name": "DreamingV2",
+      "venue": "IROS",
+      "date": "2022-03",
+      "keywords": {
+        "en": [
+          "Discrete world model",
+          "Reconstruction-free learning",
+          "Atari control"
+        ],
+        "zh": [
+          "离散世界模型",
+          "无重建学习",
+          "Atari控制"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M"
+      ],
+      "applications": "Visual reinforcement learning through discrete latent imagination",
+      "dateBasis": "Initial arXiv release (v1): 2022-03 [2203.00494]"
+    },
+    {
+      "bibKey": "seo2022multiviewdreaming",
+      "name": "Multi-View Dreaming",
+      "venue": "Advanced Robotics",
+      "date": "2022-03",
+      "keywords": {
+        "en": [
+          "Multiview world model",
+          "Contrastive learning",
+          "Robot control"
+        ],
+        "zh": [
+          "多视角世界模型",
+          "对比学习",
+          "机器人控制"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "AC-R"
+      ],
+      "applications": "View-invariant latent imagination for visuomotor control",
+      "dateBasis": "Initial arXiv release (v1): 2022-03 [2203.11024]"
+    },
+    {
+      "bibKey": "wang2022denoisedmdp",
+      "name": "Denoised MDPs",
+      "venue": "ICML",
+      "date": "2022-06",
+      "keywords": {
+        "en": [
+          "Denoised dynamics",
+          "Controllability",
+          "Reward relevance"
+        ],
+        "zh": [
+          "去噪动力学",
+          "可控性",
+          "奖励相关性"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-C",
+        "AC-R"
+      ],
+      "applications": "Control and state estimation under structured visual nuisance factors",
+      "dateBasis": "Initial arXiv release (v1): 2022-06 [2206.15477]"
+    },
+    {
+      "bibKey": "wu2022slotformer",
+      "name": "SlotFormer",
+      "venue": "ICLR",
+      "date": "2022-10",
+      "keywords": {
+        "en": [
+          "Object-centric dynamics",
+          "Slot prediction",
+          "Visual simulation"
+        ],
+        "zh": [
+          "物体中心动力学",
+          "槽位预测",
+          "视觉仿真"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-E"
+      ],
+      "applications": "Long-horizon object-centric video dynamics prediction",
+      "dateBasis": "Initial arXiv release (v1): 2022-10 [2210.05861]"
+    },
+    {
+      "bibKey": "ma2023harmonydream",
+      "name": "HarmonyDream",
+      "venue": "ICML",
+      "date": "2023-09",
+      "keywords": {
+        "en": [
+          "Task harmonization",
+          "Observation-reward modeling",
+          "Visual reinforcement learning"
+        ],
+        "zh": [
+          "任务协调",
+          "观测奖励建模",
+          "视觉强化学习"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "AC-R"
+      ],
+      "applications": "Balanced world-model training for sample-efficient visual control",
+      "dateBasis": "Initial arXiv release (v1): 2023-09 [2310.00344]"
+    },
+    {
+      "bibKey": "lin2023dynalang",
+      "name": "Dynalang",
+      "venue": "ICML",
+      "date": "2023-07",
+      "keywords": {
+        "en": [
+          "Multimodal world model",
+          "Language grounding",
+          "Imagined reinforcement learning"
+        ],
+        "zh": [
+          "多模态世界模型",
+          "语言落地",
+          "想象强化学习"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "AC-V",
+        "AC-N"
+      ],
+      "applications": "Language-informed games, navigation, and embodied control",
+      "dateBasis": "Initial arXiv release (v1): 2023-07 [2308.01399]"
+    },
+    {
+      "bibKey": "zhu2023statler",
+      "name": "Statler",
+      "venue": "ICRA",
+      "date": "2023-06",
+      "keywords": {
+        "en": [
+          "Structured world state",
+          "Language-model memory",
+          "Embodied reasoning"
+        ],
+        "zh": [
+          "结构化世界状态",
+          "语言模型记忆",
+          "具身推理"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-M",
+        "SS-E",
+        "AC-V",
+        "AC-R"
+      ],
+      "applications": "Long-horizon task reasoning with explicit state updates",
+      "dateBasis": "Initial arXiv release (v1): 2023-06 [2306.17840]"
+    },
+    {
+      "bibKey": "zhao2023llmdm",
+      "name": "LLM-DM",
+      "venue": "NeurIPS",
+      "date": "2023-05",
+      "keywords": {
+        "en": [
+          "Commonsense world model",
+          "Monte Carlo tree search",
+          "Task planning"
+        ],
+        "zh": [
+          "常识世界模型",
+          "蒙特卡洛树搜索",
+          "任务规划"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-C",
+        "SS-E",
+        "AC-T"
+      ],
+      "applications": "Large-scale symbolic and commonsense task planning",
+      "dateBasis": "Initial arXiv release (v1): 2023-05 [2305.14078]"
+    },
+    {
+      "bibKey": "hao2023rap",
+      "name": "RAP",
+      "venue": "EMNLP",
+      "date": "2023-05",
+      "keywords": {
+        "en": [
+          "Reasoning as planning",
+          "Language world model",
+          "Tree search"
+        ],
+        "zh": [
+          "推理即规划",
+          "语言世界模型",
+          "树搜索"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-C",
+        "SS-E",
+        "AC-T"
+      ],
+      "applications": "Multi-step reasoning through simulated intermediate states",
+      "dateBasis": "Initial arXiv release (v1): 2023-05 [2305.14992]"
+    },
+    {
+      "bibKey": "huang2023safedreamer",
+      "name": "SafeDreamer",
+      "venue": "ICLR",
+      "date": "2023-07",
+      "keywords": {
+        "en": [
+          "Safe reinforcement learning",
+          "Cost prediction",
+          "Constrained imagination"
+        ],
+        "zh": [
+          "安全强化学习",
+          "成本预测",
+          "约束想象"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-C",
+        "AC-R"
+      ],
+      "applications": "Constraint-aware policy learning from visual world-model rollouts",
+      "dateBasis": "Initial arXiv release (v1): 2023-07 [2307.07176]"
+    },
+    {
+      "bibKey": "deng2023s4wm",
+      "name": "S4WM",
+      "venue": "NeurIPS",
+      "date": "2023-07",
+      "keywords": {
+        "en": [
+          "Structured state space",
+          "World-model backbone",
+          "Long memory"
+        ],
+        "zh": [
+          "结构化状态空间",
+          "世界模型骨干",
+          "长记忆"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M"
+      ],
+      "applications": "Efficient long-context world simulation and visual control",
+      "dateBasis": "Initial arXiv release (v1): 2023-07 [2307.02064]"
+    },
+    {
+      "bibKey": "yang2024eva",
+      "name": "EVA",
+      "venue": "arXiv",
+      "date": "2024-10",
+      "keywords": {
+        "en": [
+          "Future video anticipation",
+          "Vision-language reasoning",
+          "Embodied prediction"
+        ],
+        "zh": [
+          "未来视频预判",
+          "视觉语言推理",
+          "具身预测"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "AC-R"
+      ],
+      "applications": "Language-guided anticipation of embodied interaction futures",
+      "dateBasis": "Initial arXiv release (v1): 2024-10 [2410.15461]"
+    },
+    {
+      "bibKey": "zhang2024prelar",
+      "name": "PreLAR",
+      "venue": "ECCV",
+      "date": "2024-10",
+      "keywords": {
+        "en": [
+          "Latent action learning",
+          "Action-free video pretraining",
+          "Visual control"
+        ],
+        "zh": [
+          "潜动作学习",
+          "无动作视频预训练",
+          "视觉控制"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "AC-R"
+      ],
+      "applications": "Sample-efficient world-model pretraining for robotic control",
+      "dateBasis": "First official public proceedings release: ECCV 2024, 2024-10; no public preprint was released during review"
+    },
+    {
+      "bibKey": "sun2024hrssm",
+      "name": "HRSSM",
+      "venue": "ICML",
+      "date": "2024-05",
+      "keywords": {
+        "en": [
+          "Robust latent dynamics",
+          "Spatiotemporal masking",
+          "Visual control"
+        ],
+        "zh": [
+          "鲁棒潜动力学",
+          "时空掩码",
+          "视觉控制"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "AC-R"
+      ],
+      "applications": "Model-based reinforcement learning under exogenous visual distractors",
+      "dateBasis": "Initial arXiv release (v1): 2024-05 [2405.06263]"
+    },
+    {
+      "bibKey": "wang2024worlddreamer",
+      "name": "WorldDreamer",
+      "venue": "arXiv",
+      "date": "2024-01",
+      "keywords": {
+        "en": [
+          "Masked-token prediction",
+          "General video world model",
+          "Multimodal conditioning"
+        ],
+        "zh": [
+          "掩码标记预测",
+          "通用视频世界模型",
+          "多模态条件"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M"
+      ],
+      "applications": "General visual simulation from image, text, and action prompts",
+      "dateBasis": "Initial arXiv release (v1): 2024-01 [2401.09985]"
+    },
+    {
+      "bibKey": "zhu2024irasim",
+      "name": "IRASim",
+      "venue": "ICCV",
+      "date": "2024-06",
+      "keywords": {
+        "en": [
+          "Robot video simulation",
+          "Fine-grained action alignment",
+          "Diffusion Transformer"
+        ],
+        "zh": [
+          "机器人视频仿真",
+          "细粒度动作对齐",
+          "扩散Transformer"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-P",
+        "AC-R"
+      ],
+      "applications": "Action-conditioned visual simulation of robot manipulation",
+      "dateBasis": "Initial arXiv release (v1): 2024-06 [2406.14540]"
+    },
+    {
+      "bibKey": "zhao2024vidman",
+      "name": "VidMan",
+      "venue": "NeurIPS",
+      "date": "2024-11",
+      "keywords": {
+        "en": [
+          "Video diffusion dynamics",
+          "Manipulation policy",
+          "Future prediction"
+        ],
+        "zh": [
+          "视频扩散动力学",
+          "操作策略",
+          "未来预测"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "AC-R"
+      ],
+      "applications": "Manipulation policy learning from implicit video dynamics",
+      "dateBasis": "Initial arXiv release (v1): 2024-11 [2411.09153]"
+    },
+    {
+      "bibKey": "micheli2024deltairis",
+      "name": "Delta-IRIS",
+      "venue": "ICML",
+      "date": "2024-06",
+      "keywords": {
+        "en": [
+          "Context-aware tokenization",
+          "Stochastic deltas",
+          "Imagined reinforcement learning"
+        ],
+        "zh": [
+          "上下文感知标记化",
+          "随机增量",
+          "想象强化学习"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M"
+      ],
+      "applications": "Efficient discrete world modeling for visual reinforcement learning",
+      "dateBasis": "Initial arXiv release (v1): 2024-06 [2406.19320]"
+    },
+    {
+      "bibKey": "zhang2024pivotr",
+      "name": "PIVOT-R",
+      "venue": "NeurIPS",
+      "date": "2024-10",
+      "keywords": {
+        "en": [
+          "Waypoint world model",
+          "Primitive parsing",
+          "Language-guided manipulation"
+        ],
+        "zh": [
+          "路点世界模型",
+          "原语解析",
+          "语言引导操作"
+        ]
+      },
+      "roles": [
+        "TI-G",
+        "AC-V",
+        "AC-R"
+      ],
+      "applications": "Hierarchical language-conditioned robot manipulation",
+      "dateBasis": "Initial arXiv release (v1): 2024-10 [2410.10394]"
+    },
+    {
+      "bibKey": "xu2024pegs",
+      "name": "PEGS",
+      "venue": "CoRL",
+      "date": "2024-06",
+      "keywords": {
+        "en": [
+          "Gaussian splatting",
+          "Particle physics",
+          "Correctable simulation"
+        ],
+        "zh": [
+          "高斯泼溅",
+          "粒子物理",
+          "可校正仿真"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-G",
+        "SS-P",
+        "AC-R"
+      ],
+      "applications": "Realtime physical scene prediction and correction for robotics",
+      "dateBasis": "Initial arXiv release (v1): 2024-06 [2406.10788]"
+    },
+    {
+      "bibKey": "huang2024wmp",
+      "name": "WMP",
+      "venue": "ICRA",
+      "date": "2024-09",
+      "keywords": {
+        "en": [
+          "Legged locomotion",
+          "Predictive perception",
+          "Recurrent state-space model"
+        ],
+        "zh": [
+          "足式运动",
+          "预测感知",
+          "递归状态空间模型"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-G",
+        "SS-P",
+        "AC-R"
+      ],
+      "applications": "Robust visual locomotion over occluded and changing terrain",
+      "dateBasis": "Initial arXiv release (v1): 2024-09 [2409.16784]"
+    },
+    {
+      "bibKey": "pan2024xmobility",
+      "name": "X-MOBILITY",
+      "venue": "ICRA",
+      "date": "2024-10",
+      "keywords": {
+        "en": [
+          "Generalizable navigation",
+          "Latent state-space model",
+          "Multimodal prediction"
+        ],
+        "zh": [
+          "通用导航",
+          "潜状态空间模型",
+          "多模态预测"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "AC-N"
+      ],
+      "applications": "End-to-end robot navigation across indoor and outdoor domains",
+      "dateBasis": "Initial arXiv release (v1): 2024-10 [2410.17491]"
+    },
+    {
+      "bibKey": "tang2024worldcoder",
+      "name": "WorldCoder",
+      "venue": "NeurIPS",
+      "date": "2024-02",
+      "keywords": {
+        "en": [
+          "Executable world model",
+          "Program synthesis",
+          "Model-based LLM agent"
+        ],
+        "zh": [
+          "可执行世界模型",
+          "程序合成",
+          "基于模型的LLM智能体"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-C",
+        "SS-E",
+        "AC-T"
+      ],
+      "applications": "Planning with learned executable transition and reward programs",
+      "dateBasis": "Initial arXiv release (v1): 2024-02 [2402.12275]"
+    },
+    {
+      "bibKey": "li2024dynamiccity",
+      "name": "DynamicCity",
+      "venue": "ICLR",
+      "date": "2024-10",
+      "keywords": {
+        "en": [
+          "4D occupancy generation",
+          "Dynamic urban scenes",
+          "Driving simulation"
+        ],
+        "zh": [
+          "四维占据生成",
+          "动态城市场景",
+          "驾驶仿真"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-G",
+        "SS-E",
+        "AC-D"
+      ],
+      "applications": "Large-scale controllable 4D urban occupancy synthesis",
+      "dateBasis": "Initial arXiv release (v1): 2024-10 [2410.18084]"
+    },
+    {
+      "bibKey": "yang2024genadpredictive",
+      "name": "GenAD (Predictive Model)",
+      "venue": "CVPR",
+      "date": "2024-03",
+      "keywords": {
+        "en": [
+          "Generalized driving prediction",
+          "Multimodal pretraining",
+          "Future state modeling"
+        ],
+        "zh": [
+          "通用驾驶预测",
+          "多模态预训练",
+          "未来状态建模"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-G",
+        "AC-D"
+      ],
+      "applications": "Transferable future prediction across autonomous-driving tasks",
+      "dateBasis": "Initial arXiv release (v1): 2024-03 [2403.09630]"
+    },
+    {
+      "bibKey": "yin2024drivingworld",
+      "name": "DrivingWorld",
+      "venue": "arXiv",
+      "date": "2024-12",
+      "keywords": {
+        "en": [
+          "Video GPT",
+          "Driving world model",
+          "Trajectory-conditioned rollout"
+        ],
+        "zh": [
+          "视频GPT",
+          "驾驶世界模型",
+          "轨迹条件展开"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-G",
+        "AC-D"
+      ],
+      "applications": "Autoregressive future driving-scene generation",
+      "dateBasis": "Initial arXiv release (v1): 2024-12 [2412.19505]"
+    },
+    {
+      "bibKey": "zheng2024doe1",
+      "name": "Doe-1",
+      "venue": "arXiv",
+      "date": "2024-12",
+      "keywords": {
+        "en": [
+          "Large driving model",
+          "Closed-loop driving",
+          "Joint world-action prediction"
+        ],
+        "zh": [
+          "大型驾驶模型",
+          "闭环驾驶",
+          "世界动作联合预测"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-G",
+        "AC-D"
+      ],
+      "applications": "Unified scene prediction and end-to-end autonomous driving",
+      "dateBasis": "Initial arXiv release (v1): 2024-12 [2412.09627]"
+    },
+    {
+      "bibKey": "chen2024drivinggpt",
+      "name": "DrivingGPT",
+      "venue": "ICCV",
+      "date": "2024-12",
+      "keywords": {
+        "en": [
+          "Multimodal autoregression",
+          "Driving planning",
+          "World-action tokens"
+        ],
+        "zh": [
+          "多模态自回归",
+          "驾驶规划",
+          "世界动作标记"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-G",
+        "AC-D"
+      ],
+      "applications": "Unified driving observation prediction and trajectory planning",
+      "dateBasis": "Initial arXiv release (v1): 2024-12 [2412.18607]"
+    },
+    {
+      "bibKey": "huang2024owl1",
+      "name": "Owl-1",
+      "venue": "arXiv",
+      "date": "2024-12",
+      "keywords": {
+        "en": [
+          "Long video generation",
+          "Persistent world state",
+          "Autoregressive rollout"
+        ],
+        "zh": [
+          "长视频生成",
+          "持续世界状态",
+          "自回归展开"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M"
+      ],
+      "applications": "Consistent long-horizon visual world simulation",
+      "dateBasis": "Initial arXiv release (v1): 2024-12 [2412.09600]"
+    },
+    {
+      "bibKey": "li2024infinitydrive",
+      "name": "InfinityDrive",
+      "venue": "arXiv",
+      "date": "2024-12",
+      "keywords": {
+        "en": [
+          "Long driving video",
+          "Trajectory conditioning",
+          "Temporal consistency"
+        ],
+        "zh": [
+          "长驾驶视频",
+          "轨迹条件",
+          "时间一致性"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-G",
+        "AC-D"
+      ],
+      "applications": "Extended controllable driving-scene generation",
+      "dateBasis": "Initial arXiv release (v1): 2024-12 [2412.01522]"
+    },
+    {
+      "bibKey": "ma2024delphi",
+      "name": "Delphi",
+      "venue": "arXiv",
+      "date": "2024-06",
+      "keywords": {
+        "en": [
+          "Controllable driving video",
+          "Planner augmentation",
+          "Failure-case synthesis"
+        ],
+        "zh": [
+          "可控驾驶视频",
+          "规划器增强",
+          "失败场景合成"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-P",
+        "AC-D"
+      ],
+      "applications": "Synthetic long-tail driving data and end-to-end planner training",
+      "dateBasis": "Initial arXiv release (v1): 2024-06 [2406.01349]"
+    },
+    {
+      "bibKey": "li2024drivephysica",
+      "name": "DrivePhysica",
+      "venue": "arXiv",
+      "date": "2024-12",
+      "keywords": {
+        "en": [
+          "Physics-informed driving",
+          "Motion decomposition",
+          "Trajectory-conditioned video"
+        ],
+        "zh": [
+          "物理信息驾驶",
+          "运动分解",
+          "轨迹条件视频"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-G",
+        "SS-P",
+        "SS-C",
+        "AC-D"
+      ],
+      "applications": "Physically structured controllable driving-video prediction",
+      "dateBasis": "Initial arXiv release (v1): 2024-12 [2412.08410]"
+    },
+    {
+      "bibKey": "wang2025diswm",
+      "name": "DisWM",
+      "venue": "ICCV",
+      "date": "2025-03",
+      "keywords": {
+        "en": [
+          "Visual reinforcement learning",
+          "Distractor separation",
+          "Semantic dynamics"
+        ],
+        "zh": [
+          "视觉强化学习",
+          "干扰因素分离",
+          "语义动力学"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M"
+      ],
+      "applications": "Transferable visual reinforcement learning under changing backgrounds and visual distractors",
+      "dateBasis": "Initial arXiv release (v1): 2025-03 [2503.08751]"
+    },
+    {
+      "bibKey": "safa2025sensei",
+      "name": "SENSEI",
+      "venue": "ICML",
+      "date": "2025-03",
+      "keywords": {
+        "en": [
+          "Semantic exploration",
+          "Foundation-model rewards",
+          "Model-based reinforcement learning"
+        ],
+        "zh": [
+          "语义探索",
+          "基础模型奖励",
+          "基于模型的强化学习"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "AC-R"
+      ],
+      "applications": "Exploration and world-model learning from sparse-reward visual environments",
+      "dateBasis": "Initial arXiv release (v1): 2025-03 [2503.01584]"
+    },
+    {
+      "bibKey": "nematollahi2025lumos",
+      "name": "LUMOS",
+      "venue": "ICRA",
+      "date": "2025-03",
+      "keywords": {
+        "en": [
+          "Language-conditioned imitation",
+          "Latent practice",
+          "Long-horizon manipulation"
+        ],
+        "zh": [
+          "语言条件模仿",
+          "潜空间练习",
+          "长时程操作"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "AC-V",
+        "AC-R"
+      ],
+      "applications": "Language-steerable multitask manipulation from offline play data",
+      "dateBasis": "Initial arXiv release (v1): 2025-03 [2503.10370]"
+    },
+    {
+      "bibKey": "he2025glam",
+      "name": "GLAM",
+      "venue": "AAAI",
+      "date": "2025-01",
+      "keywords": {
+        "en": [
+          "Mamba world model",
+          "State variation",
+          "Atari control"
+        ],
+        "zh": [
+          "Mamba世界模型",
+          "状态变化",
+          "Atari控制"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M"
+      ],
+      "applications": "Imagination-based visual control with global and local change modeling",
+      "dateBasis": "Initial arXiv release (v1): 2025-01 [2501.11949]"
+    },
+    {
+      "bibKey": "chen2025gpc",
+      "name": "Generative Predictive Control",
+      "venue": "IEEE RA-L",
+      "date": "2025-02",
+      "keywords": {
+        "en": [
+          "Predictive control",
+          "Generative policy",
+          "Action selection"
+        ],
+        "zh": [
+          "预测控制",
+          "生成式策略",
+          "动作选择"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-P",
+        "AC-R"
+      ],
+      "applications": "Look-ahead ranking and optimization of robot manipulation actions",
+      "dateBasis": "Initial arXiv release (v1): 2025-02 [2502.00622]"
+    },
+    {
+      "bibKey": "liu2025flowdreamer",
+      "name": "FlowDreamer",
+      "venue": "IEEE RA-L",
+      "date": "2025-05",
+      "keywords": {
+        "en": [
+          "RGB-D prediction",
+          "3D scene flow",
+          "Manipulation planning"
+        ],
+        "zh": [
+          "RGB-D预测",
+          "三维场景流",
+          "操作规划"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-G",
+        "SS-P",
+        "AC-R"
+      ],
+      "applications": "Model-predictive control for visuomotor manipulation",
+      "dateBasis": "Initial arXiv release (v1): 2025-05 [2505.10075]"
+    },
+    {
+      "bibKey": "gao2025enerverse",
+      "name": "EnerVerse",
+      "venue": "NeurIPS",
+      "date": "2025-01",
+      "keywords": {
+        "en": [
+          "Embodied video generation",
+          "Multiview rollout",
+          "Robot data engine"
+        ],
+        "zh": [
+          "具身视频生成",
+          "多视角展开",
+          "机器人数据引擎"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-G",
+        "AC-V",
+        "AC-R"
+      ],
+      "applications": "Long-horizon manipulation simulation and synthetic robot-data generation",
+      "dateBasis": "Initial arXiv release (v1): 2025-01 [2501.01895]"
+    },
+    {
+      "bibKey": "chen2025pinwm",
+      "name": "PIN-WM",
+      "venue": "RSS",
+      "date": "2025-04",
+      "keywords": {
+        "en": [
+          "Physics-informed dynamics",
+          "System identification",
+          "Non-prehensile manipulation"
+        ],
+        "zh": [
+          "物理信息动力学",
+          "系统辨识",
+          "非抓取操作"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-G",
+        "SS-P",
+        "SS-C",
+        "AC-R"
+      ],
+      "applications": "Model-based planning and control for pushing and dynamic manipulation",
+      "dateBasis": "Initial arXiv release (v1): 2025-04 [2504.16693]"
+    },
+    {
+      "bibKey": "huang2025promptingfuture",
+      "name": "Prompting with the Future",
+      "venue": "RSS",
+      "date": "2025-06",
+      "keywords": {
+        "en": [
+          "Interactive digital twin",
+          "Vision-language planning",
+          "Model-predictive control"
+        ],
+        "zh": [
+          "交互数字孪生",
+          "视觉语言规划",
+          "模型预测控制"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-G",
+        "SS-P",
+        "SS-E",
+        "AC-V",
+        "AC-R"
+      ],
+      "applications": "Open-world robot planning through simulated visual futures",
+      "dateBasis": "Initial arXiv release (v1): 2025-06 [2506.13761]"
+    },
+    {
+      "bibKey": "yan2025flowaction",
+      "name": "3DFlowAction",
+      "venue": "arXiv",
+      "date": "2025-06",
+      "keywords": {
+        "en": [
+          "3D flow prediction",
+          "Cross-embodiment learning",
+          "Manipulation planning"
+        ],
+        "zh": [
+          "三维流预测",
+          "跨形态学习",
+          "操作规划"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-G",
+        "SS-P",
+        "AC-R"
+      ],
+      "applications": "Robot manipulation learned jointly from human and robot videos",
+      "dateBasis": "Initial arXiv release (v1): 2025-06 [2506.06199]"
+    },
+    {
+      "bibKey": "li2025gaf",
+      "name": "GAF",
+      "venue": "ICRA",
+      "date": "2025-06",
+      "keywords": {
+        "en": [
+          "Gaussian action field",
+          "4D scene dynamics",
+          "Robot manipulation"
+        ],
+        "zh": [
+          "高斯动作场",
+          "四维场景动力学",
+          "机器人操作"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "SS-G",
+        "SS-P",
+        "AC-R"
+      ],
+      "applications": "Dynamic-scene prediction and action generation for manipulation",
+      "dateBasis": "Initial arXiv release (v1): 2025-06 [2506.14135]"
+    },
+    {
+      "bibKey": "yang2025manigaussianpp",
+      "name": "ManiGaussian++",
+      "venue": "IROS",
+      "date": "2025-06",
+      "keywords": {
+        "en": [
+          "Bimanual manipulation",
+          "Gaussian world model",
+          "Hierarchical dynamics"
+        ],
+        "zh": [
+          "双臂操作",
+          "高斯世界模型",
+          "分层动力学"
+        ]
+      },
+      "roles": [
+        "TI-G",
+        "SS-G",
+        "SS-P",
+        "SS-E",
+        "AC-R"
+      ],
+      "applications": "General bimanual manipulation with explicit 3D future prediction",
+      "dateBasis": "Initial arXiv release (v1): 2025-06 [2506.19842]"
+    },
+    {
+      "bibKey": "gao2025egoagent",
+      "name": "EgoAgent",
+      "venue": "ICCV",
+      "date": "2025-02",
+      "keywords": {
+        "en": [
+          "Egocentric prediction",
+          "Human action forecasting",
+          "Joint agent model"
+        ],
+        "zh": [
+          "第一视角预测",
+          "人类动作预测",
+          "联合智能体模型"
+        ]
+      },
+      "roles": [
+        "TI-G",
+        "TI-M",
+        "SS-E"
+      ],
+      "applications": "Joint forecasting of egocentric environments and future human actions",
+      "dateBasis": "Initial arXiv release (v1): 2025-02 [2502.05857]"
+    },
+    {
+      "bibKey": "zheng2025trajworld",
+      "name": "TrajWorld",
+      "venue": "ICML",
+      "date": "2025-02",
+      "keywords": {
+        "en": [
+          "Trajectory modeling",
+          "Heterogeneous environments",
+          "Generalist dynamics"
+        ],
+        "zh": [
+          "轨迹建模",
+          "异构环境",
+          "通用动力学"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M"
+      ],
+      "applications": "Reusable dynamics prediction, policy learning, and planning across control domains",
+      "dateBasis": "Initial arXiv release (v1): 2025-02 [2502.01366]"
+    },
+    {
+      "bibKey": "burchi2025twister",
+      "name": "TWISTER",
+      "venue": "ICLR",
+      "date": "2025-03",
+      "keywords": {
+        "en": [
+          "Transformer world model",
+          "Contrastive prediction",
+          "Visual reinforcement learning"
+        ],
+        "zh": [
+          "Transformer世界模型",
+          "对比预测",
+          "视觉强化学习"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M"
+      ],
+      "applications": "Long-context imagination for data-efficient visual control",
+      "dateBasis": "Initial arXiv release (v1): 2025-03 [2503.04416]"
+    },
+    {
+      "bibKey": "scannell2025dcwm",
+      "name": "DCWM",
+      "venue": "ICLR",
+      "date": "2025-03",
+      "keywords": {
+        "en": [
+          "Discrete codebook",
+          "Continuous control",
+          "Model-predictive control"
+        ],
+        "zh": [
+          "离散码本",
+          "连续控制",
+          "模型预测控制"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "AC-R"
+      ],
+      "applications": "State-based continuous control through discrete latent dynamics",
+      "dateBasis": "Initial arXiv release (v1): 2025-03 [2503.00653]"
+    },
+    {
+      "bibKey": "wang2025statespacediffuser",
+      "name": "StateSpaceDiffuser",
+      "venue": "NeurIPS",
+      "date": "2025-05",
+      "keywords": {
+        "en": [
+          "Diffusion world model",
+          "State-space memory",
+          "Long-context video"
+        ],
+        "zh": [
+          "扩散世界模型",
+          "状态空间记忆",
+          "长上下文视频"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M"
+      ],
+      "applications": "Long-horizon interactive visual simulation",
+      "dateBasis": "Initial arXiv release (v1): 2025-05 [2505.22246]"
+    },
+    {
+      "bibKey": "wu2025rlvrworld",
+      "name": "RLVR-World",
+      "venue": "NeurIPS",
+      "date": "2025-05",
+      "keywords": {
+        "en": [
+          "Verifiable rewards",
+          "World-model post-training",
+          "Multimodal prediction"
+        ],
+        "zh": [
+          "可验证奖励",
+          "世界模型后训练",
+          "多模态预测"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G"
+      ],
+      "applications": "Reinforcement-learning refinement of text and video environment simulators",
+      "dateBasis": "Initial arXiv release (v1): 2025-05 [2505.13934]"
+    },
+    {
+      "bibKey": "gao2025maskgwm",
+      "name": "MaskGWM",
+      "venue": "CVPR",
+      "date": "2025-02",
+      "keywords": {
+        "en": [
+          "Driving video prediction",
+          "Masked reconstruction",
+          "Action conditioning"
+        ],
+        "zh": [
+          "驾驶视频预测",
+          "掩码重建",
+          "动作条件"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "AC-D"
+      ],
+      "applications": "Generalizable action-conditioned driving-scene simulation",
+      "dateBasis": "Initial arXiv release (v1): 2025-02 [2502.11663]"
+    },
+    {
+      "bibKey": "yang2025epona",
+      "name": "Epona",
+      "venue": "ICCV",
+      "date": "2025-06",
+      "keywords": {
+        "en": [
+          "Autoregressive diffusion",
+          "Driving simulation",
+          "Trajectory control"
+        ],
+        "zh": [
+          "自回归扩散",
+          "驾驶仿真",
+          "轨迹控制"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-G",
+        "AC-D"
+      ],
+      "applications": "Long, high-resolution controllable driving-video rollout",
+      "dateBasis": "Initial arXiv release (v1): 2025-06 [2506.24113]"
+    },
+    {
+      "bibKey": "wang2025longdwm",
+      "name": "LongDWM",
+      "venue": "AAAI",
+      "date": "2025-06",
+      "keywords": {
+        "en": [
+          "Long-term driving",
+          "Cross-granularity distillation",
+          "Video world model"
+        ],
+        "zh": [
+          "长时驾驶",
+          "跨粒度蒸馏",
+          "视频世界模型"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "AC-D"
+      ],
+      "applications": "Minute-scale trajectory-conditioned driving video generation",
+      "dateBasis": "Initial arXiv release (v1): 2025-06 [2506.01546]"
+    },
+    {
+      "bibKey": "tan2025scenediffuserpp",
+      "name": "SceneDiffuser++",
+      "venue": "CVPR",
+      "date": "2025-06",
+      "keywords": {
+        "en": [
+          "City-scale traffic simulation",
+          "Generative scene dynamics",
+          "Trip-level rollout"
+        ],
+        "zh": [
+          "城市级交通仿真",
+          "生成式场景动力学",
+          "行程级展开"
+        ]
+      },
+      "roles": [
+        "TI-I",
+        "TI-G",
+        "TI-M",
+        "SS-G",
+        "SS-E",
+        "AC-D"
+      ],
+      "applications": "Point-to-point closed-loop traffic simulation for autonomous-driving evaluation",
+      "dateBasis": "Initial arXiv release (v1): 2025-06 [2506.21976]"
     }
   ],
   "evaluation": [

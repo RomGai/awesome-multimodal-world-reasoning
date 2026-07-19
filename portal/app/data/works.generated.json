@@ -7541,7 +7541,7 @@
       "project": "https://viccccciv.github.io/glam/"
     },
     "paradigms": [
-      "generative-interactive"
+      "latent-predictive"
     ]
   },
   {
@@ -13175,6 +13175,2778 @@
     },
     "paradigms": [
       "mllm-integrated"
+    ]
+  },
+  {
+    "id": "oh2015actionconditional",
+    "name": "Action-Conditional Video Prediction",
+    "title": "Action-Conditional Video Prediction using Deep Networks in Atari Games",
+    "venue": "NeurIPS",
+    "date": "2015-07",
+    "year": 2015,
+    "roles": [
+      "TI-I",
+      "TI-G"
+    ],
+    "keywords": {
+      "en": [
+        "Action-conditioned prediction",
+        "Atari dynamics",
+        "Future frames"
+      ],
+      "zh": [
+        "动作条件预测",
+        "Atari动力学",
+        "未来帧"
+      ]
+    },
+    "summary": {
+      "en": "Action-Conditional Video Prediction learns to simulate future Atari frames from recent images and a sequence of player actions. A convolutional encoder extracts scene features, multiplicative action interactions modify those features according to the selected control, and a recurrent decoder predicts pixels over multiple steps. Curriculum training and multistep losses expose the model to its own forecasts so it can continue trajectories beyond one frame. Experiments across several Atari games evaluate pixel prediction, object motion, action effects, and long-rollout behavior, including rollouts under alternative controls. Ablations compare action fusion mechanisms, feedforward and recurrent architectures, prediction horizons, curriculum schedules, loss functions, and model capacity.",
+      "zh": "Action-Conditional Video Prediction 根据近期图像和一串玩家动作模拟未来 Atari 画面。卷积编码器提取场景特征，乘性动作交互依据所选控制改变这些特征，递归解码器再进行多步像素预测；课程训练和多步损失让模型接触自身预测结果，从而可以持续展开而非只预测一帧。论文在多款 Atari 游戏上评估像素预测、物体运动、动作效果和长展开行为，并展示不同控制下的替代未来；消融比较动作融合、前馈与递归架构、预测时域、课程策略、损失函数和模型容量。"
+    },
+    "applications": "Visual simulation of game consequences under control inputs",
+    "links": {
+      "paper": "https://arxiv.org/abs/1507.08750"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "watter2015e2c",
+    "name": "Embed to Control",
+    "title": "Embed to Control: A Locally Linear Latent Dynamics Model for Control from Raw Images",
+    "venue": "NeurIPS",
+    "date": "2015-06",
+    "year": 2015,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-P",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Locally linear dynamics",
+        "Control from pixels",
+        "Variational state model"
+      ],
+      "zh": [
+        "局部线性动力学",
+        "像素控制",
+        "变分状态模型"
+      ]
+    },
+    "summary": {
+      "en": "Embed to Control learns a compact latent state in which image-based dynamics are locally linear under actions. A variational encoder maps observations to states, a transition network produces local linear matrices conditioned on the current latent, and a decoder reconstructs the next image. Training jointly optimizes reconstruction and one-step transition likelihood so the representation supports both perception and controllable prediction. At test time, iterative linear-quadratic regulation plans through the learned latent dynamics toward a target observation. Experiments on pendulum, cart-pole, and planar arm systems evaluate reconstruction, state organization, multistep prediction, and control success. Analyses examine latent dimension, transition structure, uncertainty, planning updates, and comparisons with nonlinear and observation-space models.",
+      "zh": "Embed to Control 学习一个紧凑潜状态，使图像动力学在动作条件下具有局部线性形式。变分编码器把观测映射为状态，转移网络根据当前潜变量产生局部线性矩阵，解码器重建下一图像；训练联合优化重建与一步转移似然，使表征同时支持感知和可控预测。测试时，迭代线性二次调节器通过学习到的潜动力学规划到目标观测。论文在摆、倒立摆和二维机械臂系统上评估重建、状态组织、多步预测与控制成功，并分析潜维度、转移结构、不确定性、规划更新及与非线性和观测空间模型的比较。"
+    },
+    "applications": "Planning and control directly from image observations",
+    "links": {
+      "paper": "https://arxiv.org/abs/1506.07365"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "fraccaro2016kvae",
+    "name": "Kalman Variational Auto-Encoder",
+    "title": "A Disentangled Recognition and Nonlinear Dynamics Model for Unsupervised Learning",
+    "venue": "NeurIPS",
+    "date": "2017-10",
+    "year": 2017,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-P"
+    ],
+    "keywords": {
+      "en": [
+        "Kalman VAE",
+        "Nonlinear state space",
+        "Structured inference"
+      ],
+      "zh": [
+        "卡尔曼变分自编码器",
+        "非线性状态空间",
+        "结构化推断"
+      ]
+    },
+    "summary": {
+      "en": "The Kalman Variational Auto-Encoder combines nonlinear visual representation learning with structured linear-Gaussian latent dynamics. A variational autoencoder maps each observation to an embedding, while a switching state-space model evolves a lower-dimensional hidden state with locally selected transition matrices. Kalman filtering and smoothing provide temporally coherent inference, and decoded future states produce predicted observations. The separation lets the model retain tractable probabilistic dynamics while representing nonlinear images. Experiments on bouncing objects and human-motion sequences evaluate reconstruction, filtering, missing-frame completion, long-horizon prediction, and latent state organization. Analyses study transition mixtures, dynamics dimension, inference structure, observation embeddings, uncertainty, switching behavior, and comparisons with recurrent variational models.",
+      "zh": "Kalman Variational Auto-Encoder 将非线性视觉表征学习与结构化线性高斯潜动力学结合。变分自编码器把每个观测映射到嵌入，切换状态空间模型用局部选择的转移矩阵推进更低维隐藏状态；卡尔曼滤波和平滑提供时间一致的推断，解码未来状态即可得到预测观测。该分离在表达非线性图像的同时保留可处理的概率动力学。论文在弹跳物体和人体运动序列上评估重建、滤波、缺帧补全、长时预测与潜状态组织，并分析转移混合、动力学维度、推断结构、不确定性和切换行为。"
+    },
+    "applications": "Unsupervised filtering, prediction, and control from image sequences",
+    "links": {
+      "paper": "https://arxiv.org/abs/1710.05741",
+      "code": "https://github.com/simonkamronn/kvae",
+      "project": "https://sites.google.com/view/kvae/home"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "karl2016dvbf",
+    "name": "DVBF",
+    "title": "Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data",
+    "venue": "ICLR",
+    "date": "2016-05",
+    "year": 2016,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-P"
+    ],
+    "keywords": {
+      "en": [
+        "Variational filtering",
+        "Latent state-space model",
+        "System identification"
+      ],
+      "zh": [
+        "变分滤波",
+        "潜状态空间模型",
+        "系统辨识"
+      ]
+    },
+    "summary": {
+      "en": "DVBF learns nonlinear state-space models directly from raw sequential observations and optional controls. Instead of inferring each latent state independently, its variational posterior samples transition noise and propagates states through the same learned dynamics used for generation. This couples representation learning to a Markov transition model, supports filtering and multistep prediction, and permits action-conditioned system identification. Experiments on pendulum images, bouncing balls, and simulated robot systems evaluate reconstruction, latent-state recovery, dynamics prediction, filtering, and control-related parameter learning. Ablations compare transition parameterizations, posterior designs, deterministic and stochastic dynamics, action inputs, sequence lengths, and the effect of backpropagating through sampled transitions on learned physical state structure.",
+      "zh": "DVBF 直接从原始序列观测和可选控制中学习非线性状态空间模型。其变分后验不是独立推断每个潜状态，而是采样转移噪声，并通过与生成过程相同的学习动力学传播状态；这种结构把表征学习与马尔可夫转移模型耦合，支持滤波、多步预测和动作条件系统辨识。论文在摆图像、弹跳球和模拟机器人系统上评估重建、潜状态恢复、动力学预测、滤波及控制相关参数学习，并比较转移参数化、后验设计、确定与随机动力学、动作输入和序列长度。"
+    },
+    "applications": "Unsupervised dynamics identification and control from raw observations",
+    "links": {
+      "paper": "https://arxiv.org/abs/1605.06432",
+      "code": "https://github.com/argmax-ai/deep-variational-bayes-filters"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "watters2017vin",
+    "name": "Visual Interaction Networks",
+    "title": "Visual Interaction Networks: Learning a Physics Simulator from Video",
+    "venue": "NeurIPS",
+    "date": "2017-06",
+    "year": 2017,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-P",
+      "SS-C",
+      "SS-E"
+    ],
+    "keywords": {
+      "en": [
+        "Visual physics",
+        "Object interactions",
+        "Latent simulation"
+      ],
+      "zh": [
+        "视觉物理",
+        "物体交互",
+        "潜仿真"
+      ]
+    },
+    "summary": {
+      "en": "Visual Interaction Networks learn a latent physics simulator from video observations. A perceptual front end identifies object states from several input frames, an interaction network computes pairwise effects and advances those states, and a decoder predicts future object positions or images. The model separates visual inference from physical rollout, so the same learned dynamics can be applied repeatedly and can reason about collisions and forces among multiple entities. Experiments on springs, bouncing objects, and planetary systems evaluate state estimation, multistep prediction, generalization to new configurations, and physical parameter inference. Analyses vary observation length, object count, interaction structure, rollout horizon, supervision, and the transfer of learned dynamics across visual conditions.",
+      "zh": "Visual Interaction Networks 从视频观测学习潜物理模拟器。感知前端根据若干输入帧识别物体状态，交互网络计算成对作用并推进这些状态，解码器预测未来物体位置或图像；模型把视觉推断与物理展开分开，因此同一动力学可反复应用，并能推理多实体之间的碰撞与作用力。论文在弹簧、弹跳物体和行星系统上评估状态估计、多步预测、对新构型的泛化和物理参数推断，并分析观测长度、物体数量、交互结构、展开时域、监督方式及动力学跨视觉条件迁移。"
+    },
+    "applications": "Physical forecasting and inference from short image sequences",
+    "links": {
+      "paper": "https://arxiv.org/abs/1706.01433"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "babaeizadeh2017sv2p",
+    "name": "SV2P",
+    "title": "Stochastic Variational Video Prediction",
+    "venue": "ICLR",
+    "date": "2017-10",
+    "year": 2017,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M"
+    ],
+    "keywords": {
+      "en": [
+        "Stochastic video prediction",
+        "Action conditioning",
+        "Robot control"
+      ],
+      "zh": [
+        "随机视频预测",
+        "动作条件",
+        "机器人控制"
+      ]
+    },
+    "summary": {
+      "en": "SV2P predicts stochastic visual futures with a variational latent variable model that can also condition on robot actions. A convolutional recurrent network propagates image features through time, learned motion kernels transform previous frames, and latent variables capture uncertainty that is not determined by the observed history and controls. Samples therefore represent different plausible interaction outcomes instead of collapsing to one average future. Experiments on robot pushing and human-motion video evaluate prediction accuracy, sharpness, diversity, and long rollouts, and use predicted images in visual model-predictive control. Ablations examine latent injection, posterior and prior choices, action inputs, motion transformations, sequence length, and the effect of stochastic foresight on planning.",
+      "zh": "SV2P 使用可接收机器人动作条件的变分潜变量模型预测随机视觉未来。卷积递归网络沿时间传播图像特征，学习到的运动核变换先前帧，潜变量捕捉无法由历史和控制唯一决定的不确定性，因此不同采样能够表示多种合理交互结果，而不是收敛到平均未来。论文在机器人推动和人体运动视频上评估预测精度、清晰度、多样性和长展开，并把预测图像用于视觉模型预测控制；消融分析潜变量注入、后验和先验、动作输入、运动变换、序列长度以及随机前瞻对规划的作用。"
+    },
+    "applications": "Action-conditioned visual foresight for robotic manipulation",
+    "links": {
+      "paper": "https://arxiv.org/abs/1710.11252",
+      "code": "https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/video/sv2p.py",
+      "project": "https://sites.google.com/site/stochasticvideoprediction/main"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "janner2018o2p2",
+    "name": "O2P2",
+    "title": "Reasoning About Physical Interactions with Object-Oriented Prediction and Planning",
+    "venue": "ICLR",
+    "date": "2018-12",
+    "year": 2018,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-P",
+      "SS-E",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Object-oriented prediction",
+        "Physical interaction",
+        "Visual planning"
+      ],
+      "zh": [
+        "物体导向预测",
+        "物理交互",
+        "视觉规划"
+      ]
+    },
+    "summary": {
+      "en": "O2P2 learns object-oriented physical dynamics from images and uses the model for planning. An object encoder extracts latent states for individual bodies, an interaction network predicts how pairwise forces and contacts update those states, and a decoder renders the resulting future scene. Planning searches over object placements or interventions and compares predicted outcomes with a target configuration, so control operates through explicit simulated consequences. Experiments on block towers and collision scenes evaluate future prediction, physical plausibility, stability classification, and goal-directed construction. Ablations examine object factorization, pairwise interaction terms, rollout depth, rendering, planning objectives, training-scene diversity, and generalization to new numbers and arrangements of objects.",
+      "zh": "O2P2 从图像学习物体导向的物理动力学，并将模型用于规划。物体编码器提取各个刚体的潜状态，交互网络预测成对作用力与接触如何更新这些状态，解码器渲染产生的未来场景；规划器搜索物体放置或干预，并把预测结果与目标构型比较，因此控制建立在显式模拟后果上。论文在积木塔和碰撞场景中评估未来预测、物理合理性、稳定性判断和目标导向构建，并分析物体分解、成对交互、展开深度、渲染、规划目标、训练场景多样性及对新物体数量和布局的泛化。"
+    },
+    "applications": "Goal-directed block placement through learned physical simulation",
+    "links": {
+      "paper": "https://arxiv.org/abs/1812.10972"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "sanchezgonzalez2018graphnetworks",
+    "name": "Graph Networks as Learnable Physics Engines",
+    "title": "Graph Networks as Learnable Physics Engines for Inference and Control",
+    "venue": "ICML",
+    "date": "2018-06",
+    "year": 2018,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-P",
+      "SS-C",
+      "SS-E"
+    ],
+    "keywords": {
+      "en": [
+        "Graph network",
+        "Physics engine",
+        "System identification"
+      ],
+      "zh": [
+        "图网络",
+        "物理引擎",
+        "系统辨识"
+      ]
+    },
+    "summary": {
+      "en": "Graph Networks as Learnable Physics Engines represents a physical system as objects, relations, and global attributes, then learns message-passing dynamics that advance this graph through time. The forward model predicts positions and velocities under forces or controls, while an inference variant estimates hidden physical parameters from observed trajectories. Because the transition is differentiable, candidate controls can be optimized through predicted rollouts for online planning or used to train a policy offline. Experiments span eight simulated and real physical systems, including rigid bodies, chains, fluids, and deformable materials, and evaluate prediction, structural and parametric generalization, system identification, control, rollout length, graph construction, and interaction-function design.",
+      "zh": "Graph Networks as Learnable Physics Engines 将物理系统表示为物体、关系和全局属性，并学习通过消息传递推进图状态的动力学。前向模型在外力或控制下预测位置与速度，推断模型从观测轨迹估计隐藏物理参数；由于转移可微，控制量可以通过预测展开进行在线轨迹优化，也可用于离线策略训练。论文覆盖刚体、链条、流体和可变形材料等八类仿真与真实物理系统，评估预测、结构和参数泛化、系统辨识与控制，并分析展开长度、图构造和交互函数设计。"
+    },
+    "applications": "Physical prediction, parameter inference, and trajectory optimization",
+    "links": {
+      "paper": "https://arxiv.org/abs/1806.01242"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "denton2018svg",
+    "name": "SVG-LP",
+    "title": "Stochastic Video Generation with a Learned Prior",
+    "venue": "ICML",
+    "date": "2018-02",
+    "year": 2018,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M"
+    ],
+    "keywords": {
+      "en": [
+        "Stochastic video prediction",
+        "Learned prior",
+        "Uncertain futures"
+      ],
+      "zh": [
+        "随机视频预测",
+        "学习先验",
+        "不确定未来"
+      ]
+    },
+    "summary": {
+      "en": "SVG-LP models uncertain video futures with a recurrent generator and a learned time-dependent prior over latent variables. During training, a posterior encoder observes future frames and supplies stochastic codes, while a prior network predicts their distribution from past frames; at inference, sampling the prior produces multiple plausible continuations. A deterministic recurrent pathway captures predictable motion and combines it with stochastic variation before decoding each frame. Experiments on robot pushing, human motion, and natural video compare sharpness, diversity, likelihood-related objectives, and long-horizon prediction. Ablations examine learned versus fixed priors, posterior structure, recurrent depth, latent dimension, training schedules, and how stochastic samples represent alternative physical outcomes.",
+      "zh": "SVG-LP 以递归生成器和随时间变化的学习先验建模不确定视频未来。训练时，后验编码器观察未来帧并提供随机编码，先验网络根据历史帧预测其分布；推理时从先验采样可产生多种合理续写。确定性递归路径捕捉可预测运动，再与随机变化结合后解码每一帧。论文在机器人推动、人体运动和自然视频上比较清晰度、多样性、概率目标和长时程预测，并分析学习先验与固定先验、后验结构、递归深度、潜变量维度、训练策略以及随机样本如何表达不同物理结果。"
+    },
+    "applications": "Multimodal future-frame generation in dynamic visual environments",
+    "links": {
+      "paper": "https://arxiv.org/abs/1802.07687",
+      "code": "https://github.com/edenton/svg",
+      "project": "https://sites.google.com/view/svglp/"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "jiang2019scalor",
+    "name": "SCALOR",
+    "title": "SCALOR: Generative World Models with Scalable Object Representations",
+    "venue": "ICLR",
+    "date": "2019-10",
+    "year": 2019,
+    "roles": [
+      "TI-G",
+      "TI-M",
+      "SS-E"
+    ],
+    "keywords": {
+      "en": [
+        "Object-centric representation",
+        "Sequential generative model",
+        "Entity tracking"
+      ],
+      "zh": [
+        "物体中心表征",
+        "序列生成模型",
+        "实体跟踪"
+      ]
+    },
+    "summary": {
+      "en": "SCALOR is a sequential generative world model that discovers, tracks, and renders a variable number of objects in video. It represents each entity with location, scale, depth, appearance, and presence variables, uses propagation to update existing objects, and invokes a discovery process for newly visible entities. A background model and spatial mixture renderer compose the full observation while preserving identity over time. Experiments on synthetic and real multi-object sequences evaluate counting, detection, tracking, reconstruction, generation, and scalability to crowded scenes. Ablations examine propagation versus discovery, relational context, glimpse resolution, depth ordering, background modeling, temporal inference, and generalization to longer sequences and more objects than seen in training.",
+      "zh": "SCALOR 是序列生成式世界模型，能够在视频中发现、跟踪并渲染数量可变的物体。每个实体由位置、尺度、深度、外观和存在变量表示，传播过程更新已有物体，发现过程处理新出现实体；背景模型与空间混合渲染器共同组成完整观测，并在时间上保持身份。论文在合成和真实多物体序列上评估计数、检测、跟踪、重建、生成以及拥挤场景的可扩展性，并分析传播与发现、关系上下文、局部分辨率、深度次序、背景建模、时间推断及对更长序列和更多物体的泛化。"
+    },
+    "applications": "Unsupervised decomposition and temporal modeling of crowded scenes",
+    "links": {
+      "paper": "https://arxiv.org/abs/1910.02384",
+      "code": "https://github.com/JindongJiang/SCALOR",
+      "project": "https://sites.google.com/view/scalor/home"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "veerapaneni2019op3",
+    "name": "OP3",
+    "title": "Entity Abstraction in Visual Model-Based Reinforcement Learning",
+    "venue": "CoRL",
+    "date": "2019-10",
+    "year": 2019,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-E",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Entity abstraction",
+        "Object-centric planning",
+        "Visual model-based reinforcement learning"
+      ],
+      "zh": [
+        "实体抽象",
+        "物体中心规划",
+        "视觉模型强化学习"
+      ]
+    },
+    "summary": {
+      "en": "OP3 learns an object-centric probabilistic world model and uses it directly for visual planning. Iterative inference decomposes images into exchangeable entity variables, a relational transition model predicts how those entities change under actions, and a decoder renders future observations. At decision time, the controller samples candidate action sequences, rolls their entity states forward, and scores predicted outcomes against a goal image. Experiments on simulated pushing and block manipulation evaluate perception, multistep prediction, goal-conditioned planning, and generalization to different object arrangements and counts. Ablations examine iterative refinement, relational dynamics, object slots, stochastic inference, planning horizons, candidate sampling, and comparisons with unstructured pixel or monolithic latent models.",
+      "zh": "OP3 学习物体中心概率世界模型并直接用于视觉规划。迭代推断把图像分解为可交换实体变量，关系转移模型预测这些实体在动作下如何变化，解码器渲染未来观测；决策时，控制器采样候选动作序列，在实体状态上向前展开，并依据目标图像为预测结果评分。论文在仿真推动与积木操作中评估感知、多步预测、目标条件规划以及对不同物体布局和数量的泛化，并分析迭代细化、关系动力学、物体槽位、随机推断、规划时域、候选采样及与像素或整体潜模型的比较。"
+    },
+    "applications": "Planning manipulation with object-centric latent dynamics",
+    "links": {
+      "paper": "https://arxiv.org/abs/1910.12827",
+      "project": "https://sites.google.com/view/op3website/"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "lin2020gswm",
+    "name": "G-SWM",
+    "title": "Improving Generative Imagination in Object-Centric World Models",
+    "venue": "ICML",
+    "date": "2020-10",
+    "year": 2020,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-E"
+    ],
+    "keywords": {
+      "en": [
+        "Object-centric generation",
+        "Multimodal dynamics",
+        "Situation awareness"
+      ],
+      "zh": [
+        "物体中心生成",
+        "多模态动力学",
+        "情境感知"
+      ]
+    },
+    "summary": {
+      "en": "G-SWM is a generative structured world model that represents a scene as persistent object variables and models uncertain interactions through time. It combines object discovery, tracking, relational dynamics, appearance generation, and birth or disappearance within one probabilistic framework. A situation-dependent transition prior can represent multiple plausible futures, while the renderer reconstructs full observations from predicted entity states. Experiments on synthetic and game-like multi-object videos evaluate object detection, tracking, future generation, uncertainty, and long-horizon consistency under collisions and changing object counts. Ablations examine relational reasoning, stochastic transitions, proposal and discovery mechanisms, situation awareness, object persistence, and comparisons with earlier structured world models.",
+      "zh": "G-SWM 是生成式结构化世界模型，用持续的物体变量表示场景，并在时间上建模不确定交互。系统在统一概率框架中结合物体发现、跟踪、关系动力学、外观生成以及实体出现和消失；情境相关转移先验能够表示多种合理未来，渲染器则从预测实体状态重建完整观测。论文在合成和游戏式多物体视频上评估检测、跟踪、未来生成、不确定性及碰撞和物体数量变化下的长时一致性，并分析关系推理、随机转移、提议与发现机制、情境感知和物体持续性。"
+    },
+    "applications": "Object-centric temporal imagination in multi-entity scenes",
+    "links": {
+      "paper": "https://arxiv.org/abs/2010.02054",
+      "code": "https://github.com/zhixuan-lin/G-SWM"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "kim2020gamegan",
+    "name": "GameGAN",
+    "title": "Learning to Simulate Dynamic Environments with GameGAN",
+    "venue": "CVPR",
+    "date": "2020-05",
+    "year": 2020,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M"
+    ],
+    "keywords": {
+      "en": [
+        "Neural game engine",
+        "Action-conditioned generation",
+        "External memory"
+      ],
+      "zh": [
+        "神经游戏引擎",
+        "动作条件生成",
+        "外部记忆"
+      ]
+    },
+    "summary": {
+      "en": "GameGAN learns an interactive game simulator directly from action-labeled gameplay video. A recurrent dynamics engine receives player controls and updates a latent state, an external memory preserves spatial layout across revisited locations, and a generative adversarial renderer produces the next frame. The architecture separates static scene content from dynamic sprites so actions cause coherent movement while persistent map elements remain stable. Experiments on PAC-MAN and related environments evaluate visual fidelity, action responsiveness, long rollouts, collision behavior, and map consistency, including human play inside the learned simulator. Ablations study memory, dynamics, rendering losses, action conditioning, static-dynamic decomposition, and generalization beyond the exact trajectories in the training data.",
+      "zh": "GameGAN 直接从带动作标签的游戏视频学习可交互游戏模拟器。递归动力学引擎接收玩家控制并更新潜状态，外部记忆在再次到访的位置保持空间布局，生成对抗渲染器产生下一帧；架构还分离静态场景内容与动态角色，使动作带来连贯运动而地图元素持续稳定。论文在 PAC-MAN 等环境中评估视觉保真、动作响应、长展开、碰撞行为与地图一致性，并展示人在学习模拟器中的实际游玩；消融分析记忆、动力学、渲染损失、动作条件、静动态分解和超出训练轨迹的泛化。"
+    },
+    "applications": "Interactive simulation of game environments from recorded play",
+    "links": {
+      "paper": "https://arxiv.org/abs/2005.12126",
+      "code": "https://github.com/nv-tlabs/GameGAN_code",
+      "project": "https://research.nvidia.com/labs/toronto-ai/GameGAN/"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "leguen2020phydnet",
+    "name": "PhyDNet",
+    "title": "Disentangling Physical Dynamics from Unknown Factors for Unsupervised Video Prediction",
+    "venue": "CVPR",
+    "date": "2020-03",
+    "year": 2020,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-P"
+    ],
+    "keywords": {
+      "en": [
+        "Physics-aware prediction",
+        "Partial differential equations",
+        "Video dynamics"
+      ],
+      "zh": [
+        "物理感知预测",
+        "偏微分方程",
+        "视频动力学"
+      ]
+    },
+    "summary": {
+      "en": "PhyDNet separates predictable physical evolution from appearance changes and other unknown factors in video. A physics branch uses a recurrent cell constrained to approximate partial differential operators, while a residual branch learns complementary dynamics not captured by those constraints. The two hidden states are updated over time and decoded together to predict future frames, yielding an interpretable physical component without requiring physical labels. Experiments on moving digits, human motion, traffic, and meteorological sequences evaluate multistep prediction, physical-state recovery, and long-horizon behavior. Ablations examine moment constraints, branch capacity, coupling, teacher forcing, prediction horizons, and comparisons with purely recurrent video models and numerical physical baselines.",
+      "zh": "PhyDNet 将视频中可预测的物理演化与外观变化及其他未知因素分开。物理分支采用受约束的递归单元近似偏微分算子，残差分支学习这些约束未覆盖的补充动力学；两个隐藏状态随时间更新并共同解码未来帧，在不需要物理标签的情况下形成可解释物理成分。论文在移动数字、人体运动、交通和气象序列上评估多步预测、物理状态恢复与长时行为，并分析矩约束、分支容量、耦合、教师强制、预测时域以及与纯递归视频模型和数值物理基线的比较。"
+    },
+    "applications": "Unsupervised future prediction with separated physical and residual dynamics",
+    "links": {
+      "paper": "https://arxiv.org/abs/2003.01460",
+      "code": "https://github.com/vincent-leguen/PhyDNet"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "kim2021drivegan",
+    "name": "DriveGAN",
+    "title": "DriveGAN: Towards a Controllable High-Quality Neural Simulation",
+    "venue": "CVPR",
+    "date": "2021-04",
+    "year": 2021,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "AC-D"
+    ],
+    "keywords": {
+      "en": [
+        "Neural driving simulator",
+        "Controllable generation",
+        "Scene dynamics"
+      ],
+      "zh": [
+        "神经驾驶模拟器",
+        "可控生成",
+        "场景动力学"
+      ]
+    },
+    "summary": {
+      "en": "DriveGAN learns a controllable neural driving simulator from video without access to a conventional rendering engine. It decomposes latent state into static scene style, dynamic objects, and action-sensitive motion, then advances the state recurrently under steering and speed controls. A generator renders each updated state as a high-resolution driving frame, while disentanglement and temporal objectives preserve scene identity and make controls interpretable. Experiments on real driving datasets and simulator data evaluate image quality, long-rollout consistency, action response, scene editing, and transfer across environments. Ablations study latent decomposition, recurrent dynamics, control supervision, content-style separation, object motion, and the connection between learned controls and generated camera trajectories.",
+      "zh": "DriveGAN 从视频学习可控神经驾驶模拟器，而不依赖传统渲染引擎。模型把潜状态分解为静态场景风格、动态物体和对动作敏感的运动，并在转向与速度控制下递归推进状态；生成器将每个更新状态渲染为高分辨率驾驶画面，分解与时间目标保持场景身份并使控制具有明确作用。论文在真实驾驶数据和模拟器数据上评估图像质量、长展开一致性、动作响应、场景编辑和跨环境迁移，并分析潜状态分解、递归动力学、控制监督、内容风格分离及物体运动。"
+    },
+    "applications": "Interactive photorealistic driving-scene simulation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2104.15060",
+      "code": "https://github.com/nv-tlabs/DriveGAN_code",
+      "project": "https://research.nvidia.com/labs/toronto-ai/DriveGAN/"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "seo2022apv",
+    "name": "APV",
+    "title": "Reinforcement Learning with Action-Free Pre-Training from Videos",
+    "venue": "ICML",
+    "date": "2022-03",
+    "year": 2022,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Action-free video pretraining",
+        "Latent prediction",
+        "Visual reinforcement learning"
+      ],
+      "zh": [
+        "无动作视频预训练",
+        "潜预测",
+        "视觉强化学习"
+      ]
+    },
+    "summary": {
+      "en": "APV pretrains an action-free latent video predictor and transfers its dynamics representation into an action-conditioned world model for reinforcement learning. The first model learns temporal structure from diverse videos without controls; during downstream interaction, a second transition module is stacked on the pretrained representation to incorporate real actions. Imagined trajectories train a Dreamer-style policy, and distances in the pretrained video space also provide an intrinsic exploration bonus. Experiments pretrain on RLBench videos and finetune on Meta-World manipulation and DeepMind Control locomotion, evaluating success, returns, and sample efficiency. Ablations cover pretraining data, stacked dynamics, intrinsic rewards, frozen versus updated representations, and domain transfer.",
+      "zh": "APV 先预训练无动作的潜视频预测器，再把其动力学表征迁移到动作条件世界模型中进行强化学习。第一阶段从多样视频学习时间结构而不需要控制标签；下游交互时，在预训练表征上叠加第二个转移模块以接收真实动作。Dreamer 式策略在想象轨迹中训练，预训练视频空间的距离还提供内在探索奖励。论文用 RLBench 视频预训练，在 Meta-World 操作和 DeepMind Control 运动任务上微调，评估成功、回报和样本效率，并分析预训练数据、叠加动力学、内在奖励、表征更新及跨域迁移。"
+    },
+    "applications": "Sample-efficient manipulation and locomotion from pretrained video dynamics",
+    "links": {
+      "paper": "https://arxiv.org/abs/2203.13880",
+      "code": "https://github.com/younggyoseo/apv",
+      "project": "https://sites.google.com/view/rl-apv"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "pan2022isodream",
+    "name": "Iso-Dream",
+    "title": "Iso-Dream: Isolating and Leveraging Noncontrollable Visual Dynamics in World Models",
+    "venue": "NeurIPS",
+    "date": "2022-05",
+    "year": 2022,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-C"
+    ],
+    "keywords": {
+      "en": [
+        "Controllable dynamics",
+        "Noncontrollable dynamics",
+        "Visual reinforcement learning"
+      ],
+      "zh": [
+        "可控动力学",
+        "不可控动力学",
+        "视觉强化学习"
+      ]
+    },
+    "summary": {
+      "en": "Iso-Dream decomposes a visual world model into controllable dynamics affected by the agent and noncontrollable dynamics that evolve independently. Separate latent transition modules model the two factors, while attention and prediction objectives preserve their interactions in reconstructed observations. During imagination, the policy chooses actions through the controllable branch and attends to forecasted noncontrollable motion, allowing it to anticipate other agents or background events without treating them as action effects. Experiments on modified DeepMind Control and CARLA tasks evaluate returns, separation, prediction, and robustness to moving distractors and traffic. Ablations study factorization losses, attention, future noncontrollable states, latent capacity, and the contribution of each branch to control.",
+      "zh": "Iso-Dream 将视觉世界模型分解为受智能体动作影响的可控动力学和独立演化的不可控动力学。两个潜转移模块分别建模这些因素，注意力与预测目标在重建观测时保留它们之间的交互；想象过程中，策略通过可控分支选择动作，同时关注预测的不可控运动，因此能够预判其他智能体或背景事件，而不把它们误认为动作效果。论文在改造的 DeepMind Control 和 CARLA 任务上评估回报、分离、预测及对移动干扰和交通的适应，并分析分解损失、注意力、未来不可控状态和各分支贡献。"
+    },
+    "applications": "Control in environments with independently moving visual factors",
+    "links": {
+      "paper": "https://arxiv.org/abs/2205.13817",
+      "code": "https://github.com/panmt/Iso-Dream"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "deng2022dreamingv2",
+    "name": "DreamingV2",
+    "title": "DreamingV2: Reinforcement Learning with Discrete World Models without Reconstruction",
+    "venue": "IROS",
+    "date": "2022-03",
+    "year": 2022,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M"
+    ],
+    "keywords": {
+      "en": [
+        "Discrete world model",
+        "Reconstruction-free learning",
+        "Atari control"
+      ],
+      "zh": [
+        "离散世界模型",
+        "无重建学习",
+        "Atari控制"
+      ]
+    },
+    "summary": {
+      "en": "DreamingV2 learns a discrete latent world model for visual reinforcement learning without reconstructing image pixels. An encoder maps observations to categorical latent variables, recurrent action-conditioned dynamics predict their temporal evolution, and reward and continuation heads supply task signals. The representation is trained with a contrastive objective between predicted and encoded latents, after which an actor and critic learn entirely from imagined latent trajectories. Experiments on Atari games compare data efficiency, returns, model behavior, and computation with pixel-reconstruction and continuous-latent agents. Ablations analyze discrete versus continuous states, contrastive targets, negative samples, latent size, reconstruction removal, imagination horizon, and the stability of policy gradients through learned dynamics.",
+      "zh": "DreamingV2 在不重建图像像素的情况下学习用于视觉强化学习的离散潜世界模型。编码器把观测映射为类别潜变量，递归动作条件动力学预测它们的时间演化，奖励和持续预测头提供任务信号；表征通过预测潜状态与编码潜状态之间的对比目标训练，随后演员和评论家完全在想象潜轨迹中学习。论文在 Atari 游戏上比较数据效率、回报、模型行为和计算开销，并分析离散与连续状态、对比目标、负样本、潜变量规模、去除重建、想象时域以及通过动力学传播策略梯度的稳定性。"
+    },
+    "applications": "Visual reinforcement learning through discrete latent imagination",
+    "links": {
+      "paper": "https://arxiv.org/abs/2203.00494"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "seo2022multiviewdreaming",
+    "name": "Multi-View Dreaming",
+    "title": "Multi-View Dreaming: Multi-View World Model with Contrastive Learning",
+    "venue": "Advanced Robotics",
+    "date": "2022-03",
+    "year": 2022,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Multiview world model",
+        "Contrastive learning",
+        "Robot control"
+      ],
+      "zh": [
+        "多视角世界模型",
+        "对比学习",
+        "机器人控制"
+      ]
+    },
+    "summary": {
+      "en": "Multi-View Dreaming learns a shared latent world model from synchronized camera views for robust visual control. View-specific encoders feed a recurrent action-conditioned dynamics model, and contrastive objectives align representations of the same physical state across viewpoints while distinguishing different times. The policy and value model train on imagined latent rollouts, so control can exploit a state representation that is less tied to any single camera. Experiments on simulated manipulation and control tasks evaluate returns, sample efficiency, view transfer, and tolerance to camera changes or missing views. Ablations examine positive-pair construction, shared versus separate encoders, view fusion, reconstruction, contrastive weights, training-view count, and deployment from unseen viewpoints.",
+      "zh": "Multi-View Dreaming 从同步相机视角学习共享潜世界模型，以提高视觉控制的视角鲁棒性。各视角编码器接入递归动作条件动力学，对比目标让同一物理状态在不同视角下的表征对齐，同时区分不同时间状态；策略与价值模型在想象潜展开中训练，因此控制可利用不依赖单一相机的状态表示。论文在仿真操作和控制任务上评估回报、样本效率、视角迁移以及对相机变化或缺失视角的适应，并分析正样本构造、共享与独立编码器、视角融合、重建、对比权重、训练视角数量和未见视角部署。"
+    },
+    "applications": "View-invariant latent imagination for visuomotor control",
+    "links": {
+      "paper": "https://arxiv.org/abs/2203.11024"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "wang2022denoisedmdp",
+    "name": "Denoised MDPs",
+    "title": "Denoised MDPs: Learning World Models Better Than the World Itself",
+    "venue": "ICML",
+    "date": "2022-06",
+    "year": 2022,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-C",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Denoised dynamics",
+        "Controllability",
+        "Reward relevance"
+      ],
+      "zh": [
+        "去噪动力学",
+        "可控性",
+        "奖励相关性"
+      ]
+    },
+    "summary": {
+      "en": "Denoised MDPs factor visual experience according to whether information is controllable and reward-relevant. The learned world model preserves the latent process that is both influenced by actions and useful for reward, while separate variables account for uncontrollable or task-irrelevant variation needed to explain observations. Action-conditioned transitions, reward prediction, and reconstruction objectives jointly identify these components, and a policy learns from imagined denoised trajectories. Experiments on DeepMind Control and RoboDesk variants with structured distractors evaluate control returns, state regression, representation separation, and generalization. Ablations test causal assumptions, latent factors, reward supervision, reconstruction paths, distractor types, and which information the policy receives.",
+      "zh": "Denoised MDPs 按信息是否可控以及是否与奖励相关来分解视觉经验。世界模型保留既受动作影响又对奖励有用的潜过程，同时用独立变量解释不可控或与任务无关但仍影响观测的变化；动作条件转移、奖励预测与重建目标共同辨识这些成分，策略在去噪后的想象轨迹中学习。论文在带结构化干扰的 DeepMind Control 和 RoboDesk 变体上评估控制回报、状态回归、表征分离与泛化，并分析因果假设、潜因素、奖励监督、重建路径、干扰类型及策略可访问的信息。"
+    },
+    "applications": "Control and state estimation under structured visual nuisance factors",
+    "links": {
+      "paper": "https://arxiv.org/abs/2206.15477",
+      "code": "https://github.com/facebookresearch/denoised_mdp",
+      "project": "https://www.tongzhouwang.info/denoised_mdp/"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "wu2022slotformer",
+    "name": "SlotFormer",
+    "title": "SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models",
+    "venue": "ICLR",
+    "date": "2022-10",
+    "year": 2022,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-E"
+    ],
+    "keywords": {
+      "en": [
+        "Object-centric dynamics",
+        "Slot prediction",
+        "Visual simulation"
+      ],
+      "zh": [
+        "物体中心动力学",
+        "槽位预测",
+        "视觉仿真"
+      ]
+    },
+    "summary": {
+      "en": "SlotFormer models video dynamics as interactions among object-centric slots. A pretrained perceptual model decomposes each frame into a set of entity representations, and a Transformer autoregressively predicts future slot sets while attending across objects and time. A decoder renders predicted slots back to video, making it possible to evaluate both object trajectories and generated observations over long horizons. Experiments on synthetic physics, CLEVRER, and real-world object videos measure reconstruction, rollout quality, object tracking, dynamics prediction, and downstream reasoning. Ablations examine slot initialization, Transformer attention, rollout training, perceptual-model finetuning, temporal context, object count, and how errors in unsupervised decomposition affect future simulation.",
+      "zh": "SlotFormer 把视频动力学建模为物体中心槽位之间的交互。预训练感知模型将每帧分解为一组实体表示，Transformer 在物体和时间维度上进行注意力，并自回归预测未来槽位集合；解码器把预测槽位重新渲染为视频，因此可同时评估物体轨迹与长时程生成观测。论文在合成物理、CLEVRER 和真实物体视频上评估重建、展开质量、跟踪、动力学预测和下游推理，并分析槽位初始化、注意力、展开训练、感知模型微调、时间上下文、物体数量及无监督分解误差。"
+    },
+    "applications": "Long-horizon object-centric video dynamics prediction",
+    "links": {
+      "paper": "https://arxiv.org/abs/2210.05861",
+      "code": "https://github.com/pairlab/SlotFormer",
+      "project": "https://slotformer.github.io/"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "ma2023harmonydream",
+    "name": "HarmonyDream",
+    "title": "HarmonyDream: Task Harmonization Inside World Models",
+    "venue": "ICML",
+    "date": "2023-09",
+    "year": 2023,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Task harmonization",
+        "Observation-reward modeling",
+        "Visual reinforcement learning"
+      ],
+      "zh": [
+        "任务协调",
+        "观测奖励建模",
+        "视觉强化学习"
+      ]
+    },
+    "summary": {
+      "en": "HarmonyDream treats world-model learning as a balance between observation modeling and reward modeling. Rather than fixing their loss weights, it learns coefficients that maintain a dynamic equilibrium among reconstruction, dynamics, and reward objectives as training progresses. The resulting latent transition model continues to generate imagined trajectories for actor-critic learning, while the harmonizer prevents either detailed visual prediction or compact task signals from dominating the representation. Experiments on Atari 100K, DeepMind Control, and visual robot manipulation compare returns and sample efficiency across Dreamer-style backbones. Analyses cover learned coefficients, task interference, model capacity, observation complexity, reward prediction, and the portability of harmonization across world-model implementations.",
+      "zh": "HarmonyDream 把世界模型学习视为观测建模与奖励建模之间的动态平衡。它不固定各损失权重，而是在训练过程中学习系数，协调重建、动力学和奖励目标；所得潜转移模型继续为演员—评论家生成想象轨迹，同时避免细致视觉预测或紧凑任务信号独占表征。论文在 Atari 100K、DeepMind Control 和视觉机器人操作上比较不同 Dreamer 式骨干的回报与样本效率，并分析学习权重、任务干扰、模型容量、观测复杂度、奖励预测以及协调机制跨实现迁移。"
+    },
+    "applications": "Balanced world-model training for sample-efficient visual control",
+    "links": {
+      "paper": "https://arxiv.org/abs/2310.00344",
+      "code": "https://github.com/thuml/HarmonyDream"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "lin2023dynalang",
+    "name": "Dynalang",
+    "title": "Learning to Model the World with Language",
+    "venue": "ICML",
+    "date": "2023-07",
+    "year": 2023,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "AC-V",
+      "AC-N"
+    ],
+    "keywords": {
+      "en": [
+        "Multimodal world model",
+        "Language grounding",
+        "Imagined reinforcement learning"
+      ],
+      "zh": [
+        "多模态世界模型",
+        "语言落地",
+        "想象强化学习"
+      ]
+    },
+    "summary": {
+      "en": "Dynalang learns a multimodal world model that predicts future image and language representations together with rewards and continuation. Text may describe rules, current state, instructions, or feedback, and the recurrent latent dynamics integrate these signals with visual observations and actions. The agent trains its policy on imagined rollouts, using language because it improves prediction of what will happen rather than treating every utterance as a direct command. Experiments include games, instruction following, and navigation in photorealistic homes, and evaluate returns, language use, offline text pretraining, and generation. Ablations examine language types, predictive objectives, modality dropout, imagination, pretraining, and temporal grounding between words and environmental events.",
+      "zh": "Dynalang 学习联合预测未来图像表征、语言表征、奖励与持续信号的多模态世界模型。文本可以描述规则、当前状态、指令或反馈，递归潜动力学把这些语言信息与视觉观测和动作整合；策略在想象展开中训练，语言的作用是帮助预测将发生什么，而非被统一当作直接命令。论文覆盖游戏、指令跟随和照片级家庭环境导航，评估回报、语言利用、离线文本预训练和生成能力，并分析不同语言类型、预测目标、模态丢弃、想象学习、预训练及词语与环境事件的时间对齐。"
+    },
+    "applications": "Language-informed games, navigation, and embodied control",
+    "links": {
+      "paper": "https://arxiv.org/abs/2308.01399",
+      "code": "https://github.com/jlin816/dynalang",
+      "project": "https://dynalang.github.io/"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "zhu2023statler",
+    "name": "Statler",
+    "title": "Statler: State-Maintaining Language Models for Embodied Reasoning",
+    "venue": "ICRA",
+    "date": "2023-06",
+    "year": 2023,
+    "roles": [
+      "TI-I",
+      "TI-M",
+      "SS-E",
+      "AC-V",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Structured world state",
+        "Language-model memory",
+        "Embodied reasoning"
+      ],
+      "zh": [
+        "结构化世界状态",
+        "语言模型记忆",
+        "具身推理"
+      ]
+    },
+    "summary": {
+      "en": "Statler maintains an explicit textual world state for long-horizon embodied reasoning. A state reader selects task-relevant facts from the structured memory, a planner proposes the next action, and a state writer updates entities, properties, relations, and task progress after observing the action outcome. Separating persistent state from conversational context lets the language model reason over changing environments without repeatedly reconstructing the entire history. Experiments on simulated household and embodied tasks evaluate success, state accuracy, long-horizon consistency, and robustness to extended interaction. Ablations examine reader-writer separation, state formats, update frequency, observation access, memory length, and comparisons with monolithic prompting and retrieval-based language agents.",
+      "zh": "Statler 为长时程具身推理维护显式文本世界状态。状态读取器从结构化记忆中选择与任务相关的事实，规划器提出下一动作，状态写入器在观察动作结果后更新实体、属性、关系和任务进度。把持续状态从对话上下文中分离，使语言模型无需反复重建全部历史即可推理变化中的环境。论文在模拟家庭和具身任务上评估任务成功、状态准确、长时一致性以及对延长交互的适应，并分析读写模块分离、状态格式、更新频率、观测访问、记忆长度以及与单体提示和检索式智能体的比较。"
+    },
+    "applications": "Long-horizon task reasoning with explicit state updates",
+    "links": {
+      "paper": "https://arxiv.org/abs/2306.17840",
+      "code": "https://github.com/ripl/statler",
+      "project": "https://statler-lm.github.io/"
+    },
+    "paradigms": [
+      "latent-predictive",
+      "mllm-integrated"
+    ]
+  },
+  {
+    "id": "zhao2023llmdm",
+    "name": "LLM-DM",
+    "title": "Large Language Models as Commonsense Knowledge for Large-Scale Task Planning",
+    "venue": "NeurIPS",
+    "date": "2023-05",
+    "year": 2023,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-C",
+      "SS-E",
+      "AC-T"
+    ],
+    "keywords": {
+      "en": [
+        "Commonsense world model",
+        "Monte Carlo tree search",
+        "Task planning"
+      ],
+      "zh": [
+        "常识世界模型",
+        "蒙特卡洛树搜索",
+        "任务规划"
+      ]
+    },
+    "summary": {
+      "en": "LLM-DM uses a large language model as both a commonsense transition model and a policy prior inside Monte Carlo tree search. Given a structured task state and candidate action, the world-model query predicts likely successor states, while a separate policy query proposes promising actions to focus the search. Planning repeatedly expands and evaluates this learned state-transition tree rather than executing language-model suggestions directly. Experiments on multiplication, multihop travel, and object rearrangement measure planning success, search efficiency, and generalization to novel tasks. The paper analyzes model and policy prompts, branching, rollout depth, language-model scale, minimum-description-length intuition, and when world-model search is preferable to direct policy generation.",
+      "zh": "LLM-DM 在蒙特卡洛树搜索中同时把大型语言模型用作常识状态转移模型和策略先验。给定结构化任务状态与候选动作，世界模型查询预测可能的后继状态，策略查询则提出有希望的动作以集中搜索；规划器反复扩展并评估这一学习到的状态转移树，而非直接执行语言模型建议。论文在乘法、多跳旅行和物体重排任务上评估规划成功、搜索效率和对新任务的泛化，并分析模型与策略提示、分支、展开深度、语言模型规模、最短描述长度直觉及何时适合使用世界模型搜索。"
+    },
+    "applications": "Large-scale symbolic and commonsense task planning",
+    "links": {
+      "paper": "https://arxiv.org/abs/2305.14078",
+      "code": "https://github.com/1989Ryan/llm-mcts",
+      "project": "https://llm-mcts.github.io"
+    },
+    "paradigms": [
+      "latent-predictive",
+      "mllm-integrated"
+    ]
+  },
+  {
+    "id": "hao2023rap",
+    "name": "RAP",
+    "title": "Reasoning with Language Model is Planning with World Model",
+    "venue": "EMNLP",
+    "date": "2023-05",
+    "year": 2023,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-C",
+      "SS-E",
+      "AC-T"
+    ],
+    "keywords": {
+      "en": [
+        "Reasoning as planning",
+        "Language world model",
+        "Tree search"
+      ],
+      "zh": [
+        "推理即规划",
+        "语言世界模型",
+        "树搜索"
+      ]
+    },
+    "summary": {
+      "en": "RAP frames language-model reasoning as planning through a learned textual world model. A language model proposes reasoning actions, predicts the next intermediate state after each action, and estimates local rewards such as goal relevance, consistency, and likelihood. Monte Carlo tree search explores alternative reasoning paths using these transition and reward signals before returning the highest-valued solution. This separates search over consequences from a single left-to-right chain. Experiments on mathematical reasoning, logical inference, and embodied planning evaluate answer accuracy, search behavior, and transfer across language-model scales. Ablations examine world-model prompts, reward components, tree policies, rollout depth, sampling, self-consistency, and the contribution of explicit state prediction.",
+      "zh": "RAP 把语言模型推理表述为通过学习到的文本世界模型进行规划。语言模型提出推理动作，预测每个动作后的中间状态，并估计目标相关性、一致性和可能性等局部奖励；蒙特卡洛树搜索依据这些转移与奖励探索不同推理路径，再返回价值最高的解答，从而把后果搜索与单条从左到右的思维链分开。论文在数学推理、逻辑推断和具身规划上评估答案准确率、搜索行为和跨模型规模迁移，并分析世界模型提示、奖励组成、树策略、展开深度、采样、自一致性及显式状态预测。"
+    },
+    "applications": "Multi-step reasoning through simulated intermediate states",
+    "links": {
+      "paper": "https://arxiv.org/abs/2305.14992",
+      "code": "https://github.com/maitrix-org/llm-reasoners"
+    },
+    "paradigms": [
+      "latent-predictive",
+      "mllm-integrated"
+    ]
+  },
+  {
+    "id": "huang2023safedreamer",
+    "name": "SafeDreamer",
+    "title": "SafeDreamer: Safe Reinforcement Learning with World Models",
+    "venue": "ICLR",
+    "date": "2023-07",
+    "year": 2023,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-C",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Safe reinforcement learning",
+        "Cost prediction",
+        "Constrained imagination"
+      ],
+      "zh": [
+        "安全强化学习",
+        "成本预测",
+        "约束想象"
+      ]
+    },
+    "summary": {
+      "en": "SafeDreamer extends a latent visual world model to predict both task rewards and safety costs under actions. The recurrent dynamics generate imagined trajectories, and constrained actor-critic objectives optimize return while enforcing a cost budget through learned value estimates or Lagrangian updates. Because reward and violation consequences are simulated before execution, policy training can use risky alternatives without collecting them directly in the real environment. Experiments in Safety-Gymnasium and driving-style tasks measure return, cumulative cost, violations, and sample efficiency. The paper compares constrained optimization variants and analyzes cost prediction, imagination horizon, budget settings, model errors, offline pretraining, and how safety objectives influence learned behavior.",
+      "zh": "SafeDreamer 扩展潜视觉世界模型，使其在动作条件下同时预测任务奖励和安全成本。递归动力学生成想象轨迹，受约束的演员—评论家目标通过学习的价值估计或拉格朗日更新，在提高回报的同时满足成本预算；由于奖励与违规后果能够在执行前被模拟，策略可从有风险的替代方案中学习而无需直接在真实环境采集。论文在 Safety-Gymnasium 和驾驶式任务上评估回报、累计成本、违规和样本效率，并比较不同约束优化方式，分析成本预测、想象时域、预算、模型误差与安全目标。"
+    },
+    "applications": "Constraint-aware policy learning from visual world-model rollouts",
+    "links": {
+      "paper": "https://arxiv.org/abs/2307.07176",
+      "code": "https://github.com/PKU-Alignment/SafeDreamer"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "deng2023s4wm",
+    "name": "S4WM",
+    "title": "Facing Off World Model Backbones: RNNs, Transformers, and S4",
+    "venue": "NeurIPS",
+    "date": "2023-07",
+    "year": 2023,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M"
+    ],
+    "keywords": {
+      "en": [
+        "Structured state space",
+        "World-model backbone",
+        "Long memory"
+      ],
+      "zh": [
+        "结构化状态空间",
+        "世界模型骨干",
+        "长记忆"
+      ]
+    },
+    "summary": {
+      "en": "S4WM studies structured state-space sequence models as the temporal backbone of latent world models. Observations are encoded into compact states, an action-conditioned S4 module predicts long sequences of latent dynamics, and decoders recover observations, rewards, and continuation signals for imagined policy learning. The parallel training and recurrent inference forms of S4 provide long memory without the quadratic attention cost of Transformers. Experiments compare recurrent, Transformer, and S4 backbones on visual-control and sequence-prediction tasks, measuring returns, rollout error, context use, speed, and memory. Ablations vary S4 depth, state size, sequence length, stochastic latent variables, observation models, and the interaction between backbone architecture and imagination horizon.",
+      "zh": "S4WM 研究把结构化状态空间序列模型作为潜世界模型的时间骨干。观测被编码为紧凑状态，动作条件 S4 模块预测较长的潜动力学序列，解码器恢复观测、奖励和持续信号供策略在想象中学习；S4 的并行训练与递归推理形式在避免 Transformer 二次注意力开销的同时提供长记忆。论文在视觉控制和序列预测任务上比较递归、Transformer 与 S4 骨干，评估回报、展开误差、上下文利用、速度和内存，并分析 S4 深度、状态规模、序列长度、随机潜变量和想象时域。"
+    },
+    "applications": "Efficient long-context world simulation and visual control",
+    "links": {
+      "paper": "https://arxiv.org/abs/2307.02064",
+      "project": "https://fdeng18.github.io/s4wm"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "yang2024eva",
+    "name": "EVA",
+    "title": "EVA: An Embodied World Model for Future Video Anticipation",
+    "venue": "arXiv",
+    "date": "2024-10",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Future video anticipation",
+        "Vision-language reasoning",
+        "Embodied prediction"
+      ],
+      "zh": [
+        "未来视频预判",
+        "视觉语言推理",
+        "具身预测"
+      ]
+    },
+    "summary": {
+      "en": "EVA combines vision-language reasoning with a generative video world model to anticipate embodied futures. A multimodal reasoning component interprets the current scene, task, and interaction history, then supplies semantic plans and conditions to a video generator that rolls observations forward autoregressively. Predicted clips expose likely object changes and action consequences, and the system can repeatedly condition on its own generated future for longer anticipation. The paper evaluates future video quality, semantic consistency, action relevance, and embodied question answering across household and egocentric interaction data. It also introduces EVA-Bench and analyzes reasoning prompts, temporal context, generator conditioning, autoregressive length, and the relationship between predicted visual futures and action understanding.",
+      "zh": "EVA 将视觉语言推理与生成式视频世界模型结合，用于预判具身交互的未来。多模态推理模块理解当前场景、任务和交互历史，产生语义计划与条件，视频生成器再据此自回归展开未来观测；预测片段呈现可能的物体变化和动作后果，并可继续作为条件支持更长预判。论文在家庭与第一视角交互数据上评估未来视频质量、语义一致性、动作相关性和具身问答，同时提出 EVA-Bench，并分析推理提示、时间上下文、生成条件、展开长度以及视觉未来与动作理解的联系。"
+    },
+    "applications": "Language-guided anticipation of embodied interaction futures",
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.15461",
+      "code": "https://github.com/litwellchi/EmbodiedVideoAnticipator",
+      "project": "https://sites.google.com/view/icml-eva"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "mllm-integrated"
+    ]
+  },
+  {
+    "id": "zhang2024prelar",
+    "name": "PreLAR",
+    "title": "PreLAR: World Model Pre-training with Learnable Action Representation",
+    "venue": "ECCV",
+    "date": "2024-10",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Latent action learning",
+        "Action-free video pretraining",
+        "Visual control"
+      ],
+      "zh": [
+        "潜动作学习",
+        "无动作视频预训练",
+        "视觉控制"
+      ]
+    },
+    "summary": {
+      "en": "PreLAR pretrains an action-conditional world model from videos that do not contain recorded actions. An inverse-style encoder maps adjacent observations to a learnable latent action, and an action-state consistency objective encourages this representation to capture the change that connects the two states. During downstream finetuning, a real-action encoder is aligned with the latent interface so the pretrained transition model can support imagined actor-critic learning. Experiments on Meta-World visual control tasks evaluate sample efficiency, returns, prediction quality, and transfer from Something-Something-V2 videos. The paper further analyzes latent-action dimensionality, consistency training, pretraining data, finetuning interactions, and comparisons with action-free video-prediction pretraining.",
+      "zh": "PreLAR 从没有记录动作的视频中预训练动作条件世界模型。类似逆动力学的编码器把相邻观测映射为可学习潜动作，动作—状态一致性目标促使该表示捕捉连接两个状态的实际变化；下游微调时，真实动作编码器与这一潜接口对齐，使预训练转移模型能够支持想象轨迹中的演员—评论家学习。论文在 Meta-World 视觉控制任务上评估样本效率、回报、预测质量以及从 Something-Something-V2 视频的迁移，并分析潜动作维度、一致性训练、预训练数据和交互微调。"
+    },
+    "applications": "Sample-efficient world-model pretraining for robotic control",
+    "links": {
+      "paper": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03363.pdf",
+      "code": "https://github.com/zhanglixuan0720/PreLAR"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "sun2024hrssm",
+    "name": "HRSSM",
+    "title": "Learning Latent Dynamic Robust Representations for World Models",
+    "venue": "ICML",
+    "date": "2024-05",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Robust latent dynamics",
+        "Spatiotemporal masking",
+        "Visual control"
+      ],
+      "zh": [
+        "鲁棒潜动力学",
+        "时空掩码",
+        "视觉控制"
+      ]
+    },
+    "summary": {
+      "en": "HRSSM learns task-relevant latent dynamics for visual control while filtering exogenous appearance changes. Its representation objective combines spatiotemporal masking, latent reconstruction, and a bisimulation principle so observations with similar controllable transitions and rewards remain close despite irrelevant pixels. A hybrid recurrent state-space model separates representation learning from stable temporal prediction, and imagined latent trajectories train the policy. Experiments on DeepMind Control and ManiSkill environments augmented with dynamic Matterport backgrounds measure returns, robustness, representation quality, and generalization to unseen distractors. Ablations examine masking schedules, bisimulation, reconstruction, hybrid recurrence, joint-training stability, and how each component preserves endogenous dynamics for downstream control.",
+      "zh": "HRSSM 学习面向视觉控制的任务相关潜动力学，同时过滤外源性外观变化。其表征目标结合时空掩码、潜重建和双模拟原则，使具有相似可控转移与奖励的观测即使像素不同也保持接近；混合递归状态空间模型把表征学习与稳定时间预测组织起来，策略在想象潜轨迹中训练。论文在加入动态 Matterport 背景的 DeepMind Control 与 ManiSkill 环境上评估回报、鲁棒性、表征质量和对未见干扰的泛化，并分析掩码、双模拟、重建、混合递归及联合训练稳定性。"
+    },
+    "applications": "Model-based reinforcement learning under exogenous visual distractors",
+    "links": {
+      "paper": "https://arxiv.org/abs/2405.06263",
+      "code": "https://github.com/bit1029public/HRSSM"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "wang2024worlddreamer",
+    "name": "WorldDreamer",
+    "title": "WorldDreamer: Towards General World Models for Video Generation via Predicting Masked Tokens",
+    "venue": "arXiv",
+    "date": "2024-01",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M"
+    ],
+    "keywords": {
+      "en": [
+        "Masked-token prediction",
+        "General video world model",
+        "Multimodal conditioning"
+      ],
+      "zh": [
+        "掩码标记预测",
+        "通用视频世界模型",
+        "多模态条件"
+      ]
+    },
+    "summary": {
+      "en": "WorldDreamer learns general visual dynamics by predicting masked discrete video tokens under flexible conditioning. A video tokenizer converts frames into compact codes, and a bidirectional Transformer reconstructs randomly masked space-time regions while receiving image, text, or action prompts. At generation time, iterative token filling supports future prediction, long video continuation, interpolation, inpainting, and controllable simulation within one model. Experiments across diverse internet videos, games, and embodied sequences evaluate visual fidelity, temporal consistency, prompt following, and transfer among generation tasks. Ablations study masking schedules, tokenizers, conditioning injection, training mixtures, sampling iterations, and the effect of joint task training on action-conditioned world simulation.",
+      "zh": "WorldDreamer 通过在灵活条件下预测被遮盖的离散视频标记来学习通用视觉动力学。视频标记器把帧压缩为编码，双向 Transformer 在接收图像、文本或动作提示的同时重建随机遮盖的时空区域；生成时，迭代填充标记可统一支持未来预测、长视频续写、插值、修补和可控仿真。论文在网络视频、游戏与具身序列上评估视觉保真、时间一致性、提示遵循和任务间迁移，并分析掩码策略、标记器、条件注入、训练混合、采样轮数以及多任务训练对动作条件世界仿真的影响。"
+    },
+    "applications": "General visual simulation from image, text, and action prompts",
+    "links": {
+      "paper": "https://arxiv.org/abs/2401.09985",
+      "code": "https://github.com/JeffWang987/WorldDreamer",
+      "project": "https://world-dreamer.github.io"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "zhu2024irasim",
+    "name": "IRASim",
+    "title": "IRASim: A Fine-Grained World Model for Robot Manipulation",
+    "venue": "ICCV",
+    "date": "2024-06",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-P",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Robot video simulation",
+        "Fine-grained action alignment",
+        "Diffusion Transformer"
+      ],
+      "zh": [
+        "机器人视频仿真",
+        "细粒度动作对齐",
+        "扩散Transformer"
+      ]
+    },
+    "summary": {
+      "en": "IRASim predicts robot manipulation videos with fine-grained alignment between control trajectories and visual change. It uses a diffusion Transformer whose temporal blocks receive frame-level robot actions, camera observations, and task context, allowing each generated segment to reflect the timing and magnitude of motion. The model supports multistep rollout of interaction futures rather than isolated image generation. Experiments on several robot datasets and action-collection settings evaluate frame quality, temporal coherence, action controllability, geometric motion, and transfer across tasks and camera views. Ablations vary action representations, conditioning frequency, temporal modules, diffusion objectives, rollout horizons, and data mixtures to identify how control signals shape predicted manipulation dynamics.",
+      "zh": "IRASim 以机器人控制轨迹和视觉变化之间的细粒度对齐来预测操作视频。扩散 Transformer 的时间模块接收逐帧机器人动作、相机观测与任务语境，使每个生成片段反映运动发生的时刻和幅度，并能够连续展开交互未来，而非只生成孤立图像。论文在多种机器人数据集和动作采集设置上评估画面质量、时间连贯、动作可控、几何运动以及跨任务和视角迁移；消融分析动作表示、条件频率、时间模块、扩散目标、展开时域和数据混合对操作动力学预测的影响。"
+    },
+    "applications": "Action-conditioned visual simulation of robot manipulation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2406.14540",
+      "project": "https://gen-irasim.github.io/",
+      "code": "https://github.com/bytedance/IRASim"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "zhao2024vidman",
+    "name": "VidMan",
+    "title": "VidMan: Exploiting Implicit Dynamics from Video Diffusion Model for Effective Robot Manipulation",
+    "venue": "NeurIPS",
+    "date": "2024-11",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Video diffusion dynamics",
+        "Manipulation policy",
+        "Future prediction"
+      ],
+      "zh": [
+        "视频扩散动力学",
+        "操作策略",
+        "未来预测"
+      ]
+    },
+    "summary": {
+      "en": "VidMan extracts manipulation dynamics from a video diffusion model and converts them into robot actions. In the first stage, the model learns to generate future visual observations conditioned on current images and task instructions, forming an implicit predictive model of object motion and interaction. A second-stage action module reads intermediate diffusion features and predicted futures to decode control commands, linking visual dynamics to execution without discarding the generative representation. Experiments on simulated and real manipulation benchmarks evaluate task success, data efficiency, future-video quality, and transfer across instructions and objects. Ablations examine diffusion pretraining, feature layers, prediction horizons, action heads, language conditioning, and joint versus staged optimization.",
+      "zh": "VidMan 从视频扩散模型中提取操作动力学并把它转化为机器人动作。第一阶段依据当前图像和任务指令生成未来视觉观测，形成对物体运动与交互的隐式预测模型；第二阶段动作模块读取扩散中间特征和预测未来，解码控制命令，从而在保留生成式表征的同时连接视觉动力学与执行。论文在仿真和真实操作基准上评估任务成功、数据效率、未来视频质量以及跨指令和物体迁移，并分析扩散预训练、特征层、预测时域、动作头、语言条件和分阶段优化。"
+    },
+    "applications": "Manipulation policy learning from implicit video dynamics",
+    "links": {
+      "paper": "https://arxiv.org/abs/2411.09153",
+      "code": "https://github.com/jirufengyu/VidMan",
+      "project": "https://jirufengyu.github.io/VidMan/"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "micheli2024deltairis",
+    "name": "Delta-IRIS",
+    "title": "Efficient World Models with Context-Aware Tokenization",
+    "venue": "ICML",
+    "date": "2024-06",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M"
+    ],
+    "keywords": {
+      "en": [
+        "Context-aware tokenization",
+        "Stochastic deltas",
+        "Imagined reinforcement learning"
+      ],
+      "zh": [
+        "上下文感知标记化",
+        "随机增量",
+        "想象强化学习"
+      ]
+    },
+    "summary": {
+      "en": "Delta-IRIS compresses visual transitions by tokenizing only the stochastic delta that remains after conditioning on recent frames and actions. Its discrete autoencoder reconstructs each observation from trajectory context plus a small set of delta tokens, while an autoregressive Transformer predicts future tokens, rewards, and episode termination. The agent alternates real-environment collection with actor-critic learning inside generated trajectories. Experiments in Crafter and Atari compare returns, training speed, token counts, reconstruction, and rollout coherence with IRIS and other world-model agents. The paper analyzes contextual encoding, continuous summary tokens, codebook choices, token budgets, model scale, and how separating deterministic context from stochastic change improves efficient imagination.",
+      "zh": "Delta-IRIS 在最近帧和动作条件下，只标记仍需解释的随机状态增量，从而压缩视觉转移。离散自编码器利用轨迹上下文和少量增量标记重建每个观测，自回归 Transformer 预测未来标记、奖励与回合终止；智能体在真实环境采集和生成轨迹中的演员—评论家学习之间交替。论文在 Crafter 与 Atari 上比较回报、训练速度、标记数量、重建和展开连贯性，并分析上下文编码、连续汇总标记、码本选择、标记预算与模型规模如何支持高效想象。"
+    },
+    "applications": "Efficient discrete world modeling for visual reinforcement learning",
+    "links": {
+      "paper": "https://arxiv.org/abs/2406.19320",
+      "code": "https://github.com/vmicheli/delta-iris"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "zhang2024pivotr",
+    "name": "PIVOT-R",
+    "title": "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+    "venue": "NeurIPS",
+    "date": "2024-10",
+    "year": 2024,
+    "roles": [
+      "TI-G",
+      "AC-V",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Waypoint world model",
+        "Primitive parsing",
+        "Language-guided manipulation"
+      ],
+      "zh": [
+        "路点世界模型",
+        "原语解析",
+        "语言引导操作"
+      ]
+    },
+    "summary": {
+      "en": "PIVOT-R predicts task-relevant visual waypoints as an intermediate world state for language-guided manipulation. A primitive parser decomposes an instruction into executable interaction stages, and the waypoint-aware world model forecasts the observation associated with each primitive rather than generating every frame. A lightweight action decoder converts the current observation and predicted waypoint into low-level controls, while an asynchronous executor runs semantic prediction and motor control at different frequencies. Experiments on the SeaWave benchmark assess multilevel instruction following, manipulation success, waypoint quality, and execution efficiency. Ablations examine primitive supervision, waypoint prediction, action decoding, asynchronous scheduling, instruction complexity, and dynamic changes during execution.",
+      "zh": "PIVOT-R 把任务相关视觉路点作为语言引导操作中的中间世界状态。原语解析器把指令分解为可执行交互阶段，路点感知世界模型预测每个原语对应的目标观测，而非生成每一帧；轻量动作解码器再把当前观测与预测路点转换为底层控制，异步执行器以不同频率运行语义预测和运动控制。论文在 SeaWave 基准上评估多层级指令跟随、操作成功、路点质量和执行效率，并分析原语监督、路点预测、动作解码、异步调度、指令复杂度及执行中的动态变化。"
+    },
+    "applications": "Hierarchical language-conditioned robot manipulation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.10394",
+      "project": "https://abliao.github.io/PIVOT-R/",
+      "code": "https://github.com/abliao/PIVOT-R"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "mllm-integrated"
+    ]
+  },
+  {
+    "id": "xu2024pegs",
+    "name": "PEGS",
+    "title": "Physically Embodied Gaussian Splatting: A Realtime Correctable World Model for Robotics",
+    "venue": "CoRL",
+    "date": "2024-06",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-G",
+      "SS-P",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Gaussian splatting",
+        "Particle physics",
+        "Correctable simulation"
+      ],
+      "zh": [
+        "高斯泼溅",
+        "粒子物理",
+        "可校正仿真"
+      ]
+    },
+    "summary": {
+      "en": "PEGS couples Gaussian splatting with a particle-based physical model to create a visually grounded, correctable robot world model. Gaussian primitives describe appearance and geometry, corresponding particles carry mass and mechanical state, and a simulator advances the particles under robot actions before rendering the predicted scene. New camera observations can update both visual and physical variables online, limiting drift during interaction. Experiments on deformable and rigid manipulation scenes measure rendering quality, trajectory prediction, physical consistency, correction speed, and realtime performance. The paper also studies Gaussian-particle correspondence, initialization, material parameters, observation updates, simulation resolution, and the effect of correction on multi-step forecasts and robot planning.",
+      "zh": "PEGS 把高斯泼溅与粒子物理模型结合，构建视觉落地且可在线校正的机器人世界模型。高斯基元描述外观与几何，对应粒子保存质量和力学状态；模拟器在机器人动作下推进粒子，再渲染预测场景。新的相机观测可以在线更新视觉与物理变量，从而限制交互过程中的漂移。论文在刚体和可变形物体操作中评估渲染质量、轨迹预测、物理一致性、校正速度和实时性能，并分析高斯—粒子对应、初始化、材料参数、观测更新、模拟分辨率以及校正对多步预测与规划的作用。"
+    },
+    "applications": "Realtime physical scene prediction and correction for robotics",
+    "links": {
+      "paper": "https://arxiv.org/abs/2406.10788",
+      "code": "https://github.com/rai-opensource/embodied_gaussians",
+      "project": "https://embodied-gaussians.github.io/"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "huang2024wmp",
+    "name": "WMP",
+    "title": "World Model-based Perception for Visual Legged Locomotion",
+    "venue": "ICRA",
+    "date": "2024-09",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-G",
+      "SS-P",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Legged locomotion",
+        "Predictive perception",
+        "Recurrent state-space model"
+      ],
+      "zh": [
+        "足式运动",
+        "预测感知",
+        "递归状态空间模型"
+      ]
+    },
+    "summary": {
+      "en": "WMP equips a legged robot with a recurrent world model that integrates visual observations, proprioception, and action history into a predictive perception state. The model forecasts future exteroceptive features and reconstructs terrain information, allowing its latent state to retain geometry when the camera is occluded or motion makes observations unreliable. A locomotion policy consumes this predictive state together with robot measurements to produce joint commands. Simulation and hardware experiments cover stairs, gaps, obstacles, and disturbed sensing, evaluating traversal, robustness, state prediction, and sim-to-real transfer. Ablations examine recurrence, future prediction, visual inputs, history length, reconstruction targets, and policy access to the world-model state.",
+      "zh": "WMP 为足式机器人引入递归世界模型，把视觉观测、本体感觉和动作历史整合为预测性感知状态。模型预测未来外感特征并重建地形信息，使潜状态在相机被遮挡或运动导致观测不可靠时仍能保留几何；运动策略结合这一预测状态与机器人测量生成关节命令。仿真和实体实验覆盖楼梯、沟槽、障碍及传感扰动，评估通过能力、鲁棒性、状态预测和仿真到现实迁移，并分析递归、未来预测、视觉输入、历史长度、重建目标以及策略读取世界模型状态的作用。"
+    },
+    "applications": "Robust visual locomotion over occluded and changing terrain",
+    "links": {
+      "paper": "https://arxiv.org/abs/2409.16784",
+      "project": "https://wmp-loco.github.io/",
+      "code": "https://github.com/bytedance/WMP"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "pan2024xmobility",
+    "name": "X-MOBILITY",
+    "title": "X-MOBILITY: End-To-End Generalizable Navigation via World Modeling",
+    "venue": "ICRA",
+    "date": "2024-10",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "AC-N"
+    ],
+    "keywords": {
+      "en": [
+        "Generalizable navigation",
+        "Latent state-space model",
+        "Multimodal prediction"
+      ],
+      "zh": [
+        "通用导航",
+        "潜状态空间模型",
+        "多模态预测"
+      ]
+    },
+    "summary": {
+      "en": "X-MOBILITY learns a navigation policy around an autoregressive latent world model shared across robots and environments. Camera images, route commands, odometry, and control history update a recurrent state-space representation; decoders predict future images and semantics, while a separate policy head maps the latent state to navigation commands. This factorization lets predictive representation learning use heterogeneous data while control remains executable on the target platform. Experiments in simulation and real indoor and outdoor settings evaluate navigation success, collision, route progress, perception prediction, and cross-domain transfer. Ablations study decoder supervision, latent recurrence, data mixtures, command inputs, policy decoupling, and adaptation across embodiments.",
+      "zh": "X-MOBILITY 围绕可跨机器人和环境共享的自回归潜世界模型学习导航策略。相机图像、路线命令、里程计和控制历史更新递归状态空间表征，多个解码器预测未来图像与语义，独立策略头则把潜状态映射为可执行导航命令。这种分解使预测表征学习能够利用异构数据，同时保持目标平台上的控制接口。论文在仿真和真实室内外场景中评估导航成功、碰撞、路线进度、感知预测和跨域迁移，并分析解码监督、潜递归、数据混合、命令输入、策略解耦及跨形态适配。"
+    },
+    "applications": "End-to-end robot navigation across indoor and outdoor domains",
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.17491",
+      "project": "https://nvlabs.github.io/X-MOBILITY",
+      "code": "https://github.com/NVlabs/X-Mobility"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "tang2024worldcoder",
+    "name": "WorldCoder",
+    "title": "WorldCoder, a Model-Based LLM Agent: Building World Models by Writing Code and Interacting with the Environment",
+    "venue": "NeurIPS",
+    "date": "2024-02",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-C",
+      "SS-E",
+      "AC-T"
+    ],
+    "keywords": {
+      "en": [
+        "Executable world model",
+        "Program synthesis",
+        "Model-based LLM agent"
+      ],
+      "zh": [
+        "可执行世界模型",
+        "程序合成",
+        "基于模型的LLM智能体"
+      ]
+    },
+    "summary": {
+      "en": "WorldCoder builds an explicit world model as Python code through interaction with an environment. An LLM proposes and edits programs that implement state transitions and rewards, while collected experience tests whether the program explains observed tuples. A planner searches inside the current program, and an optimism constraint encourages revisions that both fit evidence and expose potentially rewarding behavior. Because the model is executable, its predicted consequences can be inspected, reused, and edited across tasks. Experiments on gridworld and task-planning environments measure sample efficiency, planning success, program correction, computational cost, and transfer, with analyses of optimism, counterexamples, code repair, exploration, and comparison with reactive LLM agents and deep reinforcement learning.",
+      "zh": "WorldCoder 通过与环境交互，把显式世界模型构建为可执行 Python 程序。大型语言模型提出并修改实现状态转移和奖励的代码，采集到的经验用于检验程序能否解释真实转移；规划器在当前程序中搜索，乐观约束促使系统寻找既符合证据又可能带来更高奖励的修订。由于模型可执行，其预测后果能够检查、复用并跨任务编辑。论文在网格世界和任务规划环境中评估样本效率、规划成功、程序修正、计算成本与迁移，并分析乐观性、反例、代码修复和探索。"
+    },
+    "applications": "Planning with learned executable transition and reward programs",
+    "links": {
+      "paper": "https://arxiv.org/abs/2402.12275",
+      "code": "https://github.com/haotang1995/WorldCoder",
+      "project": "https://haotang1995.github.io/projects/worldcoder"
+    },
+    "paradigms": [
+      "latent-predictive",
+      "mllm-integrated"
+    ]
+  },
+  {
+    "id": "li2024dynamiccity",
+    "name": "DynamicCity",
+    "title": "DynamicCity: Large-Scale 4D Occupancy Generation from Dynamic Scenes",
+    "venue": "ICLR",
+    "date": "2024-10",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-G",
+      "SS-E",
+      "AC-D"
+    ],
+    "keywords": {
+      "en": [
+        "4D occupancy generation",
+        "Dynamic urban scenes",
+        "Driving simulation"
+      ],
+      "zh": [
+        "四维占据生成",
+        "动态城市场景",
+        "驾驶仿真"
+      ]
+    },
+    "summary": {
+      "en": "DynamicCity generates large-scale four-dimensional urban occupancy sequences with explicit geometry and semantic entities. It represents a scene over space and time using a compressed HexPlane-style field, learns a diffusion prior over these representations, and conditions generation on maps, trajectories, layouts, and text or command signals. The resulting occupancy worlds support scene completion, temporal rollout, controllable traffic composition, and rendering from moving viewpoints. Experiments on autonomous-driving datasets evaluate geometric accuracy, semantic quality, temporal consistency, diversity, and condition following, including large spatial extents and long sequences. Ablations examine representation compression, diffusion design, conditioning modalities, dynamic-object modeling, sampling, and transfer across datasets.",
+      "zh": "DynamicCity 生成具有显式几何和语义实体的大尺度四维城市占据序列。系统用压缩的 HexPlane 式场表示时空场景，学习该表征上的扩散先验，并接受地图、轨迹、布局以及文本或命令条件；生成的占据世界可用于场景补全、时间展开、可控交通组成和移动视角渲染。论文在自动驾驶数据集上评估几何精度、语义质量、时间一致性、多样性和条件遵循，并覆盖大空间范围与长序列；消融分析表征压缩、扩散设计、条件模态、动态物体建模、采样和跨数据集迁移。"
+    },
+    "applications": "Large-scale controllable 4D urban occupancy synthesis",
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.18084",
+      "code": "https://github.com/3DTopia/DynamicCity",
+      "project": "https://dynamic-city.github.io"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "yang2024genadpredictive",
+    "name": "GenAD (Predictive Model)",
+    "title": "GenAD: Generalized Predictive Model for Autonomous Driving",
+    "venue": "CVPR",
+    "date": "2024-03",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-G",
+      "AC-D"
+    ],
+    "keywords": {
+      "en": [
+        "Generalized driving prediction",
+        "Multimodal pretraining",
+        "Future state modeling"
+      ],
+      "zh": [
+        "通用驾驶预测",
+        "多模态预训练",
+        "未来状态建模"
+      ]
+    },
+    "summary": {
+      "en": "GenAD learns a generalized predictive model from large-scale driving sequences and multiple sensor-derived targets. A shared spatiotemporal backbone represents the current scene and vehicle motion, while predictive objectives forecast future visual and structured driving states under ego trajectories. The pretrained dynamics are adapted to several autonomous-driving tasks, allowing one model to reuse temporal knowledge rather than learning each downstream problem independently. Experiments across driving datasets evaluate future prediction, occupancy and motion understanding, transfer, data scaling, and zero-shot or finetuned performance. The paper analyzes pretraining targets, temporal context, multimodal supervision, trajectory conditioning, backbone scale, and how predictive representations support perception and planning tasks.",
+      "zh": "GenAD 从大规模驾驶序列和多种传感器派生目标中学习通用预测模型。共享时空骨干表示当前场景与车辆运动，多个预测目标在自车轨迹条件下推断未来视觉及结构化驾驶状态；预训练动力学随后适配多种自动驾驶任务，使时间知识能够被不同下游问题复用。论文在多个驾驶数据集上评估未来预测、占据与运动理解、迁移、数据规模以及零样本或微调表现，并分析预训练目标、时间上下文、多模态监督、轨迹条件、骨干规模以及预测表征对感知和规划的支持。"
+    },
+    "applications": "Transferable future prediction across autonomous-driving tasks",
+    "links": {
+      "paper": "https://arxiv.org/abs/2403.09630",
+      "code": "https://github.com/OpenDriveLab/DriveAGI"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "yin2024drivingworld",
+    "name": "DrivingWorld",
+    "title": "DrivingWorld: Constructing World Model for Autonomous Driving via Video GPT",
+    "venue": "arXiv",
+    "date": "2024-12",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-G",
+      "AC-D"
+    ],
+    "keywords": {
+      "en": [
+        "Video GPT",
+        "Driving world model",
+        "Trajectory-conditioned rollout"
+      ],
+      "zh": [
+        "视频GPT",
+        "驾驶世界模型",
+        "轨迹条件展开"
+      ]
+    },
+    "summary": {
+      "en": "DrivingWorld constructs an autoregressive driving world model in a tokenized video space. A visual tokenizer compresses multiview or panoramic driving observations, and a GPT-style temporal model predicts future tokens conditioned on scene history and ego-motion information. Decoding the sequence yields long future driving videos whose viewpoint and scene evolution follow the specified vehicle trajectory. Experiments on autonomous-driving datasets evaluate image quality, temporal consistency, geometry, trajectory alignment, and rollout length, and compare the approach with video diffusion and predictive baselines. Ablations study tokenization, temporal context, motion conditioning, autoregressive sampling, multiview layout, model scale, and strategies for reducing error accumulation during extended generation.",
+      "zh": "DrivingWorld 在标记化视频空间中构建自回归驾驶世界模型。视觉标记器压缩多视角或全景驾驶观测，GPT 式时间模型依据场景历史和自车运动信息预测未来标记；解码后的长时驾驶视频使视点和场景演化遵循给定车辆轨迹。论文在自动驾驶数据集上评估图像质量、时间一致性、几何、轨迹对齐和展开长度，并与视频扩散和预测基线比较；消融分析标记化、时间上下文、运动条件、自回归采样、多视角布局、模型规模以及减少长生成误差累积的策略。"
+    },
+    "applications": "Autoregressive future driving-scene generation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2412.19505",
+      "code": "https://github.com/YvanYin/DrivingWorld",
+      "project": "https://huxiaotaostasy.github.io/DrivingWorld/"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "zheng2024doe1",
+    "name": "Doe-1",
+    "title": "Doe-1: Closed-Loop Autonomous Driving with Large World Model",
+    "venue": "arXiv",
+    "date": "2024-12",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-G",
+      "AC-D"
+    ],
+    "keywords": {
+      "en": [
+        "Large driving model",
+        "Closed-loop driving",
+        "Joint world-action prediction"
+      ],
+      "zh": [
+        "大型驾驶模型",
+        "闭环驾驶",
+        "世界动作联合预测"
+      ]
+    },
+    "summary": {
+      "en": "Doe-1 trains a large driving model to predict both how the observed world changes and how the ego vehicle should act. Multicamera visual tokens, vehicle states, route information, and actions are arranged in a shared autoregressive sequence, allowing future observations and control trajectories to condition one another. The same model performs world rollout and closed-loop planning, with newly observed frames repeatedly updating its context during driving. Experiments in simulation and logged driving evaluate planning, collision, route completion, visual prediction, open-loop metrics, and closed-loop behavior. Ablations examine token ordering, world and action losses, temporal context, scale, pretraining mixtures, rollout feedback, and multimodal inputs.",
+      "zh": "Doe-1 训练大型驾驶模型，同时预测观测世界如何变化以及自车应如何行动。多相机视觉标记、车辆状态、路线信息和动作被组织在共享自回归序列中，使未来观测与控制轨迹相互条件；同一模型既执行世界展开也进行闭环规划，驾驶时由新观测持续更新上下文。论文在仿真和驾驶日志上评估规划、碰撞、路线完成、视觉预测、开环指标与闭环行为，并分析标记顺序、世界与动作损失、时间上下文、模型规模、预训练混合、展开反馈和多模态输入。"
+    },
+    "applications": "Unified scene prediction and end-to-end autonomous driving",
+    "links": {
+      "paper": "https://arxiv.org/abs/2412.09627",
+      "code": "https://github.com/wzzheng/Doe",
+      "project": "https://wzzheng.net/Doe"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "chen2024drivinggpt",
+    "name": "DrivingGPT",
+    "title": "DrivingGPT: Unifying Driving World Modeling and Planning with Multi-modal Autoregressive Transformers",
+    "venue": "ICCV",
+    "date": "2024-12",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-G",
+      "AC-D"
+    ],
+    "keywords": {
+      "en": [
+        "Multimodal autoregression",
+        "Driving planning",
+        "World-action tokens"
+      ],
+      "zh": [
+        "多模态自回归",
+        "驾驶规划",
+        "世界动作标记"
+      ]
+    },
+    "summary": {
+      "en": "DrivingGPT unifies driving-scene modeling and planning in a multimodal autoregressive Transformer. Camera features, structured scene tokens, ego states, and planned trajectories share a temporal token stream, and training alternates next-observation prediction with future-action prediction. This interface lets the model forecast consequences under proposed motion and generate controls informed by its evolving world representation. Experiments on autonomous-driving benchmarks evaluate visual and structured future prediction, trajectory accuracy, collision-related measures, and closed-loop planning, alongside data and model scaling. Ablations investigate token modalities, prediction order, world-model supervision, action horizons, temporal context, auxiliary losses, and whether joint training improves both environment forecasting and driving decisions.",
+      "zh": "DrivingGPT 在多模态自回归 Transformer 中统一驾驶场景建模与规划。相机特征、结构化场景标记、自车状态和规划轨迹共享时间标记流，训练同时进行下一观测预测和未来动作预测；该接口使模型能够推断候选运动的后果，并依据不断演化的世界表征生成控制。论文在自动驾驶基准上评估视觉和结构化未来预测、轨迹精度、碰撞相关指标及闭环规划，同时考察数据和模型规模；消融分析标记模态、预测顺序、世界模型监督、动作时域、上下文、辅助损失及联合训练效果。"
+    },
+    "applications": "Unified driving observation prediction and trajectory planning",
+    "links": {
+      "paper": "https://arxiv.org/abs/2412.18607",
+      "project": "https://rogerchern.github.io/DrivingGPT"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "huang2024owl1",
+    "name": "Owl-1",
+    "title": "Owl-1: Omni World Model for Consistent Long Video Generation",
+    "venue": "arXiv",
+    "date": "2024-12",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M"
+    ],
+    "keywords": {
+      "en": [
+        "Long video generation",
+        "Persistent world state",
+        "Autoregressive rollout"
+      ],
+      "zh": [
+        "长视频生成",
+        "持续世界状态",
+        "自回归展开"
+      ]
+    },
+    "summary": {
+      "en": "Owl-1 separates persistent world state from transient observations to generate consistent long videos. A recurrent latent state records entities, layout, and accumulated events, while a video generator renders the next segment from that state and current conditions. After each segment, an update module integrates newly generated observations back into the state before the following rollout, supporting repeated calls beyond a fixed training clip. Experiments on diverse long-video datasets assess visual quality, identity and scene persistence, temporal consistency, motion, and generation length. The paper analyzes state initialization and updating, segment overlap, memory capacity, conditioning, autoregressive error, and comparisons with extending standard image-to-video models through frame concatenation.",
+      "zh": "Owl-1 把持续世界状态与瞬时观测分开，以生成一致的长视频。递归潜状态记录实体、布局和已经发生的事件，视频生成器依据该状态与当前条件渲染下一片段；每个片段结束后，更新模块把新生成观测整合回状态，再开始后续展开，从而突破固定训练片段长度。论文在多种长视频数据上评估画面质量、身份与场景持续性、时间一致性、运动和生成长度，并分析状态初始化与更新、片段重叠、记忆容量、条件方式、自回归误差以及与直接拼接图生视频模型的比较。"
+    },
+    "applications": "Consistent long-horizon visual world simulation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2412.09600",
+      "code": "https://github.com/huang-yh/Owl"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "li2024infinitydrive",
+    "name": "InfinityDrive",
+    "title": "InfinityDrive: Breaking Time Limits in Driving World Models",
+    "venue": "arXiv",
+    "date": "2024-12",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-G",
+      "AC-D"
+    ],
+    "keywords": {
+      "en": [
+        "Long driving video",
+        "Trajectory conditioning",
+        "Temporal consistency"
+      ],
+      "zh": [
+        "长驾驶视频",
+        "轨迹条件",
+        "时间一致性"
+      ]
+    },
+    "summary": {
+      "en": "InfinityDrive produces extended driving videos by chaining trajectory-conditioned generation while carrying information beyond the immediately preceding frames. The model maintains long-term scene context, uses ego paths and map-related controls to determine viewpoint evolution, and applies temporal training objectives that preserve road structure, surrounding vehicles, and appearance across generated clips. This supports controllable driving-world rollout for durations longer than conventional video generators. Experiments on large-scale driving data evaluate perceptual quality, temporal and geometric consistency, trajectory following, object persistence, and length generalization. Ablations study memory context, clip recurrence, conditioning signals, training horizons, sampling schedules, and mechanisms that limit accumulated drift during long autoregressive simulation.",
+      "zh": "InfinityDrive 通过连续连接轨迹条件生成片段来产生超长驾驶视频，并保留超过最近若干帧的历史信息。模型维护长期场景上下文，以自车路径和地图相关控制决定视点演化，并用时间训练目标保持道路结构、周围车辆和外观跨片段一致，从而实现远长于常规视频生成器的可控驾驶世界展开。论文在大规模驾驶数据上评估感知质量、时间与几何一致性、轨迹遵循、物体持续性和长度泛化，并分析记忆上下文、片段递归、条件信号、训练时域、采样策略和限制累积漂移的机制。"
+    },
+    "applications": "Extended controllable driving-scene generation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2412.01522",
+      "project": "https://metadrivescape.github.io/papers_project/InfinityDrive/page.html"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "ma2024delphi",
+    "name": "Delphi",
+    "title": "Unleashing Generalization of End-to-End Autonomous Driving with Controllable Long Video Generation",
+    "venue": "arXiv",
+    "date": "2024-06",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-P",
+      "AC-D"
+    ],
+    "keywords": {
+      "en": [
+        "Controllable driving video",
+        "Planner augmentation",
+        "Failure-case synthesis"
+      ],
+      "zh": [
+        "可控驾驶视频",
+        "规划器增强",
+        "失败场景合成"
+      ]
+    },
+    "summary": {
+      "en": "Delphi is a controllable long-video driving world model used to expand training data for an end-to-end planner. It generates future camera sequences conditioned on road context, ego trajectories, and controllable scene factors, and chains clips to represent extended driving events. A data loop identifies planner failure situations, synthesizes related variations with the generator, and adds them to policy training so visual futures and control learning remain connected. Experiments evaluate video quality, temporal consistency, condition following, long-tail scenario coverage, and downstream driving metrics in open- and closed-loop settings. Ablations examine trajectory control, clip extension, synthetic-data selection, failure mining, generated-data ratios, and planner retraining.",
+      "zh": "Delphi 是用于扩充端到端规划器训练数据的可控长视频驾驶世界模型。它依据道路语境、自车轨迹和可控场景因素生成未来相机序列，并通过连接片段表示持续驾驶事件；数据闭环先发现规划器失败情形，再用生成器合成相关变化并加入策略训练，使视觉未来和控制学习相互联系。论文评估视频质量、时间一致性、条件遵循、长尾场景覆盖以及开环和闭环驾驶指标，并分析轨迹控制、片段延长、合成数据选择、失败挖掘、生成数据比例与规划器再训练。"
+    },
+    "applications": "Synthetic long-tail driving data and end-to-end planner training",
+    "links": {
+      "paper": "https://arxiv.org/abs/2406.01349",
+      "project": "https://westlake-autolab.github.io/delphi.github.io/"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "li2024drivephysica",
+    "name": "DrivePhysica",
+    "title": "Physical Informed Driving World Model",
+    "venue": "arXiv",
+    "date": "2024-12",
+    "year": 2024,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-G",
+      "SS-P",
+      "SS-C",
+      "AC-D"
+    ],
+    "keywords": {
+      "en": [
+        "Physics-informed driving",
+        "Motion decomposition",
+        "Trajectory-conditioned video"
+      ],
+      "zh": [
+        "物理信息驾驶",
+        "运动分解",
+        "轨迹条件视频"
+      ]
+    },
+    "summary": {
+      "en": "DrivePhysica injects geometric and motion priors into a trajectory-conditioned driving video world model. The method decomposes observed movement into camera-induced and object-relative components, represents depth ordering and road geometry, and conditions a diffusion generator on ego trajectories and structured scene controls. These physical signals guide how pixels, objects, and viewpoints evolve across future frames rather than leaving motion entirely implicit. Experiments on driving datasets evaluate visual quality, temporal coherence, depth and motion consistency, trajectory controllability, and scene interaction under varied conditions. Ablations examine relative versus absolute motion, geometry features, conditioning fusion, occlusion reasoning, temporal modules, and the contribution of each physical prior to long video rollout.",
+      "zh": "DrivePhysica 把几何与运动先验注入轨迹条件驾驶视频世界模型。方法将观测运动分解为相机引起的运动和物体相对运动，表示深度次序与道路几何，并以自车轨迹和结构化场景控制为条件驱动扩散生成器；这些物理信号显式约束像素、物体和视点在未来帧中的演化。论文在驾驶数据集上评估视觉质量、时间连贯、深度与运动一致性、轨迹可控性及不同条件下的场景交互，并分析相对和绝对运动、几何特征、条件融合、遮挡推理、时间模块及各物理先验。"
+    },
+    "applications": "Physically structured controllable driving-video prediction",
+    "links": {
+      "paper": "https://arxiv.org/abs/2412.08410",
+      "project": "https://metadrivescape.github.io/papers_project/DrivePhysica/page.html"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "wang2025diswm",
+    "name": "DisWM",
+    "title": "Disentangled World Models: Learning to Transfer Semantic Knowledge from Distracting Videos for Reinforcement Learning",
+    "venue": "ICCV",
+    "date": "2025-03",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M"
+    ],
+    "keywords": {
+      "en": [
+        "Visual reinforcement learning",
+        "Distractor separation",
+        "Semantic dynamics"
+      ],
+      "zh": [
+        "视觉强化学习",
+        "干扰因素分离",
+        "语义动力学"
+      ]
+    },
+    "summary": {
+      "en": "DisWM learns a world model that separates task-relevant semantic dynamics from visually distracting content in observation videos. Its architecture decomposes encoded observations into semantic and nuisance variables, predicts their evolution with distinct transition components, and reconstructs future frames while preserving the reward-bearing state. The agent trains its policy through imagined trajectories in the semantic latent space, so control does not depend on background appearance. Experiments across visually perturbed reinforcement-learning environments evaluate reconstruction, latent separation, policy learning, and transfer to unseen distractors, showing how the learned dynamics retain task information across changes in rendering and scene content.",
+      "zh": "DisWM 面向含有背景变化和视觉干扰的强化学习环境，把观测编码为与任务有关的语义状态和与控制无关的干扰变量，并用分离的转移模块预测两部分的时间演化。模型通过未来帧重建与奖励相关目标保持语义状态，策略则在语义潜空间生成的想象轨迹中训练，从而减少对具体外观的依赖。论文在多种加入视频背景和场景扰动的控制任务中检验重建、表征分离、策略学习与跨干扰迁移，验证模型能够保留支持决策的动态信息。"
+    },
+    "applications": "Transferable visual reinforcement learning under changing backgrounds and visual distractors",
+    "links": {
+      "paper": "https://arxiv.org/abs/2503.08751",
+      "code": "https://github.com/qiwang067/DisWM",
+      "project": "https://qiwang067.github.io/diswm"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "safa2025sensei",
+    "name": "SENSEI",
+    "title": "SENSEI: Semantic Exploration Guided by Foundation Models to Learn Versatile World Models",
+    "venue": "ICML",
+    "date": "2025-03",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Semantic exploration",
+        "Foundation-model rewards",
+        "Model-based reinforcement learning"
+      ],
+      "zh": [
+        "语义探索",
+        "基础模型奖励",
+        "基于模型的强化学习"
+      ]
+    },
+    "summary": {
+      "en": "SENSEI uses a vision-language foundation model to direct exploration toward semantically meaningful changes while an agent learns a predictive world model. A prompted foundation model scores selected observations for interestingness, and a compact reward model is trained to reproduce those scores inside the reinforcement-learning loop. The agent then plans and learns from imagined transitions using both task rewards and the distilled semantic exploration signal. The full paper evaluates the approach in visually rich, sparse-reward environments, including RoboDesk and Pokémon, and analyzes discovered behaviors, world-model coverage, downstream task learning, reward distillation, and the effect of semantic guidance on exploration trajectories.",
+      "zh": "SENSEI 在智能体学习预测式世界模型的同时，利用视觉语言基础模型把探索引向具有语义意义的环境变化。系统先让经过提示的基础模型为部分观测评估“有趣程度”，再训练轻量奖励模型在强化学习循环中复现这一信号；智能体据此结合任务奖励，在世界模型生成的想象转移中规划和学习。论文在 RoboDesk 与 Pokémon 等视觉丰富、奖励稀疏的环境中评估发现行为、世界覆盖、下游任务学习和奖励蒸馏，并分析语义引导如何改变探索轨迹。"
+    },
+    "applications": "Exploration and world-model learning from sparse-reward visual environments",
+    "links": {
+      "paper": "https://arxiv.org/abs/2503.01584",
+      "code": "https://github.com/martius-lab/sensei",
+      "project": "https://sites.google.com/view/sensei-paper"
+    },
+    "paradigms": [
+      "latent-predictive",
+      "mllm-integrated"
+    ]
+  },
+  {
+    "id": "nematollahi2025lumos",
+    "name": "LUMOS",
+    "title": "LUMOS: Language-Conditioned Imitation Learning with World Models",
+    "venue": "ICRA",
+    "date": "2025-03",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "AC-V",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Language-conditioned imitation",
+        "Latent practice",
+        "Long-horizon manipulation"
+      ],
+      "zh": [
+        "语言条件模仿",
+        "潜空间练习",
+        "长时程操作"
+      ]
+    },
+    "summary": {
+      "en": "LUMOS learns language-conditioned robotic skills by practicing long-horizon behavior inside an offline latent world model. It trains the model from unstructured play data, relabels trajectories with image and language goals, and optimizes a goal-conditioned policy on imagined rollouts using a temporally extended latent reward. At test time, language commands select goals and the learned continuous visuomotor policy executes directly on the robot without online environment training. Experiments on CALVIN and a real robotic platform examine chained task completion, annotation efficiency, goal relabeling, imagined on-policy practice, and transfer from the learned model to physical manipulation under previously unseen command sequences.",
+      "zh": "LUMOS 通过在离线潜世界模型中反复练习长时程行为来学习语言条件机器人技能。系统从无结构的游玩数据训练世界模型，以图像目标和语言目标重新标注轨迹，并在想象展开中利用跨多个时间步的潜空间奖励优化目标条件策略。测试时，语言指令负责选择目标，连续视觉运动策略无需在线环境训练即可在机器人上执行。论文在 CALVIN 和真实机器人平台上检验连续任务完成、少量语言标注、目标重标注、想象中的在策略练习以及从模型到实体操作的迁移。"
+    },
+    "applications": "Language-steerable multitask manipulation from offline play data",
+    "links": {
+      "paper": "https://arxiv.org/abs/2503.10370",
+      "project": "https://lumos.cs.uni-freiburg.de",
+      "code": "https://github.com/nematoli/lumos"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "he2025glam",
+    "name": "GLAM",
+    "title": "GLAM: Global-Local Variation Awareness in Mamba-based World Model",
+    "venue": "AAAI",
+    "date": "2025-01",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M"
+    ],
+    "keywords": {
+      "en": [
+        "Mamba world model",
+        "State variation",
+        "Atari control"
+      ],
+      "zh": [
+        "Mamba世界模型",
+        "状态变化",
+        "Atari控制"
+      ]
+    },
+    "summary": {
+      "en": "GLAM introduces a Mamba-based latent world model that explicitly reasons about changes between environmental states. A global branch identifies longer-range variation patterns across a sequence and predicts how those patterns continue, while a local branch models adjacent-state changes together with rewards, termination signals, and visual features. The combined recurrent representation supplies imagined trajectories for actor-critic learning in a model-based reinforcement-learning agent. Experiments on the Atari 100K benchmark compare normalized game scores, data efficiency, and computational behavior with recurrent and Transformer world models, while ablations isolate the effects of global variation reasoning, local transition reasoning, and their joint training objective.",
+      "zh": "GLAM 构建了一个基于 Mamba 的潜世界模型，显式推理环境状态之间的变化。全局分支从较长序列中识别变化模式并预测其延续方式，局部分支则建模相邻状态变化以及奖励、终止信号和视觉特征；两者形成的递归表征为模型强化学习智能体提供想象轨迹，用于训练演员与评论家。论文在 Atari 100K 基准上比较标准化得分、数据效率和计算表现，并通过消融分别考察全局变化推理、局部转移推理及联合目标对预测与控制的作用。"
+    },
+    "applications": "Imagination-based visual control with global and local change modeling",
+    "links": {
+      "paper": "https://arxiv.org/abs/2501.11949",
+      "code": "https://github.com/GLAM2025/glam"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "chen2025gpc",
+    "name": "Generative Predictive Control",
+    "title": "Inference-Time Enhancement of Generative Robot Policies via Predictive World Modeling",
+    "venue": "IEEE RA-L",
+    "date": "2025-02",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-P",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Predictive control",
+        "Generative policy",
+        "Action selection"
+      ],
+      "zh": [
+        "预测控制",
+        "生成式策略",
+        "动作选择"
+      ]
+    },
+    "summary": {
+      "en": "Generative Predictive Control augments a pretrained generative robot policy with an action-conditioned video world model at inference time. The policy proposes several action sequences; the predictive model rolls each candidate forward from the current observation, and task-specific visual objectives either rank the proposals or optimize them through model gradients. This design turns future observation prediction into a reusable look-ahead interface without retraining the base policy. Simulation and real-robot experiments cover pushing and manipulation tasks, measuring success, predicted outcomes, candidate ranking, gradient refinement, and sensitivity to model horizon, proposal count, objectives, and prediction quality across diffusion-policy and flow-based policy backbones.",
+      "zh": "Generative Predictive Control 在推理阶段用动作条件视频世界模型增强已经训练好的生成式机器人策略。策略先提出多条候选动作序列，预测模型从当前观测出发逐条展开未来画面，任务相关的视觉目标再对候选进行排序，或通过模型梯度进一步优化动作。该设计把未来观测预测变成可复用的前瞻接口，无需重新训练基础策略。仿真与真实机器人实验覆盖推动和操作任务，并检验任务成功率、候选排序、梯度修正以及预测时域、候选数量、目标函数和模型质量的影响。"
+    },
+    "applications": "Look-ahead ranking and optimization of robot manipulation actions",
+    "links": {
+      "paper": "https://arxiv.org/abs/2502.00622",
+      "code": "https://github.com/han20192019/gpc_code",
+      "project": "https://computationalrobotics.seas.harvard.edu/GPC/"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "liu2025flowdreamer",
+    "name": "FlowDreamer",
+    "title": "FlowDreamer: A RGB-D World Model with Flow-based Motion Representations for Robot Manipulation",
+    "venue": "IEEE RA-L",
+    "date": "2025-05",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-G",
+      "SS-P",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "RGB-D prediction",
+        "3D scene flow",
+        "Manipulation planning"
+      ],
+      "zh": [
+        "RGB-D预测",
+        "三维场景流",
+        "操作规划"
+      ]
+    },
+    "summary": {
+      "en": "FlowDreamer models manipulation futures in RGB-D space by separating three-dimensional motion from visual appearance generation. Given recent observations and candidate robot actions, a flow predictor estimates scene flow and transports geometric content through time, while a conditional generator synthesizes residual RGB-D details and newly revealed regions. The resulting future observations can be scored inside a model-predictive-control loop to choose actions toward visual goals. The paper evaluates prediction and control on simulated and real manipulation tasks, reporting RGB and depth fidelity, flow accuracy, goal-reaching success, and ablations on motion representations, geometry conditioning, rollout length, and the contribution of each prediction component.",
+      "zh": "FlowDreamer 在 RGB-D 空间中预测机器人操作的未来，并把三维运动与视觉外观生成分开处理。给定近期观测和候选动作，场景流预测器估计物体及环境的三维位移并沿时间传递几何内容，条件生成器补全残余的颜色、深度细节和新显露区域。生成的未来观测能够在模型预测控制循环中接受目标评分，用于选择通向视觉目标的动作。论文在仿真和真实操作任务中评估颜色与深度预测、场景流精度和目标达成，并分析运动表征、几何条件、展开长度及各模块的贡献。"
+    },
+    "applications": "Model-predictive control for visuomotor manipulation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.10075",
+      "code": "https://github.com/sharinka0715/FlowDreamer",
+      "project": "https://sharinka0715.github.io/FlowDreamer/"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "gao2025enerverse",
+    "name": "EnerVerse",
+    "title": "EnerVerse: Envisioning Embodied Future Space for Robotics Manipulation",
+    "venue": "NeurIPS",
+    "date": "2025-01",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-G",
+      "AC-V",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Embodied video generation",
+        "Multiview rollout",
+        "Robot data engine"
+      ],
+      "zh": [
+        "具身视频生成",
+        "多视角展开",
+        "机器人数据引擎"
+      ]
+    },
+    "summary": {
+      "en": "EnerVerse is an embodied world model that predicts long manipulation futures as synchronized multiview video chunks. It combines autoregressive chunk generation with a sparse context memory so earlier observations, language instructions, and robot actions condition extended rollouts without retaining every frame. The model supports future visualization, interactive action conditioning, and a data-engine pipeline that produces additional robot experience for policy training. Experiments across simulation and physical manipulation assess video quality, temporal and cross-view consistency, action following, long-horizon stability, and the utility of generated trajectories for downstream policies, with ablations on chunking, memory selection, conditioning signals, and model scale.",
+      "zh": "EnerVerse 把长时程机器人操作未来表示为同步的多视角视频片段。模型采用自回归分块生成和稀疏上下文记忆，使早期观测、语言指令及机器人动作能够持续约束较长展开，而不必保留全部历史帧。它既能可视化未来并接受交互式动作条件，也能作为数据引擎生成额外机器人经验供策略训练。论文在仿真和实体操作中评估视频质量、时间与跨视角一致性、动作遵循、长时稳定性以及生成轨迹对下游策略的作用，并分析分块、记忆选择、条件信号和模型规模。"
+    },
+    "applications": "Long-horizon manipulation simulation and synthetic robot-data generation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2501.01895",
+      "project": "https://sites.google.com/view/enerverse"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "chen2025pinwm",
+    "name": "PIN-WM",
+    "title": "PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation",
+    "venue": "RSS",
+    "date": "2025-04",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-G",
+      "SS-P",
+      "SS-C",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Physics-informed dynamics",
+        "System identification",
+        "Non-prehensile manipulation"
+      ],
+      "zh": [
+        "物理信息动力学",
+        "系统辨识",
+        "非抓取操作"
+      ]
+    },
+    "summary": {
+      "en": "PIN-WM learns a physics-informed world model for non-prehensile manipulation from visual observations and robot interactions. It reconstructs a three-dimensional scene, estimates rigid-body and contact parameters, and couples those estimates to a differentiable dynamics model that predicts object motion under candidate actions. The identified simulator supplies rollouts for planning and model-based reinforcement learning while maintaining an explicit geometric and physical state. Experiments on pushing and related manipulation settings compare predicted trajectories and control outcomes in simulation and on hardware, and examine system identification, contact modeling, transfer across objects, data efficiency, and the roles of learned residuals and physical priors.",
+      "zh": "PIN-WM 从视觉观测和机器人交互中学习面向非抓取操作的物理信息世界模型。系统重建三维场景，估计刚体、接触与动力学参数，并把这些估计接入可微动力学模型，以预测候选动作下的物体运动。辨识后的模拟器保留显式几何和物理状态，可为规划与基于模型的强化学习提供展开。论文在推动等操作场景的仿真和实体硬件上比较轨迹预测与控制结果，并检验系统辨识、接触建模、跨物体迁移、数据效率以及学习残差和物理先验各自的作用。"
+    },
+    "applications": "Model-based planning and control for pushing and dynamic manipulation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2504.16693",
+      "project": "https://pinwm.github.io",
+      "code": "https://github.com/XuAdventurer/PIN-WM"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "huang2025promptingfuture",
+    "name": "Prompting with the Future",
+    "title": "Prompting with the Future: Open-World Model Predictive Control with Interactive Digital Twins",
+    "venue": "RSS",
+    "date": "2025-06",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-G",
+      "SS-P",
+      "SS-E",
+      "AC-V",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Interactive digital twin",
+        "Vision-language planning",
+        "Model-predictive control"
+      ],
+      "zh": [
+        "交互数字孪生",
+        "视觉语言规划",
+        "模型预测控制"
+      ]
+    },
+    "summary": {
+      "en": "Prompting with the Future builds an interactive digital twin from a real scene and uses it as the transition model in open-world model-predictive control. The pipeline reconstructs geometry and appearance, instantiates movable entities in a simulator, samples robot actions, and renders their resulting visual futures. A vision-language model evaluates these simulated outcomes against a natural-language task, after which the controller executes the selected action and replans from new observations. Experiments on tabletop and mobile-manipulation tasks evaluate reconstruction, physical interaction, candidate-action scoring, closed-loop task completion, and adaptation to unfamiliar objects and arrangements, with analyses of simulator fidelity, visual prompting, action sampling, and replanning.",
+      "zh": "Prompting with the Future 从真实场景建立可交互数字孪生，并把它作为开放世界模型预测控制中的状态转移模型。流程重建几何与外观，在模拟器中实例化可移动实体，采样机器人动作并渲染相应的视觉未来；视觉语言模型依据自然语言任务评估这些模拟结果，控制器执行最佳动作后再从新观测重新规划。论文在桌面和移动操作任务中检验场景重建、物理交互、候选动作评分、闭环任务完成及对陌生物体和布局的适应，并分析模拟保真度、视觉提示、动作采样和重规划。"
+    },
+    "applications": "Open-world robot planning through simulated visual futures",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.13761",
+      "project": "https://prompting-with-the-future.github.io",
+      "code": "https://github.com/TritiumR/Prompting-with-the-Future"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive",
+      "mllm-integrated"
+    ]
+  },
+  {
+    "id": "yan2025flowaction",
+    "name": "3DFlowAction",
+    "title": "3DFlowAction: Learning Cross-Embodiment Manipulation from 3D Flow World Model",
+    "venue": "arXiv",
+    "date": "2025-06",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-G",
+      "SS-P",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "3D flow prediction",
+        "Cross-embodiment learning",
+        "Manipulation planning"
+      ],
+      "zh": [
+        "三维流预测",
+        "跨形态学习",
+        "操作规划"
+      ]
+    },
+    "summary": {
+      "en": "3DFlowAction learns an action-oriented world model from both human and robot manipulation videos. It converts observations into three-dimensional scene features and predicts future object-centric 3D flow, providing an embodiment-independent description of how the scene should change. A robot controller then maps the predicted flow and current geometry to executable actions and updates them in closed loop as new observations arrive. Experiments across simulation and real robots evaluate cross-embodiment transfer, flow prediction, language-conditioned task execution, and robustness to viewpoint and object variation, with ablations on human-video pretraining, three-dimensional representation, temporal rollout, and the connection between predicted motion and robot control.",
+      "zh": "3DFlowAction 同时利用人类与机器人操作视频学习面向动作的世界模型。系统把观测转换为三维场景特征，并预测未来以物体为中心的三维流，用不依赖具体形态的方式描述场景应如何变化；机器人控制器再依据预测流和当前几何生成可执行动作，并在新观测到来后闭环更新。论文在仿真与真实机器人上检验跨形态迁移、流预测、语言条件任务执行以及对视角和物体变化的适应，并分析人类视频预训练、三维表征、时间展开及预测运动到控制接口的作用。"
+    },
+    "applications": "Robot manipulation learned jointly from human and robot videos",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.06199",
+      "code": "https://github.com/Hoyyyaard/3DFlowAction"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "li2025gaf",
+    "name": "GAF",
+    "title": "GAF: Gaussian Action Field as a 4D Representation for Dynamic World Modeling in Robotic Manipulation",
+    "venue": "ICRA",
+    "date": "2025-06",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "SS-G",
+      "SS-P",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Gaussian action field",
+        "4D scene dynamics",
+        "Robot manipulation"
+      ],
+      "zh": [
+        "高斯动作场",
+        "四维场景动力学",
+        "机器人操作"
+      ]
+    },
+    "summary": {
+      "en": "GAF represents manipulation dynamics as a Gaussian Action Field that links a reconstructed three-dimensional scene to its future motion. The model associates Gaussian primitives with geometry, appearance, temporal displacement, and action-related attributes, then predicts a four-dimensional scene evolution from current observations and task conditions. Robot actions are recovered from the forecasted field, allowing the predicted world transition and control output to share one structured representation. Experiments on simulated and real manipulation benchmarks measure action success, scene reconstruction, motion prediction, and generalization across tasks and viewpoints, while ablations study Gaussian attributes, temporal supervision, field aggregation, and the use of predicted future geometry for action decoding.",
+      "zh": "GAF 以高斯动作场表示机器人操作动力学，把重建的三维场景与其未来运动连接起来。模型为高斯基元赋予几何、外观、时间位移和动作相关属性，并根据当前观测与任务条件预测四维场景演化；机器人动作再从预测场中解码，使世界状态转移和控制输出共享同一结构化表征。论文在仿真和真实操作基准上评估动作成功、场景重建、运动预测及跨任务和视角泛化，并通过消融分析高斯属性、时间监督、场聚合以及未来几何对动作解码的作用。"
+    },
+    "applications": "Dynamic-scene prediction and action generation for manipulation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.14135",
+      "code": "https://github.com/ChaiYing1/GAF",
+      "project": "https://chaiying1.github.io/projects/GAF/"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "yang2025manigaussianpp",
+    "name": "ManiGaussian++",
+    "title": "ManiGaussian++: General Robotic Bimanual Manipulation with Hierarchical Gaussian World Model",
+    "venue": "IROS",
+    "date": "2025-06",
+    "year": 2025,
+    "roles": [
+      "TI-G",
+      "SS-G",
+      "SS-P",
+      "SS-E",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Bimanual manipulation",
+        "Gaussian world model",
+        "Hierarchical dynamics"
+      ],
+      "zh": [
+        "双臂操作",
+        "高斯世界模型",
+        "分层动力学"
+      ]
+    },
+    "summary": {
+      "en": "ManiGaussian++ constructs a hierarchical Gaussian world model for coordinated bimanual manipulation. It encodes multiview observations into an explicit three-dimensional Gaussian scene, separates leader-arm and follower-arm interaction structure, and predicts future Gaussian states conditioned on candidate actions and language instructions. The forecasted geometry and motion guide a policy that coordinates both manipulators while retaining object and relation information through time. Experiments on bimanual simulation suites and physical robots evaluate task success, future-state rendering, spatial consistency, coordination, and transfer across objects and instructions, with ablations on the hierarchical decomposition, Gaussian representation, prediction objectives, multiview inputs, and world-model guidance during action generation.",
+      "zh": "ManiGaussian++ 为协同双臂操作构建分层高斯世界模型。系统把多视角观测编码为显式三维高斯场景，区分主导手臂与跟随手臂的交互结构，并在候选动作和语言指令条件下预测未来高斯状态；预测的几何与运动用于指导双臂策略，同时在时间上保持物体及关系信息。论文在双臂仿真套件和实体机器人上评估任务成功、未来状态渲染、空间一致性、协同与跨物体和指令迁移，并分析层次分解、高斯表征、预测目标、多视角输入和世界模型指导。"
+    },
+    "applications": "General bimanual manipulation with explicit 3D future prediction",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.19842",
+      "code": "https://github.com/April-Yz/ManiGaussian_Bimanual"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "gao2025egoagent",
+    "name": "EgoAgent",
+    "title": "EgoAgent: A Joint Predictive Agent Model in Egocentric Worlds",
+    "venue": "ICCV",
+    "date": "2025-02",
+    "year": 2025,
+    "roles": [
+      "TI-G",
+      "TI-M",
+      "SS-E"
+    ],
+    "keywords": {
+      "en": [
+        "Egocentric prediction",
+        "Human action forecasting",
+        "Joint agent model"
+      ],
+      "zh": [
+        "第一视角预测",
+        "人类动作预测",
+        "联合智能体模型"
+      ]
+    },
+    "summary": {
+      "en": "EgoAgent jointly predicts how an egocentric world will evolve and how the camera wearer will act. From past first-person video, the model builds a temporally persistent latent representation, forecasts future semantic visual features, and predicts the wearer's three-dimensional body and hand actions within the same autoregressive system. Shared world and agent prediction encourages the representation to preserve entities and interaction cues relevant to both tasks. Experiments on large egocentric datasets evaluate future video semantics, action and pose forecasting, long-horizon prediction, and transfer to downstream recognition, with analyses of joint training, temporal context, prediction heads, multimodal supervision, and the coupling between environmental change and human motion.",
+      "zh": "EgoAgent 联合预测第一视角世界如何变化以及相机佩戴者将如何行动。模型从历史自我中心视频建立持续的时间表征，在同一自回归系统中预测未来语义视觉特征以及佩戴者的三维身体和手部动作；世界与智能体的共享预测使表征保留两类任务都需要的实体和交互线索。论文在大规模第一视角数据集上评估未来视觉语义、动作与姿态预测、长时程展开和下游识别迁移，并分析联合训练、时间上下文、预测头、多模态监督以及环境变化与人体运动的耦合。"
+    },
+    "applications": "Joint forecasting of egocentric environments and future human actions",
+    "links": {
+      "paper": "https://arxiv.org/abs/2502.05857",
+      "code": "https://github.com/zju3dv/EgoAgent",
+      "project": "https://egoagent.github.io/"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "zheng2025trajworld",
+    "name": "TrajWorld",
+    "title": "Trajectory World Models for Heterogeneous Environments",
+    "venue": "ICML",
+    "date": "2025-02",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M"
+    ],
+    "keywords": {
+      "en": [
+        "Trajectory modeling",
+        "Heterogeneous environments",
+        "Generalist dynamics"
+      ],
+      "zh": [
+        "轨迹建模",
+        "异构环境",
+        "通用动力学"
+      ]
+    },
+    "summary": {
+      "en": "TrajWorld pretrains a general trajectory world model across environments with different observation dimensions, action spaces, and temporal statistics. It tokenizes state-action trajectories into a shared sequence interface, uses environment-aware conditioning to predict future states and rewards, and supports variable history and forecast horizons. The same learned dynamics can be adapted for transition prediction, policy optimization, and model-predictive control in new domains. Experiments span multiple offline and online control suites, measuring forecasting error, transfer, data scaling, policy returns, and planning performance, with ablations on tokenization, environment identifiers, context length, pretraining mixtures, and finetuning strategies for heterogeneous downstream tasks.",
+      "zh": "TrajWorld 在观测维度、动作空间和时间统计各不相同的环境上预训练通用轨迹世界模型。系统把状态—动作轨迹标记化为统一序列接口，用环境感知条件预测未来状态和奖励，并支持可变的历史长度与预测时域；同一动力学模型能够适配新领域的转移预测、策略优化和模型预测控制。论文覆盖多种离线与在线控制套件，评估预测误差、跨环境迁移、数据规模、策略回报和规划表现，并分析标记化、环境标识、上下文长度、预训练混合与微调方式。"
+    },
+    "applications": "Reusable dynamics prediction, policy learning, and planning across control domains",
+    "links": {
+      "paper": "https://arxiv.org/abs/2502.01366",
+      "code": "https://github.com/thuml/TrajWorld"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "burchi2025twister",
+    "name": "TWISTER",
+    "title": "Learning Transformer-based World Models with Contrastive Predictive Coding",
+    "venue": "ICLR",
+    "date": "2025-03",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M"
+    ],
+    "keywords": {
+      "en": [
+        "Transformer world model",
+        "Contrastive prediction",
+        "Visual reinforcement learning"
+      ],
+      "zh": [
+        "Transformer世界模型",
+        "对比预测",
+        "视觉强化学习"
+      ]
+    },
+    "summary": {
+      "en": "TWISTER is a Transformer-based latent world model trained with contrastive predictive coding for visual reinforcement learning. The encoder maps observations into latent targets, while a causal Transformer predicts future representations, rewards, and continuation variables from preceding states and actions. A contrastive objective aligns predicted and encoded futures without requiring full pixel reconstruction, and imagined sequences train the actor and critic. Experiments on Atari 100K and continuous-control benchmarks compare data efficiency, returns, prediction behavior, and computational cost with recurrent and Transformer baselines. Ablations examine contrastive targets, negative sampling, context length, model size, reconstruction losses, and the contribution of Transformer memory to policy learning.",
+      "zh": "TWISTER 是面向视觉强化学习的 Transformer 潜世界模型，以对比预测编码进行训练。编码器把观测映射为潜目标，因果 Transformer 根据先前状态和动作预测未来表征、奖励与持续信号；对比目标在无需完整像素重建的情况下对齐预测未来和编码未来，生成的想象序列用于训练演员与评论家。论文在 Atari 100K 和连续控制基准上比较数据效率、回报、预测行为和计算开销，并分析对比目标、负样本、上下文长度、模型规模、重建损失以及 Transformer 记忆对策略学习的贡献。"
+    },
+    "applications": "Long-context imagination for data-efficient visual control",
+    "links": {
+      "paper": "https://arxiv.org/abs/2503.04416",
+      "code": "https://github.com/burchim/TWISTER"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "scannell2025dcwm",
+    "name": "DCWM",
+    "title": "Discrete Codebook World Models for Continuous Control",
+    "venue": "ICLR",
+    "date": "2025-03",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "AC-R"
+    ],
+    "keywords": {
+      "en": [
+        "Discrete codebook",
+        "Continuous control",
+        "Model-predictive control"
+      ],
+      "zh": [
+        "离散码本",
+        "连续控制",
+        "模型预测控制"
+      ]
+    },
+    "summary": {
+      "en": "Discrete Codebook World Models quantize continuous control states into learned discrete codes and model their action-conditioned transitions. An encoder assigns observations to codebook entries, a dynamics network predicts subsequent codes and rewards, and a decoder recovers continuous states when required. Planning operates over predicted code sequences, enabling model-predictive control while retaining a compact categorical representation of the environment. Experiments on continuous-control tasks compare transition accuracy, rollout stability, control returns, and planning efficiency with continuous latent and state-space baselines. Additional analyses study codebook size, commitment and reconstruction objectives, multistep training, uncertainty across predicted codes, and the relationship between discrete abstractions and controllable system states.",
+      "zh": "Discrete Codebook World Models 把连续控制状态量化为学习得到的离散编码，并建模它们在动作条件下的转移。编码器将观测分配到码本项，动力学网络预测后续编码与奖励，解码器在需要时恢复连续状态；规划直接在预测编码序列上进行，使模型预测控制能够利用紧凑的类别式环境表征。论文在连续控制任务中比较转移精度、展开稳定性、控制回报和规划效率，并分析码本规模、承诺与重建目标、多步训练、编码预测不确定性及离散抽象和可控系统状态之间的关系。"
+    },
+    "applications": "State-based continuous control through discrete latent dynamics",
+    "links": {
+      "paper": "https://arxiv.org/abs/2503.00653",
+      "code": "https://github.com/aidanscannell/dcmpc",
+      "project": "https://aidanscannell.com/projects/discrete-codebook-world-models/"
+    },
+    "paradigms": [
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "wang2025statespacediffuser",
+    "name": "StateSpaceDiffuser",
+    "title": "StateSpaceDiffuser: Bringing Long Context to Diffusion World Models",
+    "venue": "NeurIPS",
+    "date": "2025-05",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M"
+    ],
+    "keywords": {
+      "en": [
+        "Diffusion world model",
+        "State-space memory",
+        "Long-context video"
+      ],
+      "zh": [
+        "扩散世界模型",
+        "状态空间记忆",
+        "长上下文视频"
+      ]
+    },
+    "summary": {
+      "en": "StateSpaceDiffuser extends action-conditioned diffusion world models with recurrent state-space memory for long interactive histories. Rather than conditioning every generated segment on a fixed window of raw frames, it updates a compact hidden state that carries information across segments and supplies long-range context to the diffusion denoiser. The model generates future visual observations under action sequences while preserving details and events from earlier interaction. Experiments in game and embodied-video environments evaluate perceptual quality, action controllability, long-horizon consistency, memory retention, and rollout stability. Ablations compare state-space recurrence with sliding windows and attention memory, and vary context length, state capacity, training chunks, and conditioning pathways.",
+      "zh": "StateSpaceDiffuser 为动作条件扩散世界模型加入递归状态空间记忆，以处理较长的交互历史。模型不再让每个生成片段只依赖固定窗口的原始帧，而是持续更新紧凑隐藏状态，把跨片段的长期信息提供给扩散去噪器；因此它能在动作序列条件下生成未来视觉观测，并保留早期交互中的细节和事件。论文在游戏与具身视频环境中评估感知质量、动作可控性、长时一致性、记忆保持和展开稳定性，并比较滑动窗口、注意力记忆与状态空间递归，分析上下文长度、状态容量和训练分块。"
+    },
+    "applications": "Long-horizon interactive visual simulation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.22246",
+      "project": "https://insait-institute.github.io/StateSpaceDiffuser/",
+      "code": "https://github.com/insait-institute/StateSpaceDiffuser"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "wu2025rlvrworld",
+    "name": "RLVR-World",
+    "title": "RLVR-World: Training World Models with Reinforcement Learning",
+    "venue": "NeurIPS",
+    "date": "2025-05",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G"
+    ],
+    "keywords": {
+      "en": [
+        "Verifiable rewards",
+        "World-model post-training",
+        "Multimodal prediction"
+      ],
+      "zh": [
+        "可验证奖励",
+        "世界模型后训练",
+        "多模态预测"
+      ]
+    },
+    "summary": {
+      "en": "RLVR-World post-trains multimodal world models with reinforcement learning from verifiable transition rewards. The method represents an environment step as a conditioned prediction problem and scores generated next states with automatic checks tailored to structured text or visual dynamics. Policy optimization then increases the probability of transitions that satisfy state consistency, action effects, and task-specific physical or semantic criteria, complementing supervised next-state training. Experiments span language-based environments and visual world prediction, measuring transition accuracy, rollout consistency, action adherence, and downstream planning utility. The paper also analyzes reward composition, supervised warm starts, rollout length, verification reliability, and generalization to states and actions outside the post-training set.",
+      "zh": "RLVR-World 使用来自可验证状态转移的强化学习奖励，对多模态世界模型进行后训练。方法把环境一步转移表示为条件预测，并针对结构化文本或视觉动力学用自动检查器评价生成的下一状态；策略优化提高满足状态一致性、动作效果以及任务相关物理或语义条件的转移概率，从而补充监督式下一状态学习。论文覆盖语言环境和视觉世界预测，评估转移精度、展开一致性、动作遵循及对下游规划的作用，并分析奖励组合、监督热启动、展开长度、验证可靠性和对训练外状态动作的泛化。"
+    },
+    "applications": "Reinforcement-learning refinement of text and video environment simulators",
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.13934",
+      "code": "https://github.com/thuml/RLVR-World",
+      "project": "https://thuml.github.io/RLVR-World/"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "gao2025maskgwm",
+    "name": "MaskGWM",
+    "title": "MaskGWM: A Generalizable Driving World Model with Video Mask Reconstruction",
+    "venue": "CVPR",
+    "date": "2025-02",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "AC-D"
+    ],
+    "keywords": {
+      "en": [
+        "Driving video prediction",
+        "Masked reconstruction",
+        "Action conditioning"
+      ],
+      "zh": [
+        "驾驶视频预测",
+        "掩码重建",
+        "动作条件"
+      ]
+    },
+    "summary": {
+      "en": "MaskGWM is an action-conditioned driving world model trained with masked video reconstruction to improve transfer across scenes and datasets. During training, spatial and temporal portions of multiview driving clips are removed, and the diffusion model reconstructs them while conditioning on past observations, ego motion, and scene controls. The masking task encourages the model to infer persistent geometry and dynamics instead of copying local appearance. Experiments on autonomous-driving datasets evaluate visual quality, temporal coherence, trajectory controllability, cross-domain generalization, and downstream perception signals. Ablations vary mask patterns and ratios, conditioning modalities, pretraining data, temporal horizons, and the combination of reconstruction and future-generation objectives.",
+      "zh": "MaskGWM 是动作条件驾驶世界模型，通过视频掩码重建提高跨场景和跨数据集迁移能力。训练时，系统遮去多视角驾驶片段中的空间或时间区域，扩散模型依据历史观测、自车运动和场景控制恢复缺失内容；该任务促使模型推断持续的几何与动力学，而非复制局部外观。论文在自动驾驶数据集上评估视觉质量、时间一致性、轨迹可控性、跨域泛化和下游感知信号，并分析掩码形状与比例、条件模态、预训练数据、预测时域以及重建和未来生成目标的组合。"
+    },
+    "applications": "Generalizable action-conditioned driving-scene simulation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2502.11663",
+      "code": "https://github.com/SenseTime-FVG/OpenDWM"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "yang2025epona",
+    "name": "Epona",
+    "title": "Epona: Autoregressive Diffusion World Model for Autonomous Driving",
+    "venue": "ICCV",
+    "date": "2025-06",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-G",
+      "AC-D"
+    ],
+    "keywords": {
+      "en": [
+        "Autoregressive diffusion",
+        "Driving simulation",
+        "Trajectory control"
+      ],
+      "zh": [
+        "自回归扩散",
+        "驾驶仿真",
+        "轨迹控制"
+      ]
+    },
+    "summary": {
+      "en": "Epona generates long, high-resolution driving futures with an autoregressive diffusion world model. It produces video in successive clips, carries a compressed temporal state between clips, and conditions generation on past camera observations, ego trajectories, and map or scene information. This combination supports extended rollouts while preserving spatial layout and allowing explicit control over vehicle motion. Experiments on large driving datasets assess frame quality, temporal consistency, geometric alignment, trajectory adherence, and long-horizon degradation, and include comparisons with video-generation and driving-world-model baselines. Ablations examine autoregressive state propagation, diffusion conditioning, multiview geometry, clip length, trajectory representation, and training schedules for sustained interactive generation.",
+      "zh": "Epona 采用自回归扩散世界模型生成长时程、高分辨率驾驶未来。系统按连续视频片段进行生成，在片段之间传递压缩时间状态，并以历史相机观测、自车轨迹以及地图或场景信息为条件；这种结构在维持空间布局的同时支持长展开，并允许显式控制车辆运动。论文在大规模驾驶数据集上评估画面质量、时间一致性、几何对齐、轨迹遵循和长时退化，并与视频生成及驾驶世界模型比较；消融分析状态传递、扩散条件、多视角几何、片段长度、轨迹表示和训练策略。"
+    },
+    "applications": "Long, high-resolution controllable driving-video rollout",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.24113",
+      "code": "https://github.com/Kevin-thu/Epona",
+      "project": "https://kevin-thu.github.io/Epona/"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
+    ]
+  },
+  {
+    "id": "wang2025longdwm",
+    "name": "LongDWM",
+    "title": "LongDWM: Cross-Granularity Distillation for Building a Long-Term Driving World Model",
+    "venue": "AAAI",
+    "date": "2025-06",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "AC-D"
+    ],
+    "keywords": {
+      "en": [
+        "Long-term driving",
+        "Cross-granularity distillation",
+        "Video world model"
+      ],
+      "zh": [
+        "长时驾驶",
+        "跨粒度蒸馏",
+        "视频世界模型"
+      ]
+    },
+    "summary": {
+      "en": "LongDWM targets sustained driving simulation by distilling temporal knowledge across coarse and fine generation granularities. A long-range teacher models sparsely sampled global evolution, while a short-range student generates detailed local clips conditioned on historical observations, route information, and ego trajectories. Cross-granularity objectives transfer global temporal structure into the efficient clip generator and reduce drift when clips are chained autoregressively. Experiments on driving video datasets evaluate perceptual quality, trajectory adherence, scene persistence, and consistency over rollouts extending to roughly minute scale. The paper analyzes teacher-student scheduling, sampling rates, memory context, distillation losses, clip overlap, and the trade-off between local detail and long-horizon stability.",
+      "zh": "LongDWM 通过粗粒度与细粒度之间的时间知识蒸馏实现持续驾驶仿真。长程教师模型处理稀疏采样的全局演化，短程学生模型则根据历史观测、路线信息和自车轨迹生成细节丰富的局部片段；跨粒度目标把全局时间结构传递给高效片段生成器，并减少片段自回归连接时的漂移。论文在驾驶视频数据上评估感知质量、轨迹遵循、场景持续性以及接近分钟尺度展开的一致性，并分析教师学生训练、采样率、记忆上下文、蒸馏损失、片段重叠和局部细节与长期稳定性的平衡。"
+    },
+    "applications": "Minute-scale trajectory-conditioned driving video generation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.01546",
+      "project": "https://wang-xiaodong1899.github.io/longdwm/"
+    },
+    "paradigms": [
+      "generative-interactive"
+    ]
+  },
+  {
+    "id": "tan2025scenediffuserpp",
+    "name": "SceneDiffuser++",
+    "title": "SceneDiffuser++: City-Scale Traffic Simulation via a Generative World Model",
+    "venue": "CVPR",
+    "date": "2025-06",
+    "year": 2025,
+    "roles": [
+      "TI-I",
+      "TI-G",
+      "TI-M",
+      "SS-G",
+      "SS-E",
+      "AC-D"
+    ],
+    "keywords": {
+      "en": [
+        "City-scale traffic simulation",
+        "Generative scene dynamics",
+        "Trip-level rollout"
+      ],
+      "zh": [
+        "城市级交通仿真",
+        "生成式场景动力学",
+        "行程级展开"
+      ]
+    },
+    "summary": {
+      "en": "SceneDiffuser++ is a unified generative traffic world model for point-to-point simulation across city-scale map regions. From maps, route endpoints, and an evolving traffic state, it jointly generates initial scene populations, agent motion, traffic-light transitions, occlusion and reappearance, and dynamic spawning or removal of road users. The simulator rolls these structured scene components forward as the ego vehicle travels, enabling trip-level closed-loop evaluation rather than short logged snippets. Experiments use an enlarged Waymo Open Motion Dataset setting to measure scene realism, interaction fidelity, long-rollout stability, route completion, and traffic statistics, with analyses of the unified diffusion formulation and individual simulation components.",
+      "zh": "SceneDiffuser++ 是用于城市级地图点到点仿真的统一生成式交通世界模型。给定地图、路线起终点和不断变化的交通状态，模型联合生成初始场景中的参与者、车辆与行人运动、交通灯转移、遮挡后的消失与重现，以及道路使用者的动态加入或移除；随着自车行驶，这些结构化场景要素被持续向前展开，从而支持行程级闭环评估。论文在扩展的 Waymo Open Motion Dataset 场景上检验场景真实度、交互保真度、长展开稳定性、路线完成和交通统计，并分析统一扩散建模及各仿真组件。"
+    },
+    "applications": "Point-to-point closed-loop traffic simulation for autonomous-driving evaluation",
+    "links": {
+      "paper": "https://arxiv.org/abs/2506.21976",
+      "project": "https://waymo.com/research/scenediffuser-city-scale-traffic-simulation-via-a-generative-world-model/"
+    },
+    "paradigms": [
+      "generative-interactive",
+      "latent-predictive"
     ]
   }
 ]

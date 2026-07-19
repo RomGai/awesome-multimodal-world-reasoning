@@ -177,15 +177,29 @@ test("full-text paradigm audit resolves the reviewed generative-latent overlap",
     assert.ok(work, `Missing audited Research Work: ${name}`);
     assert.deepEqual(
       work.paradigms.filter((paradigm) => paradigm !== "mllm-integrated"),
-      expected,
+      expected.filter((paradigm) => paradigm !== "mllm-integrated"),
       `${work.name} does not match its full-text paradigm audit`,
     );
+    if (expected.includes("mllm-integrated")) {
+      assert.ok(
+        work.paradigms.includes("mllm-integrated"),
+        `${work.name} is missing its audited (M)LLM lineage`,
+      );
+    }
   }
 
   const overlap = works.filter((work) =>
     work.paradigms.includes("generative-interactive")
     && work.paradigms.includes("latent-predictive"));
-  assert.equal(overlap.length, 16);
+  for (const work of overlap) {
+    assert.deepEqual(
+      FULL_TEXT_PARADIGM_AUDIT[work.name.toLowerCase()]?.filter(
+        (paradigm) => paradigm !== "mllm-integrated",
+      ),
+      ["generative-interactive", "latent-predictive"],
+      `${work.name} overlaps the two lineages without a full-text audit`,
+    );
+  }
 });
 
 test("every evaluation resource has focus and complete structured details", () => {
