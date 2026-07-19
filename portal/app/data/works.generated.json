@@ -4,7 +4,7 @@
     "name": "World Models",
     "title": "Recurrent World Models Facilitate Policy Evolution",
     "venue": "NeurIPS",
-    "date": "2018-12",
+    "date": "2018-09",
     "year": 2018,
     "roles": [
       "TI-I",
@@ -42,8 +42,8 @@
     "name": "SimPLe",
     "title": "Model-Based Reinforcement Learning for Atari",
     "venue": "ICLR",
-    "date": "2020-04",
-    "year": 2020,
+    "date": "2019-03",
+    "year": 2019,
     "roles": [
       "TI-I",
       "TI-G"
@@ -78,7 +78,7 @@
     "name": "EfficientZero",
     "title": "Mastering Atari Games with Limited Data",
     "venue": "NeurIPS",
-    "date": "2021-12",
+    "date": "2021-11",
     "year": 2021,
     "roles": [
       "TI-I",
@@ -115,7 +115,7 @@
     "name": "TD-MPC",
     "title": "Temporal Difference Learning for Model Predictive Control",
     "venue": "ICML",
-    "date": "2022-07",
+    "date": "2022-03",
     "year": 2022,
     "roles": [
       "TI-I",
@@ -151,8 +151,8 @@
     "name": "JOWA",
     "title": "Scaling Offline Model-Based Reinforcement Learning via Jointly-Optimized World-Action Model Pretraining",
     "venue": "ICLR",
-    "date": "2025-04",
-    "year": 2025,
+    "date": "2024-10",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G",
@@ -188,8 +188,8 @@
     "name": "DINO-WM",
     "title": "DINO-WM: World Models on Pre-trained Visual Features Enable Zero-Shot Planning",
     "venue": "ICML",
-    "date": "2025-07",
-    "year": 2025,
+    "date": "2024-11",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G",
@@ -224,7 +224,7 @@
     "name": "UVA",
     "title": "Unified Video Action Model",
     "venue": "RSS",
-    "date": "2025-06",
+    "date": "2025-03",
     "year": 2025,
     "roles": [
       "TI-I",
@@ -261,7 +261,7 @@
     "name": "Aether",
     "title": "Aether: Geometric-Aware Unified World Modeling",
     "venue": "ICCV",
-    "date": "2025-10",
+    "date": "2025-03",
     "year": 2025,
     "roles": [
       "TI-G",
@@ -297,8 +297,8 @@
     "name": "Dreamer",
     "title": "Dream to Control: Learning Behaviors by Latent Imagination",
     "venue": "ICLR",
-    "date": "2020-04",
-    "year": 2020,
+    "date": "2019-12",
+    "year": 2019,
     "roles": [
       "TI-I",
       "TI-G",
@@ -336,8 +336,8 @@
     "name": "DreamerV3",
     "title": "Mastering diverse control tasks through world models",
     "venue": "Nature",
-    "date": "2025-04",
-    "year": 2025,
+    "date": "2023-01",
+    "year": 2023,
     "roles": [
       "TI-I",
       "TI-G",
@@ -375,7 +375,7 @@
     "name": "Genie",
     "title": "Genie: Generative Interactive Environments",
     "venue": "ICML",
-    "date": "2024-07",
+    "date": "2024-02",
     "year": 2024,
     "roles": [
       "TI-I",
@@ -411,8 +411,8 @@
     "name": "GameNGen",
     "title": "Diffusion Models Are Real-Time Game Engines",
     "venue": "ICLR",
-    "date": "2025-04",
-    "year": 2025,
+    "date": "2024-08",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G"
@@ -447,7 +447,7 @@
     "name": "iVideoGPT",
     "title": "iVideoGPT: Interactive VideoGPTs are Scalable World Models",
     "venue": "NeurIPS",
-    "date": "2024-12",
+    "date": "2024-05",
     "year": 2024,
     "roles": [
       "TI-I",
@@ -485,8 +485,8 @@
     "name": "UniSim",
     "title": "Learning Interactive Real-World Simulators",
     "venue": "ICLR",
-    "date": "2024-05",
-    "year": 2024,
+    "date": "2023-10",
+    "year": 2023,
     "roles": [
       "TI-I",
       "TI-G",
@@ -748,8 +748,8 @@
     "name": "Copilot4D",
     "title": "Copilot4D: Learning Unsupervised World Models for Autonomous Driving via Discrete Diffusion",
     "venue": "ICLR",
-    "date": "2024-05",
-    "year": 2024,
+    "date": "2023-11",
+    "year": 2023,
     "roles": [
       "TI-G",
       "SS-G",
@@ -891,7 +891,7 @@
     "name": "Isaac Gym",
     "title": "Isaac Gym: High Performance GPU-Based Physics Simulation for Robot Learning",
     "venue": "NeurIPS",
-    "date": "2021-12",
+    "date": "2021-08",
     "year": 2021,
     "roles": [
       "SS-P",
@@ -996,8 +996,8 @@
     "name": "Variational Causal Dynamics",
     "title": "Variational Causal Dynamics: Discovering Modular World Models from Interventions",
     "venue": "TMLR",
-    "date": "2023-11",
-    "year": 2023,
+    "date": "2022-06",
+    "year": 2022,
     "roles": [
       "TI-G",
       "SS-C"
@@ -1027,7 +1027,7 @@
     "name": "FOCUS",
     "title": "Offline Reinforcement Learning with Causal Structured World Models",
     "venue": "NeurIPS",
-    "date": "2022-12",
+    "date": "2022-06",
     "year": 2022,
     "roles": [
       "TI-G",
@@ -1061,7 +1061,7 @@
     "name": "C-JEPA",
     "title": "Causal-JEPA: Learning World Models through Object-Level Latent Masking",
     "venue": "ICML",
-    "date": "2026-07",
+    "date": "2026-02",
     "year": 2026,
     "roles": [
       "TI-I",
@@ -1098,7 +1098,7 @@
     "name": "DayDreamer",
     "title": "DayDreamer: World Models for Physical Robot Learning",
     "venue": "CoRL",
-    "date": "2022-12",
+    "date": "2022-06",
     "year": 2022,
     "roles": [
       "TI-I",
@@ -1133,7 +1133,7 @@
     "name": "RoboDreamer",
     "title": "RoboDreamer: Learning Compositional World Models for Robot Imagination",
     "venue": "ICML",
-    "date": "2024-07",
+    "date": "2024-04",
     "year": 2024,
     "roles": [
       "TI-G",
@@ -1168,7 +1168,7 @@
     "name": "Unified World Models",
     "title": "Unified World Models: Coupling Video and Action Diffusion for Pretraining on Large Robotic Datasets",
     "venue": "RSS",
-    "date": "2025-06",
+    "date": "2025-04",
     "year": 2025,
     "roles": [
       "TI-I",
@@ -1238,7 +1238,7 @@
     "name": "GWM",
     "title": "GWM: Towards Scalable Gaussian World Models for Robotic Manipulation",
     "venue": "ICCV",
-    "date": "2025-10",
+    "date": "2025-08",
     "year": 2025,
     "roles": [
       "TI-I",
@@ -1275,7 +1275,7 @@
     "name": "I-JEPA",
     "title": "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture",
     "venue": "CVPR",
-    "date": "2023-06",
+    "date": "2023-01",
     "year": 2023,
     "roles": [
       "TI-G"
@@ -1307,7 +1307,7 @@
     "name": "V-JEPA",
     "title": "Revisiting Feature Prediction for Learning Visual Representations from Video",
     "venue": "TMLR",
-    "date": "2024-08",
+    "date": "2024-04",
     "year": 2024,
     "roles": [
       "TI-G"
@@ -1376,8 +1376,8 @@
     "name": "OccWorld",
     "title": "OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving",
     "venue": "ECCV",
-    "date": "2024-09",
-    "year": 2024,
+    "date": "2023-11",
+    "year": 2023,
     "roles": [
       "TI-G",
       "SS-G",
@@ -1413,7 +1413,7 @@
     "name": "3D-VLA",
     "title": "3D-VLA: A 3D Vision-Language-Action Generative World Model",
     "venue": "ICML",
-    "date": "2024-07",
+    "date": "2024-03",
     "year": 2024,
     "roles": [
       "TI-G",
@@ -1522,8 +1522,8 @@
     "name": "DriveDreamer",
     "title": "DriveDreamer: Towards Real-world-driven World Models for Autonomous Driving",
     "venue": "ECCV",
-    "date": "2024-09",
-    "year": 2024,
+    "date": "2023-09",
+    "year": 2023,
     "roles": [
       "TI-G",
       "SS-G",
@@ -2070,8 +2070,8 @@
     "name": "Genie Envisioner",
     "title": "Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation",
     "venue": "ICLR",
-    "date": "2026-04",
-    "year": 2026,
+    "date": "2025-08",
+    "year": 2025,
     "roles": [
       "TI-G",
       "AC-V",
@@ -2289,8 +2289,8 @@
     "name": "PlaNet",
     "title": "Learning Latent Dynamics for Planning from Pixels",
     "venue": "ICML",
-    "date": "2019-06",
-    "year": 2019,
+    "date": "2018-11",
+    "year": 2018,
     "roles": [
       "TI-I",
       "TI-G",
@@ -2328,8 +2328,8 @@
     "name": "DreamerV2",
     "title": "Mastering Atari with Discrete World Models",
     "venue": "ICLR",
-    "date": "2021-05",
-    "year": 2021,
+    "date": "2020-10",
+    "year": 2020,
     "roles": [
       "TI-I",
       "TI-G",
@@ -2367,8 +2367,8 @@
     "name": "MuZero",
     "title": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
     "venue": "Nature",
-    "date": "2020-12",
-    "year": 2020,
+    "date": "2019-11",
+    "year": 2019,
     "roles": [
       "TI-I",
       "TI-G",
@@ -2405,8 +2405,8 @@
     "name": "IRIS",
     "title": "Transformers are Sample-Efficient World Models",
     "venue": "ICLR",
-    "date": "2023-05",
-    "year": 2023,
+    "date": "2022-09",
+    "year": 2022,
     "roles": [
       "TI-I",
       "TI-G"
@@ -2442,7 +2442,7 @@
     "name": "DIAMOND",
     "title": "Diffusion for World Modeling: Visual Details Matter in Atari",
     "venue": "NeurIPS",
-    "date": "2024-12",
+    "date": "2024-05",
     "year": 2024,
     "roles": [
       "TI-I",
@@ -2516,7 +2516,7 @@
     "name": "DreamZero",
     "title": "World Action Models are Zero-Shot Policies",
     "venue": "ICLR W.",
-    "date": "2026-04",
+    "date": "2026-02",
     "year": 2026,
     "roles": [
       "TI-G",
@@ -2552,7 +2552,7 @@
     "name": "MILE",
     "title": "Model-Based Imitation Learning for Urban Driving",
     "venue": "NeurIPS",
-    "date": "2022-12",
+    "date": "2022-10",
     "year": 2022,
     "roles": [
       "TI-I",
@@ -2589,7 +2589,7 @@
     "name": "TrafficBots",
     "title": "TrafficBots: Towards World Models for Autonomous Driving Simulation and Motion Prediction",
     "venue": "ICRA",
-    "date": "2023-05",
+    "date": "2023-03",
     "year": 2023,
     "roles": [
       "TI-I",
@@ -2629,8 +2629,8 @@
     "name": "Drive-WM",
     "title": "Driving into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving",
     "venue": "CVPR",
-    "date": "2024-06",
-    "year": 2024,
+    "date": "2023-11",
+    "year": 2023,
     "roles": [
       "TI-I",
       "TI-G",
@@ -2669,7 +2669,7 @@
     "name": "Vista",
     "title": "Vista: A Generalizable Driving World Model with High Fidelity and Versatile Controllability",
     "venue": "NeurIPS",
-    "date": "2024-12",
+    "date": "2024-05",
     "year": 2024,
     "roles": [
       "TI-G",
@@ -2704,7 +2704,7 @@
     "name": "Pathdreamer",
     "title": "Pathdreamer: A World Model for Indoor Navigation",
     "venue": "ICCV",
-    "date": "2021-10",
+    "date": "2021-05",
     "year": 2021,
     "roles": [
       "TI-I",
@@ -2742,8 +2742,8 @@
     "name": "NWM",
     "title": "Navigation World Models",
     "venue": "CVPR",
-    "date": "2025-06",
-    "year": 2025,
+    "date": "2024-12",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G",
@@ -2812,8 +2812,8 @@
     "name": "WebDreamer",
     "title": "Is Your LLM Secretly a World Model of the Internet? Model-Based Planning for Web Agents",
     "venue": "TMLR",
-    "date": "2025-10",
-    "year": 2025,
+    "date": "2024-11",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G",
@@ -2848,7 +2848,7 @@
     "name": "CWM",
     "title": "CWM: An Open-Weights LLM for Research on Code Generation with World Models",
     "venue": "arXiv",
-    "date": "2025-09",
+    "date": "2025-10",
     "year": 2025,
     "roles": [
       "TI-I",
@@ -2921,7 +2921,7 @@
     "name": "TWM",
     "title": "Transformer-based World Models Are Happy With 100k Interactions",
     "venue": "ICLR",
-    "date": "2023-05",
+    "date": "2023-03",
     "year": 2023,
     "roles": [
       "TI-I",
@@ -2958,7 +2958,7 @@
     "name": "STORM",
     "title": "STORM: Efficient Stochastic Transformer based World Models for Reinforcement Learning",
     "venue": "NeurIPS",
-    "date": "2023-12",
+    "date": "2023-10",
     "year": 2023,
     "roles": [
       "TI-I",
@@ -3071,7 +3071,7 @@
     "name": "WorldGPT",
     "title": "WorldGPT: Empowering LLM as Multimodal World Model",
     "venue": "ACM MM",
-    "date": "2024-10",
+    "date": "2024-04",
     "year": 2024,
     "roles": [
       "TI-G",
@@ -3202,7 +3202,7 @@
     "name": "Masked World Models",
     "title": "Masked World Models for Visual Control",
     "venue": "CoRL",
-    "date": "2022-12",
+    "date": "2022-06",
     "year": 2022,
     "roles": [
       "TI-I",
@@ -3240,7 +3240,7 @@
     "name": "Think2Drive",
     "title": "Think2Drive: Efficient Reinforcement Learning by Thinking with Latent World Model for Autonomous Driving (in CARLA-v2)",
     "venue": "ECCV",
-    "date": "2024-09",
+    "date": "2024-02",
     "year": 2024,
     "roles": [
       "TI-I",
@@ -3725,8 +3725,8 @@
     "name": "ViMo",
     "title": "ViMo: A Generative Visual GUI World Model for App Agents",
     "venue": "ICLR",
-    "date": "2026-04",
-    "year": 2026,
+    "date": "2025-04",
+    "year": 2025,
     "roles": [
       "TI-I",
       "TI-G",
@@ -5138,8 +5138,8 @@
     "name": "TD-MPC2",
     "title": "TD-MPC2: Scalable, Robust World Models for Continuous Control",
     "venue": "ICLR",
-    "date": "2024-05",
-    "year": 2024,
+    "date": "2023-10",
+    "year": 2023,
     "roles": [
       "TI-I",
       "TI-G",
@@ -5177,8 +5177,8 @@
     "name": "DINO-Foresight",
     "title": "DINO-Foresight: Looking into the Future with DINO",
     "venue": "arXiv",
-    "date": "2025-01",
-    "year": 2025,
+    "date": "2024-12",
+    "year": 2024,
     "roles": [
       "TI-G",
       "SS-E",
@@ -5215,7 +5215,7 @@
     "name": "ManiGaussian",
     "title": "ManiGaussian: Dynamic Gaussian Splatting for Multi-task Robotic Manipulation",
     "venue": "ECCV",
-    "date": "2024-09",
+    "date": "2024-03",
     "year": 2024,
     "roles": [
       "TI-I",
@@ -5256,8 +5256,8 @@
     "name": "GaussianWorld",
     "title": "GaussianWorld: Gaussian World Model for Streaming 3D Occupancy Prediction",
     "venue": "CVPR",
-    "date": "2025-06",
-    "year": 2025,
+    "date": "2024-12",
+    "year": 2024,
     "roles": [
       "TI-G",
       "TI-M",
@@ -5376,8 +5376,8 @@
     "name": "Vid2World",
     "title": "Vid2World: Crafting Video Diffusion Models to Interactive World Models",
     "venue": "ICLR",
-    "date": "2026-04",
-    "year": 2026,
+    "date": "2025-05",
+    "year": 2025,
     "roles": [
       "TI-I",
       "TI-G",
@@ -5417,7 +5417,7 @@
     "name": "GameFactory",
     "title": "GameFactory: Creating New Games with Generative Interactive Videos",
     "venue": "CVPR",
-    "date": "2025-06",
+    "date": "2025-01",
     "year": 2025,
     "roles": [
       "TI-I",
@@ -5692,8 +5692,8 @@
     "name": "Neural Physics Engine",
     "title": "A Compositional Object-Based Approach to Learning Physical Dynamics",
     "venue": "ICLR",
-    "date": "2017-04",
-    "year": 2017,
+    "date": "2016-12",
+    "year": 2016,
     "roles": [
       "TI-G",
       "SS-P",
@@ -5729,7 +5729,7 @@
     "name": "Neural Relational Inference",
     "title": "Neural Relational Inference for Interacting Systems",
     "venue": "ICML",
-    "date": "2018-07",
+    "date": "2018-02",
     "year": 2018,
     "roles": [
       "TI-G",
@@ -5767,7 +5767,7 @@
     "name": "Graph Network Simulator",
     "title": "Learning to Simulate Complex Physics with Graph Networks",
     "venue": "ICML",
-    "date": "2020-07",
+    "date": "2020-02",
     "year": 2020,
     "roles": [
       "TI-G",
@@ -5806,8 +5806,8 @@
     "name": "MeshGraphNets",
     "title": "Learning Mesh-Based Simulation with Graph Networks",
     "venue": "ICLR",
-    "date": "2021-05",
-    "year": 2021,
+    "date": "2020-10",
+    "year": 2020,
     "roles": [
       "TI-G",
       "SS-G",
@@ -6154,8 +6154,8 @@
     "name": "Drive-OccWorld",
     "title": "Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving",
     "venue": "AAAI",
-    "date": "2025-02",
-    "year": 2025,
+    "date": "2024-08",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G",
@@ -6232,8 +6232,8 @@
     "name": "UniAD",
     "title": "Planning-Oriented Autonomous Driving",
     "venue": "CVPR",
-    "date": "2023-06",
-    "year": 2023,
+    "date": "2022-12",
+    "year": 2022,
     "roles": [
       "TI-I",
       "TI-G",
@@ -6272,7 +6272,7 @@
     "name": "GameFormer",
     "title": "GameFormer: Game-Theoretic Modeling and Learning of Transformer-Based Interactive Prediction and Planning for Autonomous Driving",
     "venue": "ICCV",
-    "date": "2023-10",
+    "date": "2023-03",
     "year": 2023,
     "roles": [
       "TI-I",
@@ -6311,8 +6311,8 @@
     "name": "LAW",
     "title": "Enhancing End-to-End Autonomous Driving with Latent World Model",
     "venue": "ICLR",
-    "date": "2025-04",
-    "year": 2025,
+    "date": "2024-06",
+    "year": 2024,
     "roles": [
       "TI-G",
       "SS-E",
@@ -6348,7 +6348,7 @@
     "name": "World4Drive",
     "title": "World4Drive: End-to-End Autonomous Driving via Intention-Aware Physical Latent World Model",
     "venue": "ICCV",
-    "date": "2025-10",
+    "date": "2025-07",
     "year": 2025,
     "roles": [
       "TI-I",
@@ -6388,7 +6388,7 @@
     "name": "MUVO",
     "title": "MUVO: A Multimodal Generative World Model for Autonomous Driving with Geometric Representations",
     "venue": "arXiv",
-    "date": "2023-12",
+    "date": "2023-11",
     "year": 2023,
     "roles": [
       "TI-I",
@@ -6467,7 +6467,7 @@
     "name": "CoWVLA",
     "title": "Chain of World: World Model Thinking in Latent Motion",
     "venue": "arXiv",
-    "date": "2026-01",
+    "date": "2026-03",
     "year": 2026,
     "roles": [
       "TI-I",
@@ -6508,8 +6508,8 @@
     "name": "Video Prediction Policy",
     "title": "Video Prediction Policy: A Generalist Robot Policy with Predictive Visual Representations",
     "venue": "ICML",
-    "date": "2025-07",
-    "year": 2025,
+    "date": "2024-12",
+    "year": 2024,
     "roles": [
       "TI-G",
       "SS-E",
@@ -6548,8 +6548,8 @@
     "name": "DREMA",
     "title": "Dream to Manipulate: Compositional World Models Empowering Robot Imitation Learning with Imagination",
     "venue": "CoRL",
-    "date": "2025-09",
-    "year": 2025,
+    "date": "2024-12",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G",
@@ -6588,7 +6588,7 @@
     "name": "Fast-WAM",
     "title": "Fast-WAM: Do World Action Models Need Test-Time Future Imagination?",
     "venue": "arXiv",
-    "date": "2026-02",
+    "date": "2026-03",
     "year": 2026,
     "roles": [
       "TI-G",
@@ -6628,7 +6628,7 @@
     "name": "NavMorph",
     "title": "NavMorph: A Self-Evolving World Model for Vision-and-Language Navigation in Continuous Environments",
     "venue": "ICCV",
-    "date": "2025-10",
+    "date": "2025-06",
     "year": 2025,
     "roles": [
       "TI-I",
@@ -6742,7 +6742,7 @@
     "name": "WorldMem",
     "title": "WorldMem: Long-Term Consistent World Simulation with Memory",
     "venue": "ICCV",
-    "date": "2025-10",
+    "date": "2025-04",
     "year": 2025,
     "roles": [
       "TI-I",
@@ -6782,7 +6782,7 @@
     "name": "Meta-Memory",
     "title": "Meta-Memory: Retrieving and Integrating Semantic-Spatial Memories for Robot Spatial Reasoning",
     "venue": "RA-L",
-    "date": "2025-12",
+    "date": "2025-09",
     "year": 2025,
     "roles": [
       "TI-M",
@@ -6820,8 +6820,8 @@
     "name": "OccSora",
     "title": "OccSora: 4D Occupancy Generation Models as World Simulators for Autonomous Driving",
     "venue": "IEEE TIP",
-    "date": "2026-06",
-    "year": 2026,
+    "date": "2024-05",
+    "year": 2024,
     "roles": [
       "TI-G",
       "SS-G",
@@ -6936,7 +6936,7 @@
     "name": "COME",
     "title": "COME: Adding Scene-Centric Forecasting Control to Occupancy World Model",
     "venue": "NeurIPS",
-    "date": "2025-12",
+    "date": "2025-06",
     "year": 2025,
     "roles": [
       "TI-I",
@@ -6975,8 +6975,8 @@
     "name": "SparseWorld",
     "title": "SparseWorld: A Flexible, Adaptive, and Efficient 4D Occupancy World Model Powered by Sparse and Dynamic Queries",
     "venue": "AAAI",
-    "date": "2026-01",
-    "year": 2026,
+    "date": "2025-10",
+    "year": 2025,
     "roles": [
       "TI-G",
       "SS-G",
@@ -7013,7 +7013,7 @@
     "name": "PLDM",
     "title": "Learning from Reward-Free Offline Data: A Case for Planning with Latent Dynamics Models",
     "venue": "NeurIPS",
-    "date": "2025-12",
+    "date": "2025-02",
     "year": 2025,
     "roles": [
       "TI-I",
@@ -7128,8 +7128,8 @@
     "name": "ViDAR",
     "title": "Visual Point Cloud Forecasting Enables Scalable Autonomous Driving",
     "venue": "CVPR",
-    "date": "2024-06",
-    "year": 2024,
+    "date": "2023-12",
+    "year": 2023,
     "roles": [
       "TI-G",
       "SS-G",
@@ -7206,7 +7206,7 @@
     "name": "Occupancy Flow Fields",
     "title": "Occupancy Flow Fields for Motion Forecasting in Autonomous Driving",
     "venue": "IEEE RA-L",
-    "date": "2022-04",
+    "date": "2022-03",
     "year": 2022,
     "roles": [
       "TI-G",
@@ -7282,8 +7282,8 @@
     "name": "NewtonGen",
     "title": "NewtonGen: Physics-Consistent and Controllable Text-to-Video Generation via Neural Newtonian Dynamics",
     "venue": "ICLR",
-    "date": "2026-04",
-    "year": 2026,
+    "date": "2025-09",
+    "year": 2025,
     "roles": [
       "TI-G",
       "SS-P",
@@ -7855,7 +7855,7 @@
     "name": "Kairos",
     "title": "Kairos: A Regret-Aware Native World-Action Model Stack for Physical AI",
     "venue": "arXiv",
-    "date": "2026-07",
+    "date": "2026-06",
     "year": 2026,
     "roles": [
       "TI-I",
@@ -8138,7 +8138,7 @@
     "name": "ConsisDrive",
     "title": "ConsisDrive: Identity-Preserving Driving World Models for Video Generation by Instance Mask",
     "venue": "ICLR",
-    "date": "2026-04",
+    "date": "2026-02",
     "year": 2026,
     "roles": [
       "TI-G",
@@ -8297,7 +8297,7 @@
     "name": "WMReward",
     "title": "Inference-time Physics Alignment of Video Generative Models with Latent World Models",
     "venue": "arXiv",
-    "date": "2026-03",
+    "date": "2026-01",
     "year": 2026,
     "roles": [
       "TI-G",
@@ -8489,7 +8489,7 @@
     "name": "Phantom",
     "title": "Phantom: Physics-Infused Video Generation via Joint Modeling of Visual and Latent Physical Dynamics",
     "venue": "arXiv",
-    "date": "2026-05",
+    "date": "2026-04",
     "year": 2026,
     "roles": [
       "TI-G",
@@ -8724,7 +8724,7 @@
     "name": "Robust Dreamer",
     "title": "Robust Dreamer: Deviation-Aware Latent Gaussian Memory for Action-Controlled AR Video Generation",
     "venue": "arXiv",
-    "date": "2026-06",
+    "date": "2026-05",
     "year": 2026,
     "roles": [
       "TI-I",
@@ -8801,7 +8801,7 @@
     "name": "Pixel-to-4D",
     "title": "Pixel-to-4D: Camera-Controlled Image-to-Video Generation with Dynamic 3D Gaussians",
     "venue": "arXiv",
-    "date": "2026-05",
+    "date": "2026-01",
     "year": 2026,
     "roles": [
       "TI-G",
@@ -10126,8 +10126,8 @@
     "name": "DriveDreamer4D",
     "title": "DriveDreamer4D: World Models Are Effective Data Machines for 4D Driving Scene Representation",
     "venue": "CVPR",
-    "date": "2025-06",
-    "year": 2025,
+    "date": "2024-10",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G",
@@ -10284,7 +10284,7 @@
     "name": "PreWorld",
     "title": "Semi-Supervised Vision-Centric 3D Occupancy World Model for Autonomous Driving",
     "venue": "ICLR",
-    "date": "2025-04",
+    "date": "2025-02",
     "year": 2025,
     "roles": [
       "TI-G",
@@ -10517,7 +10517,7 @@
     "name": "Foundational LiDAR World Models",
     "title": "Towards foundational LiDAR world models with efficient latent flow matching",
     "venue": "NeurIPS",
-    "date": "2025-12",
+    "date": "2025-06",
     "year": 2025,
     "roles": [
       "TI-G",
@@ -10914,8 +10914,8 @@
     "name": "STICA",
     "title": "Object-Centric World Models for Causality-Aware Reinforcement Learning",
     "venue": "AAAI",
-    "date": "2026-02",
-    "year": 2026,
+    "date": "2025-11",
+    "year": 2025,
     "roles": [
       "TI-I",
       "TI-G",
@@ -11069,8 +11069,8 @@
     "name": "DreamerPro",
     "title": "DreamerPro: Reconstruction-Free Model-Based Reinforcement Learning with Prototypical Representations",
     "venue": "ICML",
-    "date": "2022-07",
-    "year": 2022,
+    "date": "2021-10",
+    "year": 2021,
     "roles": [
       "TI-I",
       "TI-G",
@@ -11148,8 +11148,8 @@
     "name": "InfiniCube",
     "title": "InfiniCube: Unbounded and Controllable Dynamic 3D Driving Scene Generation with World-Guided Video Models",
     "venue": "ICCV",
-    "date": "2025-10",
-    "year": 2025,
+    "date": "2024-12",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G",
@@ -11271,8 +11271,8 @@
     "name": "MotionStream",
     "title": "MotionStream: Real-Time Video Generation with Interactive Motion Controls",
     "venue": "ICLR",
-    "date": "2026-04",
-    "year": 2026,
+    "date": "2025-11",
+    "year": 2025,
     "roles": [
       "TI-I",
       "TI-G",
@@ -11430,7 +11430,7 @@
     "name": "FIERY",
     "title": "FIERY: Future Instance Prediction in Bird's-Eye View from Surround Monocular Cameras",
     "venue": "ICCV",
-    "date": "2021-10",
+    "date": "2021-04",
     "year": 2021,
     "roles": [
       "TI-G",
@@ -11469,8 +11469,8 @@
     "name": "C-SWM",
     "title": "Contrastive Learning of Structured World Models",
     "venue": "ICLR",
-    "date": "2020-04",
-    "year": 2020,
+    "date": "2019-11",
+    "year": 2019,
     "roles": [
       "TI-I",
       "TI-G",
@@ -11508,7 +11508,7 @@
     "name": "GenAD",
     "title": "GenAD: Generative End-to-End Autonomous Driving",
     "venue": "ECCV",
-    "date": "2024-09",
+    "date": "2024-02",
     "year": 2024,
     "roles": [
       "TI-I",
@@ -11547,8 +11547,8 @@
     "name": "AdaptiveDriver",
     "title": "Planning with Adaptive World Models for Autonomous Driving",
     "venue": "ICRA",
-    "date": "2025-05",
-    "year": 2025,
+    "date": "2024-06",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G",
@@ -11626,8 +11626,8 @@
     "name": "LatentDriver",
     "title": "Learning Multiple Probabilistic Decisions from Latent World Model in Autonomous Driving",
     "venue": "ICRA",
-    "date": "2025-05",
-    "year": 2025,
+    "date": "2024-09",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G",
@@ -11665,8 +11665,8 @@
     "name": "DriveDreamer-2",
     "title": "DriveDreamer-2: LLM-Enhanced World Models for Diverse Driving Video Generation",
     "venue": "AAAI",
-    "date": "2025-02",
-    "year": 2025,
+    "date": "2024-03",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G",
@@ -11706,8 +11706,8 @@
     "name": "Panacea",
     "title": "Panacea: Panoramic and Controllable Video Generation for Autonomous Driving",
     "venue": "CVPR",
-    "date": "2024-06",
-    "year": 2024,
+    "date": "2023-11",
+    "year": 2023,
     "roles": [
       "TI-I",
       "TI-G",
@@ -11746,8 +11746,8 @@
     "name": "MagicDrive",
     "title": "MagicDrive: Street View Generation with Diverse 3D Geometry Control",
     "venue": "ICLR",
-    "date": "2024-05",
-    "year": 2024,
+    "date": "2023-10",
+    "year": 2023,
     "roles": [
       "TI-G",
       "SS-G",
@@ -11784,8 +11784,8 @@
     "name": "LidarDM",
     "title": "LidarDM: Generative LiDAR Simulation in a Generated World",
     "venue": "ICRA",
-    "date": "2025-05",
-    "year": 2025,
+    "date": "2024-04",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G",
@@ -11825,7 +11825,7 @@
     "name": "UniPi",
     "title": "Learning Universal Policies via Text-Guided Video Generation",
     "venue": "NeurIPS",
-    "date": "2023-12",
+    "date": "2023-02",
     "year": 2023,
     "roles": [
       "TI-I",
@@ -12149,8 +12149,8 @@
     "name": "VLMaps",
     "title": "Visual Language Maps for Robot Navigation",
     "venue": "ICRA",
-    "date": "2023-05",
-    "year": 2023,
+    "date": "2022-10",
+    "year": 2022,
     "roles": [
       "SS-G",
       "SS-E",
@@ -12186,8 +12186,8 @@
     "name": "CLIP-Fields",
     "title": "CLIP-Fields: Weakly Supervised Semantic Fields for Robotic Memory",
     "venue": "RSS",
-    "date": "2023-07",
-    "year": 2023,
+    "date": "2022-10",
+    "year": 2022,
     "roles": [
       "SS-G",
       "SS-E",
@@ -12223,8 +12223,8 @@
     "name": "ConceptGraphs",
     "title": "ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning",
     "venue": "ICRA",
-    "date": "2024-05",
-    "year": 2024,
+    "date": "2023-09",
+    "year": 2023,
     "roles": [
       "SS-G",
       "SS-E",
@@ -12261,7 +12261,7 @@
     "name": "DREAMWALKER",
     "title": "DREAMWALKER: Mental Planning for Continuous Vision-Language Navigation",
     "venue": "ICCV",
-    "date": "2023-10",
+    "date": "2023-08",
     "year": 2023,
     "roles": [
       "TI-I",
@@ -12301,7 +12301,7 @@
     "name": "SayPlan",
     "title": "SayPlan: Grounding Large Language Models Using 3D Scene Graphs for Scalable Robot Task Planning",
     "venue": "CoRL",
-    "date": "2023-11",
+    "date": "2023-07",
     "year": 2023,
     "roles": [
       "TI-I",
@@ -12340,8 +12340,8 @@
     "name": "ReMEmbR",
     "title": "ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robot Navigation",
     "venue": "ICRA",
-    "date": "2025-05",
-    "year": 2025,
+    "date": "2024-09",
+    "year": 2024,
     "roles": [
       "TI-M",
       "SS-G",
@@ -12378,8 +12378,8 @@
     "name": "BEVBert",
     "title": "BEVBert: Multimodal Map Pre-Training for Language-Guided Navigation",
     "venue": "ICCV",
-    "date": "2023-10",
-    "year": 2023,
+    "date": "2022-12",
+    "year": 2022,
     "roles": [
       "TI-M",
       "SS-G",
@@ -12416,8 +12416,8 @@
     "name": "Mobility VLA",
     "title": "Mobility VLA: Multimodal Instruction Navigation with Long-Context VLMs and Topological Graphs",
     "venue": "arXiv",
-    "date": "2025-07",
-    "year": 2025,
+    "date": "2024-07",
+    "year": 2024,
     "roles": [
       "TI-M",
       "SS-G",
@@ -12453,7 +12453,7 @@
     "name": "Spatial Memory for Video World Models",
     "title": "Video World Models with Long-Term Spatial Memory",
     "venue": "arXiv",
-    "date": "2025-05",
+    "date": "2025-06",
     "year": 2025,
     "roles": [
       "TI-I",
@@ -12492,7 +12492,7 @@
     "name": "AR Forcing",
     "title": "AR Forcing: Towards Long-Horizon Robot Navigation World Model",
     "venue": "arXiv",
-    "date": "2026-03",
+    "date": "2026-05",
     "year": 2026,
     "roles": [
       "TI-I",
@@ -12571,7 +12571,7 @@
     "name": "Episodic Spatial World Model",
     "title": "Building Spatial World Models from Sparse Transitional Episodic Memories",
     "venue": "Workshop",
-    "date": "2025-12",
+    "date": "2025-05",
     "year": 2025,
     "roles": [
       "TI-G",
@@ -12609,8 +12609,8 @@
     "name": "WMA Agents",
     "title": "Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation",
     "venue": "ICLR",
-    "date": "2025-04",
-    "year": 2025,
+    "date": "2024-10",
+    "year": 2024,
     "roles": [
       "TI-I",
       "TI-G",
@@ -12723,7 +12723,7 @@
     "name": "Agent World Model",
     "title": "Agent World Model: Infinity Synthetic Environments for Agentic Reinforcement Learning",
     "venue": "ICML",
-    "date": "2026-07",
+    "date": "2026-02",
     "year": 2026,
     "roles": [
       "TI-I",
@@ -12760,7 +12760,7 @@
     "name": "4D Occupancy Forecasting",
     "title": "Point Cloud Forecasting as a Proxy for 4D Occupancy Forecasting",
     "venue": "CVPR",
-    "date": "2023-06",
+    "date": "2023-02",
     "year": 2023,
     "roles": [
       "TI-G",
@@ -13037,8 +13037,8 @@
     "name": "Driving with LLMs",
     "title": "Driving with LLMs: Fusing Object-Level Vector Modality for Explainable Autonomous Driving",
     "venue": "ICRA",
-    "date": "2024-05",
-    "year": 2024,
+    "date": "2023-10",
+    "year": 2023,
     "roles": [
       "SS-E",
       "AC-D"
@@ -13073,7 +13073,7 @@
     "name": "SimLingo",
     "title": "SimLingo: Vision-Only Closed-Loop Autonomous Driving with Language-Action Alignment",
     "venue": "CVPR",
-    "date": "2025-06",
+    "date": "2025-03",
     "year": 2025,
     "roles": [
       "AC-V",
@@ -13109,7 +13109,7 @@
     "name": "DriveVLM",
     "title": "DriveVLM: The Convergence of Autonomous Driving and Large Vision-Language Models",
     "venue": "CoRL",
-    "date": "2024-11",
+    "date": "2024-02",
     "year": 2024,
     "roles": [
       "SS-E",
@@ -13146,8 +13146,8 @@
     "name": "DriveMLM",
     "title": "DriveMLM: Aligning Multi-Modal Large Language Models with Behavioral Planning States for Autonomous Driving",
     "venue": "Visual Intelligence",
-    "date": "2025-11",
-    "year": 2025,
+    "date": "2023-12",
+    "year": 2023,
     "roles": [
       "AC-V",
       "AC-D"

@@ -35,7 +35,7 @@
     "name": "PHYRE",
     "title": "PHYRE: A New Benchmark for Physical Reasoning",
     "venue": "NeurIPS",
-    "date": "2019-12",
+    "date": "2019-08",
     "year": 2019,
     "focus": [
       "SS",
@@ -64,8 +64,8 @@
     "name": "Atari 100K (ALE)",
     "title": "Model-Based Reinforcement Learning for Atari",
     "venue": "ICLR",
-    "date": "2020-04",
-    "year": 2020,
+    "date": "2019-03",
+    "year": 2019,
     "focus": [
       "TI",
       "AC"
@@ -93,8 +93,8 @@
     "name": "CLEVRER",
     "title": "CLEVRER: Collision Events for Video Representation and Reasoning",
     "venue": "ICLR",
-    "date": "2020-04",
-    "year": 2020,
+    "date": "2019-10",
+    "year": 2019,
     "focus": [
       "TI",
       "SS"
@@ -122,8 +122,8 @@
     "name": "CausalWorld",
     "title": "CausalWorld: A Robotic Manipulation Benchmark for Causal Structure and Transfer Learning",
     "venue": "ICLR",
-    "date": "2021-05",
-    "year": 2021,
+    "date": "2020-10",
+    "year": 2020,
     "focus": [
       "SS",
       "AC"
@@ -183,7 +183,7 @@
     "name": "Physion",
     "title": "Physion: Evaluating Physical Prediction from Vision in Humans and Machines",
     "venue": "NeurIPS",
-    "date": "2021-12",
+    "date": "2021-06",
     "year": 2021,
     "focus": [
       "TI",
@@ -243,7 +243,7 @@
     "name": "SVIB",
     "title": "Imagine the Unseen World: A Benchmark for Systematic Generalization in Visual World Models",
     "venue": "NeurIPS",
-    "date": "2023-12",
+    "date": "2023-11",
     "year": 2023,
     "focus": [
       "TI",
@@ -274,7 +274,7 @@
     "name": "WOSAC",
     "title": "The Waymo Open Sim Agents Challenge",
     "venue": "NeurIPS",
-    "date": "2023-12",
+    "date": "2023-05",
     "year": 2023,
     "focus": [
       "TI",
@@ -305,8 +305,8 @@
     "name": "I-PHYRE",
     "title": "I-PHYRE: Interactive Physical Reasoning",
     "venue": "ICLR",
-    "date": "2024-05",
-    "year": 2024,
+    "date": "2023-12",
+    "year": 2023,
     "focus": [
       "TI",
       "SS",
@@ -336,8 +336,8 @@
     "name": "Cam4DOcc",
     "title": "Cam4DOcc: Benchmark for Camera-Only 4D Occupancy Forecasting in Autonomous Driving Applications",
     "venue": "CVPR",
-    "date": "2024-06",
-    "year": 2024,
+    "date": "2023-11",
+    "year": 2023,
     "focus": [
       "TI",
       "SS"
@@ -365,7 +365,7 @@
     "name": "DrivingDojo",
     "title": "DrivingDojo Dataset: Advancing Interactive and Knowledge-Enriched Driving World Model",
     "venue": "NeurIPS",
-    "date": "2024-12",
+    "date": "2024-10",
     "year": 2024,
     "focus": [
       "TI",
@@ -454,8 +454,8 @@
     "name": "ACT-Bench",
     "title": "ACT-Bench: Towards Action Controllable World Models for Autonomous Driving",
     "venue": "ICLR W.",
-    "date": "2025-04",
-    "year": 2025,
+    "date": "2024-12",
+    "year": 2024,
     "focus": [
       "TI",
       "AC"
@@ -484,8 +484,8 @@
     "name": "MMWorld",
     "title": "MMWorld: Towards Multi-discipline Multi-faceted World Model Evaluation in Videos",
     "venue": "ICLR",
-    "date": "2025-04",
-    "year": 2025,
+    "date": "2024-06",
+    "year": 2024,
     "focus": [
       "TI",
       "SS"
@@ -514,7 +514,7 @@
     "name": "PhysBench",
     "title": "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
     "venue": "ICLR",
-    "date": "2025-04",
+    "date": "2025-01",
     "year": 2025,
     "focus": [
       "SS"
@@ -605,7 +605,7 @@
     "name": "MEt3R",
     "title": "MEt3R: Measuring Multi-View Consistency in Generated Images",
     "venue": "CVPR",
-    "date": "2025-06",
+    "date": "2025-01",
     "year": 2025,
     "focus": [
       "SS"
@@ -667,7 +667,7 @@
     "name": "EVA-Bench",
     "title": "Empowering World Models with Reflection for Embodied Video Prediction",
     "venue": "ICML",
-    "date": "2025-07",
+    "date": "2025-05",
     "year": 2025,
     "focus": [
       "TI",
@@ -697,8 +697,8 @@
     "name": "PhyGenBench",
     "title": "Towards World Simulator: Crafting Physical Commonsense-Based Benchmark for Video Generation",
     "venue": "ICML",
-    "date": "2025-07",
-    "year": 2025,
+    "date": "2024-10",
+    "year": 2024,
     "focus": [
       "SS"
     ],
@@ -726,7 +726,7 @@
     "name": "Text2World",
     "title": "Text2World: Benchmarking Large Language Models for Symbolic World Model Generation",
     "venue": "ACL F.",
-    "date": "2025-07",
+    "date": "2025-02",
     "year": 2025,
     "focus": [
       "SS",
@@ -756,7 +756,7 @@
     "name": "WM-ABench",
     "title": "Do Vision-Language Models Have Internal World Models? Towards an Atomic Evaluation",
     "venue": "ACL F.",
-    "date": "2025-07",
+    "date": "2025-06",
     "year": 2025,
     "focus": [
       "TI",
@@ -785,7 +785,7 @@
     "name": "WorldPrediction",
     "title": "WorldPrediction: A Benchmark for High-level World Modeling and Long-horizon Procedural Planning",
     "venue": "ICML W.",
-    "date": "2025-07",
+    "date": "2025-06",
     "year": 2025,
     "focus": [
       "TI",
@@ -815,8 +815,8 @@
     "name": "WorldSimBench",
     "title": "WorldSimBench: Towards Video Generation Models as World Simulators",
     "venue": "ICML",
-    "date": "2025-07",
-    "year": 2025,
+    "date": "2024-10",
+    "year": 2024,
     "focus": [
       "TI",
       "SS",
@@ -849,7 +849,7 @@
     "name": "DreamGen Bench",
     "title": "DreamGen: Unlocking Generalization in Robot Learning through Video World Models",
     "venue": "CoRL",
-    "date": "2025-09",
+    "date": "2025-05",
     "year": 2025,
     "focus": [
       "TI",
@@ -880,8 +880,8 @@
     "name": "DriveArena",
     "title": "DriveArena: A Closed-loop Generative Simulation Platform for Autonomous Driving",
     "venue": "ICCV",
-    "date": "2025-10",
-    "year": 2025,
+    "date": "2024-08",
+    "year": 2024,
     "focus": [
       "TI",
       "SS",
@@ -911,7 +911,7 @@
     "name": "SimWorld",
     "title": "SimWorld: A Unified Benchmark for Simulator-Conditioned Scene Generation via World Model",
     "venue": "IROS",
-    "date": "2025-10",
+    "date": "2025-03",
     "year": 2025,
     "focus": [
       "TI",
@@ -940,7 +940,7 @@
     "name": "UniOcc",
     "title": "UniOcc: A Unified Benchmark for Occupancy Forecasting and Prediction in Autonomous Driving",
     "venue": "ICCV",
-    "date": "2025-10",
+    "date": "2025-03",
     "year": 2025,
     "focus": [
       "TI",
@@ -970,7 +970,7 @@
     "name": "WorldScore",
     "title": "WorldScore: A Unified Evaluation Benchmark for World Generation",
     "venue": "ICCV",
-    "date": "2025-10",
+    "date": "2025-04",
     "year": 2025,
     "focus": [
       "TI",
@@ -1002,7 +1002,7 @@
     "name": "EWMBench",
     "title": "EWMBench: Evaluating Scene, Motion, and Semantic Quality in Embodied World Models",
     "venue": "BMVC",
-    "date": "2025-11",
+    "date": "2025-05",
     "year": 2025,
     "focus": [
       "TI",
@@ -1031,7 +1031,7 @@
     "name": "WorldModelBench",
     "title": "WorldModelBench: Judging Video Generation Models as World Models",
     "venue": "NeurIPS",
-    "date": "2025-12",
+    "date": "2025-02",
     "year": 2025,
     "focus": [
       "TI",
@@ -1180,8 +1180,8 @@
     "name": "Physics-IQ",
     "title": "Do Generative Video Models Understand Physical Principles?",
     "venue": "WACV",
-    "date": "2026-03",
-    "year": 2026,
+    "date": "2025-01",
+    "year": 2025,
     "focus": [
       "SS"
     ],
@@ -1238,8 +1238,8 @@
     "name": "T2VWorldBench",
     "title": "T2VWorldBench: A Benchmark for Evaluating World Knowledge in Text-to-Video Generation",
     "venue": "WACV",
-    "date": "2026-03",
-    "year": 2026,
+    "date": "2025-07",
+    "year": 2025,
     "focus": [
       "TI",
       "SS"
@@ -1269,7 +1269,7 @@
     "name": "DrivingGen",
     "title": "DrivingGen: A Comprehensive Benchmark for Generative Video World Models in Autonomous Driving",
     "venue": "ICLR",
-    "date": "2026-04",
+    "date": "2026-01",
     "year": 2026,
     "focus": [
       "TI",
@@ -1300,8 +1300,8 @@
     "name": "PhyWorldBench",
     "title": "PhyWorldBench: A Comprehensive Evaluation of Physical Realism in Text-to-Video Models",
     "venue": "ICLR",
-    "date": "2026-04",
-    "year": 2026,
+    "date": "2025-07",
+    "year": 2025,
     "focus": [
       "SS"
     ],
@@ -1329,8 +1329,8 @@
     "name": "World-in-World",
     "title": "World-in-World: World Models in a Closed-Loop World",
     "venue": "ICLR",
-    "date": "2026-04",
-    "year": 2026,
+    "date": "2025-10",
+    "year": 2025,
     "focus": [
       "TI",
       "AC"
@@ -1361,8 +1361,8 @@
     "name": "WorldGym",
     "title": "WorldGym: World Model as An Environment for Policy Evaluation",
     "venue": "ICLR",
-    "date": "2026-04",
-    "year": 2026,
+    "date": "2025-06",
+    "year": 2025,
     "focus": [
       "TI",
       "AC"
@@ -1487,7 +1487,7 @@
     "name": "MBench",
     "title": "MBench: A Comprehensive Benchmark on Memory Capability for Video World Models",
     "venue": "arXiv",
-    "date": "2026-05",
+    "date": "2026-06",
     "year": 2026,
     "focus": [
       "TI",
@@ -1675,8 +1675,8 @@
     "name": "4DWorldBench",
     "title": "4DWorldBench: A Comprehensive Evaluation Framework for 3D/4D World Generation Models",
     "venue": "CVPR",
-    "date": "2026-06",
-    "year": 2026,
+    "date": "2025-11",
+    "year": 2025,
     "focus": [
       "TI",
       "SS",
@@ -1777,7 +1777,7 @@
     "name": "ForecastOcc",
     "title": "ForecastOcc: Vision-based Semantic Occupancy Forecasting",
     "venue": "ICRA",
-    "date": "2026-06",
+    "date": "2026-02",
     "year": 2026,
     "focus": [
       "TI",
@@ -1806,8 +1806,8 @@
     "name": "PAI-Bench",
     "title": "PAI-Bench: A Comprehensive Benchmark for Physical AI",
     "venue": "CVPR",
-    "date": "2026-06",
-    "year": 2026,
+    "date": "2025-12",
+    "year": 2025,
     "focus": [
       "TI",
       "SS",
@@ -1903,7 +1903,7 @@
     "name": "RoboWM-Bench",
     "title": "RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation",
     "venue": "CVPR W.",
-    "date": "2026-06",
+    "date": "2026-04",
     "year": 2026,
     "focus": [
       "TI",
@@ -1964,8 +1964,8 @@
     "name": "WorldLens",
     "title": "WorldLens: Full-Spectrum Evaluations of Driving World Models in Real World",
     "venue": "CVPR",
-    "date": "2026-06",
-    "year": 2026,
+    "date": "2025-12",
+    "year": 2025,
     "focus": [
       "TI",
       "SS",
@@ -2063,8 +2063,8 @@
     "name": "AutumnBench",
     "title": "Benchmarking World-Model Learning with Environment-Level Queries",
     "venue": "ICML",
-    "date": "2026-07",
-    "year": 2026,
+    "date": "2025-10",
+    "year": 2025,
     "focus": [
       "TI",
       "SS",
@@ -2096,7 +2096,7 @@
     "name": "dWorldEval",
     "title": "Scaling Real-World Robot Policy Evaluation via Discrete Diffusion World Model",
     "venue": "ICML",
-    "date": "2026-07",
+    "date": "2026-04",
     "year": 2026,
     "focus": [
       "TI",
@@ -2125,7 +2125,7 @@
     "name": "iWorld-Bench",
     "title": "iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework",
     "venue": "ICML",
-    "date": "2026-07",
+    "date": "2026-05",
     "year": 2026,
     "focus": [
       "TI",
@@ -2162,7 +2162,7 @@
     "name": "RBench",
     "title": "Rethinking Video Generation Model for the Embodied World",
     "venue": "ICML",
-    "date": "2026-07",
+    "date": "2026-01",
     "year": 2026,
     "focus": [
       "TI",
@@ -2223,7 +2223,7 @@
     "name": "CausalPhys",
     "title": "Causal Scaffolding for Physical Reasoning: A Benchmark for Causally-Informed Physical World Understanding in VLMs",
     "venue": "KDD",
-    "date": "2026-08",
+    "date": "2026-06",
     "year": 2026,
     "focus": [
       "SS"
@@ -2253,7 +2253,7 @@
     "name": "MemoBench",
     "title": "MemoBench: Benchmarking World Modeling in Dynamically Changing Environments",
     "venue": "ECCV",
-    "date": "2026-09",
+    "date": "2026-06",
     "year": 2026,
     "focus": [
       "TI",
@@ -2494,7 +2494,7 @@
     "name": "OopsieVerse",
     "title": "OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation",
     "venue": "RSS",
-    "date": "2026-07",
+    "date": "2026-06",
     "year": 2026,
     "focus": [
       "SS",
@@ -2553,8 +2553,8 @@
     "name": "Morpheus",
     "title": "Evaluating Newtonian Mechanics in Video Generative Models with Real Physical Systems",
     "venue": "ICML",
-    "date": "2026-07",
-    "year": 2026,
+    "date": "2025-04",
+    "year": 2025,
     "focus": [
       "TI",
       "SS"
@@ -2772,7 +2772,7 @@
     "name": "Software World Models",
     "title": "Towards Evaluation of Implicit Software World Models in Coding LLMs",
     "venue": "ICML Workshop",
-    "date": "2026-07",
+    "date": "2026-06",
     "year": 2026,
     "focus": [
       "SS",
@@ -2830,7 +2830,7 @@
     "name": "MSVBench",
     "title": "MSVBench: Towards Human-Level Evaluation of Multi-Shot Video Generation",
     "venue": "ACL Findings",
-    "date": "2026-07",
+    "date": "2026-02",
     "year": 2026,
     "focus": [
       "TI",
@@ -3445,7 +3445,7 @@
     "name": "VideoPhy",
     "title": "VideoPhy: Evaluating Physical Commonsense for Video Generation",
     "venue": "NeurIPS Workshop",
-    "date": "2024-12",
+    "date": "2024-06",
     "year": 2024,
     "focus": [
       "TI",
@@ -3509,7 +3509,7 @@
     "name": "Physion++",
     "title": "Physion++: Evaluating Physical Scene Understanding that Requires Online Inference of Different Physical Properties",
     "venue": "NeurIPS",
-    "date": "2023-12",
+    "date": "2023-06",
     "year": 2023,
     "focus": [
       "TI",
@@ -3540,8 +3540,8 @@
     "name": "Meta-World",
     "title": "Meta-World: A Benchmark and Evaluation for Multi-Task and Meta Reinforcement Learning",
     "venue": "CoRL",
-    "date": "2020-11",
-    "year": 2020,
+    "date": "2019-10",
+    "year": 2019,
     "focus": [
       "SS",
       "AC"
@@ -3574,7 +3574,7 @@
     "name": "LIBERO",
     "title": "LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning",
     "venue": "NeurIPS Datasets and Benchmarks",
-    "date": "2023-12",
+    "date": "2023-06",
     "year": 2023,
     "focus": [
       "TI",
@@ -3609,7 +3609,7 @@
     "name": "robomimic",
     "title": "What Matters in Learning from Offline Human Demonstrations for Robot Manipulation",
     "venue": "CoRL",
-    "date": "2021-11",
+    "date": "2021-08",
     "year": 2021,
     "focus": [
       "TI",
@@ -3782,8 +3782,8 @@
     "name": "VLABench",
     "title": "VLABench: A Large-Scale Benchmark for Language-Conditioned Robotics Manipulation with Long-Horizon Reasoning Tasks",
     "venue": "arXiv",
-    "date": "2025-01",
-    "year": 2025,
+    "date": "2024-12",
+    "year": 2024,
     "focus": [
       "TI",
       "SS",
@@ -3920,7 +3920,7 @@
     "name": "Occ3D",
     "title": "Occ3D: A Large-Scale 3D Occupancy Prediction Benchmark for Autonomous Driving",
     "venue": "NeurIPS",
-    "date": "2023-12",
+    "date": "2023-04",
     "year": 2023,
     "focus": [
       "TI",
@@ -3953,7 +3953,7 @@
     "name": "NAVSIM",
     "title": "NAVSIM: Data-Driven Non-Reactive Autonomous Vehicle Simulation and Benchmarking",
     "venue": "NeurIPS",
-    "date": "2024-12",
+    "date": "2024-06",
     "year": 2024,
     "focus": [
       "TI",
@@ -3987,7 +3987,7 @@
     "name": "Habitat",
     "title": "Habitat: A Platform for Embodied AI Research",
     "venue": "ICCV",
-    "date": "2019-10",
+    "date": "2019-04",
     "year": 2019,
     "focus": [
       "SS",
@@ -4055,8 +4055,8 @@
     "name": "ALFRED",
     "title": "ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks",
     "venue": "CVPR",
-    "date": "2020-06",
-    "year": 2020,
+    "date": "2019-12",
+    "year": 2019,
     "focus": [
       "TI",
       "SS",
@@ -4090,8 +4090,8 @@
     "name": "TextWorld",
     "title": "TextWorld: A Learning Environment for Text-Based Games",
     "venue": "CGW Workshop",
-    "date": "2019-08",
-    "year": 2019,
+    "date": "2018-06",
+    "year": 2018,
     "focus": [
       "TI",
       "SS",
@@ -4124,7 +4124,7 @@
     "name": "ScienceWorld",
     "title": "ScienceWorld: Is Your Agent Smarter than a 5th Grader?",
     "venue": "EMNLP",
-    "date": "2022-12",
+    "date": "2022-03",
     "year": 2022,
     "focus": [
       "TI",
@@ -4158,8 +4158,8 @@
     "name": "WebArena",
     "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
     "venue": "ICLR",
-    "date": "2024-05",
-    "year": 2024,
+    "date": "2023-07",
+    "year": 2023,
     "focus": [
       "TI",
       "SS",
@@ -4193,7 +4193,7 @@
     "name": "VisualWebArena",
     "title": "VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks",
     "venue": "ACL",
-    "date": "2024-08",
+    "date": "2024-01",
     "year": 2024,
     "focus": [
       "TI",
@@ -4228,7 +4228,7 @@
     "name": "AppWorld",
     "title": "AppWorld: A Controllable World of Apps and People for Benchmarking Interactive Coding Agents",
     "venue": "ACL",
-    "date": "2024-08",
+    "date": "2024-07",
     "year": 2024,
     "focus": [
       "TI",
@@ -4263,8 +4263,8 @@
     "name": "AndroidWorld",
     "title": "AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents",
     "venue": "ICLR",
-    "date": "2025-04",
-    "year": 2025,
+    "date": "2024-05",
+    "year": 2024,
     "focus": [
       "TI",
       "SS",
@@ -4297,8 +4297,8 @@
     "name": "ToolSandbox",
     "title": "ToolSandbox: A Stateful, Conversational, Interactive Evaluation Benchmark for LLM Tool Use Capabilities",
     "venue": "NAACL",
-    "date": "2025-04",
-    "year": 2025,
+    "date": "2024-08",
+    "year": 2024,
     "focus": [
       "TI",
       "SS",
@@ -4331,8 +4331,8 @@
     "name": "Tau-bench",
     "title": "Tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
     "venue": "ICLR",
-    "date": "2025-04",
-    "year": 2025,
+    "date": "2024-06",
+    "year": 2024,
     "focus": [
       "TI",
       "SS",
@@ -4399,8 +4399,8 @@
     "name": "CALVIN",
     "title": "CALVIN: A Benchmark for Language-Conditioned Policy Learning for Long-Horizon Robot Manipulation Tasks",
     "venue": "RA-L",
-    "date": "2022-12",
-    "year": 2022,
+    "date": "2021-12",
+    "year": 2021,
     "focus": [
       "TI",
       "SS",
@@ -4433,7 +4433,7 @@
     "name": "SafeBench",
     "title": "SafeBench: A Benchmarking Platform for Safety Evaluation of Autonomous Vehicles",
     "venue": "NeurIPS Datasets and Benchmarks",
-    "date": "2022-12",
+    "date": "2022-06",
     "year": 2022,
     "focus": [
       "TI",
@@ -4467,7 +4467,7 @@
     "name": "Bench2Drive",
     "title": "Bench2Drive: Towards Multi-Ability Benchmarking of Closed-Loop End-to-End Autonomous Driving",
     "venue": "NeurIPS",
-    "date": "2024-12",
+    "date": "2024-06",
     "year": 2024,
     "focus": [
       "TI",
@@ -4501,7 +4501,7 @@
     "name": "Waymax",
     "title": "Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research",
     "venue": "NeurIPS",
-    "date": "2023-12",
+    "date": "2023-10",
     "year": 2023,
     "focus": [
       "TI",
@@ -4535,8 +4535,8 @@
     "name": "MetaDrive",
     "title": "MetaDrive: Composing Diverse Driving Scenarios for Generalizable Reinforcement Learning",
     "venue": "TPAMI",
-    "date": "2022-12",
-    "year": 2022,
+    "date": "2021-09",
+    "year": 2021,
     "focus": [
       "TI",
       "SS",
@@ -4570,7 +4570,7 @@
     "name": "AdvSim",
     "title": "AdvSim: Generating Safety-Critical Scenarios for Self-Driving Vehicles",
     "venue": "CVPR",
-    "date": "2021-06",
+    "date": "2021-01",
     "year": 2021,
     "focus": [
       "TI",
@@ -4604,7 +4604,7 @@
     "name": "SAFE-SIM",
     "title": "SAFE-SIM: Safety-Critical Closed-Loop Traffic Simulation with Diffusion-Controllable Adversaries",
     "venue": "ECCV",
-    "date": "2024-09",
+    "date": "2024-01",
     "year": 2024,
     "focus": [
       "TI",
@@ -4671,7 +4671,7 @@
     "name": "Bench2Drive-Robust",
     "title": "Bench2Drive-Robust: Benchmarking Closed-Loop Autonomous Driving under Deployment Perturbations",
     "venue": "arXiv",
-    "date": "2026-02",
+    "date": "2026-05",
     "year": 2026,
     "focus": [
       "TI",
@@ -4705,8 +4705,8 @@
     "name": "Procgen",
     "title": "Leveraging Procedural Generation to Benchmark Reinforcement Learning",
     "venue": "ICML",
-    "date": "2020-07",
-    "year": 2020,
+    "date": "2019-12",
+    "year": 2019,
     "focus": [
       "TI",
       "SS",
@@ -4739,7 +4739,7 @@
     "name": "MineRL",
     "title": "MineRL: A Large-Scale Dataset of Minecraft Demonstrations",
     "venue": "IJCAI",
-    "date": "2019-08",
+    "date": "2019-07",
     "year": 2019,
     "focus": [
       "TI",
@@ -4773,7 +4773,7 @@
     "name": "MineDojo",
     "title": "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge",
     "venue": "NeurIPS Datasets and Benchmarks",
-    "date": "2022-12",
+    "date": "2022-06",
     "year": 2022,
     "focus": [
       "TI",
@@ -4808,7 +4808,7 @@
     "name": "ViZDoom",
     "title": "ViZDoom: A Doom-Based AI Research Platform for Visual Reinforcement Learning",
     "venue": "CIG",
-    "date": "2016-09",
+    "date": "2016-05",
     "year": 2016,
     "focus": [
       "TI",
@@ -4842,7 +4842,7 @@
     "name": "Craftax",
     "title": "Craftax: A Lightning-Fast Benchmark for Open-Ended Reinforcement Learning",
     "venue": "ICML",
-    "date": "2024-07",
+    "date": "2024-02",
     "year": 2024,
     "focus": [
       "TI",
@@ -4876,7 +4876,7 @@
     "name": "WorkArena",
     "title": "WorkArena: How Capable Are Web Agents at Solving Common Knowledge Work Tasks?",
     "venue": "ICML",
-    "date": "2024-07",
+    "date": "2024-03",
     "year": 2024,
     "focus": [
       "TI",
@@ -4910,8 +4910,8 @@
     "name": "BrowserGym",
     "title": "The BrowserGym Ecosystem for Web Agent Research",
     "venue": "arXiv",
-    "date": "2025-04",
-    "year": 2025,
+    "date": "2024-12",
+    "year": 2024,
     "focus": [
       "TI",
       "SS",
@@ -4944,7 +4944,7 @@
     "name": "OSWorld",
     "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
     "venue": "NeurIPS",
-    "date": "2024-12",
+    "date": "2024-04",
     "year": 2024,
     "focus": [
       "TI",
@@ -4979,7 +4979,7 @@
     "name": "VLN-CE",
     "title": "Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments",
     "venue": "ECCV",
-    "date": "2020-08",
+    "date": "2020-04",
     "year": 2020,
     "focus": [
       "TI",
@@ -5013,8 +5013,8 @@
     "name": "ALFWorld",
     "title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
     "venue": "ICLR",
-    "date": "2021-05",
-    "year": 2021,
+    "date": "2020-10",
+    "year": 2020,
     "focus": [
       "TI",
       "SS",
@@ -5082,7 +5082,7 @@
     "name": "BEHAVIOR",
     "title": "BEHAVIOR: Benchmark for Everyday Household Activities in Virtual, Interactive, and Ecological Environments",
     "venue": "CoRL",
-    "date": "2021-11",
+    "date": "2021-08",
     "year": 2021,
     "focus": [
       "TI",
@@ -5117,8 +5117,8 @@
     "name": "iGibson",
     "title": "Interactive Gibson Benchmark (iGibson 0.5): A Benchmark for Interactive Navigation in Cluttered Environments",
     "venue": "IROS",
-    "date": "2020-10",
-    "year": 2020,
+    "date": "2019-10",
+    "year": 2019,
     "focus": [
       "TI",
       "SS",
@@ -5252,7 +5252,7 @@
     "name": "PhysicsArena",
     "title": "PhysicsArena: The First Multimodal Physics Reasoning Benchmark Exploring Variable, Process, and Solution Dimensions",
     "venue": "Findings of EMNLP",
-    "date": "2025-11",
+    "date": "2025-05",
     "year": 2025,
     "focus": [
       "SS"
@@ -5316,8 +5316,8 @@
     "name": "PASTURE",
     "title": "CoWs on Pasture: Baselines and Benchmarks for Language-Driven Zero-Shot Object Navigation",
     "venue": "CVPR",
-    "date": "2023-06",
-    "year": 2023,
+    "date": "2022-03",
+    "year": 2022,
     "focus": [
       "SS",
       "AC"
@@ -5619,7 +5619,7 @@
     "name": "4D Occupancy Forecasting Protocol",
     "title": "Point Cloud Forecasting as a Proxy for 4D Occupancy Forecasting",
     "venue": "CVPR",
-    "date": "2023-06",
+    "date": "2023-02",
     "year": 2023,
     "focus": [
       "TI",

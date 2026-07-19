@@ -108,6 +108,20 @@ test("expanded catalogs have unique identifiers and retain their reviewed bases"
   assert.equal(new Set(resources.map((resource) => resource.id)).size, resources.length);
 });
 
+test("chronology follows first public release rather than venue month", () => {
+  const worksById = new Map(works.map((work) => [work.id, work]));
+  const resourcesByName = new Map(resources.map((resource) => [resource.name, resource]));
+  assert.equal(worksById.get("hafner2023dreamerv3")?.date, "2023-01");
+  assert.equal(worksById.get("cheng2025jowa")?.date, "2024-10");
+  assert.equal(worksById.get("think2drive2024")?.date, "2024-02");
+  assert.equal(resourcesByName.get("WorldModelBench")?.date, "2025-02");
+  assert.equal(resourcesByName.get("Physics-IQ")?.date, "2025-01");
+  assert.equal(resourcesByName.get("MBench")?.date, "2026-06");
+  for (const item of [...works, ...resources]) {
+    assert.equal(item.year, Number(item.date.slice(0, 4)), `${item.name} has a date/year mismatch`);
+  }
+});
+
 test("Table 2 and Table 3 tags stay synchronized with their portal entries", () => {
   const table2Rows = csvObjects(methodsCsv);
   const worksById = new Map(works.map((work) => [work.id, work]));

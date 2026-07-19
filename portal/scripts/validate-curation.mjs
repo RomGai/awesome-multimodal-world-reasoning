@@ -35,17 +35,20 @@ if (resources.length !== 74 + (additions.evaluation?.length ?? 0)) {
 const worksById = new Map(works.map((work) => [work.id, work]));
 for (const addition of additions.research ?? []) {
   if (!worksById.has(addition.bibKey)) errors.push(`${addition.bibKey}: curated Research Work is missing from the generated catalog.`);
+  if (!addition.dateBasis?.trim()) errors.push(`${addition.bibKey}: first-public-date basis is missing.`);
   if (!meta.summaries?.[addition.bibKey]?.en || !meta.summaries?.[addition.bibKey]?.zh) {
     errors.push(`${addition.bibKey}: curated Research summary is missing from portal-meta.`);
   }
 }
 for (const addition of additions.evaluation ?? []) {
+  if (!addition.dateBasis?.trim()) errors.push(`${addition.bibKey}: first-public-date basis is missing.`);
   if (!resources.some((resource) => resource.id.endsWith(`-${addition.bibKey}`))) {
     errors.push(`${addition.bibKey}: curated Evaluation Resource is missing from the generated catalog.`);
   }
 }
 
 for (const work of works) {
+  if (!/^\d{4}-\d{2}$/.test(work.date) || work.year !== Number(work.date.slice(0, 4))) errors.push(`${work.name}: invalid chronology.`);
   if (!work.roles?.length || work.roles.some((role) => !allowedRoles.has(role))) errors.push(`${work.name}: invalid roles.`);
   if (!work.paradigms?.length || work.paradigms.some((paradigm) => !allowedParadigms.has(paradigm)) || new Set(work.paradigms).size !== work.paradigms.length) errors.push(`${work.name}: invalid research paradigms.`);
   if (!work.summary?.en?.trim() || !work.summary?.zh?.trim()) errors.push(`${work.name}: missing bilingual summary.`);
@@ -57,6 +60,7 @@ for (const work of works) {
 }
 
 for (const resource of resources) {
+  if (!/^\d{4}-\d{2}$/.test(resource.date) || resource.year !== Number(resource.date.slice(0, 4))) errors.push(`${resource.name}: invalid chronology.`);
   if (!resource.focus?.length || resource.focus.some((tag) => !allowedFocus.has(tag))) errors.push(`${resource.name}: invalid focus.`);
   for (const field of ["resourceType", "target", "scale", "task", "dimensions"]) {
     if (!resource[field]?.trim()) errors.push(`${resource.name}: missing ${field}.`);

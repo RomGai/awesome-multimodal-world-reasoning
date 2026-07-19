@@ -20,6 +20,7 @@ Do not submit links to unofficial mirrors, repository aggregators, or third-part
 - Table-derived records are stored in `source-data/`.
 - Additional Research and Evaluation entries are stored in `data/curated-additions.json`.
 - Bilingual summaries and official link overrides are stored in `data/portal-meta.json`.
+- Use the first publicly accessible month for chronology: arXiv v1 when available, otherwise the earliest official release or formal publication. Keep the venue label separate from this date.
 - Files under `app/data/*.generated.json` are generated and should not be edited manually.
 
 After making a change, run:

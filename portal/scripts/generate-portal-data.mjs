@@ -259,6 +259,7 @@ const works = csvRows.filter((cells) => cells.some(Boolean)).map((cells, index) 
   const invalidRole = roles.find((role) => !allowedRoles.has(role));
   if (invalidRole) throw new Error(`Invalid role ${invalidRole} on ${row.method}.`);
   if (!/^\d{4}-\d{2}$/.test(row.chronology_month)) throw new Error(`Invalid date on ${row.method}.`);
+  if (row.year !== row.chronology_month.slice(0, 4)) throw new Error(`Date/year mismatch on ${row.method}.`);
   const url = primaryUrl(id, entry, meta.paperOverrides);
   if (!url?.startsWith("https://")) throw new Error(`Missing HTTPS primary source for ${row.method}.`);
   const primaryKind = officialReleaseKeys.has(id) ? "official" : "paper";
@@ -290,6 +291,7 @@ for (const addition of additions.research ?? []) {
   const roles = addition.roles ?? [];
   if (!roles.length || roles.some((role) => !allowedRoles.has(role))) throw new Error(`Curated Research Work ${id} has invalid roles.`);
   if (!/^\d{4}-\d{2}$/.test(addition.date ?? "")) throw new Error(`Curated Research Work ${id} has an invalid date.`);
+  if (!addition.dateBasis?.trim()) throw new Error(`Curated Research Work ${id} lacks a first-public-date basis.`);
   if (!addition.keywords?.en?.length || !addition.keywords?.zh?.length) throw new Error(`Curated Research Work ${id} lacks bilingual topics.`);
   const summary = meta.summaries?.[id];
   if (!summary?.en || !summary?.zh) throw new Error(`Curated Research Work ${id} lacks a bilingual full-text summary.`);
@@ -343,6 +345,8 @@ const evaluationResources = benchmarkCsvRows.filter((cells) => cells.some(Boolea
   }
   const domains = override.domains ?? row.domains.split(";").map((domain) => domain.trim()).filter(Boolean);
   if (!Array.isArray(domains) || !domains.length) throw new Error(`Missing domains for Table 3 resource ${row.benchmark}.`);
+  if (!/^\d{4}-\d{2}$/.test(row.chronology_month)) throw new Error(`Invalid date on ${row.benchmark}.`);
+  if (row.year !== row.chronology_month.slice(0, 4)) throw new Error(`Date/year mismatch on ${row.benchmark}.`);
   const links = citeKeys.reduce((allLinks, key) => ({ ...allLinks, ...(meta.links[key] ?? {}) }), {});
   const primaryKind = isOfficialRelease(entry, primaryKey) ? "official" : "paper";
   return {
@@ -381,6 +385,7 @@ for (const [index, addition] of (additions.evaluation ?? []).entries()) {
     throw new Error(`Curated Evaluation Resource ${id} has invalid Evaluation Focus tags.`);
   }
   if (!/^\d{4}-\d{2}$/.test(addition.date ?? "")) throw new Error(`Curated Evaluation Resource ${id} has an invalid date.`);
+  if (!addition.dateBasis?.trim()) throw new Error(`Curated Evaluation Resource ${id} lacks a first-public-date basis.`);
   if (!addition.keywords?.en?.length || !addition.keywords?.zh?.length) throw new Error(`Curated Evaluation Resource ${id} lacks bilingual domains.`);
   for (const field of ["resourceType", "target", "scale", "task", "dimensions"]) {
     if (!addition[field]) throw new Error(`Curated Evaluation Resource ${id} lacks ${field}.`);

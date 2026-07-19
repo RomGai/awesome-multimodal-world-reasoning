@@ -29,7 +29,7 @@
 
 This repository is the interactive companion to **A Survey of World Models in Multimodal Reasoning**. Because many methods serve multiple functional roles, it is not organized as a conventional Awesome-style linear list. Instead, the repository centers on a live portal for cross-role indexing, multi-label filtering, and exploration across Research Works and Evaluation Resources.
 
-The portal currently indexes 345 Research Works and 176 Evaluation Resources. Every Research Work includes a concise summary in English and Chinese, while Evaluation Resources provide structured details. It also supports world-model types, keyword and year search, date sorting, pagination, and verified Paper, Code, Project, and Blog links when available.
+The portal currently indexes 345 Research Works and 176 Evaluation Resources. Every Research Work includes a concise summary in English and Chinese, while Evaluation Resources provide structured details. It also supports world-model types, keyword and year search, date sorting, pagination, and verified Paper, Code, Project, and Blog links when available. Chronology follows the first publicly accessible release: arXiv v1 when available, otherwise the earliest official release or formal publication.
 
 ## Live portal
 
