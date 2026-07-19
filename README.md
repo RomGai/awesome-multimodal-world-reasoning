@@ -27,7 +27,7 @@
 
 ## Introduction
 
-This repository is the interactive companion to **From Language to World States: A Survey of World Models in Multimodal Reasoning**. The survey takes a functional perspective, treating world models as components of multimodal reasoning rather than as a single architectural family or an application-specific list. A method may simultaneously predict or imagine temporal evolution, represent structured world state, and connect those representations to action. Because many methods therefore serve multiple functional roles, the repository is not organized as a conventional Awesome-style linear list. Instead, it centers on a live portal for cross-role indexing, multi-label filtering, and exploration across Research Works and Evaluation Resources.
+This repository is the interactive companion to **From Language to World States: A Survey of World Models in Multimodal Reasoning**. The survey takes a functional perspective on world models, examining the roles they play in multimodal reasoning rather than organizing them only by architecture or application. Because a single method may serve multiple functional roles, the repository is not organized as a conventional Awesome-style linear list. Instead, it centers on a live portal for cross-role indexing, multi-label filtering, and exploration across Research Works and Evaluation Resources.
 
 The portal currently indexes 416 Research Works and 176 Evaluation Resources. Every Research Work includes a concise summary in English and Chinese, while Evaluation Resources provide structured details. It also supports world-model types, keyword and year search, date sorting, pagination, and verified Paper, Code, Project, and Blog links when available. Chronology follows the first publicly accessible release: arXiv v1 when available, otherwise the earliest official release or formal publication.
 
@@ -50,7 +50,7 @@ The portal provides two connected views:
 
 ## Organization
 
-To make these functional overlaps explicit, the taxonomy separates what a method contributes from how it realizes that contribution. Primary and detailed roles capture the functional dimensions of **Temporal & Imaginative (TI)**, **Structured State (SS)**, and **Action Coupled (AC)**; World Model Types describe broader technical formulations; and Evaluation Resources are indexed separately by the dimensions they assess. This structure positions the survey as a map connecting methods, capabilities, and evaluation evidence.
+Building on this functional perspective, the taxonomy separates what a method contributes from how it realizes that contribution. A method may simultaneously predict or imagine temporal evolution, represent structured world state, and connect those representations to action; the portal therefore uses non-exclusive, multi-label roles to preserve these overlaps. Primary and detailed roles capture the functional dimensions of **Temporal & Imaginative (TI)**, **Structured State (SS)**, and **Action Coupled (AC)**; World Model Types describe broader technical formulations; and Evaluation Resources are indexed separately by the dimensions they assess. This structure positions the survey as a map connecting methods, capabilities, and evaluation evidence.
 
 ### Primary roles
 
