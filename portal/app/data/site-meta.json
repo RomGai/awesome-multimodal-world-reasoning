@@ -2,7 +2,7 @@
   "resources": [
     {
       "kind": "arxiv",
-      "label": "arXiv",
+      "label": "preprint",
       "href": "",
       "placeholder": true
     },
