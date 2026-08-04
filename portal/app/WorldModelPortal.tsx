@@ -123,7 +123,7 @@ const roleLabels: Record<RoleTag, Record<Language, string>> = {
 
 const copy = {
   en: {
-    companion: "World Models in Multimodal Reasoning",
+    companion: "A Survey of World Models in Multimodal Reasoning",
     titleA: "From Language to",
     titleB: "World States",
     works: "indexed works",
@@ -147,7 +147,7 @@ const copy = {
     empty: "No work matches this combination.",
     reset: "Reset the index",
     roleHint: "Select a role on any card to filter the full index.",
-    dataNote: "Data is generated locally from Table 2 and the source bibliography.",
+    dataNote: "Data is generated locally from Table 2 and the survey bibliography.",
     identity: "World-State Portal",
   },
   zh: {
@@ -193,7 +193,7 @@ const portalViewCopy = {
       empty: "No work matches this combination.",
       reset: "Reset the index",
       roleHint: "Select a role on any card to filter the full index.",
-      dataNote: "Data is generated locally from Table 2 and the source bibliography.",
+      dataNote: "Data is generated locally from Table 2 and the survey bibliography.",
       paginationLabel: "Research index pages",
       perPageLabel: "Works per page",
     },
@@ -225,7 +225,7 @@ const portalViewCopy = {
       empty: "No evaluation resource matches this combination.",
       reset: "Reset the resource index",
       roleHint: "Select a focus or domain on any card to filter the resource index.",
-      dataNote: "Data is generated locally from Table 3 and the source bibliography.",
+      dataNote: "Data is generated locally from Table 3 and the survey bibliography.",
       paginationLabel: "Research index pages",
       perPageLabel: "Resources per page",
     },
@@ -308,7 +308,7 @@ export default function WorldModelPortal() {
     ? { open: "Details", close: "Close", label: "Resource details", type: "Resource type", target: "Evaluation target", scale: "Scale", task: "Task", dimensions: "Main dimensions / metrics" }
     : { open: "详情", close: "收起", label: "资源详情", type: "资源类型", target: "评估对象", scale: "规模", task: "任务", dimensions: "主要维度 / 指标" };
   const footerCopy = language === "en"
-    ? { copyright: "© 2026 World Models in Multimodal Reasoning. All rights reserved.", descriptor: "Research works & evaluation index" }
+    ? { copyright: "© 2026 A Survey of World Models in Multimodal Reasoning. All rights reserved.", descriptor: "Survey literature & evaluation index" }
     : { copyright: "© 2026《多模态推理中的世界模型综述》。保留所有权利。", descriptor: "综述文献与评估资源索引" };
   const yearCopy = language === "en"
     ? { label: "Year range", from: "From", to: "To", separator: "to" }
@@ -510,7 +510,7 @@ export default function WorldModelPortal() {
       <header className="topbar">
         <a className="brand" href="#top" aria-label="World Model Index home">
           <span className="brandMark" aria-hidden="true"><i className="fas fa-book-open" /></span>
-          <span>Research Index</span>
+          <span>Survey Index</span>
         </a>
         <button
           className="languageButton"
@@ -529,7 +529,7 @@ export default function WorldModelPortal() {
             <span className="titleLine">{t.titleA}</span>
             <span className="titleLine titleAccent">{t.titleB}</span>
           </h1>
-          <nav className="heroLinks" aria-label="Research resources">
+          <nav className="heroLinks" aria-label="Survey resources">
             {siteMeta.resources.map((resource) => {
               const content = (
                 <>
